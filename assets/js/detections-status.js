@@ -82,6 +82,17 @@
       .toUpperCase();
 
     return detections.filter((d) => {
+      const category = String(d.category || "").toLowerCase();
+      const status = normalizeStatus(d.status);
+
+      if (filters.category && category !== String(filters.category).toLowerCase()) {
+        return false;
+      }
+
+      if (filters.status && status !== normalizeStatus(filters.status)) {
+        return false;
+      }
+
       if (filters.aiSuggestedOnly && normalizeStatus(d.status) !== "ai_suggested") {
         return false;
       }
@@ -168,27 +179,77 @@
   function readFilters() {
     const ai = document.getElementById("filter-ai-suggested");
     const hasStrategy = document.getElementById("filter-has-strategy");
+    const category = document.getElementById("filter-category");
+    const status = document.getElementById("filter-status");
     const technique = document.getElementById("filter-technique-id");
     return {
       aiSuggestedOnly: Boolean(ai?.checked),
       hasStrategyOnly: Boolean(hasStrategy?.checked),
+      category: category?.value || "",
+      status: status?.value || "",
       technique: technique?.value || "",
     };
+  }
+
+  function fillSelect(selectId, values) {
+    const select = document.getElementById(selectId);
+    if (!select) return;
+    const current = select.value;
+
+    select.innerHTML = `<option value="">All</option>`;
+    values.forEach((v) => {
+      const opt = document.createElement("option");
+      opt.value = v;
+      opt.textContent = v;
+      select.appendChild(opt);
+    });
+
+    if (current && values.includes(current)) {
+      select.value = current;
+    }
+  }
+
+  function populateFilterOptions(index) {
+    const detections = index?.detections || [];
+    const categories = Array.from(
+      new Set(
+        detections
+          .map((d) => String(d.category || "").trim())
+          .filter(Boolean)
+      )
+    ).sort((a, b) => a.localeCompare(b));
+
+    const statuses = Array.from(
+      new Set(
+        detections
+          .map((d) => String(d.status || "").trim())
+          .filter(Boolean)
+      )
+    ).sort((a, b) => a.localeCompare(b));
+
+    fillSelect("filter-category", categories);
+    fillSelect("filter-status", statuses);
   }
 
   function bindFilterEvents(onChange) {
     const ai = document.getElementById("filter-ai-suggested");
     const hasStrategy = document.getElementById("filter-has-strategy");
+    const category = document.getElementById("filter-category");
+    const status = document.getElementById("filter-status");
     const technique = document.getElementById("filter-technique-id");
     const clear = document.getElementById("filter-clear");
 
     if (ai) ai.addEventListener("change", onChange);
     if (hasStrategy) hasStrategy.addEventListener("change", onChange);
+    if (category) category.addEventListener("change", onChange);
+    if (status) status.addEventListener("change", onChange);
     if (technique) technique.addEventListener("input", onChange);
     if (clear) {
       clear.addEventListener("click", function () {
         if (ai) ai.checked = false;
         if (hasStrategy) hasStrategy.checked = false;
+        if (category) category.value = "";
+        if (status) status.value = "";
         if (technique) technique.value = "";
         onChange();
       });
@@ -219,6 +280,7 @@
 
     try {
       const [index, mapping] = await Promise.all([loadDetectionIndex(), loadMapping()]);
+      populateFilterOptions(index);
       renderMeta(index);
       const rerender = function () {
         renderTable(index, mapping, readFilters());
