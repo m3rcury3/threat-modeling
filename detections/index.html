@@ -907,6 +907,15 @@ It also maps each local detection to MITRE ATT&amp;CK official Detection Strateg
 <div id="detections-meta">Loading...</div>
 
 <h2 id="all-detections-and-deployment-status">All Detections and Deployment Status<a class="headerlink" href="#all-detections-and-deployment-status" title="Permanent link">&para;</a></h2>
+<div id="detections-filters">
+    <label><input type="checkbox" id="filter-ai-suggested"> AI Suggested only</label>
+    <label><input type="checkbox" id="filter-has-strategy"> Has MITRE Detection Strategy</label>
+    <label>Technique ID: <input type="text" id="filter-technique-id" placeholder="e.g., T1059.001"></label>
+    <button class="md-button" id="filter-clear" type="button">Clear Filters</button>
+</div>
+
+<div id="detections-filter-summary">Loading...</div>
+
 <div id="detections-status-table">Loading...</div>
 
 

@@ -37,6 +37,13 @@
     return map[normalized] || `⚪ ${esc(status)}`;
   }
 
+  function normalizeStatus(status) {
+    return String(status || "unknown")
+      .toLowerCase()
+      .replaceAll(" ", "_")
+      .replaceAll("-", "_");
+  }
+
   function strategyLinksForDetection(detectionId, crosswalk) {
     const entries = crosswalk?.[detectionId] || [];
     if (!entries.length) return "-";
@@ -64,16 +71,55 @@
         <li>In Testing: ${esc(byStatus.in_testing || 0)}</li>
         <li>Planned: ${esc(byStatus.planned || 0)}</li>
         <li>Deprecated: ${esc(byStatus.deprecated || 0)}</li>
+        <li>AI Suggested: ${esc(byStatus["AI Suggested"] || 0)}</li>
       </ul>
     `;
   }
 
-  function renderTable(index, mapping) {
+  function applyFilters(detections, crosswalk, filters) {
+    const techniqueNeedle = String(filters.technique || "")
+      .trim()
+      .toUpperCase();
+
+    return detections.filter((d) => {
+      if (filters.aiSuggestedOnly && normalizeStatus(d.status) !== "ai_suggested") {
+        return false;
+      }
+
+      if (filters.hasStrategyOnly) {
+        const entries = crosswalk?.[d.detection_id] || [];
+        if (!entries.length) {
+          return false;
+        }
+      }
+
+      if (techniqueNeedle) {
+        const techniques = Array.isArray(d.mitre_techniques) ? d.mitre_techniques : [];
+        const hasMatch = techniques.some((t) => String(t || "").toUpperCase().includes(techniqueNeedle));
+        if (!hasMatch) {
+          return false;
+        }
+      }
+
+      return true;
+    });
+  }
+
+  function renderSummary(filteredCount, totalCount) {
+    const summary = document.getElementById("detections-filter-summary");
+    if (!summary) return;
+    summary.innerHTML = `<p>Showing <strong>${esc(filteredCount)}</strong> of <strong>${esc(totalCount)}</strong> detections.</p>`;
+  }
+
+  function renderTable(index, mapping, filters) {
     const root = document.getElementById("detections-status-table");
     if (!root) return;
     const crosswalk = mapping?.mappings?.detection_strategy_crosswalk || {};
+    const detections = index.detections || [];
+    const filtered = applyFilters(detections, crosswalk, filters);
+    renderSummary(filtered.length, detections.length);
 
-    const rows = (index.detections || [])
+    const rows = filtered
       .slice()
       .sort((a, b) => String(a.detection_id || "").localeCompare(String(b.detection_id || "")))
       .map((d) => {
@@ -119,6 +165,36 @@
     `;
   }
 
+  function readFilters() {
+    const ai = document.getElementById("filter-ai-suggested");
+    const hasStrategy = document.getElementById("filter-has-strategy");
+    const technique = document.getElementById("filter-technique-id");
+    return {
+      aiSuggestedOnly: Boolean(ai?.checked),
+      hasStrategyOnly: Boolean(hasStrategy?.checked),
+      technique: technique?.value || "",
+    };
+  }
+
+  function bindFilterEvents(onChange) {
+    const ai = document.getElementById("filter-ai-suggested");
+    const hasStrategy = document.getElementById("filter-has-strategy");
+    const technique = document.getElementById("filter-technique-id");
+    const clear = document.getElementById("filter-clear");
+
+    if (ai) ai.addEventListener("change", onChange);
+    if (hasStrategy) hasStrategy.addEventListener("change", onChange);
+    if (technique) technique.addEventListener("input", onChange);
+    if (clear) {
+      clear.addEventListener("click", function () {
+        if (ai) ai.checked = false;
+        if (hasStrategy) hasStrategy.checked = false;
+        if (technique) technique.value = "";
+        onChange();
+      });
+    }
+  }
+
   async function loadDetectionIndex() {
     const url = new URL("../data/detection_index.json", window.location.href);
     const response = await fetch(url.toString(), { cache: "no-store" });
@@ -144,9 +220,13 @@
     try {
       const [index, mapping] = await Promise.all([loadDetectionIndex(), loadMapping()]);
       renderMeta(index);
-      renderTable(index, mapping);
+      const rerender = function () {
+        renderTable(index, mapping, readFilters());
+      };
+      bindFilterEvents(rerender);
+      rerender();
     } catch (error) {
-      ["detections-meta", "detections-status-table"].forEach((id) => {
+      ["detections-meta", "detections-filter-summary", "detections-status-table"].forEach((id) => {
         const node = document.getElementById(id);
         if (node) {
           node.innerHTML = `<p>Failed to load detections data: ${esc(error.message || error)}</p>`;
