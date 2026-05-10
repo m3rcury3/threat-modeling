@@ -1,0 +1,1102 @@
+# Search Corpus
+
+This page is auto-generated to improve full-text search coverage for live JSON-driven views.
+
+## Snapshot
+
+- Generated at: 2026-05-10T09:36:15.599276+00:00
+- Local detections: 5
+- Mapped techniques: 5
+- Mapped tactics: 8
+- Mapped groups: 100
+- Mapped software: 174
+- Mapped detection strategies: 697
+
+## Detections
+
+- DET-C-001: AWS S3 Bucket Made Public | status=provisioned | category=cloud | network=internet_connected | owner=blue-team | tactics=TA0010 | techniques=T1567.001
+- DET-E-001: Brute Force Attack – Local Windows Account | status=provisioned | category=endpoint | network=both | owner=blue-team | tactics=TA0006 | techniques=T1110.001
+- DET-E-002: Suspicious PowerShell Encoded Command Execution | status=provisioned | category=endpoint | network=internet_connected | owner=blue-team | tactics=TA0002 | techniques=T1059.001
+- DET-I-001: Impossible Travel – Simultaneous Logons from Different Countries | status=provisioned | category=identity | network=both | owner=blue-team | tactics=TA0001 | techniques=T1078
+- DET-N-001: DNS Beaconing to Suspicious Domain | status=in_testing | category=network | network=internet_connected | owner=blue-team | tactics=TA0011 | techniques=T1071.004
+
+## MITRE Tactics
+
+- TA0001: Initial Access | shortname=initial-access | techniques=T1078
+- TA0002: Execution | shortname=execution | techniques=T1059.001
+- TA0003: Persistence | shortname=persistence | techniques=T1078
+- TA0004: Privilege Escalation | shortname=privilege-escalation | techniques=T1078
+- TA0005: Stealth | shortname=stealth | techniques=T1078
+- TA0006: Credential Access | shortname=credential-access | techniques=T1110.001
+- TA0007: Discovery | shortname=discovery | techniques=
+- TA0008: Lateral Movement | shortname=lateral-movement | techniques=
+- TA0009: Collection | shortname=collection | techniques=
+- TA0010: Exfiltration | shortname=exfiltration | techniques=T1567.001
+- TA0011: Command and Control | shortname=command-and-control | techniques=T1071.004
+- TA0040: Impact | shortname=impact | techniques=
+- TA0042: Resource Development | shortname=resource-development | techniques=
+- TA0043: Reconnaissance | shortname=reconnaissance | techniques=
+- TA0112: Defense Impairment | shortname=defense-impairment | techniques=
+
+## MITRE Techniques
+
+- T1059.001: PowerShell | tactics=TA0002 | groups=G0007, G0009, G0010, G0016, G0021, G0022, G0027, G0032, G0033, G0034, G0035, G0037, G0038, G0040, G0045, G0046, G0047, G0049, G0050, G0051, G0052, G0059, G0060, G0061, G0062, G0064, G0065, G0069, G0073, G0076, G0078, G0079, G0080, G0082, G0084, G0087, G0090, G0091, G0092, G0093, G0094, G0096, G0099, G0100, G0102, G0105, G0108, G0114, G0115, G0117, G0119, G0121, G0125, G0129, G0131, G0133, G0139, G0140, G0142, G0143, G1001, G1003, G1006, G1012, G1015, G1016, G1017, G1018, G1019, G1021, G1022, G1023, G1024, G1031, G1034, G1035, G1039, G1040, G1043, G1044, G1046, G1048, G1051, G1053, G1055 | software=S0037, S0053, S0126, S0129, S0145, S0150, S0151, S0154, S0170, S0184, S0186, S0192, S0194, S0196, S0198, S0223, S0234, S0241, S0250, S0256, S0266, S0269, S0270, S0273, S0330, S0341, S0352, S0354, S0356, S0360, S0363, S0367, S0371, S0379, S0381, S0382, S0385, S0386, S0387, S0389, S0390, S0393, S0417, S0441, S0447, S0450, S0457, S0476, S0488, S0491, S0496, S0499, S0511, S0512, S0514, S0517, S0521, S0526, S0534, S0546, S0553, S0554, S0583, S0591, S0613, S0622, S0625, S0633, S0648, S0649, S0650, S0660, S0669, S0670, S0673, S0674, S0677, S0679, S0680, S0681, S0685, S0688, S0689, S0692, S0695, S1012, S1018, S1023, S1024, S1030, S1032, S1039, S1046, S1058, S1060, S1065, S1070, S1081, S1085, S1086, S1111, S1117, S1129, S1132, S1138, S1140, S1141, S1149, S1151, S1155, S1173, S1178, S1183, S1193, S1196, S1199, S1201, S1202, S1212, S1213, S1229, S1242, S1244, S1245, S9001, S9008, S9019, S9032, S9034, S9036, S9039
+- T1071.004: DNS | tactics=TA0011 | groups=G0004, G0026, G0046, G0049, G0080, G0081, G0087, G0096, G0114, G0140, G1003 | software=S0013, S0022, S0070, S0124, S0125, S0145, S0146, S0154, S0157, S0167, S0170, S0184, S0228, S0260, S0269, S0338, S0354, S0360, S0377, S0477, S0495, S0504, S0514, S0559, S0596, S0615, S0633, S0663, S0666, S0690, S0699, S1014, S1015, S1019, S1020, S1021, S1027, S1047, S1063, S1090, S1111, S9001, S9015
+- T1078: Valid Accounts | tactics=TA0001, TA0003, TA0004, TA0005 | groups=G0001, G0004, G0007, G0008, G0011, G0016, G0026, G0027, G0032, G0034, G0035, G0037, G0039, G0045, G0046, G0049, G0051, G0053, G0061, G0064, G0065, G0085, G0087, G0091, G0093, G0096, G0102, G0114, G0117, G0119, G0122, G1004, G1005, G1015, G1017, G1021, G1024, G1032, G1033, G1040, G1041, G1043, G1048, G1051, G1055 | software=S0038, S0053, S0362, S0567, S0599, S0604, S9036
+- T1110.001: Password Guessing | tactics=TA0006 | groups=G0007, G0016, G1055 | software=S0020, S0341, S0367, S0374, S0453, S0488, S0532, S0598, S0698
+- T1567.001: Exfiltration to Code Repository | tactics=TA0010 | groups= | software=S0363, S9008
+
+## MITRE Groups
+
+- G0001: Axiom
+- G0002: Moafee
+- G0003: Cleaver
+- G0004: Ke3chang
+- G0005: APT12
+- G0006: APT1
+- G0007: APT28
+- G0008: Carbanak
+- G0009: Deep Panda
+- G0010: Turla
+- G0011: PittyTiger
+- G0012: Darkhotel
+- G0013: APT30
+- G0016: APT29
+- G0017: DragonOK
+- G0018: admin@338
+- G0019: Naikon
+- G0020: Equation
+- G0021: Molerats
+- G0022: APT3
+- G0023: APT16
+- G0024: Putter Panda
+- G0025: APT17
+- G0026: APT18
+- G0027: Threat Group-3390
+- G0028: Threat Group-1314
+- G0029: Scarlet Mimic
+- G0030: Lotus Blossom
+- G0032: Lazarus Group
+- G0033: Poseidon Group
+- G0034: Sandworm Team
+- G0035: Dragonfly
+- G0036: GCMAN
+- G0037: FIN6
+- G0038: Stealth Falcon
+- G0039: Suckfly
+- G0040: Patchwork
+- G0041: Strider
+- G0043: Group5
+- G0044: Winnti Group
+- G0045: menuPass
+- G0046: FIN7
+- G0047: Gamaredon Group
+- G0048: RTM
+- G0049: OilRig
+- G0050: APT32
+- G0051: FIN10
+- G0052: CopyKittens
+- G0053: FIN5
+- G0054: Sowbug
+- G0055: NEODYMIUM
+- G0056: PROMETHIUM
+- G0059: Magic Hound
+- G0060: BRONZE BUTLER
+- G0061: FIN8
+- G0062: TA459
+- G0063: BlackOasis
+- G0064: APT33
+- G0065: Leviathan
+- G0066: Elderwood
+- G0067: APT37
+- G0068: PLATINUM
+- G0069: MuddyWater
+- G0070: Dark Caracal
+- G0071: Orangeworm
+- G0073: APT19
+- G0075: Rancor
+- G0076: Thrip
+- G0077: Leafminer
+- G0078: Gorgon Group
+- G0079: DarkHydrus
+- G0080: Cobalt Group
+- G0081: Tropic Trooper
+- G0082: APT38
+- G0083: SilverTerrier
+- G0084: Gallmaker
+- G0085: FIN4
+- G0087: APT39
+- G0088: TEMP.Veles
+- G0089: The White Company
+- G0090: WIRTE
+- G0091: Silence
+- G0092: TA505
+- G0093: GALLIUM
+- G0094: Kimsuky
+- G0095: Machete
+- G0096: APT41
+- G0098: BlackTech
+- G0099: APT-C-36
+- G0100: Inception
+- G0102: Wizard Spider
+- G0103: Mofang
+- G0105: DarkVishnya
+- G0106: Rocke
+- G0107: Whitefly
+- G0108: Blue Mockingbird
+- G0112: Windshift
+- G0114: Chimera
+- G0115: GOLD SOUTHFIELD
+- G0117: Fox Kitten
+- G0119: Indrik Spider
+- G0120: Evilnum
+- G0121: Sidewinder
+- G0122: Silent Librarian
+- G0123: Volatile Cedar
+- G0124: Windigo
+- G0125: HAFNIUM
+- G0126: Higaisa
+- G0127: TA551
+- G0128: ZIRCONIUM
+- G0129: Mustang Panda
+- G0130: Ajax Security Team
+- G0131: Tonto Team
+- G0133: Nomadic Octopus
+- G0134: Transparent Tribe
+- G0135: BackdoorDiplomacy
+- G0136: IndigoZebra
+- G0137: Ferocious Kitten
+- G0138: Andariel
+- G0139: TeamTNT
+- G0140: LazyScripter
+- G0142: Confucius
+- G0143: Aquatic Panda
+- G1001: HEXANE
+- G1002: BITTER
+- G1003: Ember Bear
+- G1004: LAPSUS$
+- G1005: POLONIUM
+- G1006: Earth Lusca
+- G1007: Aoqin Dragon
+- G1008: SideCopy
+- G1009: Moses Staff
+- G1011: EXOTIC LILY
+- G1012: CURIUM
+- G1013: Metador
+- G1014: LuminousMoth
+- G1015: Scattered Spider
+- G1016: FIN13
+- G1017: Volt Typhoon
+- G1018: TA2541
+- G1019: MoustachedBouncer
+- G1020: Mustard Tempest
+- G1021: Cinnamon Tempest
+- G1022: ToddyCat
+- G1023: APT5
+- G1024: Akira
+- G1026: Malteiro
+- G1028: APT-C-23
+- G1030: Agrius
+- G1031: Saint Bear
+- G1032: INC Ransom
+- G1033: Star Blizzard
+- G1034: Daggerfly
+- G1035: Winter Vivern
+- G1036: Moonstone Sleet
+- G1037: TA577
+- G1038: TA578
+- G1039: RedCurl
+- G1040: Play
+- G1041: Sea Turtle
+- G1042: RedEcho
+- G1043: BlackByte
+- G1044: APT42
+- G1045: Salt Typhoon
+- G1046: Storm-1811
+- G1047: Velvet Ant
+- G1048: UNC3886
+- G1049: AppleJeus
+- G1050: Water Galura
+- G1051: Medusa Group
+- G1052: Contagious Interview
+- G1053: Storm-0501
+- G1054: MirrorFace
+- G1055: VOID MANTICORE
+
+## MITRE Software
+
+- S0013: PlugX | type=malware
+- S0020: China Chopper | type=malware
+- S0022: Uroburos | type=malware
+- S0037: HAMMERTOSS | type=malware
+- S0038: Duqu | type=malware
+- S0053: SeaDuke | type=malware
+- S0070: HTTPBrowser | type=malware
+- S0124: Pisloader | type=malware
+- S0125: Remsec | type=malware
+- S0126: ComRAT | type=malware
+- S0129: AutoIt backdoor | type=malware
+- S0145: POWERSOURCE | type=malware
+- S0146: TEXTMATE | type=malware
+- S0150: POSHSPY | type=malware
+- S0151: HALFBAKED | type=malware
+- S0154: Cobalt Strike | type=malware
+- S0157: SOUNDBITE | type=malware
+- S0167: Matryoshka | type=malware
+- S0170: Helminth | type=malware
+- S0184: POWRUNER | type=malware
+- S0186: DownPaper | type=malware
+- S0192: Pupy | type=tool
+- S0194: PowerSploit | type=tool
+- S0196: PUNCHBUGGY | type=malware
+- S0198: NETWIRE | type=malware
+- S0223: POWERSTATS | type=malware
+- S0228: NanHaiShu | type=malware
+- S0234: Bandook | type=malware
+- S0241: RATANKBA | type=malware
+- S0250: Koadic | type=tool
+- S0256: Mosquito | type=malware
+- S0260: InvisiMole | type=malware
+- S0266: TrickBot | type=malware
+- S0269: QUADAGENT | type=malware
+- S0270: RogueRobin | type=malware
+- S0273: Socksbot | type=malware
+- S0330: Zeus Panda | type=malware
+- S0338: Cobian RAT | type=malware
+- S0341: Xbash | type=malware
+- S0352: OSX_OCEANLOTUS.D | type=malware
+- S0354: Denis | type=malware
+- S0356: KONNI | type=malware
+- S0360: BONDUPDATER | type=malware
+- S0362: Linux Rabbit | type=malware
+- S0363: Empire | type=tool
+- S0367: Emotet | type=malware
+- S0371: POWERTON | type=malware
+- S0374: SpeakUp | type=malware
+- S0377: Ebury | type=malware
+- S0379: Revenge RAT | type=malware
+- S0381: FlawedAmmyy | type=malware
+- S0382: ServHelper | type=malware
+- S0385: njRAT | type=malware
+- S0386: Ursnif | type=malware
+- S0387: KeyBoy | type=malware
+- S0389: JCry | type=malware
+- S0390: SQLRat | type=malware
+- S0393: PowerStallion | type=malware
+- S0417: GRIFFON | type=malware
+- S0441: PowerShower | type=malware
+- S0447: Lokibot | type=malware
+- S0450: SHARPSTATS | type=malware
+- S0453: Pony | type=malware
+- S0457: Netwalker | type=malware
+- S0476: Valak | type=malware
+- S0477: Goopy | type=malware
+- S0488: CrackMapExec | type=tool
+- S0491: StrongPity | type=malware
+- S0495: RDAT | type=malware
+- S0496: REvil | type=malware
+- S0499: Hancitor | type=malware
+- S0504: Anchor | type=malware
+- S0511: RegDuke | type=malware
+- S0512: FatDuke | type=malware
+- S0514: WellMess | type=malware
+- S0517: Pillowmint | type=malware
+- S0521: BloodHound | type=tool
+- S0526: KGH_SPY | type=malware
+- S0532: Lucifer | type=malware
+- S0534: Bazar | type=malware
+- S0546: SharpStage | type=malware
+- S0553: MoleNet | type=malware
+- S0554: Egregor | type=malware
+- S0559: SUNBURST | type=malware
+- S0567: Dtrack | type=malware
+- S0583: Pysa | type=malware
+- S0591: ConnectWise | type=tool
+- S0596: ShadowPad | type=malware
+- S0598: P.A.S. Webshell | type=malware
+- S0599: Kinsing | type=malware
+- S0604: Industroyer | type=malware
+- S0613: PS1 | type=malware
+- S0615: SombRAT | type=malware
+- S0622: AppleSeed | type=malware
+- S0625: Cuba | type=malware
+- S0633: Sliver | type=tool
+- S0648: JSS Loader | type=malware
+- S0649: SMOKEDHAM | type=malware
+- S0650: QakBot | type=malware
+- S0660: Clambling | type=malware
+- S0663: SysUpdate | type=malware
+- S0666: Gelsemium | type=malware
+- S0669: KOCTOPUS | type=malware
+- S0670: WarzoneRAT | type=malware
+- S0673: DarkWatchman | type=malware
+- S0674: CharmPower | type=malware
+- S0677: AADInternals | type=tool
+- S0679: Ferocious | type=malware
+- S0680: LitePower | type=malware
+- S0681: Lizar | type=malware
+- S0685: PowerPunch | type=malware
+- S0688: Meteor | type=malware
+- S0689: WhisperGate | type=malware
+- S0690: Green Lambert | type=malware
+- S0692: SILENTTRINITY | type=tool
+- S0695: Donut | type=tool
+- S0698: HermeticWizard | type=malware
+- S0699: Mythic | type=tool
+- S1012: PowerLess | type=malware
+- S1014: DanBot | type=malware
+- S1015: Milan | type=malware
+- S1018: Saint Bot | type=malware
+- S1019: Shark | type=malware
+- S1020: Kevin | type=malware
+- S1021: DnsSystem | type=malware
+- S1023: CreepyDrive | type=malware
+- S1024: CreepySnail | type=malware
+- S1027: Heyoka Backdoor | type=malware
+- S1030: Squirrelwaffle | type=malware
+- S1032: PyDCrypt | type=malware
+- S1039: Bumblebee | type=malware
+- S1046: PowGoop | type=malware
+- S1047: Mori | type=malware
+- S1058: Prestige | type=malware
+- S1060: Mafalda | type=malware
+- S1063: Brute Ratel C4 | type=tool
+- S1065: Woody RAT | type=malware
+- S1070: Black Basta | type=malware
+- S1081: BADHATCH | type=malware
+- S1085: Sardonic | type=malware
+- S1086: Snip3 | type=malware
+- S1090: NightClub | type=malware
+- S1111: DarkGate | type=malware
+- S1117: GLASSTOKEN | type=malware
+- S1129: Akira | type=malware
+- S1132: IPsec Helper | type=malware
+- S1138: Gootloader | type=malware
+- S1140: Spica | type=malware
+- S1141: LunarWeb | type=malware
+- S1149: CHIMNEYSWEEP | type=malware
+- S1151: ZeroCleare | type=malware
+- S1155: Covenant | type=tool
+- S1173: PowerExchange | type=malware
+- S1178: ShrinkLocker | type=malware
+- S1183: StrelaStealer | type=malware
+- S1193: TAMECAT | type=malware
+- S1196: Troll Stealer | type=malware
+- S1199: LockBit 2.0 | type=malware
+- S1201: TRANSLATEXT | type=malware
+- S1202: LockBit 3.0 | type=malware
+- S1212: RansomHub | type=malware
+- S1213: Lumma Stealer | type=malware
+- S1229: Havoc | type=malware
+- S1242: Qilin | type=malware
+- S1244: Medusa Ransomware | type=malware
+- S1245: InvisibleFerret | type=malware
+- S9001: SystemBC | type=malware
+- S9008: Shai-Hulud | type=malware
+- S9015: BRICKSTORM | type=malware
+- S9019: PureCrypter | type=malware
+- S9032: MuddyViper | type=malware
+- S9034: Tsundere Botnet | type=malware
+- S9036: LP-Notes | type=malware
+- S9039: LazyWiper | type=malware
+
+## MITRE Detection Strategies
+
+- DET0001: Detect Access to Cloud Instance Metadata API (IaaS)
+- DET0002: Behavioral Detection of Publish/Subscribe Protocol Misuse for C2
+- DET0003: T1136.002 Detection Strategy - Domain Account Creation Across Platforms
+- DET0004: Detection Strategy for Hijack Execution Flow using Path Interception by PATH Environment Variable.
+- DET0005: Renamed Legitimate Utility Execution with Metadata Mismatch and Suspicious Path
+- DET0006: Detection Strategy for Network Boundary Bridging
+- DET0007: Detection of Domain Trust Discovery via API, Script, and CLI Enumeration
+- DET0008: Behavioral Detection of Remote Cloud Logins via Valid Accounts
+- DET0009: Supply-chain tamper in dependencies/dev-tools (manager→write/install→first-run→egress)
+- DET0010: Behavioral Detection of Event Triggered Execution Across Platforms
+- DET0011: Detecting Junk Data in C2 Channels via Behavioral Analysis
+- DET0012: Detection Strategy for VBA Stomping
+- DET0013: Detection of Local Browser Artifact Access for Reconnaissance
+- DET0014: Detection of Data Staging Prior to Exfiltration
+- DET0015: Detection Strategy for Exclusive Control
+- DET0016: Security Software Discovery Across Platforms
+- DET0017: Detection Strategy for Application Shimming via sdbinst.exe and Registry Artifacts (Windows)
+- DET0018: Behavior-chain, platform-aware detection strategy for T1129 Shared Modules
+- DET0019: Detection Strategy for Stripped Payloads Across Platforms
+- DET0020: Detect Shell Configuration Modification for Persistence via Event-Triggered Execution
+- DET0021: Behavioral Detection for Service Stop across Platforms
+- DET0022: Detect Forced SMB/WebDAV Authentication via lure files and outbound NTLM
+- DET0023: Obfuscated Binary Unpacking Detection via Behavioral Patterns
+- DET0024: Detect Kerberos Ccache File Theft or Abuse (T1558.005)
+- DET0025: Detecting Electron Application Abuse for Proxy Execution
+- DET0026: Windows Detection Strategy for T1547.012 - Print Processor DLL Persistence
+- DET0027: Detection of Web Protocol-Based C2 Over HTTP, HTTPS, or WebSockets
+- DET0028: Detect Excessive or Unauthorized Bandwidth Usage for Botnet, Proxyjacking, or Scanning Purposes
+- DET0029: Detect Persistence via Outlook Custom Forms Triggered by Malicious Email
+- DET0030: Detect Conditional Access Policy Modification in Identity and Cloud Platforms
+- DET0031: Invalid Code Signature Execution Detection via Metadata and Behavioral Context
+- DET0032: Detection Strategy for Hidden Files and Directories
+- DET0033: Detection Strategy for Accessibility Feature Hijacking via Binary Replacement or Registry Modification
+- DET0034: Detection of Adversarial Process Discovery Behavior
+- DET0035: Detect Bidirectional Web Service C2 Channels via Process & Network Correlation
+- DET0036: Suspicious Device Registration via Entra ID or MFA Platform
+- DET0037: Detect Suspicious Access to Browser Credential Stores
+- DET0038: Detection Strategy for Hijack Execution Flow using Executable Installer File Permissions Weakness
+- DET0039: Detection Strategy for Dynamic Resolution across OS Platforms
+- DET0040: Detection of Persistence Artifact Removal Across Host Platforms
+- DET0041: Detection of Lifecycle Policy Modifications for Triggered Deletion in IaaS Cloud Storage
+- DET0042: Detection Strategy for T1218.012 Verclsid Abuse
+- DET0043: Detection Strategy for System Location Discovery
+- DET0044: Detecting Malicious Browser Extensions Across Platforms
+- DET0045: Detection Strategy for Process Argument Spoofing on Windows
+- DET0046: Detection Strategy for T1497 Virtualization/Sandbox Evasion
+- DET0047: Detect Local Email Collection via Outlook Data File Access and Command Line Tooling
+- DET0048: Detect Remote Email Collection via Abnormal Login and Programmatic Access
+- DET0049: Behavioral Detection of Network History and Configuration Tampering
+- DET0050: Detect Persistence via Malicious Office Add-ins
+- DET0051: Detection Strategy for File/Path Exclusions
+- DET0052: Behavioral Detection Strategy for Abuse of Sudo and Sudo Caching
+- DET0053: Detect Obfuscated C2 via Network Traffic Analysis
+- DET0054: Internal Spearphishing via Trusted Accounts
+- DET0055: Detection strategy for Group Policy Discovery on Windows
+- DET0056: Detection Strategy for Subvert Trust Controls via Install Root Certificate.
+- DET0057: Detect Suspicious Access to securityd Memory for Credential Extraction
+- DET0058: Detection Strategy for Web Service: Dead Drop Resolver
+- DET0059: Detection Strategy for Data Manipulation
+- DET0060: Detect Ingress Tool Transfers via Behavioral Chain
+- DET0061: Detect Default File Association Hijack via Registry & Execution Correlation on Windows
+- DET0062: Detection Strategy for Disable or Modify Linux Audit System Log
+- DET0063: Cross-Platform Behavioral Detection of Python Execution
+- DET0064: Detection Strategy for Hijack Execution Flow through Path Interception by Unquoted Path
+- DET0065: Detection Strategy for Container Administration Command Abuse
+- DET0066: User Execution – Malicious Link (click → suspicious egress → download/write → follow-on activity)
+- DET0067: Detection Strategy for Ignore Process Interrupts
+- DET0068: Detection Strategy for T1505.004 - Malicious IIS Components
+- DET0069: Detect unauthorized or suspicious Hardware Additions (USB/Thunderbolt/Network)
+- DET0070: Detection Strategy for Phishing across platforms.
+- DET0071: Detection of Remote Data Staging Prior to Exfiltration
+- DET0072: Detect Logon Script Modifications and Execution
+- DET0073: Detection Strategy for System Services: Systemctl
+- DET0074: Detect Use of Stolen Web Session Cookies Across Platforms
+- DET0075: Internal Proxy Behavior via Lateral Host-to-Host C2 Relay
+- DET0076: Behavioral Detection of Visual Basic Execution (VBS/VBA/VBScript)
+- DET0077: Detection of Exfiltration Over Alternate Network Interfaces
+- DET0078: Behavioral Detection of Malicious Cloud API Scripting
+- DET0079: Detection of Remote Service Session Hijacking
+- DET0080: Exploit Public-Facing Application – multi-signal correlation (request → error → post-exploit process/egress)
+- DET0081: Detection of Proxy Execution via Trusted Signed Binaries Across Platforms
+- DET0082: Internal Website and System Content Defacement via UI or Messaging Modifications
+- DET0083: Container CLI and API Abuse via Docker/Kubernetes (T1059.013)
+- DET0084: Detection Strategy for Modify Cloud Compute Infrastructure: Delete Cloud Instance
+- DET0085: Credential Dumping from SAM via Registry Dump and Local File Access
+- DET0086: Detect WMI Event Subscription for Persistence via WmiPrvSE Process and MOF Compilation
+- DET0087: Encrypted or Encoded File Payload Detection Strategy
+- DET0088: Backup Software Discovery via CLI, Registry, and Process Inspection (T1518.002)
+- DET0089: Behavioral Detection of Keylogging Activity Across Platforms
+- DET0090: Cross-host C2 via Removable Media Relay
+- DET0091: Detection Strategy for Dynamic API Resolution via Hash-Based Function Lookups
+- DET0092: Detection of Malicious or Unauthorized Software Extensions
+- DET0093: Behavioral Detection of User Discovery via Local and Remote Enumeration
+- DET0094: Cross-Platform Behavioral Detection of Scheduled Task/Job Abuse
+- DET0095: Detect Persistence via Malicious Outlook Rules
+- DET0096: Account Manipulation Behavior Chain Detection
+- DET0097: Detection of Application Window Enumeration via API or Scripting
+- DET0098: Detect abuse of Windows BITS Jobs for download, execution and persistence
+- DET0099: Detection Strategy for T1542.001 Pre-OS Boot: System Firmware
+- DET0100: Behavioral Detection of Asynchronous Procedure Call (APC) Injection via Remote Thread Queuing
+- DET0101: Detection Strategy for Lua Scripting Abuse
+- DET0102: Behavioral Detection of Input Capture Across Platforms
+- DET0103: Behavioral Detection of Network Share Connection Removal via CLI and SMB Disconnects
+- DET0104: Detect Modification of Authentication Processes Across Platforms
+- DET0105: Post-Credential Dump Password Cracking Detection via Suspicious File Access and Hash Analysis Tools
+- DET0106: Behavioral Detection of PE Injection via Remote Memory Mapping
+- DET0107: Detection Strategy for Spearphishing Links
+- DET0108: Detection Strategy for Data Encoding in C2 Channels
+- DET0109: Detection Strategy for Plist File Modification (T1647)
+- DET0110: Setuid/Setgid Privilege Abuse Detection (Linux/macOS)
+- DET0111: Detect Unsecured Credentials Shared in Chat Messages
+- DET0112: Boot or Logon Initialization Scripts Detection Strategy
+- DET0113: Detect AS-REP Roasting Attempts (T1558.004)
+- DET0114: Behavioral Detection of Local Group Enumeration Across OS Platforms
+- DET0115: Detection Strategy for Spearphishing via a Service across OS Platforms
+- DET0116: Detection Strategy for Safe Mode Boot Abuse
+- DET0117: Detection of Masqueraded Tasks or Services with Suspicious Naming and Execution
+- DET0118: Exploitation of Remote Services – multi-platform lateral movement detection
+- DET0119: Detection Strategy for Steganographic Abuse in File & Script Execution
+- DET0120: Account Access Removal via Multi-Platform Audit Correlation
+- DET0121: Detection Strategy for T1547.015 – Login Items on macOS
+- DET0122: Detect Abuse of Windows Time Providers for Persistence
+- DET0123: Detection of Data Exfiltration via Removable Media
+- DET0124: Behavior-chain detection for T1132.001 Data Encoding: Standard Encoding (Base64/Hex/MIME) across Windows, Linux, macOS, ESXi
+- DET0125: Detect persistence via reopened application plist modification (macOS)
+- DET0126: Detection Strategy for SSH Key Injection in Authorized Keys
+- DET0127: Behavioral Detection of Masquerading Across Platforms via Metadata and Execution Discrepancy
+- DET0128: Detection Strategy for Hidden Windows
+- DET0129: Domain Account Enumeration Across Platforms
+- DET0130: Detect Unauthorized Access to Cloud Secrets Management Stores
+- DET0131: Behavioral Detection Strategy for Exfiltration Over Alternative Protocol
+- DET0132: Detection of Mutex-Based Execution Guardrails Across Platforms
+- DET0133: IDE Tunneling Detection via Process, File, and Network Behaviors
+- DET0134: Detect Suspicious Access to Windows Credential Manager
+- DET0135: Detection of Mail Protocol-Based C2 Activity (SMTP, IMAP, POP3)
+- DET0136: Behavior-chain detection for T1134.005 Access Token Manipulation: SID-History Injection (Windows)
+- DET0137: Detection Strategy for Disk Wipe via Direct Disk Access and Destructive Commands
+- DET0138: Detection of Malicious Code Execution via InstallUtil.exe
+- DET0139: Detection of Credential Harvesting via API Hooking
+- DET0140: Behavioral Detection of Malicious File Deletion
+- DET0141: Detect Time-Based Evasion via Sleep, Timer Loops, and Delayed Execution
+- DET0142: Behavioral Detection of CLI Abuse on Network Devices
+- DET0143: Detection Strategy for Encrypted Channel via Symmetric Cryptography across OS Platforms
+- DET0144: Detect Forged Kerberos Golden Tickets (T1558.001)
+- DET0145: Detection of Disabled or Modified System Firewalls across OS Platforms.
+- DET0146: Detection of Data Destruction Across Platforms via Mass Overwrite and Deletion Patterns
+- DET0147: Detection Strategy for Cloud Service Hijacking via SaaS Abuse
+- DET0148: Detection Strategy for Forged SAML Tokens
+- DET0149: Detection of Exfiltration Over Unencrypted Non-C2 Protocol
+- DET0150: Detection Strategy for File Creation or Modification of Boot Files
+- DET0151: Behavior-chain, platform-aware detection strategy for T1124 System Time Discovery
+- DET0152: Detection Strategy for Hijack Execution Flow: Dylib Hijacking
+- DET0153: Detection Strategy for Exfiltration Over Webhook
+- DET0154: Detect Screensaver-Based Persistence via Registry and Execution Chains
+- DET0155: Detection Strategy for Modify Cloud Resource Hierarchy
+- DET0156: Detection Strategy for Resource Hijacking: SMS Pumping via SaaS Application Logs
+- DET0157: Detect Kerberoasting Attempts (T1558.003)
+- DET0158: Detection of Msiexec Abuse for Local, Network, and DLL Execution
+- DET0159: Detect Remote Access via USB Hardware (TinyPilot, PiKVM)
+- DET0160: Detection Strategy for Multi-Factor Authentication Request Generation (T1621)
+- DET0161: Password Policy Discovery – cross-platform behavior-chain analytics
+- DET0162: Socket-filter trigger → on-host raw-socket activity → reverse connection (T1205.002)
+- DET0163: Detection Strategy for Network Address Translation Traversal
+- DET0164: Detection Strategy for Overwritten Process Arguments Masquerading
+- DET0165: Behavioral Detection of Command History Clearing
+- DET0166: Detection Strategy for T1505.002 - Transport Agent Abuse (Windows/Linux)
+- DET0167: Firmware Modification via Flash Tool or Corrupted Firmware Upload
+- DET0168: Virtualization/Sandbox Evasion via System Checks across Windows, Linux, macOS
+- DET0169: Detection Strategy for Cloud Infrastructure Discovery
+- DET0170: Detection Strategy for Modify System Image on Network Devices
+- DET0171: Detection Strategy for Forged Web Cookies
+- DET0172: Behavior-chain, platform-aware detection strategy for T1127 Trusted Developer Utilities Proxy Execution (Windows)
+- DET0173: Detection Strategy for Endpoint DoS via Service Exhaustion Flood
+- DET0174: Detection Strategy for Exploitation for Credential Access
+- DET0175: Detection Strategy for T1542.004 Pre-OS Boot: ROMMONkit
+- DET0176: Drive-by Compromise — Behavior-based, Multi-platform Detection Strategy (T1189)
+- DET0177: Detect Persistence via Outlook Home Page Exploitation
+- DET0178: Behavioral Detection of Unauthorized VNC Remote Control Sessions
+- DET0179: Behavioral Detection of Permission Groups Discovery
+- DET0180: Detection Strategy for T1547.009 – Shortcut Modification (Windows)
+- DET0181: Detection Strategy for SQL Stored Procedures Abuse via T1505.001
+- DET0182: Behavior-chain detection for T1135 Network Share Discovery across Windows, Linux, and macOS
+- DET0183: Detection Strategy for Lateral Tool Transfer across OS platforms
+- DET0184: Behavioral Detection of Indicator Removal Across Platforms
+- DET0185: Behavioral Detection Strategy for Use Alternate Authentication Material: Application Access Token (T1550.001)
+- DET0186: Automated File and API Collection Detection Across Platforms
+- DET0187: Detect Disabled Windows Event Log
+- DET0188: Local Storage Discovery via Drive Enumeration and Filesystem Probing
+- DET0189: Detection Strategy for Indicator Removal from Tools - Post-AV Evasion Modification
+- DET0190: Detect MFA Modification or Disabling Across Platforms
+- DET0191: Behavior-chain detection strategy for T1127.002 Trusted Developer Utilities Proxy Execution: ClickOnce (Windows)
+- DET0192: Detection Strategy for Email Hiding Rules
+- DET0193: Detection Strategy for Stored Data Manipulation across OS Platforms.
+- DET0194: Detection of Malicious Control Panel Item Execution via control.exe or Rundll32
+- DET0195: Behavioral Detection of System Network Configuration Discovery
+- DET0196: Domain Fronting Behavior via Mismatched TLS SNI and HTTP Host Headers
+- DET0197: Behavior-chain, platform-aware detection strategy for T1125 Video Capture
+- DET0198: Detect Abuse of Container APIs for Credential Access
+- DET0199: Detection Strategy for Virtual Machine Discovery
+- DET0200: Indirect Command Execution – Windows utility abuse behavior chain
+- DET0201: Detection Strategy for Hijack Execution Flow for DLLs
+- DET0202: Behavioral Detection of Windows Command Shell Execution
+- DET0203: Detection Strategy for Ptrace-Based Process Injection on Linux
+- DET0204: Detection Strategy for T1547.010 – Port Monitor DLL Persistence via spoolsv.exe (Windows)
+- DET0205: Detect XSL Script Abuse via msxsl and wmic
+- DET0206: Detection of Malicious Kubernetes CronJob Scheduling
+- DET0207: Detect LSA Authentication Package Persistence via Registry and LSASS DLL Load
+- DET0208: Endpoint Resource Saturation and Crash Pattern Detection Across Platforms
+- DET0209: Detection of Registry Query for Environmental Discovery
+- DET0210: Abuse of Domain Accounts
+- DET0211: Detection of Direct VM Console Access via Cloud-Native Methods
+- DET0212: Detection Strategy for T1505.005 – Terminal Services DLL Modification (Windows)
+- DET0213: Detection Strategy for Data Transfer Size Limits and Chunked Exfiltration
+- DET0214: Detection Strategy for Embedded Payloads
+- DET0215: Detection of Multi-Platform File Encryption for Impact
+- DET0216: Detection Strategy for LC_LOAD_DYLIB Modification in Mach-O Binaries on macOS
+- DET0217: Detection Strategy for Extra Window Memory (EWM) Injection on Windows
+- DET0218: Detection Strategy for Hijack Execution Flow across OS platforms.
+- DET0219: Detection Strategy for Escape to Host
+- DET0220: Detection of USB-Based Data Exfiltration
+- DET0221: Behavioral Detection Strategy for T1123 Audio Capture Across Windows, Linux, macOS
+- DET0222: Detecting MMC (.msc) Proxy Execution and Malicious COM Activation
+- DET0223: Detection of Adversary Abuse of Software Deployment Tools
+- DET0224: Detect Abuse of Component Object Model (T1559.001)
+- DET0225: Detect unauthorized LSASS driver persistence via LSA plugin abuse (Windows)
+- DET0226: Detection Strategy for Masquerading via File Type Modification
+- DET0227: Detection Strategy for Non-Standard Ports
+- DET0228: Detect Multi-Stage Command and Control Channels
+- DET0229: Enumeration of Global Address Lists via Email Account Discovery
+- DET0230: Detect Suspicious or Malicious Code Signing Abuse
+- DET0231: Behavioral Detection of Systemd Timer Abuse for Scheduled Execution
+- DET0232: Detection Strategy for ESXi Administration Command
+- DET0233: Detection Strategy for Network Device Configuration Dump via Config Repositories
+- DET0234: Credential Dumping via Sensitive Memory and Registry Access Correlation
+- DET0235: Detecting Steganographic Command and Control via File + Network Correlation
+- DET0236: Detection Strategy for Spearphishing Attachment across OS Platforms
+- DET0237: Detection Strategy for Boot or Logon Initialization Scripts: RC Scripts
+- DET0238: Defacement via File and Web Content Modification Across Platforms
+- DET0240: Detection Strategy for Steal or Forge Authentication Certificates
+- DET0241: Detect Forged Kerberos Silver Tickets (T1558.002)
+- DET0242: Suspicious Database Access and Dump Activity Across Environments (T1213.006)
+- DET0243: Detection Strategy for Weaken Encryption: Reduce Key Space on Network Devices
+- DET0244: Detection Strategy for Login Hook Persistence on macOS
+- DET0245: Detection Strategy for Spearphishing Voice across OS platforms
+- DET0246: Detection Strategy for MFA Interception via Input Capture and Smart Card Proxying
+- DET0247: Detection of Adversary Use of Unused or Unsupported Cloud Regions (IaaS)
+- DET0248: User Execution – Malicious Image (containers & IaaS) – pull/run → start → anomalous behavior (T1204.003)
+- DET0249: Behavior-chain detection for T1610 Deploy Container across Docker & Kubernetes control/node planes
+- DET0250: Detect Credential Discovery via Windows Registry Enumeration
+- DET0251: Behavioral Detection of Cloud Group Enumeration via API and CLI Access
+- DET0252: User-Initiated Malicious Library Installation via Package Manager (T1204.005)
+- DET0253: Detection of Systemd Service Creation or Modification on Linux
+- DET0254: Detection Strategy of Transmitted Data Manipulation
+- DET0255: Detection Strategy for Log Enumeration
+- DET0256: Detection Strategy for SSH Session Hijacking
+- DET0257: Detect Mark-of-the-Web (MOTW) Bypass via Container and Disk Image Files
+- DET0258: Linux Python Startup Hook Persistence via .pth and Customize Files (T1546.018)
+- DET0259: Remote Desktop Software Execution and Beaconing Detection
+- DET0260: Detection Strategy for Forged Web Credentials
+- DET0261: Detection of Local Data Staging Prior to Exfiltration
+- DET0262: Detection Strategy for Dynamic Resolution through DNS Calculation
+- DET0263: Detecting Bulk or Anomalous Access to Private Code Repositories via SaaS Platforms
+- DET0264: Cross-Platform Detection of JavaScript Execution Abuse
+- DET0265: Detection Strategy for System Services: Launchctl
+- DET0266: Behavioral Detection of Mailbox Data and Log Deletion for Anti-Forensics
+- DET0267: Resource Hijacking Detection Strategy
+- DET0268: Detect Archiving via Library (T1560.002)
+- DET0269: Behavioral Detection Strategy for Remote Service Logins and Post-Access Activity
+- DET0270: Detection of Domain or Tenant Policy Modifications via AD and Identity Provider
+- DET0271: Detect Domain Controller Authentication Process Modification (Skeleton Key)
+- DET0272: Detect Modification of Network Device Authentication via Patched System Images
+- DET0273: Detection Strategy for Encrypted Channel across OS Platforms
+- DET0274: Boot or Logon Autostart Execution Detection Strategy
+- DET0275: Detect Adversary Deobfuscation or Decoding of Files and Payloads
+- DET0276: Detection Strategy for Rogue Domain Controller (DCShadow) Registration and Replication Abuse
+- DET0277: Detection Strategy for Role Addition to Cloud Accounts
+- DET0278: Detection Strategy for T1542 Pre-OS Boot
+- DET0279: Detection Strategy for System Services across OS platforms.
+- DET0280: Behavior-Based Registry Modification Detection on Windows
+- DET0281: Detection Strategy for Compressed Payload Creation and Execution
+- DET0282: Detection Strategy for System Binary Proxy Execution: Regsvr32
+- DET0283: Behavior-chain detection for T1134 Access Token Manipulation on Windows
+- DET0284: Detection Strategy for Exfiltration to Text Storage Sites
+- DET0285: Multi-Event Behavioral Detection for DCOM-Based Remote Code Execution
+- DET0286: Detection Strategy for Impersonation
+- DET0287: Exploitation for Client Execution – cross-platform behavior chain (browser/Office/3rd-party apps)
+- DET0288: Detect Gatekeeper Bypass via Quarantine Flag and Trust Control Manipulation
+- DET0289: Detection Strategy for Disable or Modify Cloud Log
+- DET0290: Cross-Platform Detection of Cron Job Abuse for Persistence and Execution
+- DET0291: Detection of Cloud Service Dashboard Usage via GUI-Based Cloud Access
+- DET0292: Masquerading via Space After Filename - Behavioral Detection Strategy
+- DET0293: Detect Hybrid Identity Authentication Process Modification
+- DET0294: User Execution – Malicious File via download/open → spawn chain (T1204.002)
+- DET0295: Behavioral Detection of Thread Execution Hijacking via Thread Suspension and Context Switching
+- DET0296: Detect Adversary-in-the-Middle via Network and Configuration Anomalies
+- DET0297: Detection Strategy for Disk Structure Wipe via Boot/Partition Overwrite
+- DET0298: Detect Archiving via Utility (T1560.001)
+- DET0299: Multi-Platform File and Directory Permissions Modification Detection Strategy
+- DET0300: Detection Strategy for Reflective Code Loading
+- DET0301: Removable Media Execution Chain Detection via File and Process Activity
+- DET0302: Port-knock → rule/daemon change → first successful connect (T1205.001)
+- DET0303: Local Account Enumeration Across Host Platforms
+- DET0304: Detection Strategy for Endpoint DoS via Application or System Exploitation
+- DET0305: Detection of Group Policy Modifications via AD Object Changes and File Activity
+- DET0306: Detection of Unauthorized Network Firewall Rule Modification
+- DET0307: Detect Access to Unsecured Credential Files Across Platforms
+- DET0308: Detection Strategy for Modify Cloud Compute Infrastructure
+- DET0309: Compromised software/update chain (installer/write → first-run/child → egress/signature anomaly)
+- DET0310: Suspicious Addition to Local or Domain Groups
+- DET0311: Detection for Spoofing Tool UI across OS Platforms
+- DET0312: Detect Active Setup Persistence via StubPath Execution
+- DET0313: Detection Strategy for HTML Smuggling via JavaScript Blob + Dynamic File Drop
+- DET0314: Detection Strategy for Network Sniffing Across Platforms
+- DET0315: Detect Persistence via Office Test Registry DLL Injection
+- DET0316: Detection Strategy for Disk Content Wipe via Direct Access and Overwrite
+- DET0318: Detection Strategy for Exfiltration to Code Repository
+- DET0319: Detection Strategy for T1136.003 - Cloud Account Creation across IaaS, IdP, SaaS, Office
+- DET0320: Detection of System Network Connections Discovery Across Platforms
+- DET0321: Detection Strategy for Hidden Virtual Instance Execution
+- DET0322: Detection Strategy for Junk Code Obfuscation with Suspicious Execution Patterns
+- DET0323: Detection Strategy for T1542.002 Pre-OS Boot: Component Firmware
+- DET0324: Detection Strategy for Polymorphic Code Mutation and Execution
+- DET0325: External Proxy Behavior via Outbound Relay to Intermediate Infrastructure
+- DET0326: Behavior-chain detection for T1132.002 Data Encoding: Non-Standard Encoding across Windows, Linux, macOS, ESXi
+- DET0327: Multi-event Detection Strategy for RDP-Based Remote Logins and Post-Access Activity
+- DET0328: Detection of Malicious Profile Installation via CMSTP.exe
+- DET0329: Behavioral Detection for T1490 - Inhibit System Recovery
+- DET0330: Detection Strategy for T1546.016 - Event Triggered Execution via Installer Packages
+- DET0331: Detection Strategy for ListPlanting Injection on Windows
+- DET0332: Detection Strategy for AutoHotKey & AutoIT Abuse
+- DET0333: Cross-Platform Detection of Scheduled Task/Job Abuse via `at` Utility
+- DET0334: Detection Strategy for T1525 – Implant Internal Image
+- DET0335: Detect Abuse of XPC Services (T1559.003)
+- DET0336: Detect Compromise of Host Software Binaries
+- DET0337: Detection Strategy for Modify Cloud Compute Infrastructure: Revert Cloud Instance
+- DET0338: Behavioral Detection Strategy for Use Alternate Authentication Material (T1550)
+- DET0339: Detection Strategy for Weaken Encryption on Network Devices
+- DET0340: User Execution – Malicious Copy & Paste (browser/email → shell with obfuscated one-liner) – T1204.004
+- DET0341: Clipboard Data Access with Anomalous Context
+- DET0342: Detection of Suspicious Compiled HTML File Execution via hh.exe
+- DET0343: Direct Network Flood Detection across IaaS, Linux, Windows, and macOS
+- DET0344: Detection Strategy for Fileless Storage via Registry, WMI, and Shared Memory
+- DET0345: Detection Strategy for Abuse Elevation Control Mechanism (T1548)
+- DET0346: Detect Screen Capture via Commands and API Calls
+- DET0347: Detection Strategy for Masquerading via Legitimate Resource Name or Location
+- DET0348: Detection Strategy for Exfiltration Over C2 Channel
+- DET0349: Detection Strategy for Content Injection
+- DET0350: Detecting Downgrade Attacks
+- DET0351: Unix-like File Permission Manipulation Behavioral Chain Detection Strategy
+- DET0352: Detection Strategy for T1550.003 - Pass the Ticket (Windows)
+- DET0353: Detection Strategy for Hidden User Accounts
+- DET0354: Behavior-chain detection for T1133 External Remote Services across Windows, Linux, macOS, Containers
+- DET0355: Detection Strategy for Email Bombing
+- DET0356: Endpoint DoS via OS Exhaustion Flood Detection Strategy
+- DET0357: Behavioral Detection of Internet Connection Discovery
+- DET0358: Programmatic and Excessive Access to Confluence Documentation
+- DET0359: Multi-hop Proxy Behavior via Relay Node Chaining, Onion Routing, and Network Tunneling
+- DET0360: Behavioral Detection of Domain Group Discovery
+- DET0361: Detecting .NET COM Registration Abuse via Regsvcs/Regasm
+- DET0362: Detection Strategy for AppCert DLLs Persistence via Registry Injection
+- DET0363: Detection of Credential Dumping from LSASS Memory via Access and Dump Sequence
+- DET0364: Behavioral Detection Strategy for WMI Execution Abuse on Windows
+- DET0365: Detect Registry and Startup Folder Persistence (Windows)
+- DET0366: Detection Strategy for Double File Extension Masquerading
+- DET0367: Detect Network Logon Script Abuse via Multi-Event Correlation on Windows
+- DET0368: Hardware Supply Chain Compromise Detection via Host Status & Boot Integrity Checks
+- DET0369: Detection Strategy for Event Triggered Execution via Trap (T1546.005)
+- DET0370: Recursive Enumeration of Files and Directories Across Privilege Contexts
+- DET0371: Detection Strategy for Debugger Evasion (T1622)
+- DET0372: Multi-Platform Detection Strategy for T1678 - Delay Execution
+- DET0373: Detection Strategy for Addition of Email Delegate Permissions
+- DET0374: Detection Strategy for Serverless Execution (T1648)
+- DET0375: Detection Strategy for T1546.017 - Udev Rules (Linux)
+- DET0376: Behavioral Detection Strategy for Network Service Discovery Across Platforms
+- DET0377: Detection of Kernel/User-Level Rootkit Behavior Across Platforms
+- DET0378: Behavioral Detection of Obfuscated Files or Information
+- DET0379: Detect Evil Twin Wi-Fi Access Points on Network Devices
+- DET0380: Detection of Local Data Collection Prior to Exfiltration
+- DET0381: Detect Access and Decryption of Group Policy Preference (GPP) Credentials in SYSVOL
+- DET0382: Detection Strategy for Process Hollowing on Windows
+- DET0383: Detection Strategy for Masquerading via Account Name Similarity
+- DET0384: Behavioral Detection of Unix Shell Execution
+- DET0385: Detect Access and Parsing of .bash_history Files for Credential Harvesting
+- DET0386: Cloud Account Enumeration via API, CLI, and Scripting Interfaces
+- DET0387: Detect ARP Cache Poisoning Across Linux, Windows, and macOS
+- DET0388: Detection Strategy for T1548.002 – Bypass User Account Control (UAC)
+- DET0389: Behavioral Detection of DLL Injection via Windows API
+- DET0390: Linux Detection Strategy for T1547.013 - XDG Autostart Entries
+- DET0391: Detection Strategy for Runtime Data Manipulation.
+- DET0392: Multi-Platform Software Discovery Behavior Chain
+- DET0393: Detection Strategy for Temporary Elevated Cloud Access Abuse (T1548.005)
+- DET0394: Web Shell Detection via Server Behavior and File Execution Chains
+- DET0395: macOS AuthorizationExecuteWithPrivileges Elevation Prompt Detection
+- DET0396: Detect Access to macOS Keychain for Credential Theft
+- DET0397: Automated Exfiltration Detection Strategy
+- DET0398: Detect Office Startup-Based Persistence via Macros, Forms, and Registry Hooks
+- DET0399: Detection Strategy for Scheduled Transfer and Recurrent Exfiltration Patterns
+- DET0400: Behavioral Detection of DNS Tunneling and Application Layer Abuse
+- DET0401: Detection Strategy for Launch Daemon Creation or Modification (macOS)
+- DET0402: Detection Strategy for Cloud Service Discovery
+- DET0403: Detection Strategy for Traffic Duplication via Mirroring in IaaS and Network Devices
+- DET0404: Detect Winlogon Helper DLL Abuse via Registry and Process Artifacts on Windows
+- DET0405: Detection Strategy for LNK Icon Smuggling
+- DET0406: Detection Strategy for Extended Attributes Abuse
+- DET0407: Detection of Local Account Abuse for Initial Access and Persistence
+- DET0408: Detection Strategy for Reflection Amplification DoS (T1498.002)
+- DET0409: Detection Strategy for T1550.002 - Pass the Hash (Windows)
+- DET0410: Detection Strategy for Data from Network Shared Drive
+- DET0411: Detection Strategy for Hide Infrastructure
+- DET0412: Detect Access or Search for Unsecured Credentials Across Platforms
+- DET0413: Abuse of Information Repositories for Data Collection
+- DET0414: Detection of AppleScript-Based Execution on macOS
+- DET0415: Application Exhaustion Flood Detection Across Platforms
+- DET0416: Detection of File Transfer Protocol-Based C2 (FTP, FTPS, SMB, TFTP)
+- DET0417: Detection Strategy for Power Settings Abuse
+- DET0418: Windows DACL Manipulation Behavioral Chain Detection Strategy
+- DET0419: Detection Strategy for Dynamic Resolution using Domain Generation Algorithms.
+- DET0420: Detect User Activity Based Sandbox Evasion via Input & Artifact Probing
+- DET0421: Detection Strategy for System Services Service Execution
+- DET0422: Detection Strategy for IFEO Injection on Windows
+- DET0423: Detection Strategy for Modify Cloud Compute Infrastructure: Create Snapshot
+- DET0424: Detection Strategy for Disable or Modify Cloud Firewall
+- DET0425: Suspicious Use of Web Services for C2
+- DET0426: Detection of Direct Volume Access for File System Evasion
+- DET0427: Detection Strategy for Hijack Execution Flow through Service Registry Premission Weakness.
+- DET0428: Detection Strategy for Bind Mounts on Linux
+- DET0429: Detect Modification of macOS Startup Items
+- DET0430: Detect Credentials Access from Password Stores
+- DET0431: Detection Strategy for Email Spoofing
+- DET0432: Detection Strategy for NTFS File Attribute Abuse (ADS/EAs)
+- DET0433: Detecting Code Injection via mavinject.exe (App-V Injector)
+- DET0434: Detection of Launch Agent Creation or Modification on macOS
+- DET0435: Detection Strategy for Hijack Execution Flow: Dynamic Linker Hijacking
+- DET0436: Detection Strategy for Hijack Execution Flow through Services File Permissions Weakness.
+- DET0437: Detection of LSA Secrets Dumping via Registry and Memory Extraction
+- DET0438: Detect Archiving via Custom Method (T1560.003)
+- DET0439: Detection of Malware Relocation via Suspicious File Movement
+- DET0440: Detecting PowerShell Execution via SyncAppvPublishingServer.vbs Proxy Abuse
+- DET0441: Detection of Suspicious Scheduled Task Creation and Execution on Windows
+- DET0442: Detection Strategy for Subvert Trust Controls using SIP and Trust Provider Hijacking.
+- DET0443: Detection Strategy for Masquerading via Breaking Process Trees
+- DET0444: Detection of Command and Control Over Application Layer Protocols
+- DET0445: Detection of Proxy Infrastructure Setup and Traffic Bridging
+- DET0446: Credential Access via /etc/passwd and /etc/shadow Parsing
+- DET0447: T1136.001 Detection Strategy - Local Account Creation Across Platforms
+- DET0448: Detection Strategy for VDSO Hijacking on Linux
+- DET0449: Detection Strategy for Modify Cloud Compute Infrastructure: Create Cloud Instance
+- DET0450: Detection Strategy for Kernel Modules and Extensions Autostart Execution
+- DET0451: Detection Strategy for PowerShell Profile Persistence via profile.ps1 Modification
+- DET0452: Detect Subversion of Trust Controls via Certificate, Registry, and Attribute Manipulation
+- DET0453: Detection Strategy for SNMP (MIB Dump) on Network Devices
+- DET0454: Detect Malicious Modification of Pluggable Authentication Modules (PAM)
+- DET0455: Abuse of PowerShell for Arbitrary Execution
+- DET0456: Behavior-chain detection for T1134.002 Create Process with Token (Windows)
+- DET0457: Detection of Non-Application Layer Protocols for C2
+- DET0458: Detection of Trust Relationship Modifications in Domain or Tenant Policies
+- DET0459: Detection Strategy for Build Image on Host
+- DET0460: Credential Stuffing Detection via Reused Breached Credentials Across Services
+- DET0461: Detection Strategy for Hidden File System Abuse
+- DET0462: Detect LLMNR/NBT-NS Poisoning and SMB Relay on Windows
+- DET0463: Brute Force Authentication Failures with Multi-Platform Log Correlation
+- DET0464: Behavioral Detection of Wi-Fi Discovery Activity
+- DET0465: Detection of Default Account Abuse Across Platforms
+- DET0466: Detection of Script-Based Proxy Execution via Signed Microsoft Utilities
+- DET0467: Detection Strategy for TLS Callback Injection via PE Memory Modification and Hollowing
+- DET0468: Detect DHCP Spoofing Across Linux, Windows, and macOS
+- DET0469: Detection Strategy for Patch System Image on Network Devices
+- DET0470: Detecting Protocol or Service Impersonation via Anomalous TLS, HTTP Header, and Port Mismatch Correlation
+- DET0471: Detection of Tainted Content Written to Shared Storage
+- DET0472: Detect Malicious Password Filter DLL Registration
+- DET0473: Detect persistent or elevated container services via container runtime or cluster manipulation
+- DET0474: Environmental Keying Discovery-to-Decryption Behavioral Chain Detection Strategy
+- DET0475: Detection Strategy for T1218.011 Rundll32 Abuse
+- DET0476: Email Collection via Local Email Access and Auto-Forwarding Behavior
+- DET0477: Behavioral Detection of WinRM-Based Remote Access
+- DET0478: User Execution – multi-surface behavior chain (documents/links → helper/unpacker → LOLBIN/child → egress)
+- DET0479: Detection Strategy for Hijack Execution Flow using the Windows COR_PROFILER.
+- DET0480: Detection of Credential Harvesting via Web Portal Modification
+- DET0481: Windows COM Hijacking Detection via Registry and DLL Load Correlation
+- DET0482: Behavior-chain detection for T1134.001 Access Token Manipulation: Token Impersonation/Theft on Windows
+- DET0483: Detection of System Service Discovery Commands Across OS Platforms
+- DET0484: Multi-Platform Cloud Storage Exfiltration Behavior Chain
+- DET0485: Detection Strategy for Dynamic Resolution using Fast Flux DNS
+- DET0486: Detecting Odbcconf Proxy Execution of Malicious DLLs
+- DET0487: Distributed Password Spraying via Authentication Failures Across Multiple Accounts
+- DET0488: Detect abuse of Trusted Relationships (third-party and delegated admin access)
+- DET0489: Behavior-chain detection for T1134.004 Access Token Manipulation: Parent PID Spoofing (Windows)
+- DET0490: Detection Strategy for Container and Resource Discovery
+- DET0491: Peripheral Device Enumeration via System Utilities and API Calls
+- DET0492: Detection Strategy for Modify Cloud Compute Infrastructure: Modify Cloud Compute Configurations
+- DET0493: Detect Abuse of Inter-Process Communication (T1559)
+- DET0494: Detection Strategy for Weaken Encryption: Disable Crypto Hardware on Network Devices
+- DET0495: Detection Strategy for Financial Theft
+- DET0496: Behavior-Chain Detection for Remote Access Tools (Tool-Agnostic)
+- DET0497: Detection of Defense Impairment through Disabled or Modified Tools across OS Platforms.
+- DET0498: Behavior‑chain detection for T1134.003 Make and Impersonate Token (Windows)
+- DET0499: Behavioral Detection of Fallback or Alternate C2 Channels
+- DET0500: Detecting Abnormal SharePoint Data Mining by Privileged or Rare Users
+- DET0501: Detection Strategy for Compile After Delivery - Source Code to Executable Transformation
+- DET0502: Detection Strategy for Hidden Artifacts Across Platforms
+- DET0503: Behavioral Detection Strategy for Exfiltration Over Symmetric Encrypted Non-C2 Protocol
+- DET0504: Detect Abuse of Dynamic Data Exchange (T1559.002)
+- DET0505: Detection Strategy for Command Obfuscation
+- DET0506: Detecting Mshta-based Proxy Execution via Suspicious HTA or Script Invocation
+- DET0507: Detect browser session hijacking via privilege, handle access, and remote thread into browsers
+- DET0508: Behavioral Detection of Process Injection Across Platforms
+- DET0509: Detection of Web Session Cookie Theft via File, Memory, and Network Artifacts
+- DET0510: Detection Strategy for SVG Smuggling with Script Execution and Delivery Behavior
+- DET0511: Detection of Data Access and Collection from Removable Media
+- DET0512: Detection of Exfiltration Over Asymmetric Encrypted Non-C2 Protocol
+- DET0513: Detection of Cached Domain Credential Dumping via Local Hash Cache Access
+- DET0514: Detection Strategy for Exploitation for Privilege Escalation
+- DET0515: Detection Strategy for T1528 - Steal Application Access Token
+- DET0516: Behavioral Detection of Command and Scripting Interpreter Abuse
+- DET0517: Detection Strategy for Hijack Execution Flow through the AppDomainManager on Windows.
+- DET0518: Behavioral Detection of T1498 – Network Denial of Service Across Platforms
+- DET0519: Detect Persistence via Office Template Macro Injection or Registry Hijack
+- DET0520: Behavioral Detection of Log File Clearing on Linux and macOS
+- DET0521: Behavioral Detection of Spoofed GUI Credential Prompts
+- DET0522: Detect Kerberos Ticket Theft or Forgery (T1558)
+- DET0523: Detect Code Signing Policy Modification (Windows & macOS)
+- DET0524: Traffic Signaling (Port-knock / magic-packet → firewall or service activation) – T1205
+- DET0525: System Discovery via Native and Remote Utilities
+- DET0526: Detect Archiving and Encryption of Collected Data (T1560)
+- DET0527: Right-to-Left Override Masquerading Detection via Filename and Execution Context
+- DET0528: Detecting Remote Script Proxy Execution via PubPrn.vbs
+- DET0529: Behavioral Detection of Native API Invocation via Unusual DLL Loads and Direct Syscalls
+- DET0530: Multi-Event Detection for SMB Admin Share Lateral Movement
+- DET0531: Detection Strategy for Additional Cloud Credentials in IaaS/IdP/SaaS
+- DET0532: Detection of Event Log Clearing on Windows via Behavioral Chain
+- DET0533: Detection Strategy for Poisoned Pipeline Execution via SaaS CI/CD Workflows
+- DET0534: TCC Database Manipulation via Launchctl and Unprotected SIP
+- DET0535: Detect Abuse of vSphere Installation Bundles (VIBs) for Persistent Access
+- DET0536: Detection Strategy for Wi-Fi Networks
+- DET0537: Behavioral detection for Supply Chain Compromise (package/update tamper → install → first-run)
+- DET0538: Detection Strategy for Protocol Tunneling accross OS platforms.
+- DET0539: Detection Strategy for Cloud Application Integration
+- DET0540: Multi-Platform Behavioral Detection for Compute Hijacking
+- DET0541: Detection Strategy for /proc Memory Injection on Linux
+- DET0542: Registry and LSASS Monitoring for Security Support Provider Abuse
+- DET0543: Detection Strategy for Encrypted Channel via Asymmetric Cryptography across OS Platforms
+- DET0544: Detection Strategy for Process Doppelgänging on Windows
+- DET0545: Detection Strategy for Cloud Administration Command
+- DET0546: Detection of Abused or Compromised Cloud Accounts for Access and Persistence
+- DET0547: Detection Strategy for T1505 - Server Software Component
+- DET0548: Detection Strategy for Exfiltration Over Web Service
+- DET0549: Detect Suspicious Access to Private Key Files and Export Attempts Across Platforms
+- DET0550: Detecting Suspicious Access to CRM Data in SaaS Environments
+- DET0551: Password Guessing via Multi-Source Authentication Failure Correlation
+- DET0552: Detection of Windows Service Creation or Modification
+- DET0553: Detection Strategy for Obfuscated Files or Information: Binary Padding
+- DET0554: Detection of Bluetooth-Based Data Exfiltration
+- DET0555: Detection Strategy for Event Triggered Execution via emond on macOS
+- DET0556: Behavior-chain detection strategy for T1127.001 Trusted Developer Utilities Proxy Execution: MSBuild (Windows)
+- DET0557: Detection Strategy for Event Triggered Execution: AppInit DLLs (Windows)
+- DET0558: Detection Strategy for ESXi Hypervisor CLI Abuse
+- DET0559: Multi-Platform Shutdown or Reboot Detection via Execution and Host Status Events
+- DET0560: Detection of Valid Account Abuse Across Platforms
+- DET0561: Detect malicious IDE extension install/usage and IDE tunneling
+- DET0562: Multi-Platform Execution Guardrails Environmental Validation Detection Strategy
+- DET0563: Detection Strategy for Defense Impairment via Prevent Command History Logging across OS platforms.
+- DET0564: Detection Strategy for Hijack Execution Flow using Path Interception by Search Order Hijacking
+- DET0565: Detection Strategy for System Language Discovery
+- DET0566: Template Injection Detection - Windows
+- DET0567: Detecting Unauthorized Collection from Messaging Applications in SaaS and Office Environments
+- DET0568: Detection Strategy for Input Injection
+- DET0569: Detection Strategy for Downgrade System Image on Network Devices
+- DET0570: Detection Strategy for Exfiltration to Cloud Storage
+- DET0571: Detection of System Process Creation or Modification Across Platforms
+- DET0572: Suspicious RoleBinding or ClusterRoleBinding Assignment in Kubernetes
+- DET0573: Cross-Platform Detection of Data Transfer to Cloud Account
+- DET0574: Detection Strategy for Remote System Enumeration Behavior
+- DET0575: Detection Strategy for Netsh Helper DLL Persistence via Registry and Child Process Monitoring (Windows)
+- DET0576: Email Forwarding Rule Abuse Detection Across Platforms
+- DET0577: Detection Strategy for Hijack Execution Flow through the KernelCallbackTable on Windows.
+- DET0578: Detection Strategy for Cloud Storage Object Discovery
+- DET0579: Detection Strategy for Device Driver Discovery
+- DET0580: Detect Network Provider DLL Registration and Credential Capture
+- DET0581: Detect One-Way Web Service Command Channels
+- DET0582: Detection Strategy for T1542.005 Pre-OS Boot: TFTP Boot
+- DET0583: Detection Strategy for T1136 - Create Account across platforms
+- DET0584: Detection Strategy for Resource Forking on macOS
+- DET0585: Behavior-chain detection strategy for T1127.003 Trusted Developer Utilities Proxy Execution: JamPlus (Windows)
+- DET0586: Detection of NTDS.dit Credential Dumping from Domain Controllers
+- DET0587: Enumeration of User or Account Information Across Platforms
+- DET0588: Detection of Remote Service Session Hijacking for RDP.
+- DET0589: Detect Modification of Authentication Process via Reversible Encryption
+- DET0590: Behavioral Detection of External Website Defacement across Platforms
+- DET0591: Cross-Platform Behavioral Detection of File Timestomping via Metadata Tampering
+- DET0592: Detection Strategy for Data from Configuration Repository on Network Devices
+- DET0593: Detecting OS Credential Dumping via /proc Filesystem Access on Linux
+- DET0594: Detection of Unauthorized DCSync Operations via Replication API Abuse
+- DET0595: Detection Strategy for Exploitation for Stealth
+- DET0596: Behavioral Detection of Remote SSH Logins Followed by Post-Login Execution
+- DET0597: Detect Unauthorized Access to Password Managers
+- DET0805: Detection of Code Repositories
+- DET0806: Detection of Determine Physical Locations
+- DET0807: Detection of Identify Roles
+- DET0808: Detection of Vulnerabilities
+- DET0809: Detection of CDNs
+- DET0810: Detection of Search Victim-Owned Websites
+- DET0811: Detection of Search Engines
+- DET0812: Detection of Social Media
+- DET0813: Detection of Credentials
+- DET0814: Detection of Email Addresses
+- DET0815: Detection of IP Addresses
+- DET0816: Detection of Threat Intel Vendors
+- DET0817: Detection of Scanning IP Blocks
+- DET0818: Detection of Firmware
+- DET0819: Detection of Network Topology
+- DET0820: Detection of Client Configurations
+- DET0821: Detection of Spearphishing Service
+- DET0822: Detection of Search Closed Sources
+- DET0823: Detection of Phishing for Information
+- DET0824: Detection of Upload Malware
+- DET0825: Detection of Drive-by Target
+- DET0826: Detection of Gather Victim Host Information
+- DET0827: Detection of Exploits
+- DET0828: Detection of Network Trust Dependencies
+- DET0829: Detection of Serverless
+- DET0830: Detection of Active Scanning
+- DET0831: Detection of Digital Certificates
+- DET0832: Detection of WHOIS
+- DET0833: Detection of Code Signing Certificates
+- DET0834: Detection of Upload Tool
+- DET0835: Detection of Email Accounts
+- DET0836: Detection of Malvertising
+- DET0837: Detection of Botnet
+- DET0838: Detection of Virtual Private Server
+- DET0839: Detection of Stage Capabilities
+- DET0840: Detection of Install Digital Certificate
+- DET0841: Detection of Gather Victim Identity Information
+- DET0842: Detection of Artificial Intelligence
+- DET0843: Detection of DNS
+- DET0844: Detection of Digital Certificates
+- DET0845: Detection of Malware
+- DET0846: Detection of Cloud Accounts
+- DET0847: Detection of Domain Properties
+- DET0848: Detection of Digital Certificates
+- DET0849: Detection of Identify Business Tempo
+- DET0850: Detection of Obtain Capabilities
+- DET0851: Detection of Social Media Accounts
+- DET0852: Detection of Tool
+- DET0853: Detection of Develop Capabilities
+- DET0854: Detection of Virtual Private Server
+- DET0855: Detection of Business Relationships
+- DET0856: Detection of Search Open Websites/Domains
+- DET0857: Detection of Employee Names
+- DET0858: Detection of Scan Databases
+- DET0859: Detection of Network Devices
+- DET0860: Detection of Search Open Technical Databases
+- DET0861: Detection of Email Accounts
+- DET0862: Detection of DNS Server
+- DET0863: Detection of Domains
+- DET0864: Detection of Serverless
+- DET0865: Detection of Spearphishing Attachment
+- DET0866: Detection of Search Threat Vendor Data
+- DET0867: Detection of Vulnerability Scanning
+- DET0868: Detection of Wordlist Scanning
+- DET0869: Detection of Gather Victim Network Information
+- DET0870: Detection of Social Media Accounts
+- DET0871: Detection of Server
+- DET0872: Detection of Malware
+- DET0873: Detection of Establish Accounts
+- DET0874: Detection of Server
+- DET0875: Detection of Code Signing Certificates
+- DET0876: Detection of Compromise Accounts
+- DET0877: Detection of DNS/Passive DNS
+- DET0878: Detection of Spearphishing Link
+- DET0879: Detection of Cloud Accounts
+- DET0880: Detection of Purchase Technical Data
+- DET0881: Detection of SEO Poisoning
+- DET0882: Detection of Web Services
+- DET0883: Detection of Botnet
+- DET0884: Detection of Acquire Access
+- DET0885: Detection of Compromise Infrastructure
+- DET0886: Detection of Spearphishing Voice
+- DET0887: Detection of Hardware
+- DET0888: Detection of Software
+- DET0889: Detection of Network Security Appliances
+- DET0890: Detection of Gather Victim Org Information
+- DET0891: Detection of DNS Server
+- DET0892: Detection of Domains
+- DET0893: Detection of Link Target
+- DET0894: Detection of Exploits
+- DET0895: Detection of Acquire Infrastructure
+- DET0896: Detection of Web Services
+- DET0897: Detection of Selective Exclusion
+- DET0898: Detection of Spoofed User-Agent
+- DET0899: Detect Social Engineering
+- DET0900: Detection of Defense Impairment
+- DET0901: Detect Windows Firewall
+- DET0916: Detection of Generate Content
+- DET0917: Detection of Written Content
+- DET0918: Detection of Audio-Visual Content
+- DET0919: Detection of Query Public AI Services
+- DET0920: Detection Strategy for Invisible Unicode
+

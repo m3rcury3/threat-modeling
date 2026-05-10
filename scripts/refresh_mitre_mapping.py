@@ -37,6 +37,11 @@ def write_json(path: pathlib.Path, payload: dict) -> None:
     )
 
 
+def write_text(path: pathlib.Path, content: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(content, encoding="utf-8")
+
+
 def parse_frontmatter(markdown_text: str) -> dict:
     lines = markdown_text.splitlines()
     if not lines or lines[0].strip() != "---":
@@ -111,6 +116,23 @@ def build_mapping(local_detections: list[dict], stix_bundle: dict) -> dict:
     techniques_by_stix: dict[str, dict] = {}
     techniques_by_attack: dict[str, dict] = {}
     tactics_by_shortname: dict[str, dict] = {}
+    detection_strategies_by_stix: dict[str, dict] = {}
+
+    def attack_url_for_id(attack_object_id: str) -> str:
+        if attack_object_id.startswith("TA"):
+            return f"https://attack.mitre.org/tactics/{attack_object_id}/"
+        if attack_object_id.startswith("G"):
+            return f"https://attack.mitre.org/groups/{attack_object_id}/"
+        if attack_object_id.startswith("S"):
+            return f"https://attack.mitre.org/software/{attack_object_id}/"
+        if attack_object_id.startswith("DET"):
+            return f"https://attack.mitre.org/detectionstrategies/{attack_object_id}"
+        if attack_object_id.startswith("T"):
+            if "." in attack_object_id:
+                base, sub = attack_object_id.split(".", 1)
+                return f"https://attack.mitre.org/techniques/{base}/{sub}/"
+            return f"https://attack.mitre.org/techniques/{attack_object_id}/"
+        return ""
 
     for obj in objects:
         obj_type = obj.get("type")
@@ -122,6 +144,7 @@ def build_mapping(local_detections: list[dict], stix_bundle: dict) -> dict:
                     "tactic_id": tactic_id,
                     "name": obj.get("name", shortname),
                     "shortname": shortname,
+                    "url": attack_url_for_id(tactic_id),
                 }
 
     for obj in objects:
@@ -135,6 +158,7 @@ def build_mapping(local_detections: list[dict], stix_bundle: dict) -> dict:
                 groups_by_stix[obj["id"]] = {
                     "group_id": group_id,
                     "name": obj.get("name", group_id),
+                    "url": attack_url_for_id(group_id),
                 }
 
         elif obj_type in ("tool", "malware"):
@@ -144,7 +168,25 @@ def build_mapping(local_detections: list[dict], stix_bundle: dict) -> dict:
                     "software_id": software_id,
                     "name": obj.get("name", software_id),
                     "type": obj_type,
+                    "url": attack_url_for_id(software_id),
                 }
+
+        elif obj_type == "x-mitre-detection-strategy":
+            strategy_id = attack_id(obj, ("DET",))
+            if not strategy_id:
+                continue
+            strategy_url = ""
+            for ref in obj.get("external_references", []):
+                if ref.get("source_name") == "mitre-attack" and ref.get("url"):
+                    strategy_url = ref["url"]
+                    break
+            if not strategy_url:
+                strategy_url = attack_url_for_id(strategy_id)
+            detection_strategies_by_stix[obj["id"]] = {
+                "strategy_id": strategy_id,
+                "name": obj.get("name", strategy_id),
+                "url": strategy_url,
+            }
 
         elif obj_type == "attack-pattern":
             technique_id = attack_id(obj, ("T",))
@@ -157,9 +199,11 @@ def build_mapping(local_detections: list[dict], stix_bundle: dict) -> dict:
             ]
             tactics = [tactics_by_shortname[p] for p in phase_names if p in tactics_by_shortname]
             details = {
+                "stix_id": obj["id"],
                 "technique_id": technique_id,
                 "name": obj.get("name", technique_id),
                 "is_subtechnique": bool(obj.get("x_mitre_is_subtechnique", False)),
+                "url": attack_url_for_id(technique_id),
                 "tactics": tactics,
                 "groups": set(),
                 "software": set(),
@@ -176,6 +220,19 @@ def build_mapping(local_detections: list[dict], stix_bundle: dict) -> dict:
             techniques_by_stix[dst]["groups"].add(src)
         if dst in techniques_by_stix and src in software_by_stix:
             techniques_by_stix[dst]["software"].add(src)
+
+    technique_to_strategies: dict[str, set[str]] = {}
+    strategy_to_techniques: dict[str, set[str]] = {}
+    for obj in objects:
+        if obj.get("type") != "relationship" or obj.get("relationship_type") != "detects":
+            continue
+        src = obj.get("source_ref")
+        dst = obj.get("target_ref")
+        if src in detection_strategies_by_stix and dst in techniques_by_stix:
+            technique_id = techniques_by_stix[dst]["technique_id"]
+            strategy_id = detection_strategies_by_stix[src]["strategy_id"]
+            technique_to_strategies.setdefault(technique_id, set()).add(strategy_id)
+            strategy_to_techniques.setdefault(strategy_id, set()).add(technique_id)
 
     detections_by_technique: dict[str, list[dict]] = {}
     for det in local_detections:
@@ -195,6 +252,7 @@ def build_mapping(local_detections: list[dict], stix_bundle: dict) -> dict:
     software_to_techniques: dict[str, set[str]] = {}
     tactic_to_techniques: dict[str, set[str]] = {}
     tactic_to_detections: dict[str, set[str]] = {}
+    detection_to_strategies: dict[str, set[str]] = {}
 
     for technique_id in mapped_technique_ids:
         detail = techniques_by_attack.get(technique_id)
@@ -213,19 +271,34 @@ def build_mapping(local_detections: list[dict], stix_bundle: dict) -> dict:
                 software_entries.append(software)
                 software_to_techniques.setdefault(software["software_id"], set()).add(technique_id)
 
+        strategy_entries = [
+            detection_strategies_by_stix[s_stix]
+            for s_stix, s in detection_strategies_by_stix.items()
+            if s["strategy_id"] in technique_to_strategies.get(technique_id, set())
+        ]
+        strategy_entries = sorted(strategy_entries, key=lambda x: x["strategy_id"])
+
         for tactic in tactic_entries:
             tactic_to_techniques.setdefault(tactic["tactic_id"], set()).add(technique_id)
             for det in detections_by_technique.get(technique_id, []):
                 tactic_to_detections.setdefault(tactic["tactic_id"], set()).add(det["detection_id"])
+
+        for det in detections_by_technique.get(technique_id, []):
+            if technique_id in technique_to_strategies:
+                detection_to_strategies.setdefault(det["detection_id"], set()).update(
+                    technique_to_strategies[technique_id]
+                )
 
         mapped_techniques.append(
             {
                 "technique_id": technique_id,
                 "name": technique_name,
                 "is_subtechnique": bool(detail["is_subtechnique"]) if detail else False,
+                "url": detail["url"] if detail else attack_url_for_id(technique_id),
                 "tactics": sorted(tactic_entries, key=lambda x: x["tactic_id"]),
                 "groups": sorted(group_entries, key=lambda x: x["group_id"]),
                 "software": sorted(software_entries, key=lambda x: x["software_id"]),
+                "detection_strategies": strategy_entries,
                 "detections": sorted(
                     detections_by_technique.get(technique_id, []), key=lambda x: x["detection_id"]
                 ),
@@ -246,6 +319,7 @@ def build_mapping(local_detections: list[dict], stix_bundle: dict) -> dict:
             {
                 "group_id": group["group_id"],
                 "name": group["name"],
+                "url": group.get("url", attack_url_for_id(group["group_id"])),
                 "mapped_techniques": technique_ids,
                 "mapped_detections": covered_detections,
             }
@@ -268,6 +342,7 @@ def build_mapping(local_detections: list[dict], stix_bundle: dict) -> dict:
                 "software_id": software["software_id"],
                 "name": software["name"],
                 "type": software["type"],
+                "url": software.get("url", attack_url_for_id(software["software_id"])),
                 "mapped_techniques": technique_ids,
                 "mapped_detections": covered_detections,
             }
@@ -281,10 +356,44 @@ def build_mapping(local_detections: list[dict], stix_bundle: dict) -> dict:
                 "tactic_id": tactic["tactic_id"],
                 "name": tactic["name"],
                 "shortname": tactic["shortname"],
+                "url": tactic.get("url", attack_url_for_id(tactic["tactic_id"])),
                 "mapped_techniques": techs,
                 "mapped_detections": sorted(tactic_to_detections.get(tactic["tactic_id"], set())),
             }
         )
+
+    mapped_detection_strategies: list[dict] = []
+    strategy_by_id = {
+        entry["strategy_id"]: entry for entry in detection_strategies_by_stix.values()
+    }
+    for strategy_id in sorted(strategy_by_id.keys()):
+        technique_ids = sorted(strategy_to_techniques.get(strategy_id, set()))
+        if not technique_ids:
+            continue
+        mapped_detections = sorted(
+            {
+                d["detection_id"]
+                for t in technique_ids
+                for d in detections_by_technique.get(t, [])
+            }
+        )
+        mapped_detection_strategies.append(
+            {
+                "strategy_id": strategy_id,
+                "name": strategy_by_id[strategy_id]["name"],
+                "url": strategy_by_id[strategy_id]["url"],
+                "mapped_techniques": technique_ids,
+                "mapped_detections": mapped_detections,
+            }
+        )
+
+    detection_strategy_crosswalk = {}
+    for detection_id, strategy_ids in sorted(detection_to_strategies.items()):
+        detection_strategy_crosswalk[detection_id] = [
+            strategy_by_id[sid]
+            for sid in sorted(strategy_ids)
+            if sid in strategy_by_id
+        ]
 
     return {
         "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
@@ -298,6 +407,7 @@ def build_mapping(local_detections: list[dict], stix_bundle: dict) -> dict:
             "mapped_tactics": len([x for x in mapped_tactics if x["mapped_techniques"]]),
             "mapped_groups": len([x for x in mapped_groups if x["mapped_techniques"]]),
             "mapped_software": len(mapped_software),
+            "mapped_detection_strategies": len(mapped_detection_strategies),
             "total_tactics": len(mapped_tactics),
             "total_groups": len(mapped_groups),
         },
@@ -306,6 +416,8 @@ def build_mapping(local_detections: list[dict], stix_bundle: dict) -> dict:
             "techniques": mapped_techniques,
             "groups": mapped_groups,
             "software": mapped_software,
+            "detection_strategies": mapped_detection_strategies,
+            "detection_strategy_crosswalk": detection_strategy_crosswalk,
         },
         "refresh": {
             "workflow": "https://github.com/m3rcury3/threat-modeling/actions/workflows/refresh-mitre-data.yml",
@@ -349,6 +461,83 @@ def build_detection_index(local_detections: list[dict]) -> dict:
     }
 
 
+def build_search_corpus_markdown(live_mapping: dict, detection_index: dict) -> str:
+    lines: list[str] = []
+
+    lines.append("# Search Corpus")
+    lines.append("")
+    lines.append(
+        "This page is auto-generated to improve full-text search coverage for live JSON-driven views."
+    )
+    lines.append("")
+
+    counts = live_mapping.get("counts", {})
+    lines.append("## Snapshot")
+    lines.append("")
+    lines.append(f"- Generated at: {live_mapping.get('generated_at', 'unknown')}")
+    lines.append(f"- Local detections: {counts.get('local_detections', 0)}")
+    lines.append(f"- Mapped techniques: {counts.get('mapped_techniques', 0)}")
+    lines.append(f"- Mapped tactics: {counts.get('mapped_tactics', 0)}")
+    lines.append(f"- Mapped groups: {counts.get('mapped_groups', 0)}")
+    lines.append(f"- Mapped software: {counts.get('mapped_software', 0)}")
+    lines.append(f"- Mapped detection strategies: {counts.get('mapped_detection_strategies', 0)}")
+    lines.append("")
+
+    lines.append("## Detections")
+    lines.append("")
+    for det in sorted(detection_index.get("detections", []), key=lambda d: d.get("detection_id", "")):
+        det_id = det.get("detection_id", "")
+        title = det.get("title", "")
+        status = det.get("status", "unknown")
+        category = det.get("category", "unknown")
+        owner = det.get("owner", "unknown")
+        nets = ", ".join(det.get("network_applicability", []))
+        techniques = ", ".join(det.get("mitre_techniques", []))
+        tactics = ", ".join(det.get("mitre_tactics", []))
+        lines.append(
+            f"- {det_id}: {title} | status={status} | category={category} | network={nets} | owner={owner} | tactics={tactics} | techniques={techniques}"
+        )
+    lines.append("")
+
+    mappings = live_mapping.get("mappings", {})
+
+    lines.append("## MITRE Tactics")
+    lines.append("")
+    for t in mappings.get("tactics", []):
+        lines.append(
+            f"- {t.get('tactic_id', '')}: {t.get('name', '')} | shortname={t.get('shortname', '')} | techniques={', '.join(t.get('mapped_techniques', []))}"
+        )
+    lines.append("")
+
+    lines.append("## MITRE Techniques")
+    lines.append("")
+    for t in mappings.get("techniques", []):
+        lines.append(
+            f"- {t.get('technique_id', '')}: {t.get('name', '')} | tactics={', '.join(x.get('tactic_id', '') for x in t.get('tactics', []))} | groups={', '.join(x.get('group_id', '') for x in t.get('groups', []))} | software={', '.join(x.get('software_id', '') for x in t.get('software', []))}"
+        )
+    lines.append("")
+
+    lines.append("## MITRE Groups")
+    lines.append("")
+    for g in mappings.get("groups", []):
+        lines.append(f"- {g.get('group_id', '')}: {g.get('name', '')}")
+    lines.append("")
+
+    lines.append("## MITRE Software")
+    lines.append("")
+    for s in mappings.get("software", []):
+        lines.append(f"- {s.get('software_id', '')}: {s.get('name', '')} | type={s.get('type', '')}")
+    lines.append("")
+
+    lines.append("## MITRE Detection Strategies")
+    lines.append("")
+    for d in mappings.get("detection_strategies", []):
+        lines.append(f"- {d.get('strategy_id', '')}: {d.get('name', '')}")
+    lines.append("")
+
+    return "\n".join(lines) + "\n"
+
+
 def main() -> None:
     local_detections = load_local_detections()
     stix = fetch_mitre_stix()
@@ -360,6 +549,9 @@ def main() -> None:
     write_json(REPO_ROOT / "docs" / "data" / "mitre_live_mapping.json", live_mapping)
     write_json(REPO_ROOT / "data" / "detection_index.json", detection_index)
     write_json(REPO_ROOT / "docs" / "data" / "detection_index.json", detection_index)
+
+    corpus = build_search_corpus_markdown(live_mapping, detection_index)
+    write_text(REPO_ROOT / "docs" / "search-corpus.md", corpus)
 
 
 if __name__ == "__main__":

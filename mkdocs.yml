@@ -41,6 +41,7 @@ plugins:
 extra_javascript:
   - assets/js/live-mapping.js
   - assets/js/actors-tactics-stats.js
+  - assets/js/detections-status.js
 
 markdown_extensions:
   - admonition
@@ -57,6 +58,8 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Detections:
+    - Overview: detections/index.md
   - Threat Actors:
       - Overview: actors/index.md
   - Tactics:

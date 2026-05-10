@@ -156,13 +156,14 @@
     const techniques = data.mappings?.techniques || [];
     renderTable(
       "technique-table",
-      ["Technique", "Name", "Tactics", "Groups", "Software", "Detections"],
+      ["Technique", "Name", "Tactics", "Groups", "Software", "Detection Strategies", "Detections"],
       techniques.map((t) => [
         link(t.technique_id || "-", t.url || mitreUrlById(t.technique_id)),
         link(t.name || "-", t.url || mitreUrlById(t.technique_id)),
         buildList(t.tactics || [], "tactic_id", "name"),
         buildList(t.groups || [], "group_id", "name"),
         buildList(t.software || [], "software_id", "name"),
+        buildList(t.detection_strategies || [], "strategy_id", "name"),
         buildDetectionObjectList(t.detections || []),
       ])
     );
