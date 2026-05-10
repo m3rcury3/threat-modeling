@@ -245,19 +245,24 @@
     );
   }
 
+  function hasTacticSearchMatch(tactic, query) {
+    if (!query) return true;
+    const q = query.toLowerCase();
+    return (
+      (tactic.tactic_id || "").toLowerCase().includes(q) ||
+      (tactic.name || "").toLowerCase().includes(q)
+    );
+  }
+
   function renderTacticsPage(mapping, index) {
     const meta = document.getElementById("tactics-meta");
     const tactics = mapping.mappings?.tactics || [];
     const detections = index.detections || [];
     const detectionById = Object.fromEntries(detections.map((d) => [d.detection_id, d]));
-    const statusSelect = document.getElementById("tactics-mapped-status-filter");
+    const searchInput = document.getElementById("tactics-search");
+    const query = searchInput?.value?.trim() || "";
 
-    populateStatusFilter("tactics-mapped-status-filter", detections);
-
-    const selectedStatus = statusSelect?.value || "";
-    const filteredTactics = tactics.filter((t) =>
-      hasMappedDetectionStatus(t.mapped_detections || [], detectionById, selectedStatus)
-    );
+    const filteredTactics = tactics.filter((t) => hasTacticSearchMatch(t, query));
 
     setFilterSummary("tactics-filter-summary", filteredTactics.length, tactics.length);
 
@@ -322,9 +327,9 @@
       };
 
       const actorsFilter = document.getElementById("actors-group-search");
-      const tacticsFilter = document.getElementById("tactics-mapped-status-filter");
+      const tacticsFilter = document.getElementById("tactics-search");
       if (actorsFilter) actorsFilter.addEventListener("input", rerender);
-      if (tacticsFilter) tacticsFilter.addEventListener("change", rerender);
+      if (tacticsFilter) tacticsFilter.addEventListener("input", rerender);
 
       rerender();
     } catch (err) {
