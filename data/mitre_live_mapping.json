@@ -1,0 +1,4824 @@
+{
+  "generated_at": "2026-05-10T07:37:08.587146+00:00",
+  "source": {
+    "mitre_stix_url": "https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/enterprise-attack/enterprise-attack.json",
+    "object_count": 25844
+  },
+  "counts": {
+    "local_detections": 5,
+    "mapped_techniques": 5,
+    "mapped_tactics": 8,
+    "mapped_groups": 100,
+    "mapped_software": 174
+  },
+  "mappings": {
+    "tactics": [
+      {
+        "tactic_id": "TA0001",
+        "name": "Initial Access",
+        "shortname": "initial-access",
+        "mapped_techniques": [
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-I-001"
+        ]
+      },
+      {
+        "tactic_id": "TA0002",
+        "name": "Execution",
+        "shortname": "execution",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "tactic_id": "TA0003",
+        "name": "Persistence",
+        "shortname": "persistence",
+        "mapped_techniques": [
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-I-001"
+        ]
+      },
+      {
+        "tactic_id": "TA0004",
+        "name": "Privilege Escalation",
+        "shortname": "privilege-escalation",
+        "mapped_techniques": [
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-I-001"
+        ]
+      },
+      {
+        "tactic_id": "TA0005",
+        "name": "Stealth",
+        "shortname": "stealth",
+        "mapped_techniques": [
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-I-001"
+        ]
+      },
+      {
+        "tactic_id": "TA0006",
+        "name": "Credential Access",
+        "shortname": "credential-access",
+        "mapped_techniques": [
+          "T1110.001"
+        ],
+        "mapped_detections": [
+          "DET-E-001"
+        ]
+      },
+      {
+        "tactic_id": "TA0010",
+        "name": "Exfiltration",
+        "shortname": "exfiltration",
+        "mapped_techniques": [
+          "T1567.001"
+        ],
+        "mapped_detections": [
+          "DET-C-001"
+        ]
+      },
+      {
+        "tactic_id": "TA0011",
+        "name": "Command and Control",
+        "shortname": "command-and-control",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      }
+    ],
+    "techniques": [
+      {
+        "technique_id": "T1059.001",
+        "name": "PowerShell",
+        "is_subtechnique": true,
+        "tactics": [
+          {
+            "tactic_id": "TA0002",
+            "name": "Execution",
+            "shortname": "execution"
+          }
+        ],
+        "groups": [
+          {
+            "group_id": "G0007",
+            "name": "APT28"
+          },
+          {
+            "group_id": "G0009",
+            "name": "Deep Panda"
+          },
+          {
+            "group_id": "G0010",
+            "name": "Turla"
+          },
+          {
+            "group_id": "G0016",
+            "name": "APT29"
+          },
+          {
+            "group_id": "G0021",
+            "name": "Molerats"
+          },
+          {
+            "group_id": "G0022",
+            "name": "APT3"
+          },
+          {
+            "group_id": "G0027",
+            "name": "Threat Group-3390"
+          },
+          {
+            "group_id": "G0032",
+            "name": "Lazarus Group"
+          },
+          {
+            "group_id": "G0033",
+            "name": "Poseidon Group"
+          },
+          {
+            "group_id": "G0034",
+            "name": "Sandworm Team"
+          },
+          {
+            "group_id": "G0035",
+            "name": "Dragonfly"
+          },
+          {
+            "group_id": "G0037",
+            "name": "FIN6"
+          },
+          {
+            "group_id": "G0038",
+            "name": "Stealth Falcon"
+          },
+          {
+            "group_id": "G0040",
+            "name": "Patchwork"
+          },
+          {
+            "group_id": "G0045",
+            "name": "menuPass"
+          },
+          {
+            "group_id": "G0046",
+            "name": "FIN7"
+          },
+          {
+            "group_id": "G0047",
+            "name": "Gamaredon Group"
+          },
+          {
+            "group_id": "G0049",
+            "name": "OilRig"
+          },
+          {
+            "group_id": "G0050",
+            "name": "APT32"
+          },
+          {
+            "group_id": "G0051",
+            "name": "FIN10"
+          },
+          {
+            "group_id": "G0052",
+            "name": "CopyKittens"
+          },
+          {
+            "group_id": "G0059",
+            "name": "Magic Hound"
+          },
+          {
+            "group_id": "G0060",
+            "name": "BRONZE BUTLER"
+          },
+          {
+            "group_id": "G0061",
+            "name": "FIN8"
+          },
+          {
+            "group_id": "G0062",
+            "name": "TA459"
+          },
+          {
+            "group_id": "G0064",
+            "name": "APT33"
+          },
+          {
+            "group_id": "G0065",
+            "name": "Leviathan"
+          },
+          {
+            "group_id": "G0069",
+            "name": "MuddyWater"
+          },
+          {
+            "group_id": "G0073",
+            "name": "APT19"
+          },
+          {
+            "group_id": "G0076",
+            "name": "Thrip"
+          },
+          {
+            "group_id": "G0078",
+            "name": "Gorgon Group"
+          },
+          {
+            "group_id": "G0079",
+            "name": "DarkHydrus"
+          },
+          {
+            "group_id": "G0080",
+            "name": "Cobalt Group"
+          },
+          {
+            "group_id": "G0082",
+            "name": "APT38"
+          },
+          {
+            "group_id": "G0084",
+            "name": "Gallmaker"
+          },
+          {
+            "group_id": "G0087",
+            "name": "APT39"
+          },
+          {
+            "group_id": "G0090",
+            "name": "WIRTE"
+          },
+          {
+            "group_id": "G0091",
+            "name": "Silence"
+          },
+          {
+            "group_id": "G0092",
+            "name": "TA505"
+          },
+          {
+            "group_id": "G0093",
+            "name": "GALLIUM"
+          },
+          {
+            "group_id": "G0094",
+            "name": "Kimsuky"
+          },
+          {
+            "group_id": "G0096",
+            "name": "APT41"
+          },
+          {
+            "group_id": "G0099",
+            "name": "APT-C-36"
+          },
+          {
+            "group_id": "G0100",
+            "name": "Inception"
+          },
+          {
+            "group_id": "G0102",
+            "name": "Wizard Spider"
+          },
+          {
+            "group_id": "G0105",
+            "name": "DarkVishnya"
+          },
+          {
+            "group_id": "G0108",
+            "name": "Blue Mockingbird"
+          },
+          {
+            "group_id": "G0114",
+            "name": "Chimera"
+          },
+          {
+            "group_id": "G0115",
+            "name": "GOLD SOUTHFIELD"
+          },
+          {
+            "group_id": "G0117",
+            "name": "Fox Kitten"
+          },
+          {
+            "group_id": "G0119",
+            "name": "Indrik Spider"
+          },
+          {
+            "group_id": "G0121",
+            "name": "Sidewinder"
+          },
+          {
+            "group_id": "G0125",
+            "name": "HAFNIUM"
+          },
+          {
+            "group_id": "G0129",
+            "name": "Mustang Panda"
+          },
+          {
+            "group_id": "G0131",
+            "name": "Tonto Team"
+          },
+          {
+            "group_id": "G0133",
+            "name": "Nomadic Octopus"
+          },
+          {
+            "group_id": "G0139",
+            "name": "TeamTNT"
+          },
+          {
+            "group_id": "G0140",
+            "name": "LazyScripter"
+          },
+          {
+            "group_id": "G0142",
+            "name": "Confucius"
+          },
+          {
+            "group_id": "G0143",
+            "name": "Aquatic Panda"
+          },
+          {
+            "group_id": "G1001",
+            "name": "HEXANE"
+          },
+          {
+            "group_id": "G1003",
+            "name": "Ember Bear"
+          },
+          {
+            "group_id": "G1006",
+            "name": "Earth Lusca"
+          },
+          {
+            "group_id": "G1012",
+            "name": "CURIUM"
+          },
+          {
+            "group_id": "G1015",
+            "name": "Scattered Spider"
+          },
+          {
+            "group_id": "G1016",
+            "name": "FIN13"
+          },
+          {
+            "group_id": "G1017",
+            "name": "Volt Typhoon"
+          },
+          {
+            "group_id": "G1018",
+            "name": "TA2541"
+          },
+          {
+            "group_id": "G1019",
+            "name": "MoustachedBouncer"
+          },
+          {
+            "group_id": "G1021",
+            "name": "Cinnamon Tempest"
+          },
+          {
+            "group_id": "G1022",
+            "name": "ToddyCat"
+          },
+          {
+            "group_id": "G1023",
+            "name": "APT5"
+          },
+          {
+            "group_id": "G1024",
+            "name": "Akira"
+          },
+          {
+            "group_id": "G1031",
+            "name": "Saint Bear"
+          },
+          {
+            "group_id": "G1034",
+            "name": "Daggerfly"
+          },
+          {
+            "group_id": "G1035",
+            "name": "Winter Vivern"
+          },
+          {
+            "group_id": "G1039",
+            "name": "RedCurl"
+          },
+          {
+            "group_id": "G1040",
+            "name": "Play"
+          },
+          {
+            "group_id": "G1043",
+            "name": "BlackByte"
+          },
+          {
+            "group_id": "G1044",
+            "name": "APT42"
+          },
+          {
+            "group_id": "G1046",
+            "name": "Storm-1811"
+          },
+          {
+            "group_id": "G1048",
+            "name": "UNC3886"
+          },
+          {
+            "group_id": "G1051",
+            "name": "Medusa Group"
+          },
+          {
+            "group_id": "G1053",
+            "name": "Storm-0501"
+          },
+          {
+            "group_id": "G1055",
+            "name": "VOID MANTICORE"
+          }
+        ],
+        "software": [
+          {
+            "software_id": "S0037",
+            "name": "HAMMERTOSS",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0053",
+            "name": "SeaDuke",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0126",
+            "name": "ComRAT",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0129",
+            "name": "AutoIt backdoor",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0145",
+            "name": "POWERSOURCE",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0150",
+            "name": "POSHSPY",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0151",
+            "name": "HALFBAKED",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0154",
+            "name": "Cobalt Strike",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0170",
+            "name": "Helminth",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0184",
+            "name": "POWRUNER",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0186",
+            "name": "DownPaper",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0192",
+            "name": "Pupy",
+            "type": "tool"
+          },
+          {
+            "software_id": "S0194",
+            "name": "PowerSploit",
+            "type": "tool"
+          },
+          {
+            "software_id": "S0196",
+            "name": "PUNCHBUGGY",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0198",
+            "name": "NETWIRE",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0223",
+            "name": "POWERSTATS",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0234",
+            "name": "Bandook",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0241",
+            "name": "RATANKBA",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0250",
+            "name": "Koadic",
+            "type": "tool"
+          },
+          {
+            "software_id": "S0256",
+            "name": "Mosquito",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0266",
+            "name": "TrickBot",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0269",
+            "name": "QUADAGENT",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0270",
+            "name": "RogueRobin",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0273",
+            "name": "Socksbot",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0330",
+            "name": "Zeus Panda",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0341",
+            "name": "Xbash",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0352",
+            "name": "OSX_OCEANLOTUS.D",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0354",
+            "name": "Denis",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0356",
+            "name": "KONNI",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0360",
+            "name": "BONDUPDATER",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0363",
+            "name": "Empire",
+            "type": "tool"
+          },
+          {
+            "software_id": "S0367",
+            "name": "Emotet",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0371",
+            "name": "POWERTON",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0379",
+            "name": "Revenge RAT",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0381",
+            "name": "FlawedAmmyy",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0382",
+            "name": "ServHelper",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0385",
+            "name": "njRAT",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0386",
+            "name": "Ursnif",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0387",
+            "name": "KeyBoy",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0389",
+            "name": "JCry",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0390",
+            "name": "SQLRat",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0393",
+            "name": "PowerStallion",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0417",
+            "name": "GRIFFON",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0441",
+            "name": "PowerShower",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0447",
+            "name": "Lokibot",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0450",
+            "name": "SHARPSTATS",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0457",
+            "name": "Netwalker",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0476",
+            "name": "Valak",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0488",
+            "name": "CrackMapExec",
+            "type": "tool"
+          },
+          {
+            "software_id": "S0491",
+            "name": "StrongPity",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0496",
+            "name": "REvil",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0499",
+            "name": "Hancitor",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0511",
+            "name": "RegDuke",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0512",
+            "name": "FatDuke",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0514",
+            "name": "WellMess",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0517",
+            "name": "Pillowmint",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0521",
+            "name": "BloodHound",
+            "type": "tool"
+          },
+          {
+            "software_id": "S0526",
+            "name": "KGH_SPY",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0534",
+            "name": "Bazar",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0546",
+            "name": "SharpStage",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0553",
+            "name": "MoleNet",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0554",
+            "name": "Egregor",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0583",
+            "name": "Pysa",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0591",
+            "name": "ConnectWise",
+            "type": "tool"
+          },
+          {
+            "software_id": "S0613",
+            "name": "PS1",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0622",
+            "name": "AppleSeed",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0625",
+            "name": "Cuba",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0633",
+            "name": "Sliver",
+            "type": "tool"
+          },
+          {
+            "software_id": "S0648",
+            "name": "JSS Loader",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0649",
+            "name": "SMOKEDHAM",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0650",
+            "name": "QakBot",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0660",
+            "name": "Clambling",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0669",
+            "name": "KOCTOPUS",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0670",
+            "name": "WarzoneRAT",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0673",
+            "name": "DarkWatchman",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0674",
+            "name": "CharmPower",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0677",
+            "name": "AADInternals",
+            "type": "tool"
+          },
+          {
+            "software_id": "S0679",
+            "name": "Ferocious",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0680",
+            "name": "LitePower",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0681",
+            "name": "Lizar",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0685",
+            "name": "PowerPunch",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0688",
+            "name": "Meteor",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0689",
+            "name": "WhisperGate",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0692",
+            "name": "SILENTTRINITY",
+            "type": "tool"
+          },
+          {
+            "software_id": "S0695",
+            "name": "Donut",
+            "type": "tool"
+          },
+          {
+            "software_id": "S1012",
+            "name": "PowerLess",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1018",
+            "name": "Saint Bot",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1023",
+            "name": "CreepyDrive",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1024",
+            "name": "CreepySnail",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1030",
+            "name": "Squirrelwaffle",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1032",
+            "name": "PyDCrypt",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1039",
+            "name": "Bumblebee",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1046",
+            "name": "PowGoop",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1058",
+            "name": "Prestige",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1060",
+            "name": "Mafalda",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1065",
+            "name": "Woody RAT",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1070",
+            "name": "Black Basta",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1081",
+            "name": "BADHATCH",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1085",
+            "name": "Sardonic",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1086",
+            "name": "Snip3",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1111",
+            "name": "DarkGate",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1117",
+            "name": "GLASSTOKEN",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1129",
+            "name": "Akira",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1132",
+            "name": "IPsec Helper",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1138",
+            "name": "Gootloader",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1140",
+            "name": "Spica",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1141",
+            "name": "LunarWeb",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1149",
+            "name": "CHIMNEYSWEEP",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1151",
+            "name": "ZeroCleare",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1155",
+            "name": "Covenant",
+            "type": "tool"
+          },
+          {
+            "software_id": "S1173",
+            "name": "PowerExchange",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1178",
+            "name": "ShrinkLocker",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1183",
+            "name": "StrelaStealer",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1193",
+            "name": "TAMECAT",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1196",
+            "name": "Troll Stealer",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1199",
+            "name": "LockBit 2.0",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1201",
+            "name": "TRANSLATEXT",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1202",
+            "name": "LockBit 3.0",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1212",
+            "name": "RansomHub",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1213",
+            "name": "Lumma Stealer",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1229",
+            "name": "Havoc",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1242",
+            "name": "Qilin",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1244",
+            "name": "Medusa Ransomware",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1245",
+            "name": "InvisibleFerret",
+            "type": "malware"
+          },
+          {
+            "software_id": "S9001",
+            "name": "SystemBC",
+            "type": "malware"
+          },
+          {
+            "software_id": "S9008",
+            "name": "Shai-Hulud",
+            "type": "malware"
+          },
+          {
+            "software_id": "S9019",
+            "name": "PureCrypter",
+            "type": "malware"
+          },
+          {
+            "software_id": "S9032",
+            "name": "MuddyViper",
+            "type": "malware"
+          },
+          {
+            "software_id": "S9034",
+            "name": "Tsundere Botnet",
+            "type": "malware"
+          },
+          {
+            "software_id": "S9036",
+            "name": "LP-Notes",
+            "type": "malware"
+          },
+          {
+            "software_id": "S9039",
+            "name": "LazyWiper",
+            "type": "malware"
+          }
+        ],
+        "detections": [
+          {
+            "detection_id": "DET-E-002",
+            "title": "Suspicious PowerShell Encoded Command Execution",
+            "status": "provisioned",
+            "source_file": "detections/endpoint/DET-E-002.md"
+          }
+        ]
+      },
+      {
+        "technique_id": "T1071.004",
+        "name": "DNS",
+        "is_subtechnique": true,
+        "tactics": [
+          {
+            "tactic_id": "TA0011",
+            "name": "Command and Control",
+            "shortname": "command-and-control"
+          }
+        ],
+        "groups": [
+          {
+            "group_id": "G0004",
+            "name": "Ke3chang"
+          },
+          {
+            "group_id": "G0026",
+            "name": "APT18"
+          },
+          {
+            "group_id": "G0046",
+            "name": "FIN7"
+          },
+          {
+            "group_id": "G0049",
+            "name": "OilRig"
+          },
+          {
+            "group_id": "G0080",
+            "name": "Cobalt Group"
+          },
+          {
+            "group_id": "G0081",
+            "name": "Tropic Trooper"
+          },
+          {
+            "group_id": "G0087",
+            "name": "APT39"
+          },
+          {
+            "group_id": "G0096",
+            "name": "APT41"
+          },
+          {
+            "group_id": "G0114",
+            "name": "Chimera"
+          },
+          {
+            "group_id": "G0140",
+            "name": "LazyScripter"
+          },
+          {
+            "group_id": "G1003",
+            "name": "Ember Bear"
+          }
+        ],
+        "software": [
+          {
+            "software_id": "S0013",
+            "name": "PlugX",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0022",
+            "name": "Uroburos",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0070",
+            "name": "HTTPBrowser",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0124",
+            "name": "Pisloader",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0125",
+            "name": "Remsec",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0145",
+            "name": "POWERSOURCE",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0146",
+            "name": "TEXTMATE",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0154",
+            "name": "Cobalt Strike",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0157",
+            "name": "SOUNDBITE",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0167",
+            "name": "Matryoshka",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0170",
+            "name": "Helminth",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0184",
+            "name": "POWRUNER",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0228",
+            "name": "NanHaiShu",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0260",
+            "name": "InvisiMole",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0269",
+            "name": "QUADAGENT",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0338",
+            "name": "Cobian RAT",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0354",
+            "name": "Denis",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0360",
+            "name": "BONDUPDATER",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0377",
+            "name": "Ebury",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0477",
+            "name": "Goopy",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0495",
+            "name": "RDAT",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0504",
+            "name": "Anchor",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0514",
+            "name": "WellMess",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0559",
+            "name": "SUNBURST",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0596",
+            "name": "ShadowPad",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0615",
+            "name": "SombRAT",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0633",
+            "name": "Sliver",
+            "type": "tool"
+          },
+          {
+            "software_id": "S0663",
+            "name": "SysUpdate",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0666",
+            "name": "Gelsemium",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0690",
+            "name": "Green Lambert",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0699",
+            "name": "Mythic",
+            "type": "tool"
+          },
+          {
+            "software_id": "S1014",
+            "name": "DanBot",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1015",
+            "name": "Milan",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1019",
+            "name": "Shark",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1020",
+            "name": "Kevin",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1021",
+            "name": "DnsSystem",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1027",
+            "name": "Heyoka Backdoor",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1047",
+            "name": "Mori",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1063",
+            "name": "Brute Ratel C4",
+            "type": "tool"
+          },
+          {
+            "software_id": "S1090",
+            "name": "NightClub",
+            "type": "malware"
+          },
+          {
+            "software_id": "S1111",
+            "name": "DarkGate",
+            "type": "malware"
+          },
+          {
+            "software_id": "S9001",
+            "name": "SystemBC",
+            "type": "malware"
+          },
+          {
+            "software_id": "S9015",
+            "name": "BRICKSTORM",
+            "type": "malware"
+          }
+        ],
+        "detections": [
+          {
+            "detection_id": "DET-N-001",
+            "title": "DNS Beaconing to Suspicious Domain",
+            "status": "in_testing",
+            "source_file": "detections/network/DET-N-001.md"
+          }
+        ]
+      },
+      {
+        "technique_id": "T1078",
+        "name": "Valid Accounts",
+        "is_subtechnique": false,
+        "tactics": [
+          {
+            "tactic_id": "TA0001",
+            "name": "Initial Access",
+            "shortname": "initial-access"
+          },
+          {
+            "tactic_id": "TA0003",
+            "name": "Persistence",
+            "shortname": "persistence"
+          },
+          {
+            "tactic_id": "TA0004",
+            "name": "Privilege Escalation",
+            "shortname": "privilege-escalation"
+          },
+          {
+            "tactic_id": "TA0005",
+            "name": "Stealth",
+            "shortname": "stealth"
+          }
+        ],
+        "groups": [
+          {
+            "group_id": "G0001",
+            "name": "Axiom"
+          },
+          {
+            "group_id": "G0004",
+            "name": "Ke3chang"
+          },
+          {
+            "group_id": "G0007",
+            "name": "APT28"
+          },
+          {
+            "group_id": "G0008",
+            "name": "Carbanak"
+          },
+          {
+            "group_id": "G0011",
+            "name": "PittyTiger"
+          },
+          {
+            "group_id": "G0016",
+            "name": "APT29"
+          },
+          {
+            "group_id": "G0026",
+            "name": "APT18"
+          },
+          {
+            "group_id": "G0027",
+            "name": "Threat Group-3390"
+          },
+          {
+            "group_id": "G0032",
+            "name": "Lazarus Group"
+          },
+          {
+            "group_id": "G0034",
+            "name": "Sandworm Team"
+          },
+          {
+            "group_id": "G0035",
+            "name": "Dragonfly"
+          },
+          {
+            "group_id": "G0037",
+            "name": "FIN6"
+          },
+          {
+            "group_id": "G0039",
+            "name": "Suckfly"
+          },
+          {
+            "group_id": "G0045",
+            "name": "menuPass"
+          },
+          {
+            "group_id": "G0046",
+            "name": "FIN7"
+          },
+          {
+            "group_id": "G0049",
+            "name": "OilRig"
+          },
+          {
+            "group_id": "G0051",
+            "name": "FIN10"
+          },
+          {
+            "group_id": "G0053",
+            "name": "FIN5"
+          },
+          {
+            "group_id": "G0061",
+            "name": "FIN8"
+          },
+          {
+            "group_id": "G0064",
+            "name": "APT33"
+          },
+          {
+            "group_id": "G0065",
+            "name": "Leviathan"
+          },
+          {
+            "group_id": "G0085",
+            "name": "FIN4"
+          },
+          {
+            "group_id": "G0087",
+            "name": "APT39"
+          },
+          {
+            "group_id": "G0091",
+            "name": "Silence"
+          },
+          {
+            "group_id": "G0093",
+            "name": "GALLIUM"
+          },
+          {
+            "group_id": "G0096",
+            "name": "APT41"
+          },
+          {
+            "group_id": "G0102",
+            "name": "Wizard Spider"
+          },
+          {
+            "group_id": "G0114",
+            "name": "Chimera"
+          },
+          {
+            "group_id": "G0117",
+            "name": "Fox Kitten"
+          },
+          {
+            "group_id": "G0119",
+            "name": "Indrik Spider"
+          },
+          {
+            "group_id": "G0122",
+            "name": "Silent Librarian"
+          },
+          {
+            "group_id": "G1004",
+            "name": "LAPSUS$"
+          },
+          {
+            "group_id": "G1005",
+            "name": "POLONIUM"
+          },
+          {
+            "group_id": "G1015",
+            "name": "Scattered Spider"
+          },
+          {
+            "group_id": "G1017",
+            "name": "Volt Typhoon"
+          },
+          {
+            "group_id": "G1021",
+            "name": "Cinnamon Tempest"
+          },
+          {
+            "group_id": "G1024",
+            "name": "Akira"
+          },
+          {
+            "group_id": "G1032",
+            "name": "INC Ransom"
+          },
+          {
+            "group_id": "G1033",
+            "name": "Star Blizzard"
+          },
+          {
+            "group_id": "G1040",
+            "name": "Play"
+          },
+          {
+            "group_id": "G1041",
+            "name": "Sea Turtle"
+          },
+          {
+            "group_id": "G1043",
+            "name": "BlackByte"
+          },
+          {
+            "group_id": "G1048",
+            "name": "UNC3886"
+          },
+          {
+            "group_id": "G1051",
+            "name": "Medusa Group"
+          },
+          {
+            "group_id": "G1055",
+            "name": "VOID MANTICORE"
+          }
+        ],
+        "software": [
+          {
+            "software_id": "S0038",
+            "name": "Duqu",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0053",
+            "name": "SeaDuke",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0362",
+            "name": "Linux Rabbit",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0567",
+            "name": "Dtrack",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0599",
+            "name": "Kinsing",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0604",
+            "name": "Industroyer",
+            "type": "malware"
+          },
+          {
+            "software_id": "S9036",
+            "name": "LP-Notes",
+            "type": "malware"
+          }
+        ],
+        "detections": [
+          {
+            "detection_id": "DET-I-001",
+            "title": "Impossible Travel \u2013 Simultaneous Logons from Different Countries",
+            "status": "provisioned",
+            "source_file": "detections/identity/DET-I-001.md"
+          }
+        ]
+      },
+      {
+        "technique_id": "T1110.001",
+        "name": "Password Guessing",
+        "is_subtechnique": true,
+        "tactics": [
+          {
+            "tactic_id": "TA0006",
+            "name": "Credential Access",
+            "shortname": "credential-access"
+          }
+        ],
+        "groups": [
+          {
+            "group_id": "G0007",
+            "name": "APT28"
+          },
+          {
+            "group_id": "G0016",
+            "name": "APT29"
+          },
+          {
+            "group_id": "G1055",
+            "name": "VOID MANTICORE"
+          }
+        ],
+        "software": [
+          {
+            "software_id": "S0020",
+            "name": "China Chopper",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0341",
+            "name": "Xbash",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0367",
+            "name": "Emotet",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0374",
+            "name": "SpeakUp",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0453",
+            "name": "Pony",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0488",
+            "name": "CrackMapExec",
+            "type": "tool"
+          },
+          {
+            "software_id": "S0532",
+            "name": "Lucifer",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0598",
+            "name": "P.A.S. Webshell",
+            "type": "malware"
+          },
+          {
+            "software_id": "S0698",
+            "name": "HermeticWizard",
+            "type": "malware"
+          }
+        ],
+        "detections": [
+          {
+            "detection_id": "DET-E-001",
+            "title": "Brute Force Attack \u2013 Local Windows Account",
+            "status": "provisioned",
+            "source_file": "detections/endpoint/DET-E-001.md"
+          }
+        ]
+      },
+      {
+        "technique_id": "T1567.001",
+        "name": "Exfiltration to Code Repository",
+        "is_subtechnique": true,
+        "tactics": [
+          {
+            "tactic_id": "TA0010",
+            "name": "Exfiltration",
+            "shortname": "exfiltration"
+          }
+        ],
+        "groups": [],
+        "software": [
+          {
+            "software_id": "S0363",
+            "name": "Empire",
+            "type": "tool"
+          },
+          {
+            "software_id": "S9008",
+            "name": "Shai-Hulud",
+            "type": "malware"
+          }
+        ],
+        "detections": [
+          {
+            "detection_id": "DET-C-001",
+            "title": "AWS S3 Bucket Made Public",
+            "status": "provisioned",
+            "source_file": "detections/cloud/DET-C-001.md"
+          }
+        ]
+      }
+    ],
+    "groups": [
+      {
+        "group_id": "G0001",
+        "name": "Axiom",
+        "mapped_techniques": [
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G0004",
+        "name": "Ke3chang",
+        "mapped_techniques": [
+          "T1071.004",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-I-001",
+          "DET-N-001"
+        ]
+      },
+      {
+        "group_id": "G0007",
+        "name": "APT28",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078",
+          "T1110.001"
+        ],
+        "mapped_detections": [
+          "DET-E-001",
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G0008",
+        "name": "Carbanak",
+        "mapped_techniques": [
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G0009",
+        "name": "Deep Panda",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0010",
+        "name": "Turla",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0011",
+        "name": "PittyTiger",
+        "mapped_techniques": [
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G0016",
+        "name": "APT29",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078",
+          "T1110.001"
+        ],
+        "mapped_detections": [
+          "DET-E-001",
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G0021",
+        "name": "Molerats",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0022",
+        "name": "APT3",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0026",
+        "name": "APT18",
+        "mapped_techniques": [
+          "T1071.004",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-I-001",
+          "DET-N-001"
+        ]
+      },
+      {
+        "group_id": "G0027",
+        "name": "Threat Group-3390",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G0032",
+        "name": "Lazarus Group",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G0033",
+        "name": "Poseidon Group",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0034",
+        "name": "Sandworm Team",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G0035",
+        "name": "Dragonfly",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G0037",
+        "name": "FIN6",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G0038",
+        "name": "Stealth Falcon",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0039",
+        "name": "Suckfly",
+        "mapped_techniques": [
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G0040",
+        "name": "Patchwork",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0045",
+        "name": "menuPass",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G0046",
+        "name": "FIN7",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1071.004",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001",
+          "DET-N-001"
+        ]
+      },
+      {
+        "group_id": "G0047",
+        "name": "Gamaredon Group",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0049",
+        "name": "OilRig",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1071.004",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001",
+          "DET-N-001"
+        ]
+      },
+      {
+        "group_id": "G0050",
+        "name": "APT32",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0051",
+        "name": "FIN10",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G0052",
+        "name": "CopyKittens",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0053",
+        "name": "FIN5",
+        "mapped_techniques": [
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G0059",
+        "name": "Magic Hound",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0060",
+        "name": "BRONZE BUTLER",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0061",
+        "name": "FIN8",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G0062",
+        "name": "TA459",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0064",
+        "name": "APT33",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G0065",
+        "name": "Leviathan",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G0069",
+        "name": "MuddyWater",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0073",
+        "name": "APT19",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0076",
+        "name": "Thrip",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0078",
+        "name": "Gorgon Group",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0079",
+        "name": "DarkHydrus",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0080",
+        "name": "Cobalt Group",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-N-001"
+        ]
+      },
+      {
+        "group_id": "G0081",
+        "name": "Tropic Trooper",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "group_id": "G0082",
+        "name": "APT38",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0084",
+        "name": "Gallmaker",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0085",
+        "name": "FIN4",
+        "mapped_techniques": [
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G0087",
+        "name": "APT39",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1071.004",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001",
+          "DET-N-001"
+        ]
+      },
+      {
+        "group_id": "G0090",
+        "name": "WIRTE",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0091",
+        "name": "Silence",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G0092",
+        "name": "TA505",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0093",
+        "name": "GALLIUM",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G0094",
+        "name": "Kimsuky",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0096",
+        "name": "APT41",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1071.004",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001",
+          "DET-N-001"
+        ]
+      },
+      {
+        "group_id": "G0099",
+        "name": "APT-C-36",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0100",
+        "name": "Inception",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0102",
+        "name": "Wizard Spider",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G0105",
+        "name": "DarkVishnya",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0108",
+        "name": "Blue Mockingbird",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0114",
+        "name": "Chimera",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1071.004",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001",
+          "DET-N-001"
+        ]
+      },
+      {
+        "group_id": "G0115",
+        "name": "GOLD SOUTHFIELD",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0117",
+        "name": "Fox Kitten",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G0119",
+        "name": "Indrik Spider",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G0121",
+        "name": "Sidewinder",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0122",
+        "name": "Silent Librarian",
+        "mapped_techniques": [
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G0125",
+        "name": "HAFNIUM",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0129",
+        "name": "Mustang Panda",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0131",
+        "name": "Tonto Team",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0133",
+        "name": "Nomadic Octopus",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0139",
+        "name": "TeamTNT",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0140",
+        "name": "LazyScripter",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-N-001"
+        ]
+      },
+      {
+        "group_id": "G0142",
+        "name": "Confucius",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G0143",
+        "name": "Aquatic Panda",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G1001",
+        "name": "HEXANE",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G1003",
+        "name": "Ember Bear",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-N-001"
+        ]
+      },
+      {
+        "group_id": "G1004",
+        "name": "LAPSUS$",
+        "mapped_techniques": [
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G1005",
+        "name": "POLONIUM",
+        "mapped_techniques": [
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G1006",
+        "name": "Earth Lusca",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G1012",
+        "name": "CURIUM",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G1015",
+        "name": "Scattered Spider",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G1016",
+        "name": "FIN13",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G1017",
+        "name": "Volt Typhoon",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G1018",
+        "name": "TA2541",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G1019",
+        "name": "MoustachedBouncer",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G1021",
+        "name": "Cinnamon Tempest",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G1022",
+        "name": "ToddyCat",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G1023",
+        "name": "APT5",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G1024",
+        "name": "Akira",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G1031",
+        "name": "Saint Bear",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G1032",
+        "name": "INC Ransom",
+        "mapped_techniques": [
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G1033",
+        "name": "Star Blizzard",
+        "mapped_techniques": [
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G1034",
+        "name": "Daggerfly",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G1035",
+        "name": "Winter Vivern",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G1039",
+        "name": "RedCurl",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G1040",
+        "name": "Play",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G1041",
+        "name": "Sea Turtle",
+        "mapped_techniques": [
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G1043",
+        "name": "BlackByte",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G1044",
+        "name": "APT42",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G1046",
+        "name": "Storm-1811",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G1048",
+        "name": "UNC3886",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G1051",
+        "name": "Medusa Group",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G1053",
+        "name": "Storm-0501",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "group_id": "G1055",
+        "name": "VOID MANTICORE",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078",
+          "T1110.001"
+        ],
+        "mapped_detections": [
+          "DET-E-001",
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      }
+    ],
+    "software": [
+      {
+        "software_id": "S0013",
+        "name": "PlugX",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0020",
+        "name": "China Chopper",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1110.001"
+        ],
+        "mapped_detections": [
+          "DET-E-001"
+        ]
+      },
+      {
+        "software_id": "S0022",
+        "name": "Uroburos",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0037",
+        "name": "HAMMERTOSS",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0038",
+        "name": "Duqu",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-I-001"
+        ]
+      },
+      {
+        "software_id": "S0053",
+        "name": "SeaDuke",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "software_id": "S0070",
+        "name": "HTTPBrowser",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0124",
+        "name": "Pisloader",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0125",
+        "name": "Remsec",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0126",
+        "name": "ComRAT",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0129",
+        "name": "AutoIt backdoor",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0145",
+        "name": "POWERSOURCE",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0146",
+        "name": "TEXTMATE",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0150",
+        "name": "POSHSPY",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0151",
+        "name": "HALFBAKED",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0154",
+        "name": "Cobalt Strike",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0157",
+        "name": "SOUNDBITE",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0167",
+        "name": "Matryoshka",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0170",
+        "name": "Helminth",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0184",
+        "name": "POWRUNER",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0186",
+        "name": "DownPaper",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0192",
+        "name": "Pupy",
+        "type": "tool",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0194",
+        "name": "PowerSploit",
+        "type": "tool",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0196",
+        "name": "PUNCHBUGGY",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0198",
+        "name": "NETWIRE",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0223",
+        "name": "POWERSTATS",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0228",
+        "name": "NanHaiShu",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0234",
+        "name": "Bandook",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0241",
+        "name": "RATANKBA",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0250",
+        "name": "Koadic",
+        "type": "tool",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0256",
+        "name": "Mosquito",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0260",
+        "name": "InvisiMole",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0266",
+        "name": "TrickBot",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0269",
+        "name": "QUADAGENT",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0270",
+        "name": "RogueRobin",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0273",
+        "name": "Socksbot",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0330",
+        "name": "Zeus Panda",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0338",
+        "name": "Cobian RAT",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0341",
+        "name": "Xbash",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1110.001"
+        ],
+        "mapped_detections": [
+          "DET-E-001",
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0352",
+        "name": "OSX_OCEANLOTUS.D",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0354",
+        "name": "Denis",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0356",
+        "name": "KONNI",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0360",
+        "name": "BONDUPDATER",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0362",
+        "name": "Linux Rabbit",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-I-001"
+        ]
+      },
+      {
+        "software_id": "S0363",
+        "name": "Empire",
+        "type": "tool",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1567.001"
+        ],
+        "mapped_detections": [
+          "DET-C-001",
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0367",
+        "name": "Emotet",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1110.001"
+        ],
+        "mapped_detections": [
+          "DET-E-001",
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0371",
+        "name": "POWERTON",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0374",
+        "name": "SpeakUp",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1110.001"
+        ],
+        "mapped_detections": [
+          "DET-E-001"
+        ]
+      },
+      {
+        "software_id": "S0377",
+        "name": "Ebury",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0379",
+        "name": "Revenge RAT",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0381",
+        "name": "FlawedAmmyy",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0382",
+        "name": "ServHelper",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0385",
+        "name": "njRAT",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0386",
+        "name": "Ursnif",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0387",
+        "name": "KeyBoy",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0389",
+        "name": "JCry",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0390",
+        "name": "SQLRat",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0393",
+        "name": "PowerStallion",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0417",
+        "name": "GRIFFON",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0441",
+        "name": "PowerShower",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0447",
+        "name": "Lokibot",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0450",
+        "name": "SHARPSTATS",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0453",
+        "name": "Pony",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1110.001"
+        ],
+        "mapped_detections": [
+          "DET-E-001"
+        ]
+      },
+      {
+        "software_id": "S0457",
+        "name": "Netwalker",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0476",
+        "name": "Valak",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0477",
+        "name": "Goopy",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0488",
+        "name": "CrackMapExec",
+        "type": "tool",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1110.001"
+        ],
+        "mapped_detections": [
+          "DET-E-001",
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0491",
+        "name": "StrongPity",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0495",
+        "name": "RDAT",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0496",
+        "name": "REvil",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0499",
+        "name": "Hancitor",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0504",
+        "name": "Anchor",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0511",
+        "name": "RegDuke",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0512",
+        "name": "FatDuke",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0514",
+        "name": "WellMess",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0517",
+        "name": "Pillowmint",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0521",
+        "name": "BloodHound",
+        "type": "tool",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0526",
+        "name": "KGH_SPY",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0532",
+        "name": "Lucifer",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1110.001"
+        ],
+        "mapped_detections": [
+          "DET-E-001"
+        ]
+      },
+      {
+        "software_id": "S0534",
+        "name": "Bazar",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0546",
+        "name": "SharpStage",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0553",
+        "name": "MoleNet",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0554",
+        "name": "Egregor",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0559",
+        "name": "SUNBURST",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0567",
+        "name": "Dtrack",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-I-001"
+        ]
+      },
+      {
+        "software_id": "S0583",
+        "name": "Pysa",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0591",
+        "name": "ConnectWise",
+        "type": "tool",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0596",
+        "name": "ShadowPad",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0598",
+        "name": "P.A.S. Webshell",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1110.001"
+        ],
+        "mapped_detections": [
+          "DET-E-001"
+        ]
+      },
+      {
+        "software_id": "S0599",
+        "name": "Kinsing",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-I-001"
+        ]
+      },
+      {
+        "software_id": "S0604",
+        "name": "Industroyer",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-I-001"
+        ]
+      },
+      {
+        "software_id": "S0613",
+        "name": "PS1",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0615",
+        "name": "SombRAT",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0622",
+        "name": "AppleSeed",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0625",
+        "name": "Cuba",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0633",
+        "name": "Sliver",
+        "type": "tool",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0648",
+        "name": "JSS Loader",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0649",
+        "name": "SMOKEDHAM",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0650",
+        "name": "QakBot",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0660",
+        "name": "Clambling",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0663",
+        "name": "SysUpdate",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0666",
+        "name": "Gelsemium",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0669",
+        "name": "KOCTOPUS",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0670",
+        "name": "WarzoneRAT",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0673",
+        "name": "DarkWatchman",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0674",
+        "name": "CharmPower",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0677",
+        "name": "AADInternals",
+        "type": "tool",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0679",
+        "name": "Ferocious",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0680",
+        "name": "LitePower",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0681",
+        "name": "Lizar",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0685",
+        "name": "PowerPunch",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0688",
+        "name": "Meteor",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0689",
+        "name": "WhisperGate",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0690",
+        "name": "Green Lambert",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S0692",
+        "name": "SILENTTRINITY",
+        "type": "tool",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0695",
+        "name": "Donut",
+        "type": "tool",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S0698",
+        "name": "HermeticWizard",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1110.001"
+        ],
+        "mapped_detections": [
+          "DET-E-001"
+        ]
+      },
+      {
+        "software_id": "S0699",
+        "name": "Mythic",
+        "type": "tool",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S1012",
+        "name": "PowerLess",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1014",
+        "name": "DanBot",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S1015",
+        "name": "Milan",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S1018",
+        "name": "Saint Bot",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1019",
+        "name": "Shark",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S1020",
+        "name": "Kevin",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S1021",
+        "name": "DnsSystem",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S1023",
+        "name": "CreepyDrive",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1024",
+        "name": "CreepySnail",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1027",
+        "name": "Heyoka Backdoor",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S1030",
+        "name": "Squirrelwaffle",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1032",
+        "name": "PyDCrypt",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1039",
+        "name": "Bumblebee",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1046",
+        "name": "PowGoop",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1047",
+        "name": "Mori",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S1058",
+        "name": "Prestige",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1060",
+        "name": "Mafalda",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1063",
+        "name": "Brute Ratel C4",
+        "type": "tool",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S1065",
+        "name": "Woody RAT",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1070",
+        "name": "Black Basta",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1081",
+        "name": "BADHATCH",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1085",
+        "name": "Sardonic",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1086",
+        "name": "Snip3",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1090",
+        "name": "NightClub",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S1111",
+        "name": "DarkGate",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S1117",
+        "name": "GLASSTOKEN",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1129",
+        "name": "Akira",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1132",
+        "name": "IPsec Helper",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1138",
+        "name": "Gootloader",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1140",
+        "name": "Spica",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1141",
+        "name": "LunarWeb",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1149",
+        "name": "CHIMNEYSWEEP",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1151",
+        "name": "ZeroCleare",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1155",
+        "name": "Covenant",
+        "type": "tool",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1173",
+        "name": "PowerExchange",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1178",
+        "name": "ShrinkLocker",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1183",
+        "name": "StrelaStealer",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1193",
+        "name": "TAMECAT",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1196",
+        "name": "Troll Stealer",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1199",
+        "name": "LockBit 2.0",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1201",
+        "name": "TRANSLATEXT",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1202",
+        "name": "LockBit 3.0",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1212",
+        "name": "RansomHub",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1213",
+        "name": "Lumma Stealer",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1229",
+        "name": "Havoc",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1242",
+        "name": "Qilin",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1244",
+        "name": "Medusa Ransomware",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S1245",
+        "name": "InvisibleFerret",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S9001",
+        "name": "SystemBC",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S9008",
+        "name": "Shai-Hulud",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1567.001"
+        ],
+        "mapped_detections": [
+          "DET-C-001",
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S9015",
+        "name": "BRICKSTORM",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1071.004"
+        ],
+        "mapped_detections": [
+          "DET-N-001"
+        ]
+      },
+      {
+        "software_id": "S9019",
+        "name": "PureCrypter",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S9032",
+        "name": "MuddyViper",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S9034",
+        "name": "Tsundere Botnet",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S9036",
+        "name": "LP-Notes",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001",
+          "T1078"
+        ],
+        "mapped_detections": [
+          "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "software_id": "S9039",
+        "name": "LazyWiper",
+        "type": "malware",
+        "mapped_techniques": [
+          "T1059.001"
+        ],
+        "mapped_detections": [
+          "DET-E-002"
+        ]
+      }
+    ]
+  },
+  "refresh": {
+    "workflow": "https://github.com/m3rcury3/threat-modeling/actions/workflows/refresh-mitre-data.yml",
+    "note": "Use the workflow Run workflow button to refresh repository data from MITRE."
+  }
+}

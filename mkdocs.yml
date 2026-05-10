@@ -38,6 +38,9 @@ plugins:
   - search:
       lang: en
 
+extra_javascript:
+  - assets/js/live-mapping.js
+
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -55,15 +58,7 @@ nav:
   - Home: index.md
   - Threat Actors:
       - Overview: actors/index.md
-      - Muddywater (G0069): actors/muddywater.md
-      - Generic Threats: actors/generic-threats.md
   - Tactics:
-    - Overview: tactics/index.md
-    - Initial Access (TA0001): tactics/initial-access.md
-    - Execution (TA0002): tactics/execution.md
-    - Credential Access (TA0006): tactics/credential-access.md
-    - Command and Control (TA0011): tactics/command-and-control.md
-    - Exfiltration (TA0010): tactics/exfiltration.md
+      - Overview: tactics/index.md
   - Dashboards:
-      - Coverage: dashboards/coverage.md
-      - Gaps & Roadmap: dashboards/gaps.md
+      - Live ATT&CK Mapping: dashboards/live-mapping.md

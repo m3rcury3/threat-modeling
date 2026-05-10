@@ -1,27 +1,23 @@
 # MITRE ATT&CK Tactics
 
-This view organizes detections by ATT&CK tactic instead of infrastructure domain, so one detection can be reused across endpoint, identity, cloud, and network contexts.
+This section is maintained from live ATT&CK content, not static tactic snapshots.
 
-## Why Tactic-First
+## Tactic-First Model
 
-- A single detection can support multiple categories
-- Coverage decisions align to adversary behavior
-- Gaps are visible by attack phase, not platform silo
+- A single detection may span multiple categories
+- Coverage is measured by ATT&CK behavior and phase
+- Technique, group, and software relationships come from MITRE STIX
 
-## Current Tactic Coverage
+## Live Tactic Coverage
 
-| Tactic | ID | Coverage | Detections |
-|---|---|---:|---|
-| Initial Access | TA0001 | 0 | 0 |
-| Execution | TA0002 | 1 | 1 |
-| Credential Access | TA0006 | 1 | 1 |
-| Command and Control | TA0011 | 1 | 1 |
-| Exfiltration | TA0010 | 1 | 1 |
+Open [Live ATT&CK Mapping](../dashboards/live-mapping.md) to view:
 
-## Navigate
+- tactics mapped to your local detections
+- techniques under each tactic
+- linked groups and software from MITRE
 
-- [Initial Access (TA0001)](initial-access.md)
-- [Execution (TA0002)](execution.md)
-- [Credential Access (TA0006)](credential-access.md)
-- [Command and Control (TA0011)](command-and-control.md)
-- [Exfiltration (TA0010)](exfiltration.md)
+## Refresh Workflow
+
+Run this workflow whenever you want the latest MITRE updates in-repo:
+
+- [Refresh MITRE ATT&CK Data](https://github.com/m3rcury3/threat-modeling/actions/workflows/refresh-mitre-data.yml)

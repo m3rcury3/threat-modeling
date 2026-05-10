@@ -23,8 +23,9 @@ This site is intentionally grouped by adversary behavior, not by platform silo.
 
 | Grouping | Description |
 |----------|-------------|
-| [Threat Actors](actors/index.md) | Coverage by intrusion set and campaign profile (for example Muddywater) |
+| [Threat Actors](actors/index.md) | Coverage by intrusion sets/groups mapped from live MITRE ATT&CK data |
 | [Tactics](tactics/index.md) | Coverage by MITRE ATT&CK tactic and attack phase |
+| [Live ATT&CK Mapping](dashboards/live-mapping.md) | Technique-to-group/software/detection mapping with refresh controls |
 
 Use actor pages to answer "what do we detect for this adversary?" and tactic pages to answer "which attack phases are covered or missing?"
 
@@ -45,7 +46,8 @@ Use actor pages to answer "what do we detect for this adversary?" and tactic pag
 1. Copy `templates/detection-template.md` from the repository.
 2. Create a new file in `detections/<category>/DET-X-NNN.md`.
 3. Fill in all fields, including threat actor and ATT&CK tactic metadata.
-4. Link the rule from one or more pages in `docs/actors/` and `docs/tactics/`, then update `mkdocs.yml` if needed.
-5. Open a Pull Request — the site rebuilds automatically on merge.
+4. Ensure frontmatter includes ATT&CK IDs (`mitre_tactics`, `mitre_techniques`) and actor tags.
+5. Run the **Refresh MITRE ATT&CK Data** workflow to refresh group/software mappings from MITRE.
+6. Open a Pull Request — the site rebuilds automatically on merge.
 
 See the project [README](https://github.com/m3rcury3/threat-modeling#readme) for full contribution guidelines.
