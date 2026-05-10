@@ -1,10 +1,12 @@
-# [DET-X-XXX] Detection Title
+# [DET-X-XXX] Threat Actor Detection Title
 
 | Field | Value |
 |-------|-------|
 | **Detection ID** | DET-X-XXX |
-| **Title** | Short descriptive title |
-| **Category** | Endpoint \| Network \| Identity \| Cloud |
+| **Title** | Short descriptive title tied to a specific threat actor, intrusion set, or campaign |
+| **Threat Actor / Group** | e.g., APT29 \| FIN7 \| Lazarus Group \| Unknown Cluster |
+| **Actor Aliases** | Alternate names, vendor names, campaign names |
+| **Category** | Endpoint \| Network \| Identity \| Cloud \| Email \| Application |
 | **Status** | Planned \| In Testing \| Provisioned |
 | **Created** | YYYY-MM-DD |
 | **Last Updated** | YYYY-MM-DD |
@@ -14,57 +16,162 @@
 
 ## Description
 
-_What does this detection identify? Describe the threat behaviour in plain language._
+_What actor behaviour does this detection identify? Describe the threat activity in plain language and explain how it maps to a known threat actor tradecraft pattern, malware family, infrastructure pattern, or campaign technique._
 
-## Use Case
+## Threat Context
 
-_Why is this detection valuable? What attacker technique or threat scenario does it cover?
-Reference relevant MITRE ATT&CK tactics / techniques where applicable._
+_Why is this detection relevant for this specific threat actor? Summarize the actor's typical objectives, targeting, tooling, and tradecraft relevant to this detection._
 
-- **MITRE Tactic:** TA00XX – Tactic Name
-- **MITRE Technique:** T00XX.000 – Technique Name
+- **Threat Actor / Cluster:** APTXX – Actor Name
+- **Campaign / Malware Family:** Example Malware / Operation Name
+- **Targeting Profile:** Industry, geography, or victim profile
+- **ATT&CK Tactic:** TA00XX – Tactic Name
+- **ATT&CK Technique:** T00XX.000 – Technique Name
+
+## Detection Hypothesis
+
+_What observable behaviour, artifact, or pattern associated with the threat actor should trigger this detection?_
+
+Examples:
+- Known malware file characteristics used by the actor
+- Command-line or process execution patterns associated with actor tooling
+- Infrastructure or network indicators aligned to the campaign
+- Registry, persistence, or scheduled task artefacts
+- Email or lure artefacts tied to the actor's delivery method
 
 ## Data Sources
 
-List the log sources or data feeds required for this detection to function.
+List the log sources, telemetry, or packet/content inspection sources required for this detection.
 
 | Data Source | Platform | Notes |
 |-------------|----------|-------|
-| Windows Security Event Log | On-Prem / Azure | Event IDs 4624, 4625 |
-| Sysmon | Endpoint | Channel: Microsoft-Windows-Sysmon/Operational |
+| Windows Security Event Log | On-Prem / Azure | Authentication and account activity |
+| Sysmon | Endpoint | Process, network, file, and registry visibility |
+| EDR Telemetry | Endpoint | Vendor-specific enriched process and alert data |
+| Zeek / Suricata / PCAP | Network | DNS, HTTP, TLS, and connection metadata |
+| Email Gateway Logs | Email | Sender, attachment, URL, and delivery telemetry |
 
-## Logic / Query
+## Detection Logic
 
-Provide the detection logic. Use a fenced code block with the appropriate language tag
-(e.g., `kql`, `sql`, `splunk-spl`, `sigma`).
+Provide one or more open-source-friendly detection logic placeholders below. Keep only the sections relevant to the detection.
+
+### Sigma Placeholder
+
+```yaml
+# Example Sigma rule placeholder
+# Replace values with actor-specific logic
+
+title: Threat Actor Activity Placeholder
+id: 00000000-0000-0000-0000-000000000000
+status: experimental
+description: Detects behavior associated with [Threat Actor / Malware Family]
+references:
+  - https://attack.mitre.org/
+author: analyst-github-handle
+date: YYYY-MM-DD
+logsource:
+  product: windows
+  category: process_creation
+detection:
+  selection:
+    Image|endswith: '\\example.exe'
+    CommandLine|contains:
+      - 'actor-specific-string'
+      - 'malware-argument'
+  condition: selection
+falsepositives:
+  - Legitimate administrative activity
+level: medium
+tags:
+  - attack.execution
+  - attack.t1059
+  - threat.actor.placeholder
+```
+
+### YARA Placeholder
+
+```yara
+rule THREAT_ACTOR_MALWARE_PLACEHOLDER
+{
+    meta:
+        description = "Detects malware or file artifacts associated with [Threat Actor]"
+        author = "analyst-github-handle"
+        date = "YYYY-MM-DD"
+        reference = "https://example.com/report"
+        threat_actor = "Actor Name"
+        malware_family = "ExampleFamily"
+    strings:
+        $s1 = "actor_specific_string_1" ascii wide
+        $s2 = "actor_specific_string_2" ascii wide
+        $hex1 = { 90 90 68 ?? ?? ?? ?? }
+    condition:
+        uint16(0) == 0x5A4D and 1 of ($s*)
+}
+```
+
+### Snort / Suricata Placeholder
+
+```snort
+alert http $HOME_NET any -> $EXTERNAL_NET any (
+    msg:"Threat Actor C2 / Delivery Pattern Placeholder";
+    flow:established,to_server;
+    http.uri; content:"/example-path";
+    http.header; content:"actor-specific-user-agent";
+    classtype:trojan-activity;
+    sid:1000001;
+    rev:1;
+    metadata:attack_target Client_Endpoint, deployment Perimeter, created_at YYYY_MM_DD;
+)
+```
+
+### Generic KQL / SIEM Placeholder
 
 ```kql
-// Example KQL (Microsoft Sentinel)
-SecurityEvent
-| where EventID == 4625
-| summarize FailedLogons = count() by Account, IpAddress, bin(TimeGenerated, 5m)
-| where FailedLogons > 10
+// Example KQL placeholder for actor-specific behavior
+DeviceProcessEvents
+| where FileName =~ "example.exe" or ProcessCommandLine has_any ("actor-specific-string", "malware-argument")
+| project Timestamp, DeviceName, AccountName, FileName, ProcessCommandLine, InitiatingProcessFileName
 ```
 
 ### Tuning Notes
 
-_Document known false-positive sources and any tuning steps applied._
+_Document known false-positive sources, environmental exceptions, and how the rule should be tuned for actor-specific fidelity._
+
+Consider:
+- Internal tools that resemble the actor behavior
+- Threat intel confidence and indicator expiration
+- Infrastructure churn or reused public tooling
+- Region- or business-unit-specific allowlists
 
 ## Alert Thresholds
 
 | Parameter | Value |
 |-----------|-------|
-| Threshold | > 10 events within 5 minutes |
-| Severity | Medium |
-| Confidence | High |
+| Threshold | Define actor-specific trigger logic |
+| Severity | Low \| Medium \| High \| Critical |
+| Confidence | Low \| Medium \| High |
+| Enrichment | Threat intel match \| Asset criticality \| User risk |
 
 ## Response Actions
 
-1. Investigate the source IP and account involved.
-2. Check for correlated alerts (e.g., successful logon following failures).
-3. Escalate to Tier 2 if suspicious activity confirmed.
+1. Validate whether the matched artifact or behavior aligns to the specified threat actor or campaign.
+2. Enrich with threat intelligence, malware sandboxing, passive DNS, and historical telemetry.
+3. Scope related activity across hosts, users, identities, mailboxes, and network connections.
+4. Contain affected systems or accounts if malicious activity is confirmed.
+5. Preserve forensic evidence and escalate according to incident severity.
+
+## Validation
+
+_Describe how this detection should be tested before production deployment._
+
+- Atomic or benign simulation steps
+- Replay of sanitized telemetry
+- Validation against known-good and known-bad samples
+- Peer review by detection engineering / threat hunting
 
 ## References
 
-- [MITRE ATT&CK – T1110 Brute Force](https://attack.mitre.org/techniques/T1110/)
-- Internal wiki link or Confluence page
+- [MITRE ATT&CK](https://attack.mitre.org/)
+- Public threat intelligence report for the actor or campaign
+- Malware analysis write-up
+- Internal wiki link or case history
