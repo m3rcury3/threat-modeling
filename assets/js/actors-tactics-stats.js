@@ -10,6 +10,49 @@
       .replaceAll("'", "&#39;");
   }
 
+  function mitreUrlById(attackId) {
+    const id = String(attackId || "").toUpperCase();
+    if (id.startsWith("TA")) return `https://attack.mitre.org/tactics/${encodeURIComponent(id)}/`;
+    if (id.startsWith("G")) return `https://attack.mitre.org/groups/${encodeURIComponent(id)}/`;
+    if (id.startsWith("S")) return `https://attack.mitre.org/software/${encodeURIComponent(id)}/`;
+    if (id.startsWith("T")) {
+      if (id.includes(".")) {
+        const [base, sub] = id.split(".");
+        return `https://attack.mitre.org/techniques/${encodeURIComponent(base)}/${encodeURIComponent(sub)}/`;
+      }
+      return `https://attack.mitre.org/techniques/${encodeURIComponent(id)}/`;
+    }
+    return "";
+  }
+
+  function detectionDocUrl(detection) {
+    const id = detection?.detection_id || "";
+    const category = detection?.category || "";
+    if (!id || !category) return "";
+    return `../${encodeURIComponent(category)}/${encodeURIComponent(id)}/`;
+  }
+
+  function link(text, href) {
+    if (!href) return esc(text);
+    return `<a href="${esc(href)}" target="_blank" rel="noopener">${esc(text)}</a>`;
+  }
+
+  function buildTechniqueLinks(techniqueIds) {
+    if (!techniqueIds || techniqueIds.length === 0) return "-";
+    return techniqueIds.map((id) => link(id, mitreUrlById(id))).join("<br>");
+  }
+
+  function buildDetectionLinks(detectionIds, detectionById) {
+    if (!detectionIds || detectionIds.length === 0) return "-";
+    return detectionIds
+      .map((id) => {
+        const det = detectionById[id] || { detection_id: id, title: id };
+        const label = `${det.detection_id} ${det.title || ""}`.trim();
+        return link(label, detectionDocUrl(det));
+      })
+      .join("<br>");
+  }
+
   function renderTable(containerId, headers, rows) {
     const root = document.getElementById(containerId);
     if (!root) return;
@@ -69,10 +112,10 @@
       "actors-groups-table",
       ["Group ID", "Group Name", "Mapped Techniques", "Mapped Detections"],
       groups.map((g) => [
-        esc(g.group_id || "-"),
-        esc(g.name || "-"),
-        esc((g.mapped_techniques || []).length),
-        esc((g.mapped_detections || []).length),
+        link(g.group_id || "-", g.url || mitreUrlById(g.group_id)),
+        link(g.name || "-", g.url || mitreUrlById(g.group_id)),
+        buildTechniqueLinks(g.mapped_techniques || []),
+        buildDetectionLinks(g.mapped_detections || [], detectionById),
       ])
     );
 
@@ -92,10 +135,10 @@
         const detIds = t.mapped_detections || [];
         const s = statusBreakdown(detIds, detectionById);
         return [
-          esc(t.tactic_id || "-"),
-          esc(t.name || "-"),
-          esc((t.mapped_techniques || []).length),
-          esc(detIds.length),
+          link(t.tactic_id || "-", t.url || mitreUrlById(t.tactic_id)),
+          link(t.name || "-", t.url || mitreUrlById(t.tactic_id)),
+          buildTechniqueLinks(t.mapped_techniques || []),
+          buildDetectionLinks(detIds, detectionById),
           esc(s.provisioned),
           esc(s.in_testing),
           esc(s.planned),
@@ -137,10 +180,10 @@
         const detIds = t.mapped_detections || [];
         const s = statusBreakdown(detIds, detectionById);
         return [
-          esc(t.tactic_id || "-"),
-          esc(t.name || "-"),
-          esc((t.mapped_techniques || []).length),
-          esc(detIds.length),
+          link(t.tactic_id || "-", t.url || mitreUrlById(t.tactic_id)),
+          link(t.name || "-", t.url || mitreUrlById(t.tactic_id)),
+          buildTechniqueLinks(t.mapped_techniques || []),
+          buildDetectionLinks(detIds, detectionById),
           esc(s.provisioned),
           esc(s.in_testing),
           esc(s.planned),
