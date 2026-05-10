@@ -26,6 +26,7 @@ This site is intentionally grouped by adversary behavior, not by platform silo.
 | [Detections](detections/index.md) | Complete inventory of detections with deployment status and metadata |
 | [Threat Actors](actors/index.md) | Coverage by intrusion sets/groups mapped from live MITRE ATT&CK data |
 | [Tactics](tactics/index.md) | Coverage by MITRE ATT&CK tactic and attack phase |
+| [Priority Queue](dashboards/internal-air-gapped-priority.md) | Ranked implementation order for detections protecting internal and air-gapped networks |
 | [Live ATT&CK Mapping](dashboards/live-mapping.md) | Technique-to-group/software/detection mapping with refresh controls |
 
 Use actor pages to answer "what do we detect for this adversary?" and tactic pages to answer "which attack phases are covered or missing?"

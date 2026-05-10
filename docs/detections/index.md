@@ -3,6 +3,10 @@
 This page lists all detections tracked in the repository and their current deployment status.
 It also maps each local detection to MITRE ATT&CK official Detection Strategies when available.
 
+## Priority Queue
+
+If you want the implementation order for detections protecting internal and air-gapped networks, open the [Priority Queue](../dashboards/internal-air-gapped-priority.md).
+
 ## Snapshot
 
 <div id="detections-meta">Loading...</div>

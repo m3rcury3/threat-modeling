@@ -42,6 +42,7 @@ extra_javascript:
   - assets/js/live-mapping.js
   - assets/js/actors-tactics-stats.js
   - assets/js/detections-status.js
+  - assets/js/internal-air-gapped-priority.js
 
 markdown_extensions:
   - admonition
@@ -64,5 +65,6 @@ nav:
       - Overview: actors/index.md
   - Tactics:
       - Overview: tactics/index.md
+  - Priority Queue: dashboards/internal-air-gapped-priority.md
   - Dashboards:
       - Live ATT&CK Mapping: dashboards/live-mapping.md
