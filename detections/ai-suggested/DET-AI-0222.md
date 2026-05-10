@@ -3,6 +3,8 @@ detection_id: DET-AI-0222
 title: AI Suggested Detection - T1134.004 Parent PID Spoofing
 threat_actors: []
 category: application
+speed_framework:
+  - application
 status: AI Suggested
 network_applicability: both
 created: 2026-05-10
@@ -26,6 +28,7 @@ coverage_gaps: []
 | **Status** | AI Suggested |
 | **MITRE Technique** | T1134.004 - Parent PID Spoofing |
 | **MITRE Tactics** | TA0004, TA0005 |
+| **SPEED Framework** | application |
 | **MITRE Detection Strategies** | DET0489 |
 
 ---

@@ -3,6 +3,8 @@ detection_id: DET-AI-0003
 title: AI Suggested Detection - T1001.002 Steganography
 threat_actors: []
 category: application
+speed_framework:
+  - application
 status: AI Suggested
 network_applicability: both
 created: 2026-05-10
@@ -25,6 +27,7 @@ coverage_gaps: []
 | **Status** | AI Suggested |
 | **MITRE Technique** | T1001.002 - Steganography |
 | **MITRE Tactics** | TA0011 |
+| **SPEED Framework** | application |
 | **MITRE Detection Strategies** | DET0235 |
 
 ---

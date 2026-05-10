@@ -3,6 +3,8 @@ detection_id: DET-AI-0358
 title: AI Suggested Detection - T1542.002 Component Firmware
 threat_actors: []
 category: application
+speed_framework:
+  - application
 status: AI Suggested
 network_applicability: both
 created: 2026-05-10
@@ -26,6 +28,7 @@ coverage_gaps: []
 | **Status** | AI Suggested |
 | **MITRE Technique** | T1542.002 - Component Firmware |
 | **MITRE Tactics** | TA0003, TA0005 |
+| **SPEED Framework** | application |
 | **MITRE Detection Strategies** | DET0323 |
 
 ---

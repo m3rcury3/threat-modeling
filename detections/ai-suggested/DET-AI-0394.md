@@ -3,6 +3,8 @@ detection_id: DET-AI-0394
 title: AI Suggested Detection - T1547.007 Re-opened Applications
 threat_actors: []
 category: application
+speed_framework:
+  - application
 status: AI Suggested
 network_applicability: both
 created: 2026-05-10
@@ -26,6 +28,7 @@ coverage_gaps: []
 | **Status** | AI Suggested |
 | **MITRE Technique** | T1547.007 - Re-opened Applications |
 | **MITRE Tactics** | TA0003, TA0004 |
+| **SPEED Framework** | application |
 | **MITRE Detection Strategies** | DET0125 |
 
 ---

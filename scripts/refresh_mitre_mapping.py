@@ -68,6 +68,7 @@ def load_local_detections() -> list[dict]:
             "detection_id": frontmatter.get("detection_id") or path.stem,
             "title": frontmatter.get("title") or path.stem,
             "category": frontmatter.get("category", "unknown"),
+            "speed_framework": frontmatter.get("speed_framework", []),
             "status": frontmatter.get("status", "unknown"),
             "network_applicability": frontmatter.get("network_applicability", "unknown"),
             "threat_actors": frontmatter.get("threat_actors", []),
@@ -509,12 +510,13 @@ def build_search_corpus_markdown(live_mapping: dict, detection_index: dict) -> s
         title = det.get("title", "")
         status = det.get("status", "unknown")
         category = det.get("category", "unknown")
+        speed_framework = ", ".join(det.get("speed_framework", []))
         owner = det.get("owner", "unknown")
         nets = ", ".join(det.get("network_applicability", []))
         techniques = ", ".join(det.get("mitre_techniques", []))
         tactics = ", ".join(det.get("mitre_tactics", []))
         lines.append(
-            f"- {det_id}: {title} | status={status} | category={category} | network={nets} | owner={owner} | tactics={tactics} | techniques={techniques}"
+            f"- {det_id}: {title} | status={status} | category={category} | speed={speed_framework} | network={nets} | owner={owner} | tactics={tactics} | techniques={techniques}"
         )
     lines.append("")
 

@@ -3,6 +3,8 @@ detection_id: DET-AI-0115
 title: AI Suggested Detection - T1056.004 Credential API Hooking
 threat_actors: []
 category: application
+speed_framework:
+  - application
 status: AI Suggested
 network_applicability: both
 created: 2026-05-10
@@ -26,6 +28,7 @@ coverage_gaps: []
 | **Status** | AI Suggested |
 | **MITRE Technique** | T1056.004 - Credential API Hooking |
 | **MITRE Tactics** | TA0006, TA0009 |
+| **SPEED Framework** | application |
 | **MITRE Detection Strategies** | DET0139 |
 
 ---

@@ -7,6 +7,8 @@ threat_actors:
 category: endpoint
 status: provisioned
 network_applicability: internet_connected
+speed_framework:
+  - host
 created: 2025-02-01
 last_updated: 2025-05-10
 owner: blue-team
@@ -25,6 +27,7 @@ coverage_gaps:
 | **Detection ID** | DET-E-002 |
 | **Title** | Suspicious PowerShell Encoded Command Execution |
 | **Category** | Endpoint |
+| **SPEED Framework** | host |
 | **Status** | Provisioned |
 | **Created** | 2025-02-01 |
 | **Last Updated** | 2025-05-10 |

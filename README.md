@@ -63,7 +63,7 @@ This refreshes mappings from MITRE and commits updated JSON back to the reposito
 1. Copy `templates/detection-template.md` into the appropriate category folder under `detections/`.
 2. Name the file using the detection ID (e.g., `DET-E-001.md`).
 3. Fill in all fields — Description, Use Case, Data Sources, Logic/Query, Status, and References.
-4. Include ATT&CK metadata in frontmatter (`mitre_tactics`, `mitre_techniques`, `threat_actors`).
+4. Include ATT&CK metadata and SPEED framework mapping in frontmatter (`mitre_tactics`, `mitre_techniques`, `threat_actors`, `speed_framework`).
 5. Open a Pull Request; once merged to `main`, the site rebuilds automatically.
 
 ### Detection ID Convention

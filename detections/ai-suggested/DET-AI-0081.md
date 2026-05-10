@@ -3,6 +3,8 @@ detection_id: DET-AI-0081
 title: AI Suggested Detection - T1040 Network Sniffing
 threat_actors: []
 category: application
+speed_framework:
+  - application
 status: AI Suggested
 network_applicability: both
 created: 2026-05-10
@@ -26,6 +28,7 @@ coverage_gaps: []
 | **Status** | AI Suggested |
 | **MITRE Technique** | T1040 - Network Sniffing |
 | **MITRE Tactics** | TA0006, TA0007 |
+| **SPEED Framework** | application |
 | **MITRE Detection Strategies** | DET0314 |
 
 ---

@@ -3,6 +3,8 @@ detection_id: DET-AI-0397
 title: AI Suggested Detection - T1547.010 Port Monitors
 threat_actors: []
 category: application
+speed_framework:
+  - application
 status: AI Suggested
 network_applicability: both
 created: 2026-05-10
@@ -26,6 +28,7 @@ coverage_gaps: []
 | **Status** | AI Suggested |
 | **MITRE Technique** | T1547.010 - Port Monitors |
 | **MITRE Tactics** | TA0003, TA0004 |
+| **SPEED Framework** | application |
 | **MITRE Detection Strategies** | DET0204 |
 
 ---

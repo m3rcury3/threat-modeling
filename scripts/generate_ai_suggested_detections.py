@@ -127,9 +127,22 @@ def to_slug(technique_id: str) -> str:
     return technique_id.replace(".", "-").lower()
 
 
+def speed_framework_for_category(category: str) -> list[str]:
+    mapping = {
+        "application": ["application"],
+        "cloud": ["cloud"],
+        "endpoint": ["host"],
+        "identity": ["access-control"],
+        "network": ["internal-network"],
+    }
+    return mapping.get(category, [category] if category else [])
+
+
 def build_markdown(record: dict, detection_id: str, strategy_ids: list[str], today: str) -> str:
     tactic_lines = "\n".join([f"  - {t}" for t in record["tactic_ids"]]) or "  - TA0001"
     strategy_lines = "\n".join([f"  - {s}" for s in strategy_ids]) or "  -"
+    speed_framework = speed_framework_for_category("application")
+    speed_lines = "\n".join([f"  - {value}" for value in speed_framework]) or "  -"
 
     references = [
         f"- [MITRE ATT&CK Technique {record['technique_id']}](https://attack.mitre.org/techniques/{record['technique_id'].split('.')[0]}/{record['technique_id'].split('.')[1]}/)"
@@ -150,6 +163,8 @@ detection_id: {detection_id}
 title: AI Suggested Detection - {record['technique_id']} {record['name']}
 threat_actors: []
 category: application
+speed_framework:
+{speed_lines}
 status: AI Suggested
 network_applicability: both
 created: {today}
@@ -172,6 +187,7 @@ coverage_gaps: []
 | **Status** | AI Suggested |
 | **MITRE Technique** | {record['technique_id']} - {record['name']} |
 | **MITRE Tactics** | {', '.join(record['tactic_ids']) if record['tactic_ids'] else 'N/A'} |
+| **SPEED Framework** | {', '.join(speed_framework) if speed_framework else 'N/A'} |
 | **MITRE Detection Strategies** | {', '.join(strategy_ids) if strategy_ids else 'None mapped'} |
 
 ---

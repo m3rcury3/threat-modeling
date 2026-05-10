@@ -6,6 +6,8 @@ threat_actors:
 category: endpoint
 status: provisioned
 network_applicability: both
+speed_framework:
+  - host
 created: 2025-01-15
 last_updated: 2025-05-10
 owner: blue-team
@@ -23,6 +25,7 @@ coverage_gaps: []
 | **Detection ID** | DET-E-001 |
 | **Title** | Brute Force Attack – Local Windows Account |
 | **Category** | Endpoint |
+| **SPEED Framework** | host |
 | **Status** | Provisioned |
 | **Created** | 2025-01-15 |
 | **Last Updated** | 2025-05-10 |

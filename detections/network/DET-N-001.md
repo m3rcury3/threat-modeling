@@ -6,6 +6,8 @@ threat_actors:
 category: network
 status: in_testing
 network_applicability: internet_connected
+speed_framework:
+  - internal-network
 created: 2025-03-10
 last_updated: 2025-05-10
 owner: blue-team
@@ -25,6 +27,7 @@ coverage_gaps:
 | **Detection ID** | DET-N-001 |
 | **Title** | DNS Beaconing to Suspicious Domain |
 | **Category** | Network |
+| **SPEED Framework** | internal-network |
 | **Status** | In Testing |
 | **Created** | 2025-03-10 |
 | **Last Updated** | 2025-05-10 |

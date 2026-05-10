@@ -3,6 +3,8 @@ detection_id: DET-AI-0620
 title: AI Suggested Detection - T1599.001 Network Address Translation Traversal
 threat_actors: []
 category: application
+speed_framework:
+  - application
 status: AI Suggested
 network_applicability: both
 created: 2026-05-10
@@ -25,6 +27,7 @@ coverage_gaps: []
 | **Status** | AI Suggested |
 | **MITRE Technique** | T1599.001 - Network Address Translation Traversal |
 | **MITRE Tactics** | TA0112 |
+| **SPEED Framework** | application |
 | **MITRE Detection Strategies** | DET0163 |
 
 ---

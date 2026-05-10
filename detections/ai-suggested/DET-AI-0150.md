@@ -3,6 +3,8 @@ detection_id: DET-AI-0150
 title: AI Suggested Detection - T1071.005 Publish/Subscribe Protocols
 threat_actors: []
 category: application
+speed_framework:
+  - application
 status: AI Suggested
 network_applicability: both
 created: 2026-05-10
@@ -25,6 +27,7 @@ coverage_gaps: []
 | **Status** | AI Suggested |
 | **MITRE Technique** | T1071.005 - Publish/Subscribe Protocols |
 | **MITRE Tactics** | TA0011 |
+| **SPEED Framework** | application |
 | **MITRE Detection Strategies** | DET0002 |
 
 ---

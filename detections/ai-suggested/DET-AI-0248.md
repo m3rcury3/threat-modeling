@@ -3,6 +3,8 @@ detection_id: DET-AI-0248
 title: AI Suggested Detection - T1197 BITS Jobs
 threat_actors: []
 category: application
+speed_framework:
+  - application
 status: AI Suggested
 network_applicability: both
 created: 2026-05-10
@@ -27,6 +29,7 @@ coverage_gaps: []
 | **Status** | AI Suggested |
 | **MITRE Technique** | T1197 - BITS Jobs |
 | **MITRE Tactics** | TA0002, TA0003, TA0005 |
+| **SPEED Framework** | application |
 | **MITRE Detection Strategies** | DET0098 |
 
 ---

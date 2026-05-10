@@ -3,6 +3,8 @@ detection_id: DET-AI-0435
 title: AI Suggested Detection - T1555.004 Windows Credential Manager
 threat_actors: []
 category: application
+speed_framework:
+  - application
 status: AI Suggested
 network_applicability: both
 created: 2026-05-10
@@ -25,6 +27,7 @@ coverage_gaps: []
 | **Status** | AI Suggested |
 | **MITRE Technique** | T1555.004 - Windows Credential Manager |
 | **MITRE Tactics** | TA0006 |
+| **SPEED Framework** | application |
 | **MITRE Detection Strategies** | DET0134 |
 
 ---

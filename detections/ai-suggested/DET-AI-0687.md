@@ -3,6 +3,8 @@ detection_id: DET-AI-0687
 title: AI Suggested Detection - T1685.004 Disable or Modify Linux Audit System Log
 threat_actors: []
 category: application
+speed_framework:
+  - application
 status: AI Suggested
 network_applicability: both
 created: 2026-05-10
@@ -25,6 +27,7 @@ coverage_gaps: []
 | **Status** | AI Suggested |
 | **MITRE Technique** | T1685.004 - Disable or Modify Linux Audit System Log |
 | **MITRE Tactics** | TA0112 |
+| **SPEED Framework** | application |
 | **MITRE Detection Strategies** | DET0062 |
 
 ---

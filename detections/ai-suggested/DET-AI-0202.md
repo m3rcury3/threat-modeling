@@ -3,6 +3,8 @@ detection_id: DET-AI-0202
 title: AI Suggested Detection - T1114.003 Email Forwarding Rule
 threat_actors: []
 category: application
+speed_framework:
+  - application
 status: AI Suggested
 network_applicability: both
 created: 2026-05-10
@@ -25,6 +27,7 @@ coverage_gaps: []
 | **Status** | AI Suggested |
 | **MITRE Technique** | T1114.003 - Email Forwarding Rule |
 | **MITRE Tactics** | TA0009 |
+| **SPEED Framework** | application |
 | **MITRE Detection Strategies** | DET0576 |
 
 ---

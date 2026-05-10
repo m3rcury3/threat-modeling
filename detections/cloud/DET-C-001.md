@@ -6,6 +6,8 @@ threat_actors:
 category: cloud
 status: provisioned
 network_applicability: internet_connected
+speed_framework:
+  - cloud
 created: 2025-02-14
 last_updated: 2025-05-10
 owner: blue-team
@@ -25,6 +27,7 @@ coverage_gaps:
 | **Detection ID** | DET-C-001 |
 | **Title** | AWS S3 Bucket Made Public |
 | **Category** | Cloud |
+| **SPEED Framework** | cloud |
 | **Status** | Provisioned |
 | **Created** | 2025-02-14 |
 | **Last Updated** | 2025-05-10 |

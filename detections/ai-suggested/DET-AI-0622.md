@@ -3,6 +3,8 @@ detection_id: DET-AI-0622
 title: AI Suggested Detection - T1600.001 Reduce Key Space
 threat_actors: []
 category: application
+speed_framework:
+  - application
 status: AI Suggested
 network_applicability: both
 created: 2026-05-10
@@ -25,6 +27,7 @@ coverage_gaps: []
 | **Status** | AI Suggested |
 | **MITRE Technique** | T1600.001 - Reduce Key Space |
 | **MITRE Tactics** | TA0112 |
+| **SPEED Framework** | application |
 | **MITRE Detection Strategies** | DET0243 |
 
 ---

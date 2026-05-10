@@ -3,6 +3,8 @@ detection_id: DET-AI-0634
 title: AI Suggested Detection - T1608.001 Upload Malware
 threat_actors: []
 category: application
+speed_framework:
+  - application
 status: AI Suggested
 network_applicability: both
 created: 2026-05-10
@@ -25,6 +27,7 @@ coverage_gaps: []
 | **Status** | AI Suggested |
 | **MITRE Technique** | T1608.001 - Upload Malware |
 | **MITRE Tactics** | TA0042 |
+| **SPEED Framework** | application |
 | **MITRE Detection Strategies** | DET0824 |
 
 ---

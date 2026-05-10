@@ -3,6 +3,8 @@ detection_id: DET-AI-0667
 title: AI Suggested Detection - T1671 Cloud Application Integration
 threat_actors: []
 category: application
+speed_framework:
+  - application
 status: AI Suggested
 network_applicability: both
 created: 2026-05-10
@@ -25,6 +27,7 @@ coverage_gaps: []
 | **Status** | AI Suggested |
 | **MITRE Technique** | T1671 - Cloud Application Integration |
 | **MITRE Tactics** | TA0003 |
+| **SPEED Framework** | application |
 | **MITRE Detection Strategies** | DET0539 |
 
 ---

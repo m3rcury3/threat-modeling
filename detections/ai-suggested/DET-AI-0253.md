@@ -3,6 +3,8 @@ detection_id: DET-AI-0253
 title: AI Suggested Detection - T1203 Exploitation for Client Execution
 threat_actors: []
 category: application
+speed_framework:
+  - application
 status: AI Suggested
 network_applicability: both
 created: 2026-05-10
@@ -25,6 +27,7 @@ coverage_gaps: []
 | **Status** | AI Suggested |
 | **MITRE Technique** | T1203 - Exploitation for Client Execution |
 | **MITRE Tactics** | TA0002 |
+| **SPEED Framework** | application |
 | **MITRE Detection Strategies** | DET0287 |
 
 ---

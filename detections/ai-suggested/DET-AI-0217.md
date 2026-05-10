@@ -3,6 +3,8 @@ detection_id: DET-AI-0217
 title: AI Suggested Detection - T1133 External Remote Services
 threat_actors: []
 category: application
+speed_framework:
+  - application
 status: AI Suggested
 network_applicability: both
 created: 2026-05-10
@@ -26,6 +28,7 @@ coverage_gaps: []
 | **Status** | AI Suggested |
 | **MITRE Technique** | T1133 - External Remote Services |
 | **MITRE Tactics** | TA0001, TA0003 |
+| **SPEED Framework** | application |
 | **MITRE Detection Strategies** | DET0354 |
 
 ---

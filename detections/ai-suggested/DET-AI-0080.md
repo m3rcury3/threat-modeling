@@ -3,6 +3,8 @@ detection_id: DET-AI-0080
 title: AI Suggested Detection - T1039 Data from Network Shared Drive
 threat_actors: []
 category: application
+speed_framework:
+  - application
 status: AI Suggested
 network_applicability: both
 created: 2026-05-10
@@ -25,6 +27,7 @@ coverage_gaps: []
 | **Status** | AI Suggested |
 | **MITRE Technique** | T1039 - Data from Network Shared Drive |
 | **MITRE Tactics** | TA0009 |
+| **SPEED Framework** | application |
 | **MITRE Detection Strategies** | DET0410 |
 
 ---

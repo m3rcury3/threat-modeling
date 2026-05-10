@@ -3,6 +3,8 @@ detection_id: DET-AI-0586
 title: AI Suggested Detection - T1591 Gather Victim Org Information
 threat_actors: []
 category: application
+speed_framework:
+  - application
 status: AI Suggested
 network_applicability: both
 created: 2026-05-10
@@ -25,6 +27,7 @@ coverage_gaps: []
 | **Status** | AI Suggested |
 | **MITRE Technique** | T1591 - Gather Victim Org Information |
 | **MITRE Tactics** | TA0043 |
+| **SPEED Framework** | application |
 | **MITRE Detection Strategies** | DET0890 |
 
 ---

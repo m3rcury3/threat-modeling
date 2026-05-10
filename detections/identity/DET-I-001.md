@@ -6,6 +6,8 @@ threat_actors:
 category: identity
 status: provisioned
 network_applicability: both
+speed_framework:
+  - access-control
 created: 2025-01-28
 last_updated: 2025-05-10
 owner: blue-team
@@ -25,6 +27,7 @@ coverage_gaps:
 | **Detection ID** | DET-I-001 |
 | **Title** | Impossible Travel – Simultaneous Logons from Different Countries |
 | **Category** | Identity |
+| **SPEED Framework** | access-control |
 | **Status** | Provisioned |
 | **Created** | 2025-01-28 |
 | **Last Updated** | 2025-05-10 |
