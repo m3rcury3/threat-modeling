@@ -235,8 +235,6 @@ def build_mapping(local_detections: list[dict], stix_bundle: dict) -> dict:
     mapped_groups: list[dict] = []
     for group in sorted(groups_by_stix.values(), key=lambda x: x["group_id"]):
         technique_ids = sorted(group_to_techniques.get(group["group_id"], set()))
-        if not technique_ids:
-            continue
         covered_detections = sorted(
             {
                 d["detection_id"]
@@ -278,8 +276,6 @@ def build_mapping(local_detections: list[dict], stix_bundle: dict) -> dict:
     mapped_tactics: list[dict] = []
     for tactic in sorted(tactics_by_shortname.values(), key=lambda x: x["tactic_id"]):
         techs = sorted(tactic_to_techniques.get(tactic["tactic_id"], set()))
-        if not techs:
-            continue
         mapped_tactics.append(
             {
                 "tactic_id": tactic["tactic_id"],
@@ -299,9 +295,11 @@ def build_mapping(local_detections: list[dict], stix_bundle: dict) -> dict:
         "counts": {
             "local_detections": len(local_detections),
             "mapped_techniques": len(mapped_techniques),
-            "mapped_tactics": len(mapped_tactics),
-            "mapped_groups": len(mapped_groups),
+            "mapped_tactics": len([x for x in mapped_tactics if x["mapped_techniques"]]),
+            "mapped_groups": len([x for x in mapped_groups if x["mapped_techniques"]]),
             "mapped_software": len(mapped_software),
+            "total_tactics": len(mapped_tactics),
+            "total_groups": len(mapped_groups),
         },
         "mappings": {
             "tactics": mapped_tactics,

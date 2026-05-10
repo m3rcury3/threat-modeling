@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-10T07:37:08.587146+00:00",
+  "generated_at": "2026-05-10T07:50:14.032415+00:00",
   "source": {
     "mitre_stix_url": "https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/enterprise-attack/enterprise-attack.json",
     "object_count": 25844
@@ -9,7 +9,9 @@
     "mapped_techniques": 5,
     "mapped_tactics": 8,
     "mapped_groups": 100,
-    "mapped_software": 174
+    "mapped_software": 174,
+    "total_tactics": 15,
+    "total_groups": 174
   },
   "mappings": {
     "tactics": [
@@ -80,6 +82,27 @@
         ]
       },
       {
+        "tactic_id": "TA0007",
+        "name": "Discovery",
+        "shortname": "discovery",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "tactic_id": "TA0008",
+        "name": "Lateral Movement",
+        "shortname": "lateral-movement",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "tactic_id": "TA0009",
+        "name": "Collection",
+        "shortname": "collection",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
         "tactic_id": "TA0010",
         "name": "Exfiltration",
         "shortname": "exfiltration",
@@ -100,6 +123,34 @@
         "mapped_detections": [
           "DET-N-001"
         ]
+      },
+      {
+        "tactic_id": "TA0040",
+        "name": "Impact",
+        "shortname": "impact",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "tactic_id": "TA0042",
+        "name": "Resource Development",
+        "shortname": "resource-development",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "tactic_id": "TA0043",
+        "name": "Reconnaissance",
+        "shortname": "reconnaissance",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "tactic_id": "TA0112",
+        "name": "Defense Impairment",
+        "shortname": "defense-impairment",
+        "mapped_techniques": [],
+        "mapped_detections": []
       }
     ],
     "techniques": [
@@ -1786,6 +1837,18 @@
         ]
       },
       {
+        "group_id": "G0002",
+        "name": "Moafee",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G0003",
+        "name": "Cleaver",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
         "group_id": "G0004",
         "name": "Ke3chang",
         "mapped_techniques": [
@@ -1796,6 +1859,18 @@
           "DET-I-001",
           "DET-N-001"
         ]
+      },
+      {
+        "group_id": "G0005",
+        "name": "APT12",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G0006",
+        "name": "APT1",
+        "mapped_techniques": [],
+        "mapped_detections": []
       },
       {
         "group_id": "G0007",
@@ -1852,6 +1927,18 @@
         ]
       },
       {
+        "group_id": "G0012",
+        "name": "Darkhotel",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G0013",
+        "name": "APT30",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
         "group_id": "G0016",
         "name": "APT29",
         "mapped_techniques": [
@@ -1864,6 +1951,30 @@
           "DET-E-002",
           "DET-I-001"
         ]
+      },
+      {
+        "group_id": "G0017",
+        "name": "DragonOK",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G0018",
+        "name": "admin@338",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G0019",
+        "name": "Naikon",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G0020",
+        "name": "Equation",
+        "mapped_techniques": [],
+        "mapped_detections": []
       },
       {
         "group_id": "G0021",
@@ -1884,6 +1995,24 @@
         "mapped_detections": [
           "DET-E-002"
         ]
+      },
+      {
+        "group_id": "G0023",
+        "name": "APT16",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G0024",
+        "name": "Putter Panda",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G0025",
+        "name": "APT17",
+        "mapped_techniques": [],
+        "mapped_detections": []
       },
       {
         "group_id": "G0026",
@@ -1908,6 +2037,24 @@
           "DET-E-002",
           "DET-I-001"
         ]
+      },
+      {
+        "group_id": "G0028",
+        "name": "Threat Group-1314",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G0029",
+        "name": "Scarlet Mimic",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G0030",
+        "name": "Lotus Blossom",
+        "mapped_techniques": [],
+        "mapped_detections": []
       },
       {
         "group_id": "G0032",
@@ -1956,6 +2103,12 @@
         ]
       },
       {
+        "group_id": "G0036",
+        "name": "GCMAN",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
         "group_id": "G0037",
         "name": "FIN6",
         "mapped_techniques": [
@@ -1998,6 +2151,24 @@
         ]
       },
       {
+        "group_id": "G0041",
+        "name": "Strider",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G0043",
+        "name": "Group5",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G0044",
+        "name": "Winnti Group",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
         "group_id": "G0045",
         "name": "menuPass",
         "mapped_techniques": [
@@ -2032,6 +2203,12 @@
         "mapped_detections": [
           "DET-E-002"
         ]
+      },
+      {
+        "group_id": "G0048",
+        "name": "RTM",
+        "mapped_techniques": [],
+        "mapped_detections": []
       },
       {
         "group_id": "G0049",
@@ -2090,6 +2267,24 @@
         ]
       },
       {
+        "group_id": "G0054",
+        "name": "Sowbug",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G0055",
+        "name": "NEODYMIUM",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G0056",
+        "name": "PROMETHIUM",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
         "group_id": "G0059",
         "name": "Magic Hound",
         "mapped_techniques": [
@@ -2132,6 +2327,12 @@
         ]
       },
       {
+        "group_id": "G0063",
+        "name": "BlackOasis",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
         "group_id": "G0064",
         "name": "APT33",
         "mapped_techniques": [
@@ -2156,6 +2357,24 @@
         ]
       },
       {
+        "group_id": "G0066",
+        "name": "Elderwood",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G0067",
+        "name": "APT37",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G0068",
+        "name": "PLATINUM",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
         "group_id": "G0069",
         "name": "MuddyWater",
         "mapped_techniques": [
@@ -2164,6 +2383,18 @@
         "mapped_detections": [
           "DET-E-002"
         ]
+      },
+      {
+        "group_id": "G0070",
+        "name": "Dark Caracal",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G0071",
+        "name": "Orangeworm",
+        "mapped_techniques": [],
+        "mapped_detections": []
       },
       {
         "group_id": "G0073",
@@ -2176,6 +2407,12 @@
         ]
       },
       {
+        "group_id": "G0075",
+        "name": "Rancor",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
         "group_id": "G0076",
         "name": "Thrip",
         "mapped_techniques": [
@@ -2184,6 +2421,12 @@
         "mapped_detections": [
           "DET-E-002"
         ]
+      },
+      {
+        "group_id": "G0077",
+        "name": "Leafminer",
+        "mapped_techniques": [],
+        "mapped_detections": []
       },
       {
         "group_id": "G0078",
@@ -2238,6 +2481,12 @@
         ]
       },
       {
+        "group_id": "G0083",
+        "name": "SilverTerrier",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
         "group_id": "G0084",
         "name": "Gallmaker",
         "mapped_techniques": [
@@ -2270,6 +2519,18 @@
           "DET-I-001",
           "DET-N-001"
         ]
+      },
+      {
+        "group_id": "G0088",
+        "name": "TEMP.Veles",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G0089",
+        "name": "The White Company",
+        "mapped_techniques": [],
+        "mapped_detections": []
       },
       {
         "group_id": "G0090",
@@ -2326,6 +2587,12 @@
         ]
       },
       {
+        "group_id": "G0095",
+        "name": "Machete",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
         "group_id": "G0096",
         "name": "APT41",
         "mapped_techniques": [
@@ -2338,6 +2605,12 @@
           "DET-I-001",
           "DET-N-001"
         ]
+      },
+      {
+        "group_id": "G0098",
+        "name": "BlackTech",
+        "mapped_techniques": [],
+        "mapped_detections": []
       },
       {
         "group_id": "G0099",
@@ -2372,6 +2645,12 @@
         ]
       },
       {
+        "group_id": "G0103",
+        "name": "Mofang",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
         "group_id": "G0105",
         "name": "DarkVishnya",
         "mapped_techniques": [
@@ -2382,6 +2661,18 @@
         ]
       },
       {
+        "group_id": "G0106",
+        "name": "Rocke",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G0107",
+        "name": "Whitefly",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
         "group_id": "G0108",
         "name": "Blue Mockingbird",
         "mapped_techniques": [
@@ -2390,6 +2681,12 @@
         "mapped_detections": [
           "DET-E-002"
         ]
+      },
+      {
+        "group_id": "G0112",
+        "name": "Windshift",
+        "mapped_techniques": [],
+        "mapped_detections": []
       },
       {
         "group_id": "G0114",
@@ -2440,6 +2737,12 @@
         ]
       },
       {
+        "group_id": "G0120",
+        "name": "Evilnum",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
         "group_id": "G0121",
         "name": "Sidewinder",
         "mapped_techniques": [
@@ -2460,6 +2763,18 @@
         ]
       },
       {
+        "group_id": "G0123",
+        "name": "Volatile Cedar",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G0124",
+        "name": "Windigo",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
         "group_id": "G0125",
         "name": "HAFNIUM",
         "mapped_techniques": [
@@ -2470,6 +2785,24 @@
         ]
       },
       {
+        "group_id": "G0126",
+        "name": "Higaisa",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G0127",
+        "name": "TA551",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G0128",
+        "name": "ZIRCONIUM",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
         "group_id": "G0129",
         "name": "Mustang Panda",
         "mapped_techniques": [
@@ -2478,6 +2811,12 @@
         "mapped_detections": [
           "DET-E-002"
         ]
+      },
+      {
+        "group_id": "G0130",
+        "name": "Ajax Security Team",
+        "mapped_techniques": [],
+        "mapped_detections": []
       },
       {
         "group_id": "G0131",
@@ -2498,6 +2837,36 @@
         "mapped_detections": [
           "DET-E-002"
         ]
+      },
+      {
+        "group_id": "G0134",
+        "name": "Transparent Tribe",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G0135",
+        "name": "BackdoorDiplomacy",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G0136",
+        "name": "IndigoZebra",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G0137",
+        "name": "Ferocious Kitten",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G0138",
+        "name": "Andariel",
+        "mapped_techniques": [],
+        "mapped_detections": []
       },
       {
         "group_id": "G0139",
@@ -2552,6 +2921,12 @@
         ]
       },
       {
+        "group_id": "G1002",
+        "name": "BITTER",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
         "group_id": "G1003",
         "name": "Ember Bear",
         "mapped_techniques": [
@@ -2594,6 +2969,30 @@
         ]
       },
       {
+        "group_id": "G1007",
+        "name": "Aoqin Dragon",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G1008",
+        "name": "SideCopy",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G1009",
+        "name": "Moses Staff",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G1011",
+        "name": "EXOTIC LILY",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
         "group_id": "G1012",
         "name": "CURIUM",
         "mapped_techniques": [
@@ -2602,6 +3001,18 @@
         "mapped_detections": [
           "DET-E-002"
         ]
+      },
+      {
+        "group_id": "G1013",
+        "name": "Metador",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G1014",
+        "name": "LuminousMoth",
+        "mapped_techniques": [],
+        "mapped_detections": []
       },
       {
         "group_id": "G1015",
@@ -2658,6 +3069,12 @@
         ]
       },
       {
+        "group_id": "G1020",
+        "name": "Mustard Tempest",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
         "group_id": "G1021",
         "name": "Cinnamon Tempest",
         "mapped_techniques": [
@@ -2700,6 +3117,24 @@
           "DET-E-002",
           "DET-I-001"
         ]
+      },
+      {
+        "group_id": "G1026",
+        "name": "Malteiro",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G1028",
+        "name": "APT-C-23",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G1030",
+        "name": "Agrius",
+        "mapped_techniques": [],
+        "mapped_detections": []
       },
       {
         "group_id": "G1031",
@@ -2752,6 +3187,24 @@
         ]
       },
       {
+        "group_id": "G1036",
+        "name": "Moonstone Sleet",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G1037",
+        "name": "TA577",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G1038",
+        "name": "TA578",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
         "group_id": "G1039",
         "name": "RedCurl",
         "mapped_techniques": [
@@ -2784,6 +3237,12 @@
         ]
       },
       {
+        "group_id": "G1042",
+        "name": "RedEcho",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
         "group_id": "G1043",
         "name": "BlackByte",
         "mapped_techniques": [
@@ -2806,6 +3265,12 @@
         ]
       },
       {
+        "group_id": "G1045",
+        "name": "Salt Typhoon",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
         "group_id": "G1046",
         "name": "Storm-1811",
         "mapped_techniques": [
@@ -2814,6 +3279,12 @@
         "mapped_detections": [
           "DET-E-002"
         ]
+      },
+      {
+        "group_id": "G1047",
+        "name": "Velvet Ant",
+        "mapped_techniques": [],
+        "mapped_detections": []
       },
       {
         "group_id": "G1048",
@@ -2828,6 +3299,18 @@
         ]
       },
       {
+        "group_id": "G1049",
+        "name": "AppleJeus",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
+        "group_id": "G1050",
+        "name": "Water Galura",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
         "group_id": "G1051",
         "name": "Medusa Group",
         "mapped_techniques": [
@@ -2840,6 +3323,12 @@
         ]
       },
       {
+        "group_id": "G1052",
+        "name": "Contagious Interview",
+        "mapped_techniques": [],
+        "mapped_detections": []
+      },
+      {
         "group_id": "G1053",
         "name": "Storm-0501",
         "mapped_techniques": [
@@ -2848,6 +3337,12 @@
         "mapped_detections": [
           "DET-E-002"
         ]
+      },
+      {
+        "group_id": "G1054",
+        "name": "MirrorFace",
+        "mapped_techniques": [],
+        "mapped_detections": []
       },
       {
         "group_id": "G1055",

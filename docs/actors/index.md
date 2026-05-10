@@ -2,6 +2,18 @@
 
 This section is now sourced from live MITRE ATT&CK data and local detection metadata.
 
+## Live Snapshot
+
+<div id="actors-meta">Loading...</div>
+
+## All MITRE Groups
+
+<div id="actors-groups-table">Loading...</div>
+
+## Overall Detection Statistics Per Tactic
+
+<div id="actors-tactic-stats-table">Loading...</div>
+
 ## How Actor Mapping Works
 
 - Techniques in local detections are mapped to MITRE ATT&CK Groups and Software

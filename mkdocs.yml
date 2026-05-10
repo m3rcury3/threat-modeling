@@ -40,6 +40,7 @@ plugins:
 
 extra_javascript:
   - assets/js/live-mapping.js
+  - assets/js/actors-tactics-stats.js
 
 markdown_extensions:
   - admonition

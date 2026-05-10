@@ -2,6 +2,14 @@
 
 This section is maintained from live ATT&CK content, not static tactic snapshots.
 
+## Live Snapshot
+
+<div id="tactics-meta">Loading...</div>
+
+## All MITRE Tactics and Detection Statistics Per Tactic
+
+<div id="tactics-stats-table">Loading...</div>
+
 ## Tactic-First Model
 
 - A single detection may span multiple categories
