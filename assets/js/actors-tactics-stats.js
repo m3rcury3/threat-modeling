@@ -26,6 +26,10 @@
   }
 
   function detectionDocUrl(detection) {
+    const sourceFile = detection?.source_file || "";
+    if (sourceFile) {
+      return `https://github.com/m3rcury3/threat-modeling/blob/main/${encodeURI(sourceFile)}`;
+    }
     const id = detection?.detection_id || "";
     const category = detection?.category || "";
     if (!id || !category) return "";

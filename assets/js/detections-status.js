@@ -11,6 +11,10 @@
   }
 
   function detectionDocUrl(detection) {
+    const sourceFile = detection?.source_file || "";
+    if (sourceFile) {
+      return `https://github.com/m3rcury3/threat-modeling/blob/main/${encodeURI(sourceFile)}`;
+    }
     const id = detection?.detection_id || "";
     const category = detection?.category || "";
     if (!id || !category) return "";
@@ -18,12 +22,16 @@
   }
 
   function statusBadge(status) {
-    const normalized = String(status || "unknown").toLowerCase();
+    const normalized = String(status || "unknown")
+      .toLowerCase()
+      .replaceAll(" ", "_")
+      .replaceAll("-", "_");
     const map = {
       provisioned: "🟢 Provisioned",
       in_testing: "🟡 In Testing",
       planned: "🔵 Planned",
       deprecated: "⚫ Deprecated",
+      ai_suggested: "🟣 AI Suggested",
       unknown: "⚪ Unknown",
     };
     return map[normalized] || `⚪ ${esc(status)}`;
