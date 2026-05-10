@@ -1,0 +1,68 @@
+site_name: SOC Detection Requirements
+site_description: Blue Team detection requirements — source of truth for the Security Operations Centre.
+site_url: https://m3rcury3.github.io/threat-modeling/
+repo_url: https://github.com/m3rcury3/threat-modeling
+repo_name: m3rcury3/threat-modeling
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.copy
+    - content.action.edit
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang: en
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Endpoint:
+      - Overview: endpoint/index.md
+      - DET-E-001 – Brute Force: endpoint/DET-E-001.md
+      - DET-E-002 – PowerShell Encoded Command: endpoint/DET-E-002.md
+  - Network:
+      - Overview: network/index.md
+      - DET-N-001 – DNS Beaconing: network/DET-N-001.md
+  - Identity:
+      - Overview: identity/index.md
+      - DET-I-001 – Impossible Travel: identity/DET-I-001.md
+  - Cloud:
+      - Overview: cloud/index.md
+      - DET-C-001 – S3 Bucket Made Public: cloud/DET-C-001.md
