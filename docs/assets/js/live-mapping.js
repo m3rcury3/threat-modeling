@@ -10,6 +10,33 @@
       .replaceAll("'", "&#39;");
   }
 
+  function mitreUrlById(attackId) {
+    const id = String(attackId || "").toUpperCase();
+    if (id.startsWith("TA")) return `https://attack.mitre.org/tactics/${encodeURIComponent(id)}/`;
+    if (id.startsWith("G")) return `https://attack.mitre.org/groups/${encodeURIComponent(id)}/`;
+    if (id.startsWith("S")) return `https://attack.mitre.org/software/${encodeURIComponent(id)}/`;
+    if (id.startsWith("T")) {
+      if (id.includes(".")) {
+        const [base, sub] = id.split(".");
+        return `https://attack.mitre.org/techniques/${encodeURIComponent(base)}/${encodeURIComponent(sub)}/`;
+      }
+      return `https://attack.mitre.org/techniques/${encodeURIComponent(id)}/`;
+    }
+    return "";
+  }
+
+  function detectionDocUrl(detection) {
+    const id = detection?.detection_id || "";
+    const category = detection?.category || "";
+    if (!id || !category) return "";
+    return `../${encodeURIComponent(category)}/${encodeURIComponent(id)}/`;
+  }
+
+  function link(text, href) {
+    if (!href) return esc(text);
+    return `<a href="${esc(href)}" target="_blank" rel="noopener">${esc(text)}</a>`;
+  }
+
   function buildList(items, keyId, keyName) {
     if (!items || items.length === 0) {
       return "-";
@@ -18,7 +45,9 @@
       .map((item) => {
         const id = item[keyId] || "";
         const name = item[keyName] || "";
-        return `${esc(id)} ${esc(name)}`.trim();
+        const href = item.url || mitreUrlById(id);
+        const label = `${id} ${name}`.trim();
+        return link(label, href);
       })
       .join("<br>");
   }
@@ -27,7 +56,34 @@
     if (!items || items.length === 0) {
       return "-";
     }
-    return items.map((x) => esc(x)).join("<br>");
+    return items.map((x) => link(x, mitreUrlById(x))).join("<br>");
+  }
+
+  function buildDetectionList(items, detectionById) {
+    if (!items || items.length === 0) {
+      return "-";
+    }
+    return items
+      .map((id) => {
+        const det = detectionById[id] || { detection_id: id, title: id };
+        const href = detectionDocUrl(det);
+        const label = `${det.detection_id} ${det.title || ""}`.trim();
+        return link(label, href);
+      })
+      .join("<br>");
+  }
+
+  function buildDetectionObjectList(items) {
+    if (!items || items.length === 0) {
+      return "-";
+    }
+    return items
+      .map((d) => {
+        const href = detectionDocUrl(d);
+        const label = `${d.detection_id || ""} ${d.title || ""}`.trim();
+        return link(label, href);
+      })
+      .join("<br>");
   }
 
   function renderTable(containerId, headers, rows) {
@@ -71,18 +127,29 @@
     `;
   }
 
-  function renderAll(data) {
+  async function loadDetectionIndex(forceRefresh) {
+    const suffix = forceRefresh ? `?t=${Date.now()}` : "";
+    const url = new URL(`../../data/detection_index.json${suffix}`, window.location.href);
+    const response = await fetch(url.toString(), { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`Failed to load detection index: HTTP ${response.status}`);
+    }
+    return response.json();
+  }
+
+  function renderAll(data, detectionIndex) {
     renderMeta(data);
+    const detectionById = Object.fromEntries((detectionIndex.detections || []).map((d) => [d.detection_id, d]));
 
     const tactics = data.mappings?.tactics || [];
     renderTable(
       "tactic-table",
       ["Tactic", "Name", "Mapped Techniques", "Mapped Detections"],
       tactics.map((t) => [
-        esc(t.tactic_id || "-"),
-        esc(t.name || "-"),
+        link(t.tactic_id || "-", t.url || mitreUrlById(t.tactic_id)),
+        link(t.name || "-", t.url || mitreUrlById(t.tactic_id)),
         buildIdList(t.mapped_techniques || []),
-        buildIdList(t.mapped_detections || []),
+        buildDetectionList(t.mapped_detections || [], detectionById),
       ])
     );
 
@@ -91,12 +158,12 @@
       "technique-table",
       ["Technique", "Name", "Tactics", "Groups", "Software", "Detections"],
       techniques.map((t) => [
-        esc(t.technique_id || "-"),
-        esc(t.name || "-"),
+        link(t.technique_id || "-", t.url || mitreUrlById(t.technique_id)),
+        link(t.name || "-", t.url || mitreUrlById(t.technique_id)),
         buildList(t.tactics || [], "tactic_id", "name"),
         buildList(t.groups || [], "group_id", "name"),
         buildList(t.software || [], "software_id", "name"),
-        buildList(t.detections || [], "detection_id", "title"),
+        buildDetectionObjectList(t.detections || []),
       ])
     );
 
@@ -105,10 +172,10 @@
       "group-table",
       ["Group", "Name", "Mapped Techniques", "Mapped Detections"],
       groups.map((g) => [
-        esc(g.group_id || "-"),
-        esc(g.name || "-"),
+        link(g.group_id || "-", g.url || mitreUrlById(g.group_id)),
+        link(g.name || "-", g.url || mitreUrlById(g.group_id)),
         buildIdList(g.mapped_techniques || []),
-        buildIdList(g.mapped_detections || []),
+        buildDetectionList(g.mapped_detections || [], detectionById),
       ])
     );
 
@@ -117,19 +184,22 @@
       "software-table",
       ["Software", "Name", "Type", "Mapped Techniques", "Mapped Detections"],
       software.map((s) => [
-        esc(s.software_id || "-"),
-        esc(s.name || "-"),
+        link(s.software_id || "-", s.url || mitreUrlById(s.software_id)),
+        link(s.name || "-", s.url || mitreUrlById(s.software_id)),
         esc(s.type || "-"),
         buildIdList(s.mapped_techniques || []),
-        buildIdList(s.mapped_detections || []),
+        buildDetectionList(s.mapped_detections || [], detectionById),
       ])
     );
   }
 
   async function refresh(forceRefresh) {
     try {
-      const data = await loadMapping(forceRefresh);
-      renderAll(data);
+      const [data, detectionIndex] = await Promise.all([
+        loadMapping(forceRefresh),
+        loadDetectionIndex(forceRefresh),
+      ]);
+      renderAll(data, detectionIndex);
     } catch (error) {
       const ids = ["live-meta", "tactic-table", "technique-table", "group-table", "software-table"];
       ids.forEach((id) => {
