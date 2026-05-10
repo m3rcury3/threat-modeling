@@ -6,6 +6,14 @@ This section is now sourced from live MITRE ATT&CK data and local detection meta
 
 <div id="actors-meta">Loading...</div>
 
+## Mapped Detections Filter
+
+<label>Group Search:
+  <input type="text" id="actors-group-search" placeholder="Search Group ID, name, aliases, keywords">
+</label>
+
+<div id="actors-filter-summary">Loading...</div>
+
 ## All MITRE Groups
 
 <div id="actors-groups-table">Loading...</div>

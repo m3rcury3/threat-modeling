@@ -5,7 +5,7 @@ threat_actors:
   - actor_id_1
   - actor_id_2
 category: endpoint  # endpoint, network, identity, cloud, email, application
-status: planned     # planned, in_testing, provisioned, deprecated
+status: planned     # planned, in_testing, provisioned, deprecated, AI Suggested
 network_applicability: both  # internet_connected, air_gapped, both
 created: YYYY-MM-DD
 last_updated: YYYY-MM-DD
@@ -25,7 +25,7 @@ coverage_gaps: []
 | **Title** | Short descriptive title tied to a specific threat actor, intrusion set, or campaign |
 | **Threat Actors** | References to `actor_id` from `data/actors.json` |
 | **Category** | Endpoint \| Network \| Identity \| Cloud \| Email \| Application |
-| **Status** | Planned \| In Testing \| Provisioned \| Deprecated |
+| **Status** | Planned \| In Testing \| Provisioned \| Deprecated \| AI Suggested |
 | **Network Applicability** | Internet Connected \| Air-Gapped \| Both |
 | **Created** | YYYY-MM-DD |
 | **Last Updated** | YYYY-MM-DD |

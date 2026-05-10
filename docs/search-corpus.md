@@ -4,16 +4,713 @@ This page is auto-generated to improve full-text search coverage for live JSON-d
 
 ## Snapshot
 
-- Generated at: 2026-05-10T09:36:15.599276+00:00
-- Local detections: 5
-- Mapped techniques: 5
-- Mapped tactics: 8
-- Mapped groups: 100
-- Mapped software: 174
+- Generated at: 2026-05-10T10:05:56.405283+00:00
+- Local detections: 702
+- Mapped techniques: 697
+- Mapped tactics: 15
+- Mapped groups: 170
+- Mapped software: 821
 - Mapped detection strategies: 697
 
 ## Detections
 
+- DET-AI-0001: AI Suggested Detection - T1001 Data Obfuscation | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1001
+- DET-AI-0002: AI Suggested Detection - T1001.001 Junk Data | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1001.001
+- DET-AI-0003: AI Suggested Detection - T1001.002 Steganography | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1001.002
+- DET-AI-0004: AI Suggested Detection - T1001.003 Protocol or Service Impersonation | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1001.003
+- DET-AI-0005: AI Suggested Detection - T1003 OS Credential Dumping | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1003
+- DET-AI-0006: AI Suggested Detection - T1003.001 LSASS Memory | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1003.001
+- DET-AI-0007: AI Suggested Detection - T1003.002 Security Account Manager | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1003.002
+- DET-AI-0008: AI Suggested Detection - T1003.003 NTDS | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1003.003
+- DET-AI-0009: AI Suggested Detection - T1003.004 LSA Secrets | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1003.004
+- DET-AI-0010: AI Suggested Detection - T1003.005 Cached Domain Credentials | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1003.005
+- DET-AI-0011: AI Suggested Detection - T1003.006 DCSync | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1003.006
+- DET-AI-0012: AI Suggested Detection - T1003.007 Proc Filesystem | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1003.007
+- DET-AI-0013: AI Suggested Detection - T1003.008 /etc/passwd and /etc/shadow | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1003.008
+- DET-AI-0014: AI Suggested Detection - T1005 Data from Local System | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1005
+- DET-AI-0015: AI Suggested Detection - T1006 Direct Volume Access | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1006
+- DET-AI-0016: AI Suggested Detection - T1007 System Service Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1007
+- DET-AI-0017: AI Suggested Detection - T1008 Fallback Channels | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1008
+- DET-AI-0018: AI Suggested Detection - T1010 Application Window Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1010
+- DET-AI-0019: AI Suggested Detection - T1011 Exfiltration Over Other Network Medium | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0010 | techniques=T1011
+- DET-AI-0020: AI Suggested Detection - T1011.001 Exfiltration Over Bluetooth | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0010 | techniques=T1011.001
+- DET-AI-0021: AI Suggested Detection - T1012 Query Registry | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1012
+- DET-AI-0022: AI Suggested Detection - T1014 Rootkit | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1014
+- DET-AI-0023: AI Suggested Detection - T1016 System Network Configuration Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1016
+- DET-AI-0024: AI Suggested Detection - T1016.001 Internet Connection Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1016.001
+- DET-AI-0025: AI Suggested Detection - T1016.002 Wi-Fi Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1016.002
+- DET-AI-0026: AI Suggested Detection - T1018 Remote System Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1018
+- DET-AI-0027: AI Suggested Detection - T1020 Automated Exfiltration | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0010 | techniques=T1020
+- DET-AI-0028: AI Suggested Detection - T1020.001 Traffic Duplication | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0010 | techniques=T1020.001
+- DET-AI-0029: AI Suggested Detection - T1021 Remote Services | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0008 | techniques=T1021
+- DET-AI-0030: AI Suggested Detection - T1021.001 Remote Desktop Protocol | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0008 | techniques=T1021.001
+- DET-AI-0031: AI Suggested Detection - T1021.002 SMB/Windows Admin Shares | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0008 | techniques=T1021.002
+- DET-AI-0032: AI Suggested Detection - T1021.003 Distributed Component Object Model | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0008 | techniques=T1021.003
+- DET-AI-0033: AI Suggested Detection - T1021.004 SSH | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0008 | techniques=T1021.004
+- DET-AI-0034: AI Suggested Detection - T1021.005 VNC | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0008 | techniques=T1021.005
+- DET-AI-0035: AI Suggested Detection - T1021.006 Windows Remote Management | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0008 | techniques=T1021.006
+- DET-AI-0036: AI Suggested Detection - T1021.007 Cloud Services | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0008 | techniques=T1021.007
+- DET-AI-0037: AI Suggested Detection - T1021.008 Direct Cloud VM Connections | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0008 | techniques=T1021.008
+- DET-AI-0038: AI Suggested Detection - T1025 Data from Removable Media | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1025
+- DET-AI-0039: AI Suggested Detection - T1027 Obfuscated Files or Information | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1027
+- DET-AI-0040: AI Suggested Detection - T1027.001 Binary Padding | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1027.001
+- DET-AI-0041: AI Suggested Detection - T1027.002 Software Packing | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1027.002
+- DET-AI-0042: AI Suggested Detection - T1027.003 Steganography | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1027.003
+- DET-AI-0043: AI Suggested Detection - T1027.004 Compile After Delivery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1027.004
+- DET-AI-0044: AI Suggested Detection - T1027.005 Indicator Removal from Tools | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1027.005
+- DET-AI-0045: AI Suggested Detection - T1027.006 HTML Smuggling | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1027.006
+- DET-AI-0046: AI Suggested Detection - T1027.007 Dynamic API Resolution | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1027.007
+- DET-AI-0047: AI Suggested Detection - T1027.008 Stripped Payloads | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1027.008
+- DET-AI-0048: AI Suggested Detection - T1027.009 Embedded Payloads | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1027.009
+- DET-AI-0049: AI Suggested Detection - T1027.010 Command Obfuscation | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1027.010
+- DET-AI-0050: AI Suggested Detection - T1027.011 Fileless Storage | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1027.011
+- DET-AI-0051: AI Suggested Detection - T1027.012 LNK Icon Smuggling | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1027.012
+- DET-AI-0052: AI Suggested Detection - T1027.013 Encrypted/Encoded File | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1027.013
+- DET-AI-0053: AI Suggested Detection - T1027.014 Polymorphic Code | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1027.014
+- DET-AI-0054: AI Suggested Detection - T1027.015 Compression | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1027.015
+- DET-AI-0055: AI Suggested Detection - T1027.016 Junk Code Insertion | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1027.016
+- DET-AI-0056: AI Suggested Detection - T1027.017 SVG Smuggling | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1027.017
+- DET-AI-0057: AI Suggested Detection - T1027.018 Invisible Unicode | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1027.018
+- DET-AI-0058: AI Suggested Detection - T1029 Scheduled Transfer | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0010 | techniques=T1029
+- DET-AI-0059: AI Suggested Detection - T1030 Data Transfer Size Limits | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0010 | techniques=T1030
+- DET-AI-0060: AI Suggested Detection - T1033 System Owner/User Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1033
+- DET-AI-0061: AI Suggested Detection - T1036 Masquerading | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1036
+- DET-AI-0062: AI Suggested Detection - T1036.001 Invalid Code Signature | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1036.001
+- DET-AI-0063: AI Suggested Detection - T1036.002 Right-to-Left Override | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1036.002
+- DET-AI-0064: AI Suggested Detection - T1036.003 Rename Legitimate Utilities | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1036.003
+- DET-AI-0065: AI Suggested Detection - T1036.004 Masquerade Task or Service | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1036.004
+- DET-AI-0066: AI Suggested Detection - T1036.005 Match Legitimate Resource Name or Location | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1036.005
+- DET-AI-0067: AI Suggested Detection - T1036.006 Space after Filename | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1036.006
+- DET-AI-0068: AI Suggested Detection - T1036.007 Double File Extension | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1036.007
+- DET-AI-0069: AI Suggested Detection - T1036.008 Masquerade File Type | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1036.008
+- DET-AI-0070: AI Suggested Detection - T1036.009 Break Process Trees | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1036.009
+- DET-AI-0071: AI Suggested Detection - T1036.010 Masquerade Account Name | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1036.010
+- DET-AI-0072: AI Suggested Detection - T1036.011 Overwrite Process Arguments | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1036.011
+- DET-AI-0073: AI Suggested Detection - T1036.012 Browser Fingerprint | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1036.012
+- DET-AI-0074: AI Suggested Detection - T1037 Boot or Logon Initialization Scripts | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1037
+- DET-AI-0075: AI Suggested Detection - T1037.001 Logon Script (Windows) | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1037.001
+- DET-AI-0076: AI Suggested Detection - T1037.002 Login Hook | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1037.002
+- DET-AI-0077: AI Suggested Detection - T1037.003 Network Logon Script | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1037.003
+- DET-AI-0078: AI Suggested Detection - T1037.004 RC Scripts | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1037.004
+- DET-AI-0079: AI Suggested Detection - T1037.005 Startup Items | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1037.005
+- DET-AI-0080: AI Suggested Detection - T1039 Data from Network Shared Drive | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1039
+- DET-AI-0081: AI Suggested Detection - T1040 Network Sniffing | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006, TA0007 | techniques=T1040
+- DET-AI-0082: AI Suggested Detection - T1041 Exfiltration Over C2 Channel | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0010 | techniques=T1041
+- DET-AI-0083: AI Suggested Detection - T1046 Network Service Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1046
+- DET-AI-0084: AI Suggested Detection - T1047 Windows Management Instrumentation | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1047
+- DET-AI-0085: AI Suggested Detection - T1048 Exfiltration Over Alternative Protocol | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0010 | techniques=T1048
+- DET-AI-0086: AI Suggested Detection - T1048.001 Exfiltration Over Symmetric Encrypted Non-C2 Protocol | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0010 | techniques=T1048.001
+- DET-AI-0087: AI Suggested Detection - T1048.002 Exfiltration Over Asymmetric Encrypted Non-C2 Protocol | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0010 | techniques=T1048.002
+- DET-AI-0088: AI Suggested Detection - T1048.003 Exfiltration Over Unencrypted Non-C2 Protocol | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0010 | techniques=T1048.003
+- DET-AI-0089: AI Suggested Detection - T1049 System Network Connections Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1049
+- DET-AI-0090: AI Suggested Detection - T1052 Exfiltration Over Physical Medium | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0010 | techniques=T1052
+- DET-AI-0091: AI Suggested Detection - T1052.001 Exfiltration over USB | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0010 | techniques=T1052.001
+- DET-AI-0092: AI Suggested Detection - T1053 Scheduled Task/Job | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002, TA0003, TA0004 | techniques=T1053
+- DET-AI-0093: AI Suggested Detection - T1053.002 At | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002, TA0003, TA0004 | techniques=T1053.002
+- DET-AI-0094: AI Suggested Detection - T1053.003 Cron | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002, TA0003, TA0004 | techniques=T1053.003
+- DET-AI-0095: AI Suggested Detection - T1053.005 Scheduled Task | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002, TA0003, TA0004 | techniques=T1053.005
+- DET-AI-0096: AI Suggested Detection - T1053.006 Systemd Timers | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002, TA0003, TA0004 | techniques=T1053.006
+- DET-AI-0097: AI Suggested Detection - T1053.007 Container Orchestration Job | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002, TA0003, TA0004 | techniques=T1053.007
+- DET-AI-0098: AI Suggested Detection - T1055 Process Injection | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004, TA0005 | techniques=T1055
+- DET-AI-0099: AI Suggested Detection - T1055.001 Dynamic-link Library Injection | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004, TA0005 | techniques=T1055.001
+- DET-AI-0100: AI Suggested Detection - T1055.002 Portable Executable Injection | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004, TA0005 | techniques=T1055.002
+- DET-AI-0101: AI Suggested Detection - T1055.003 Thread Execution Hijacking | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004, TA0005 | techniques=T1055.003
+- DET-AI-0102: AI Suggested Detection - T1055.004 Asynchronous Procedure Call | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004, TA0005 | techniques=T1055.004
+- DET-AI-0103: AI Suggested Detection - T1055.005 Thread Local Storage | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004, TA0005 | techniques=T1055.005
+- DET-AI-0104: AI Suggested Detection - T1055.008 Ptrace System Calls | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004, TA0005 | techniques=T1055.008
+- DET-AI-0105: AI Suggested Detection - T1055.009 Proc Memory | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004, TA0005 | techniques=T1055.009
+- DET-AI-0106: AI Suggested Detection - T1055.011 Extra Window Memory Injection | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004, TA0005 | techniques=T1055.011
+- DET-AI-0107: AI Suggested Detection - T1055.012 Process Hollowing | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004, TA0005 | techniques=T1055.012
+- DET-AI-0108: AI Suggested Detection - T1055.013 Process Doppelgänging | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004, TA0005 | techniques=T1055.013
+- DET-AI-0109: AI Suggested Detection - T1055.014 VDSO Hijacking | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004, TA0005 | techniques=T1055.014
+- DET-AI-0110: AI Suggested Detection - T1055.015 ListPlanting | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004, TA0005 | techniques=T1055.015
+- DET-AI-0111: AI Suggested Detection - T1056 Input Capture | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006, TA0009 | techniques=T1056
+- DET-AI-0112: AI Suggested Detection - T1056.001 Keylogging | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006, TA0009 | techniques=T1056.001
+- DET-AI-0113: AI Suggested Detection - T1056.002 GUI Input Capture | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006, TA0009 | techniques=T1056.002
+- DET-AI-0114: AI Suggested Detection - T1056.003 Web Portal Capture | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006, TA0009 | techniques=T1056.003
+- DET-AI-0115: AI Suggested Detection - T1056.004 Credential API Hooking | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006, TA0009 | techniques=T1056.004
+- DET-AI-0116: AI Suggested Detection - T1057 Process Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1057
+- DET-AI-0117: AI Suggested Detection - T1059 Command and Scripting Interpreter | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1059
+- DET-AI-0118: AI Suggested Detection - T1059.001 PowerShell | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1059.001
+- DET-AI-0119: AI Suggested Detection - T1059.002 AppleScript | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1059.002
+- DET-AI-0120: AI Suggested Detection - T1059.003 Windows Command Shell | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1059.003
+- DET-AI-0121: AI Suggested Detection - T1059.004 Unix Shell | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1059.004
+- DET-AI-0122: AI Suggested Detection - T1059.005 Visual Basic | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1059.005
+- DET-AI-0123: AI Suggested Detection - T1059.006 Python | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1059.006
+- DET-AI-0124: AI Suggested Detection - T1059.007 JavaScript | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1059.007
+- DET-AI-0125: AI Suggested Detection - T1059.008 Network Device CLI | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1059.008
+- DET-AI-0126: AI Suggested Detection - T1059.009 Cloud API | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1059.009
+- DET-AI-0127: AI Suggested Detection - T1059.010 AutoHotKey & AutoIT | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1059.010
+- DET-AI-0128: AI Suggested Detection - T1059.011 Lua | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1059.011
+- DET-AI-0129: AI Suggested Detection - T1059.012 Hypervisor CLI | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1059.012
+- DET-AI-0130: AI Suggested Detection - T1059.013 Container CLI/API | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1059.013
+- DET-AI-0131: AI Suggested Detection - T1068 Exploitation for Privilege Escalation | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004 | techniques=T1068
+- DET-AI-0132: AI Suggested Detection - T1069 Permission Groups Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1069
+- DET-AI-0133: AI Suggested Detection - T1069.001 Local Groups | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1069.001
+- DET-AI-0134: AI Suggested Detection - T1069.002 Domain Groups | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1069.002
+- DET-AI-0135: AI Suggested Detection - T1069.003 Cloud Groups | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1069.003
+- DET-AI-0136: AI Suggested Detection - T1070 Indicator Removal | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1070
+- DET-AI-0137: AI Suggested Detection - T1070.003 Clear Command History | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1070.003
+- DET-AI-0138: AI Suggested Detection - T1070.004 File Deletion | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1070.004
+- DET-AI-0139: AI Suggested Detection - T1070.005 Network Share Connection Removal | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1070.005
+- DET-AI-0140: AI Suggested Detection - T1070.006 Timestomp | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1070.006
+- DET-AI-0141: AI Suggested Detection - T1070.007 Clear Network Connection History and Configurations | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1070.007
+- DET-AI-0142: AI Suggested Detection - T1070.008 Clear Mailbox Data | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1070.008
+- DET-AI-0143: AI Suggested Detection - T1070.009 Clear Persistence | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1070.009
+- DET-AI-0144: AI Suggested Detection - T1070.010 Relocate Malware | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1070.010
+- DET-AI-0145: AI Suggested Detection - T1071 Application Layer Protocol | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1071
+- DET-AI-0146: AI Suggested Detection - T1071.001 Web Protocols | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1071.001
+- DET-AI-0147: AI Suggested Detection - T1071.002 File Transfer Protocols | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1071.002
+- DET-AI-0148: AI Suggested Detection - T1071.003 Mail Protocols | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1071.003
+- DET-AI-0149: AI Suggested Detection - T1071.004 DNS | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1071.004
+- DET-AI-0150: AI Suggested Detection - T1071.005 Publish/Subscribe Protocols | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1071.005
+- DET-AI-0151: AI Suggested Detection - T1072 Software Deployment Tools | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002, TA0008 | techniques=T1072
+- DET-AI-0152: AI Suggested Detection - T1074 Data Staged | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1074
+- DET-AI-0153: AI Suggested Detection - T1074.001 Local Data Staging | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1074.001
+- DET-AI-0154: AI Suggested Detection - T1074.002 Remote Data Staging | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1074.002
+- DET-AI-0155: AI Suggested Detection - T1078 Valid Accounts | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0001, TA0003, TA0004, TA0005 | techniques=T1078
+- DET-AI-0156: AI Suggested Detection - T1078.001 Default Accounts | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0001, TA0003, TA0004, TA0005 | techniques=T1078.001
+- DET-AI-0157: AI Suggested Detection - T1078.002 Domain Accounts | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0001, TA0003, TA0004, TA0005 | techniques=T1078.002
+- DET-AI-0158: AI Suggested Detection - T1078.003 Local Accounts | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0001, TA0003, TA0004, TA0005 | techniques=T1078.003
+- DET-AI-0159: AI Suggested Detection - T1078.004 Cloud Accounts | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0001, TA0003, TA0004, TA0005 | techniques=T1078.004
+- DET-AI-0160: AI Suggested Detection - T1080 Taint Shared Content | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0008 | techniques=T1080
+- DET-AI-0161: AI Suggested Detection - T1082 System Information Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1082
+- DET-AI-0162: AI Suggested Detection - T1083 File and Directory Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1083
+- DET-AI-0163: AI Suggested Detection - T1087 Account Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1087
+- DET-AI-0164: AI Suggested Detection - T1087.001 Local Account | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1087.001
+- DET-AI-0165: AI Suggested Detection - T1087.002 Domain Account | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1087.002
+- DET-AI-0166: AI Suggested Detection - T1087.003 Email Account | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1087.003
+- DET-AI-0167: AI Suggested Detection - T1087.004 Cloud Account | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1087.004
+- DET-AI-0168: AI Suggested Detection - T1090 Proxy | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1090
+- DET-AI-0169: AI Suggested Detection - T1090.001 Internal Proxy | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1090.001
+- DET-AI-0170: AI Suggested Detection - T1090.002 External Proxy | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1090.002
+- DET-AI-0171: AI Suggested Detection - T1090.003 Multi-hop Proxy | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1090.003
+- DET-AI-0172: AI Suggested Detection - T1090.004 Domain Fronting | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1090.004
+- DET-AI-0173: AI Suggested Detection - T1091 Replication Through Removable Media | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0001, TA0008 | techniques=T1091
+- DET-AI-0174: AI Suggested Detection - T1092 Communication Through Removable Media | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1092
+- DET-AI-0175: AI Suggested Detection - T1095 Non-Application Layer Protocol | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1095
+- DET-AI-0176: AI Suggested Detection - T1098 Account Manipulation | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1098
+- DET-AI-0177: AI Suggested Detection - T1098.001 Additional Cloud Credentials | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1098.001
+- DET-AI-0178: AI Suggested Detection - T1098.002 Additional Email Delegate Permissions | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1098.002
+- DET-AI-0179: AI Suggested Detection - T1098.003 Additional Cloud Roles | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1098.003
+- DET-AI-0180: AI Suggested Detection - T1098.004 SSH Authorized Keys | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1098.004
+- DET-AI-0181: AI Suggested Detection - T1098.005 Device Registration | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1098.005
+- DET-AI-0182: AI Suggested Detection - T1098.006 Additional Container Cluster Roles | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1098.006
+- DET-AI-0183: AI Suggested Detection - T1098.007 Additional Local or Domain Groups | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1098.007
+- DET-AI-0184: AI Suggested Detection - T1102 Web Service | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1102
+- DET-AI-0185: AI Suggested Detection - T1102.001 Dead Drop Resolver | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1102.001
+- DET-AI-0186: AI Suggested Detection - T1102.002 Bidirectional Communication | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1102.002
+- DET-AI-0187: AI Suggested Detection - T1102.003 One-Way Communication | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1102.003
+- DET-AI-0188: AI Suggested Detection - T1104 Multi-Stage Channels | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1104
+- DET-AI-0189: AI Suggested Detection - T1105 Ingress Tool Transfer | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1105
+- DET-AI-0190: AI Suggested Detection - T1106 Native API | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1106
+- DET-AI-0191: AI Suggested Detection - T1110 Brute Force | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1110
+- DET-AI-0192: AI Suggested Detection - T1110.001 Password Guessing | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1110.001
+- DET-AI-0193: AI Suggested Detection - T1110.002 Password Cracking | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1110.002
+- DET-AI-0194: AI Suggested Detection - T1110.003 Password Spraying | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1110.003
+- DET-AI-0195: AI Suggested Detection - T1110.004 Credential Stuffing | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1110.004
+- DET-AI-0196: AI Suggested Detection - T1111 Multi-Factor Authentication Interception | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1111
+- DET-AI-0197: AI Suggested Detection - T1112 Modify Registry | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0112 | techniques=T1112
+- DET-AI-0198: AI Suggested Detection - T1113 Screen Capture | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1113
+- DET-AI-0199: AI Suggested Detection - T1114 Email Collection | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1114
+- DET-AI-0200: AI Suggested Detection - T1114.001 Local Email Collection | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1114.001
+- DET-AI-0201: AI Suggested Detection - T1114.002 Remote Email Collection | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1114.002
+- DET-AI-0202: AI Suggested Detection - T1114.003 Email Forwarding Rule | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1114.003
+- DET-AI-0203: AI Suggested Detection - T1115 Clipboard Data | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1115
+- DET-AI-0204: AI Suggested Detection - T1119 Automated Collection | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1119
+- DET-AI-0205: AI Suggested Detection - T1120 Peripheral Device Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1120
+- DET-AI-0206: AI Suggested Detection - T1123 Audio Capture | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1123
+- DET-AI-0207: AI Suggested Detection - T1124 System Time Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1124
+- DET-AI-0208: AI Suggested Detection - T1125 Video Capture | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1125
+- DET-AI-0209: AI Suggested Detection - T1127 Trusted Developer Utilities Proxy Execution | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002, TA0005 | techniques=T1127
+- DET-AI-0210: AI Suggested Detection - T1127.001 MSBuild | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002, TA0005 | techniques=T1127.001
+- DET-AI-0211: AI Suggested Detection - T1127.002 ClickOnce | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002, TA0005 | techniques=T1127.002
+- DET-AI-0212: AI Suggested Detection - T1127.003 JamPlus | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002, TA0005 | techniques=T1127.003
+- DET-AI-0213: AI Suggested Detection - T1129 Shared Modules | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1129
+- DET-AI-0214: AI Suggested Detection - T1132 Data Encoding | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1132
+- DET-AI-0215: AI Suggested Detection - T1132.001 Standard Encoding | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1132.001
+- DET-AI-0216: AI Suggested Detection - T1132.002 Non-Standard Encoding | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1132.002
+- DET-AI-0217: AI Suggested Detection - T1133 External Remote Services | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0001, TA0003 | techniques=T1133
+- DET-AI-0218: AI Suggested Detection - T1134 Access Token Manipulation | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004, TA0005 | techniques=T1134
+- DET-AI-0219: AI Suggested Detection - T1134.001 Token Impersonation/Theft | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004, TA0005 | techniques=T1134.001
+- DET-AI-0220: AI Suggested Detection - T1134.002 Create Process with Token | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004, TA0005 | techniques=T1134.002
+- DET-AI-0221: AI Suggested Detection - T1134.003 Make and Impersonate Token | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004, TA0005 | techniques=T1134.003
+- DET-AI-0222: AI Suggested Detection - T1134.004 Parent PID Spoofing | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004, TA0005 | techniques=T1134.004
+- DET-AI-0223: AI Suggested Detection - T1134.005 SID-History Injection | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004, TA0005 | techniques=T1134.005
+- DET-AI-0224: AI Suggested Detection - T1135 Network Share Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1135
+- DET-AI-0225: AI Suggested Detection - T1136 Create Account | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003 | techniques=T1136
+- DET-AI-0226: AI Suggested Detection - T1136.001 Local Account | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003 | techniques=T1136.001
+- DET-AI-0227: AI Suggested Detection - T1136.002 Domain Account | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003 | techniques=T1136.002
+- DET-AI-0228: AI Suggested Detection - T1136.003 Cloud Account | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003 | techniques=T1136.003
+- DET-AI-0229: AI Suggested Detection - T1137 Office Application Startup | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003 | techniques=T1137
+- DET-AI-0230: AI Suggested Detection - T1137.001 Office Template Macros | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003 | techniques=T1137.001
+- DET-AI-0231: AI Suggested Detection - T1137.002 Office Test | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003 | techniques=T1137.002
+- DET-AI-0232: AI Suggested Detection - T1137.003 Outlook Forms | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003 | techniques=T1137.003
+- DET-AI-0233: AI Suggested Detection - T1137.004 Outlook Home Page | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003 | techniques=T1137.004
+- DET-AI-0234: AI Suggested Detection - T1137.005 Outlook Rules | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003 | techniques=T1137.005
+- DET-AI-0235: AI Suggested Detection - T1137.006 Add-ins | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003 | techniques=T1137.006
+- DET-AI-0236: AI Suggested Detection - T1140 Deobfuscate/Decode Files or Information | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1140
+- DET-AI-0237: AI Suggested Detection - T1176 Software Extensions | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003 | techniques=T1176
+- DET-AI-0238: AI Suggested Detection - T1176.001 Browser Extensions | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003 | techniques=T1176.001
+- DET-AI-0239: AI Suggested Detection - T1176.002 IDE Extensions | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003 | techniques=T1176.002
+- DET-AI-0240: AI Suggested Detection - T1185 Browser Session Hijacking | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1185
+- DET-AI-0241: AI Suggested Detection - T1187 Forced Authentication | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1187
+- DET-AI-0242: AI Suggested Detection - T1189 Drive-by Compromise | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0001 | techniques=T1189
+- DET-AI-0243: AI Suggested Detection - T1190 Exploit Public-Facing Application | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0001 | techniques=T1190
+- DET-AI-0244: AI Suggested Detection - T1195 Supply Chain Compromise | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0001 | techniques=T1195
+- DET-AI-0245: AI Suggested Detection - T1195.001 Compromise Software Dependencies and Development Tools | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0001 | techniques=T1195.001
+- DET-AI-0246: AI Suggested Detection - T1195.002 Compromise Software Supply Chain | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0001 | techniques=T1195.002
+- DET-AI-0247: AI Suggested Detection - T1195.003 Compromise Hardware Supply Chain | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0001 | techniques=T1195.003
+- DET-AI-0248: AI Suggested Detection - T1197 BITS Jobs | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002, TA0003, TA0005 | techniques=T1197
+- DET-AI-0249: AI Suggested Detection - T1199 Trusted Relationship | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0001 | techniques=T1199
+- DET-AI-0250: AI Suggested Detection - T1200 Hardware Additions | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0001 | techniques=T1200
+- DET-AI-0251: AI Suggested Detection - T1201 Password Policy Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1201
+- DET-AI-0252: AI Suggested Detection - T1202 Indirect Command Execution | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1202
+- DET-AI-0253: AI Suggested Detection - T1203 Exploitation for Client Execution | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1203
+- DET-AI-0254: AI Suggested Detection - T1204 User Execution | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1204
+- DET-AI-0255: AI Suggested Detection - T1204.001 Malicious Link | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1204.001
+- DET-AI-0256: AI Suggested Detection - T1204.002 Malicious File | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1204.002
+- DET-AI-0257: AI Suggested Detection - T1204.003 Malicious Image | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1204.003
+- DET-AI-0258: AI Suggested Detection - T1204.004 Malicious Copy and Paste | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1204.004
+- DET-AI-0259: AI Suggested Detection - T1204.005 Malicious Library | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1204.005
+- DET-AI-0260: AI Suggested Detection - T1205 Traffic Signaling | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0005, TA0011 | techniques=T1205
+- DET-AI-0261: AI Suggested Detection - T1205.001 Port Knocking | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0005, TA0011 | techniques=T1205.001
+- DET-AI-0262: AI Suggested Detection - T1205.002 Socket Filters | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0005, TA0011 | techniques=T1205.002
+- DET-AI-0263: AI Suggested Detection - T1207 Rogue Domain Controller | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1207
+- DET-AI-0264: AI Suggested Detection - T1210 Exploitation of Remote Services | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0008 | techniques=T1210
+- DET-AI-0265: AI Suggested Detection - T1211 Exploitation for Stealth | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1211
+- DET-AI-0266: AI Suggested Detection - T1212 Exploitation for Credential Access | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1212
+- DET-AI-0267: AI Suggested Detection - T1213 Data from Information Repositories | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1213
+- DET-AI-0268: AI Suggested Detection - T1213.001 Confluence | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1213.001
+- DET-AI-0269: AI Suggested Detection - T1213.002 Sharepoint | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1213.002
+- DET-AI-0270: AI Suggested Detection - T1213.003 Code Repositories | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1213.003
+- DET-AI-0271: AI Suggested Detection - T1213.004 Customer Relationship Management Software | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1213.004
+- DET-AI-0272: AI Suggested Detection - T1213.005 Messaging Applications | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1213.005
+- DET-AI-0273: AI Suggested Detection - T1213.006 Databases | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1213.006
+- DET-AI-0274: AI Suggested Detection - T1216 System Script Proxy Execution | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1216
+- DET-AI-0275: AI Suggested Detection - T1216.001 PubPrn | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1216.001
+- DET-AI-0276: AI Suggested Detection - T1216.002 SyncAppvPublishingServer | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1216.002
+- DET-AI-0277: AI Suggested Detection - T1217 Browser Information Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1217
+- DET-AI-0278: AI Suggested Detection - T1218 System Binary Proxy Execution | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1218
+- DET-AI-0279: AI Suggested Detection - T1218.001 Compiled HTML File | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1218.001
+- DET-AI-0280: AI Suggested Detection - T1218.002 Control Panel | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1218.002
+- DET-AI-0281: AI Suggested Detection - T1218.003 CMSTP | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1218.003
+- DET-AI-0282: AI Suggested Detection - T1218.004 InstallUtil | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1218.004
+- DET-AI-0283: AI Suggested Detection - T1218.005 Mshta | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1218.005
+- DET-AI-0284: AI Suggested Detection - T1218.007 Msiexec | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1218.007
+- DET-AI-0285: AI Suggested Detection - T1218.008 Odbcconf | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1218.008
+- DET-AI-0286: AI Suggested Detection - T1218.009 Regsvcs/Regasm | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1218.009
+- DET-AI-0287: AI Suggested Detection - T1218.010 Regsvr32 | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1218.010
+- DET-AI-0288: AI Suggested Detection - T1218.011 Rundll32 | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1218.011
+- DET-AI-0289: AI Suggested Detection - T1218.012 Verclsid | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1218.012
+- DET-AI-0290: AI Suggested Detection - T1218.013 Mavinject | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1218.013
+- DET-AI-0291: AI Suggested Detection - T1218.014 MMC | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1218.014
+- DET-AI-0292: AI Suggested Detection - T1218.015 Electron Applications | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1218.015
+- DET-AI-0293: AI Suggested Detection - T1219 Remote Access Tools | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1219
+- DET-AI-0294: AI Suggested Detection - T1219.001 IDE Tunneling | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1219.001
+- DET-AI-0295: AI Suggested Detection - T1219.002 Remote Desktop Software | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1219.002
+- DET-AI-0296: AI Suggested Detection - T1219.003 Remote Access Hardware | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1219.003
+- DET-AI-0297: AI Suggested Detection - T1220 XSL Script Processing | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1220
+- DET-AI-0298: AI Suggested Detection - T1221 Template Injection | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1221
+- DET-AI-0299: AI Suggested Detection - T1222 File and Directory Permissions Modification | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1222
+- DET-AI-0300: AI Suggested Detection - T1222.001 Windows Permissions | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1222.001
+- DET-AI-0301: AI Suggested Detection - T1222.002 Linux and Mac Permissions | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1222.002
+- DET-AI-0302: AI Suggested Detection - T1480 Execution Guardrails | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1480
+- DET-AI-0303: AI Suggested Detection - T1480.001 Environmental Keying | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1480.001
+- DET-AI-0304: AI Suggested Detection - T1480.002 Mutual Exclusion | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1480.002
+- DET-AI-0305: AI Suggested Detection - T1482 Domain Trust Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1482
+- DET-AI-0306: AI Suggested Detection - T1484 Domain or Tenant Policy Modification | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004, TA0112 | techniques=T1484
+- DET-AI-0307: AI Suggested Detection - T1484.001 Group Policy Modification | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004, TA0112 | techniques=T1484.001
+- DET-AI-0308: AI Suggested Detection - T1484.002 Trust Modification | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004, TA0112 | techniques=T1484.002
+- DET-AI-0309: AI Suggested Detection - T1485 Data Destruction | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1485
+- DET-AI-0310: AI Suggested Detection - T1485.001 Lifecycle-Triggered Deletion | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1485.001
+- DET-AI-0311: AI Suggested Detection - T1486 Data Encrypted for Impact | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1486
+- DET-AI-0312: AI Suggested Detection - T1489 Service Stop | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1489
+- DET-AI-0313: AI Suggested Detection - T1490 Inhibit System Recovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1490
+- DET-AI-0314: AI Suggested Detection - T1491 Defacement | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1491
+- DET-AI-0315: AI Suggested Detection - T1491.001 Internal Defacement | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1491.001
+- DET-AI-0316: AI Suggested Detection - T1491.002 External Defacement | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1491.002
+- DET-AI-0317: AI Suggested Detection - T1495 Firmware Corruption | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1495
+- DET-AI-0318: AI Suggested Detection - T1496 Resource Hijacking | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1496
+- DET-AI-0319: AI Suggested Detection - T1496.001 Compute Hijacking | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1496.001
+- DET-AI-0320: AI Suggested Detection - T1496.002 Bandwidth Hijacking | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1496.002
+- DET-AI-0321: AI Suggested Detection - T1496.003 SMS Pumping | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1496.003
+- DET-AI-0322: AI Suggested Detection - T1496.004 Cloud Service Hijacking | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1496.004
+- DET-AI-0323: AI Suggested Detection - T1497 Virtualization/Sandbox Evasion | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005, TA0007 | techniques=T1497
+- DET-AI-0324: AI Suggested Detection - T1497.001 System Checks | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005, TA0007 | techniques=T1497.001
+- DET-AI-0325: AI Suggested Detection - T1497.002 User Activity Based Checks | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005, TA0007 | techniques=T1497.002
+- DET-AI-0326: AI Suggested Detection - T1497.003 Time Based Checks | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005, TA0007 | techniques=T1497.003
+- DET-AI-0327: AI Suggested Detection - T1498 Network Denial of Service | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1498
+- DET-AI-0328: AI Suggested Detection - T1498.001 Direct Network Flood | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1498.001
+- DET-AI-0329: AI Suggested Detection - T1498.002 Reflection Amplification | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1498.002
+- DET-AI-0330: AI Suggested Detection - T1499 Endpoint Denial of Service | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1499
+- DET-AI-0331: AI Suggested Detection - T1499.001 OS Exhaustion Flood | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1499.001
+- DET-AI-0332: AI Suggested Detection - T1499.002 Service Exhaustion Flood | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1499.002
+- DET-AI-0333: AI Suggested Detection - T1499.003 Application Exhaustion Flood | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1499.003
+- DET-AI-0334: AI Suggested Detection - T1499.004 Application or System Exploitation | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1499.004
+- DET-AI-0335: AI Suggested Detection - T1505 Server Software Component | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003 | techniques=T1505
+- DET-AI-0336: AI Suggested Detection - T1505.001 SQL Stored Procedures | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003 | techniques=T1505.001
+- DET-AI-0337: AI Suggested Detection - T1505.002 Transport Agent | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003 | techniques=T1505.002
+- DET-AI-0338: AI Suggested Detection - T1505.003 Web Shell | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003 | techniques=T1505.003
+- DET-AI-0339: AI Suggested Detection - T1505.004 IIS Components | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003 | techniques=T1505.004
+- DET-AI-0340: AI Suggested Detection - T1505.005 Terminal Services DLL | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003 | techniques=T1505.005
+- DET-AI-0341: AI Suggested Detection - T1505.006 vSphere Installation Bundles | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003 | techniques=T1505.006
+- DET-AI-0342: AI Suggested Detection - T1518 Software Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1518
+- DET-AI-0343: AI Suggested Detection - T1518.001 Security Software Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1518.001
+- DET-AI-0344: AI Suggested Detection - T1518.002 Backup Software Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1518.002
+- DET-AI-0345: AI Suggested Detection - T1525 Implant Internal Image | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003 | techniques=T1525
+- DET-AI-0346: AI Suggested Detection - T1526 Cloud Service Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1526
+- DET-AI-0347: AI Suggested Detection - T1528 Steal Application Access Token | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1528
+- DET-AI-0348: AI Suggested Detection - T1529 System Shutdown/Reboot | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1529
+- DET-AI-0349: AI Suggested Detection - T1530 Data from Cloud Storage | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1530
+- DET-AI-0350: AI Suggested Detection - T1531 Account Access Removal | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1531
+- DET-AI-0351: AI Suggested Detection - T1534 Internal Spearphishing | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0008 | techniques=T1534
+- DET-AI-0352: AI Suggested Detection - T1535 Unused/Unsupported Cloud Regions | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1535
+- DET-AI-0353: AI Suggested Detection - T1537 Transfer Data to Cloud Account | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0010 | techniques=T1537
+- DET-AI-0354: AI Suggested Detection - T1538 Cloud Service Dashboard | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1538
+- DET-AI-0355: AI Suggested Detection - T1539 Steal Web Session Cookie | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1539
+- DET-AI-0356: AI Suggested Detection - T1542 Pre-OS Boot | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0005 | techniques=T1542
+- DET-AI-0357: AI Suggested Detection - T1542.001 System Firmware | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0005 | techniques=T1542.001
+- DET-AI-0358: AI Suggested Detection - T1542.002 Component Firmware | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0005 | techniques=T1542.002
+- DET-AI-0359: AI Suggested Detection - T1542.003 Bootkit | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0005 | techniques=T1542.003
+- DET-AI-0360: AI Suggested Detection - T1542.004 ROMMONkit | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0005 | techniques=T1542.004
+- DET-AI-0361: AI Suggested Detection - T1542.005 TFTP Boot | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0005 | techniques=T1542.005
+- DET-AI-0362: AI Suggested Detection - T1543 Create or Modify System Process | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1543
+- DET-AI-0363: AI Suggested Detection - T1543.001 Launch Agent | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1543.001
+- DET-AI-0364: AI Suggested Detection - T1543.002 Systemd Service | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1543.002
+- DET-AI-0365: AI Suggested Detection - T1543.003 Windows Service | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1543.003
+- DET-AI-0366: AI Suggested Detection - T1543.004 Launch Daemon | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1543.004
+- DET-AI-0367: AI Suggested Detection - T1543.005 Container Service | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1543.005
+- DET-AI-0368: AI Suggested Detection - T1546 Event Triggered Execution | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1546
+- DET-AI-0369: AI Suggested Detection - T1546.001 Change Default File Association | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1546.001
+- DET-AI-0370: AI Suggested Detection - T1546.002 Screensaver | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1546.002
+- DET-AI-0371: AI Suggested Detection - T1546.003 Windows Management Instrumentation Event Subscription | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1546.003
+- DET-AI-0372: AI Suggested Detection - T1546.004 Unix Shell Configuration Modification | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1546.004
+- DET-AI-0373: AI Suggested Detection - T1546.005 Trap | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1546.005
+- DET-AI-0374: AI Suggested Detection - T1546.006 LC_LOAD_DYLIB Addition | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1546.006
+- DET-AI-0375: AI Suggested Detection - T1546.007 Netsh Helper DLL | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1546.007
+- DET-AI-0376: AI Suggested Detection - T1546.008 Accessibility Features | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1546.008
+- DET-AI-0377: AI Suggested Detection - T1546.009 AppCert DLLs | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1546.009
+- DET-AI-0378: AI Suggested Detection - T1546.010 AppInit DLLs | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1546.010
+- DET-AI-0379: AI Suggested Detection - T1546.011 Application Shimming | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1546.011
+- DET-AI-0380: AI Suggested Detection - T1546.012 Image File Execution Options Injection | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1546.012
+- DET-AI-0381: AI Suggested Detection - T1546.013 PowerShell Profile | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1546.013
+- DET-AI-0382: AI Suggested Detection - T1546.014 Emond | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1546.014
+- DET-AI-0383: AI Suggested Detection - T1546.015 Component Object Model Hijacking | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1546.015
+- DET-AI-0384: AI Suggested Detection - T1546.016 Installer Packages | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1546.016
+- DET-AI-0385: AI Suggested Detection - T1546.017 Udev Rules | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1546.017
+- DET-AI-0386: AI Suggested Detection - T1546.018 Python Startup Hooks | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1546.018
+- DET-AI-0387: AI Suggested Detection - T1547 Boot or Logon Autostart Execution | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1547
+- DET-AI-0388: AI Suggested Detection - T1547.001 Registry Run Keys / Startup Folder | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1547.001
+- DET-AI-0389: AI Suggested Detection - T1547.002 Authentication Package | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1547.002
+- DET-AI-0390: AI Suggested Detection - T1547.003 Time Providers | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1547.003
+- DET-AI-0391: AI Suggested Detection - T1547.004 Winlogon Helper DLL | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1547.004
+- DET-AI-0392: AI Suggested Detection - T1547.005 Security Support Provider | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1547.005
+- DET-AI-0393: AI Suggested Detection - T1547.006 Kernel Modules and Extensions | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1547.006
+- DET-AI-0394: AI Suggested Detection - T1547.007 Re-opened Applications | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1547.007
+- DET-AI-0395: AI Suggested Detection - T1547.008 LSASS Driver | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1547.008
+- DET-AI-0396: AI Suggested Detection - T1547.009 Shortcut Modification | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1547.009
+- DET-AI-0397: AI Suggested Detection - T1547.010 Port Monitors | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1547.010
+- DET-AI-0398: AI Suggested Detection - T1547.012 Print Processors | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1547.012
+- DET-AI-0399: AI Suggested Detection - T1547.013 XDG Autostart Entries | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1547.013
+- DET-AI-0400: AI Suggested Detection - T1547.014 Active Setup | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1547.014
+- DET-AI-0401: AI Suggested Detection - T1547.015 Login Items | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0004 | techniques=T1547.015
+- DET-AI-0402: AI Suggested Detection - T1548 Abuse Elevation Control Mechanism | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004 | techniques=T1548
+- DET-AI-0403: AI Suggested Detection - T1548.001 Setuid and Setgid | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004 | techniques=T1548.001
+- DET-AI-0404: AI Suggested Detection - T1548.002 Bypass User Account Control | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004 | techniques=T1548.002
+- DET-AI-0405: AI Suggested Detection - T1548.003 Sudo and Sudo Caching | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004 | techniques=T1548.003
+- DET-AI-0406: AI Suggested Detection - T1548.004 Elevated Execution with Prompt | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004 | techniques=T1548.004
+- DET-AI-0407: AI Suggested Detection - T1548.005 Temporary Elevated Cloud Access | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004 | techniques=T1548.005
+- DET-AI-0408: AI Suggested Detection - T1548.006 TCC Manipulation | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004 | techniques=T1548.006
+- DET-AI-0409: AI Suggested Detection - T1550 Use Alternate Authentication Material | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0008 | techniques=T1550
+- DET-AI-0410: AI Suggested Detection - T1550.001 Application Access Token | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0008 | techniques=T1550.001
+- DET-AI-0411: AI Suggested Detection - T1550.002 Pass the Hash | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0008 | techniques=T1550.002
+- DET-AI-0412: AI Suggested Detection - T1550.003 Pass the Ticket | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0008 | techniques=T1550.003
+- DET-AI-0413: AI Suggested Detection - T1550.004 Web Session Cookie | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0008 | techniques=T1550.004
+- DET-AI-0414: AI Suggested Detection - T1552 Unsecured Credentials | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1552
+- DET-AI-0415: AI Suggested Detection - T1552.001 Credentials In Files | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1552.001
+- DET-AI-0416: AI Suggested Detection - T1552.002 Credentials in Registry | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1552.002
+- DET-AI-0417: AI Suggested Detection - T1552.003 Shell History | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1552.003
+- DET-AI-0418: AI Suggested Detection - T1552.004 Private Keys | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1552.004
+- DET-AI-0419: AI Suggested Detection - T1552.005 Cloud Instance Metadata API | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1552.005
+- DET-AI-0420: AI Suggested Detection - T1552.006 Group Policy Preferences | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1552.006
+- DET-AI-0421: AI Suggested Detection - T1552.007 Container API | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1552.007
+- DET-AI-0422: AI Suggested Detection - T1552.008 Chat Messages | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1552.008
+- DET-AI-0423: AI Suggested Detection - T1553 Subvert Trust Controls | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1553
+- DET-AI-0424: AI Suggested Detection - T1553.001 Gatekeeper Bypass | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1553.001
+- DET-AI-0425: AI Suggested Detection - T1553.002 Code Signing | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1553.002
+- DET-AI-0426: AI Suggested Detection - T1553.003 SIP and Trust Provider Hijacking | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1553.003
+- DET-AI-0427: AI Suggested Detection - T1553.004 Install Root Certificate | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1553.004
+- DET-AI-0428: AI Suggested Detection - T1553.005 Mark-of-the-Web Bypass | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1553.005
+- DET-AI-0429: AI Suggested Detection - T1553.006 Code Signing Policy Modification | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1553.006
+- DET-AI-0430: AI Suggested Detection - T1554 Compromise Host Software Binary | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003 | techniques=T1554
+- DET-AI-0431: AI Suggested Detection - T1555 Credentials from Password Stores | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1555
+- DET-AI-0432: AI Suggested Detection - T1555.001 Keychain | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1555.001
+- DET-AI-0433: AI Suggested Detection - T1555.002 Securityd Memory | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1555.002
+- DET-AI-0434: AI Suggested Detection - T1555.003 Credentials from Web Browsers | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1555.003
+- DET-AI-0435: AI Suggested Detection - T1555.004 Windows Credential Manager | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1555.004
+- DET-AI-0436: AI Suggested Detection - T1555.005 Password Managers | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1555.005
+- DET-AI-0437: AI Suggested Detection - T1555.006 Cloud Secrets Management Stores | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1555.006
+- DET-AI-0438: AI Suggested Detection - T1556 Modify Authentication Process | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0006, TA0112 | techniques=T1556
+- DET-AI-0439: AI Suggested Detection - T1556.001 Domain Controller Authentication | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0006, TA0112 | techniques=T1556.001
+- DET-AI-0440: AI Suggested Detection - T1556.002 Password Filter DLL | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0006, TA0112 | techniques=T1556.002
+- DET-AI-0441: AI Suggested Detection - T1556.003 Pluggable Authentication Modules | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0006, TA0112 | techniques=T1556.003
+- DET-AI-0442: AI Suggested Detection - T1556.004 Network Device Authentication | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0006, TA0112 | techniques=T1556.004
+- DET-AI-0443: AI Suggested Detection - T1556.005 Reversible Encryption | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0006, TA0112 | techniques=T1556.005
+- DET-AI-0444: AI Suggested Detection - T1556.006 Multi-Factor Authentication | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0006, TA0112 | techniques=T1556.006
+- DET-AI-0445: AI Suggested Detection - T1556.007 Hybrid Identity | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0006, TA0112 | techniques=T1556.007
+- DET-AI-0446: AI Suggested Detection - T1556.008 Network Provider DLL | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0006, TA0112 | techniques=T1556.008
+- DET-AI-0447: AI Suggested Detection - T1556.009 Conditional Access Policies | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003, TA0006, TA0112 | techniques=T1556.009
+- DET-AI-0448: AI Suggested Detection - T1557 Adversary-in-the-Middle | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006, TA0009 | techniques=T1557
+- DET-AI-0449: AI Suggested Detection - T1557.001 Name Resolution Poisoning and SMB Relay | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006, TA0009 | techniques=T1557.001
+- DET-AI-0450: AI Suggested Detection - T1557.002 ARP Cache Poisoning | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006, TA0009 | techniques=T1557.002
+- DET-AI-0451: AI Suggested Detection - T1557.003 DHCP Spoofing | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006, TA0009 | techniques=T1557.003
+- DET-AI-0452: AI Suggested Detection - T1557.004 Evil Twin | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006, TA0009 | techniques=T1557.004
+- DET-AI-0453: AI Suggested Detection - T1558 Steal or Forge Kerberos Tickets | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1558
+- DET-AI-0454: AI Suggested Detection - T1558.001 Golden Ticket | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1558.001
+- DET-AI-0455: AI Suggested Detection - T1558.002 Silver Ticket | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1558.002
+- DET-AI-0456: AI Suggested Detection - T1558.003 Kerberoasting | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1558.003
+- DET-AI-0457: AI Suggested Detection - T1558.004 AS-REP Roasting | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1558.004
+- DET-AI-0458: AI Suggested Detection - T1558.005 Ccache Files | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1558.005
+- DET-AI-0459: AI Suggested Detection - T1559 Inter-Process Communication | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1559
+- DET-AI-0460: AI Suggested Detection - T1559.001 Component Object Model | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1559.001
+- DET-AI-0461: AI Suggested Detection - T1559.002 Dynamic Data Exchange | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1559.002
+- DET-AI-0462: AI Suggested Detection - T1559.003 XPC Services | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1559.003
+- DET-AI-0463: AI Suggested Detection - T1560 Archive Collected Data | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1560
+- DET-AI-0464: AI Suggested Detection - T1560.001 Archive via Utility | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1560.001
+- DET-AI-0465: AI Suggested Detection - T1560.002 Archive via Library | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1560.002
+- DET-AI-0466: AI Suggested Detection - T1560.003 Archive via Custom Method | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1560.003
+- DET-AI-0467: AI Suggested Detection - T1561 Disk Wipe | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1561
+- DET-AI-0468: AI Suggested Detection - T1561.001 Disk Content Wipe | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1561.001
+- DET-AI-0469: AI Suggested Detection - T1561.002 Disk Structure Wipe | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1561.002
+- DET-AI-0470: AI Suggested Detection - T1563 Remote Service Session Hijacking | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0008 | techniques=T1563
+- DET-AI-0471: AI Suggested Detection - T1563.001 SSH Hijacking | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0008 | techniques=T1563.001
+- DET-AI-0472: AI Suggested Detection - T1563.002 RDP Hijacking | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0008 | techniques=T1563.002
+- DET-AI-0473: AI Suggested Detection - T1564 Hide Artifacts | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1564
+- DET-AI-0474: AI Suggested Detection - T1564.001 Hidden Files and Directories | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1564.001
+- DET-AI-0475: AI Suggested Detection - T1564.002 Hidden Users | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1564.002
+- DET-AI-0476: AI Suggested Detection - T1564.003 Hidden Window | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1564.003
+- DET-AI-0477: AI Suggested Detection - T1564.004 NTFS File Attributes | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1564.004
+- DET-AI-0478: AI Suggested Detection - T1564.005 Hidden File System | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1564.005
+- DET-AI-0479: AI Suggested Detection - T1564.006 Run Virtual Instance | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1564.006
+- DET-AI-0480: AI Suggested Detection - T1564.007 VBA Stomping | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1564.007
+- DET-AI-0481: AI Suggested Detection - T1564.008 Email Hiding Rules | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1564.008
+- DET-AI-0482: AI Suggested Detection - T1564.009 Resource Forking | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1564.009
+- DET-AI-0483: AI Suggested Detection - T1564.010 Process Argument Spoofing | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1564.010
+- DET-AI-0484: AI Suggested Detection - T1564.011 Ignore Process Interrupts | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1564.011
+- DET-AI-0485: AI Suggested Detection - T1564.012 File/Path Exclusions | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1564.012
+- DET-AI-0486: AI Suggested Detection - T1564.013 Bind Mounts | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1564.013
+- DET-AI-0487: AI Suggested Detection - T1564.014 Extended Attributes | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1564.014
+- DET-AI-0488: AI Suggested Detection - T1565 Data Manipulation | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1565
+- DET-AI-0489: AI Suggested Detection - T1565.001 Stored Data Manipulation | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1565.001
+- DET-AI-0490: AI Suggested Detection - T1565.002 Transmitted Data Manipulation | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1565.002
+- DET-AI-0491: AI Suggested Detection - T1565.003 Runtime Data Manipulation | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1565.003
+- DET-AI-0492: AI Suggested Detection - T1566 Phishing | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0001 | techniques=T1566
+- DET-AI-0493: AI Suggested Detection - T1566.001 Spearphishing Attachment | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0001 | techniques=T1566.001
+- DET-AI-0494: AI Suggested Detection - T1566.002 Spearphishing Link | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0001 | techniques=T1566.002
+- DET-AI-0495: AI Suggested Detection - T1566.003 Spearphishing via Service | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0001 | techniques=T1566.003
+- DET-AI-0496: AI Suggested Detection - T1566.004 Spearphishing Voice | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0001 | techniques=T1566.004
+- DET-AI-0497: AI Suggested Detection - T1567 Exfiltration Over Web Service | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0010 | techniques=T1567
+- DET-AI-0498: AI Suggested Detection - T1567.001 Exfiltration to Code Repository | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0010 | techniques=T1567.001
+- DET-AI-0499: AI Suggested Detection - T1567.002 Exfiltration to Cloud Storage | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0010 | techniques=T1567.002
+- DET-AI-0500: AI Suggested Detection - T1567.003 Exfiltration to Text Storage Sites | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0010 | techniques=T1567.003
+- DET-AI-0501: AI Suggested Detection - T1567.004 Exfiltration Over Webhook | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0010 | techniques=T1567.004
+- DET-AI-0502: AI Suggested Detection - T1568 Dynamic Resolution | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1568
+- DET-AI-0503: AI Suggested Detection - T1568.001 Fast Flux DNS | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1568.001
+- DET-AI-0504: AI Suggested Detection - T1568.002 Domain Generation Algorithms | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1568.002
+- DET-AI-0505: AI Suggested Detection - T1568.003 DNS Calculation | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1568.003
+- DET-AI-0506: AI Suggested Detection - T1569 System Services | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1569
+- DET-AI-0507: AI Suggested Detection - T1569.001 Launchctl | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1569.001
+- DET-AI-0508: AI Suggested Detection - T1569.002 Service Execution | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1569.002
+- DET-AI-0509: AI Suggested Detection - T1569.003 Systemctl | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1569.003
+- DET-AI-0510: AI Suggested Detection - T1570 Lateral Tool Transfer | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0008 | techniques=T1570
+- DET-AI-0511: AI Suggested Detection - T1571 Non-Standard Port | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1571
+- DET-AI-0512: AI Suggested Detection - T1572 Protocol Tunneling | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1572
+- DET-AI-0513: AI Suggested Detection - T1573 Encrypted Channel | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1573
+- DET-AI-0514: AI Suggested Detection - T1573.001 Symmetric Cryptography | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1573.001
+- DET-AI-0515: AI Suggested Detection - T1573.002 Asymmetric Cryptography | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1573.002
+- DET-AI-0516: AI Suggested Detection - T1574 Hijack Execution Flow | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002, TA0005 | techniques=T1574
+- DET-AI-0517: AI Suggested Detection - T1574.001 DLL | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002, TA0005 | techniques=T1574.001
+- DET-AI-0518: AI Suggested Detection - T1574.004 Dylib Hijacking | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002, TA0005 | techniques=T1574.004
+- DET-AI-0519: AI Suggested Detection - T1574.005 Executable Installer File Permissions Weakness | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002, TA0005 | techniques=T1574.005
+- DET-AI-0520: AI Suggested Detection - T1574.006 Dynamic Linker Hijacking | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002, TA0005 | techniques=T1574.006
+- DET-AI-0521: AI Suggested Detection - T1574.007 Path Interception by PATH Environment Variable | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002, TA0005 | techniques=T1574.007
+- DET-AI-0522: AI Suggested Detection - T1574.008 Path Interception by Search Order Hijacking | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002, TA0005 | techniques=T1574.008
+- DET-AI-0523: AI Suggested Detection - T1574.009 Path Interception by Unquoted Path | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002, TA0005 | techniques=T1574.009
+- DET-AI-0524: AI Suggested Detection - T1574.010 Services File Permissions Weakness | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002, TA0005 | techniques=T1574.010
+- DET-AI-0525: AI Suggested Detection - T1574.011 Services Registry Permissions Weakness | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002, TA0005 | techniques=T1574.011
+- DET-AI-0526: AI Suggested Detection - T1574.012 COR_PROFILER | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002, TA0005 | techniques=T1574.012
+- DET-AI-0527: AI Suggested Detection - T1574.013 KernelCallbackTable | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002, TA0005 | techniques=T1574.013
+- DET-AI-0528: AI Suggested Detection - T1574.014 AppDomainManager | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002, TA0005 | techniques=T1574.014
+- DET-AI-0529: AI Suggested Detection - T1578 Modify Cloud Compute Infrastructure | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1578
+- DET-AI-0530: AI Suggested Detection - T1578.001 Create Snapshot | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1578.001
+- DET-AI-0531: AI Suggested Detection - T1578.002 Create Cloud Instance | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1578.002
+- DET-AI-0532: AI Suggested Detection - T1578.003 Delete Cloud Instance | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1578.003
+- DET-AI-0533: AI Suggested Detection - T1578.004 Revert Cloud Instance | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1578.004
+- DET-AI-0534: AI Suggested Detection - T1578.005 Modify Cloud Compute Configurations | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1578.005
+- DET-AI-0535: AI Suggested Detection - T1580 Cloud Infrastructure Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1580
+- DET-AI-0536: AI Suggested Detection - T1583 Acquire Infrastructure | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1583
+- DET-AI-0537: AI Suggested Detection - T1583.001 Domains | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1583.001
+- DET-AI-0538: AI Suggested Detection - T1583.002 DNS Server | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1583.002
+- DET-AI-0539: AI Suggested Detection - T1583.003 Virtual Private Server | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1583.003
+- DET-AI-0540: AI Suggested Detection - T1583.004 Server | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1583.004
+- DET-AI-0541: AI Suggested Detection - T1583.005 Botnet | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1583.005
+- DET-AI-0542: AI Suggested Detection - T1583.006 Web Services | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1583.006
+- DET-AI-0543: AI Suggested Detection - T1583.007 Serverless | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1583.007
+- DET-AI-0544: AI Suggested Detection - T1583.008 Malvertising | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1583.008
+- DET-AI-0545: AI Suggested Detection - T1584 Compromise Infrastructure | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1584
+- DET-AI-0546: AI Suggested Detection - T1584.001 Domains | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1584.001
+- DET-AI-0547: AI Suggested Detection - T1584.002 DNS Server | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1584.002
+- DET-AI-0548: AI Suggested Detection - T1584.003 Virtual Private Server | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1584.003
+- DET-AI-0549: AI Suggested Detection - T1584.004 Server | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1584.004
+- DET-AI-0550: AI Suggested Detection - T1584.005 Botnet | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1584.005
+- DET-AI-0551: AI Suggested Detection - T1584.006 Web Services | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1584.006
+- DET-AI-0552: AI Suggested Detection - T1584.007 Serverless | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1584.007
+- DET-AI-0553: AI Suggested Detection - T1584.008 Network Devices | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1584.008
+- DET-AI-0554: AI Suggested Detection - T1585 Establish Accounts | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1585
+- DET-AI-0555: AI Suggested Detection - T1585.001 Social Media Accounts | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1585.001
+- DET-AI-0556: AI Suggested Detection - T1585.002 Email Accounts | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1585.002
+- DET-AI-0557: AI Suggested Detection - T1585.003 Cloud Accounts | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1585.003
+- DET-AI-0558: AI Suggested Detection - T1586 Compromise Accounts | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1586
+- DET-AI-0559: AI Suggested Detection - T1586.001 Social Media Accounts | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1586.001
+- DET-AI-0560: AI Suggested Detection - T1586.002 Email Accounts | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1586.002
+- DET-AI-0561: AI Suggested Detection - T1586.003 Cloud Accounts | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1586.003
+- DET-AI-0562: AI Suggested Detection - T1587 Develop Capabilities | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1587
+- DET-AI-0563: AI Suggested Detection - T1587.001 Malware | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1587.001
+- DET-AI-0564: AI Suggested Detection - T1587.002 Code Signing Certificates | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1587.002
+- DET-AI-0565: AI Suggested Detection - T1587.003 Digital Certificates | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1587.003
+- DET-AI-0566: AI Suggested Detection - T1587.004 Exploits | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1587.004
+- DET-AI-0567: AI Suggested Detection - T1588 Obtain Capabilities | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1588
+- DET-AI-0568: AI Suggested Detection - T1588.001 Malware | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1588.001
+- DET-AI-0569: AI Suggested Detection - T1588.002 Tool | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1588.002
+- DET-AI-0570: AI Suggested Detection - T1588.003 Code Signing Certificates | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1588.003
+- DET-AI-0571: AI Suggested Detection - T1588.004 Digital Certificates | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1588.004
+- DET-AI-0572: AI Suggested Detection - T1588.005 Exploits | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1588.005
+- DET-AI-0573: AI Suggested Detection - T1588.006 Vulnerabilities | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1588.006
+- DET-AI-0574: AI Suggested Detection - T1588.007 Artificial Intelligence | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1588.007
+- DET-AI-0575: AI Suggested Detection - T1589 Gather Victim Identity Information | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1589
+- DET-AI-0576: AI Suggested Detection - T1589.001 Credentials | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1589.001
+- DET-AI-0577: AI Suggested Detection - T1589.002 Email Addresses | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1589.002
+- DET-AI-0578: AI Suggested Detection - T1589.003 Employee Names | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1589.003
+- DET-AI-0579: AI Suggested Detection - T1590 Gather Victim Network Information | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1590
+- DET-AI-0580: AI Suggested Detection - T1590.001 Domain Properties | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1590.001
+- DET-AI-0581: AI Suggested Detection - T1590.002 DNS | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1590.002
+- DET-AI-0582: AI Suggested Detection - T1590.003 Network Trust Dependencies | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1590.003
+- DET-AI-0583: AI Suggested Detection - T1590.004 Network Topology | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1590.004
+- DET-AI-0584: AI Suggested Detection - T1590.005 IP Addresses | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1590.005
+- DET-AI-0585: AI Suggested Detection - T1590.006 Network Security Appliances | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1590.006
+- DET-AI-0586: AI Suggested Detection - T1591 Gather Victim Org Information | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1591
+- DET-AI-0587: AI Suggested Detection - T1591.001 Determine Physical Locations | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1591.001
+- DET-AI-0588: AI Suggested Detection - T1591.002 Business Relationships | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1591.002
+- DET-AI-0589: AI Suggested Detection - T1591.003 Identify Business Tempo | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1591.003
+- DET-AI-0590: AI Suggested Detection - T1591.004 Identify Roles | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1591.004
+- DET-AI-0591: AI Suggested Detection - T1592 Gather Victim Host Information | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1592
+- DET-AI-0592: AI Suggested Detection - T1592.001 Hardware | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1592.001
+- DET-AI-0593: AI Suggested Detection - T1592.002 Software | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1592.002
+- DET-AI-0594: AI Suggested Detection - T1592.003 Firmware | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1592.003
+- DET-AI-0595: AI Suggested Detection - T1592.004 Client Configurations | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1592.004
+- DET-AI-0596: AI Suggested Detection - T1593 Search Open Websites/Domains | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1593
+- DET-AI-0597: AI Suggested Detection - T1593.001 Social Media | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1593.001
+- DET-AI-0598: AI Suggested Detection - T1593.002 Search Engines | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1593.002
+- DET-AI-0599: AI Suggested Detection - T1593.003 Code Repositories | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1593.003
+- DET-AI-0600: AI Suggested Detection - T1594 Search Victim-Owned Websites | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1594
+- DET-AI-0601: AI Suggested Detection - T1595 Active Scanning | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1595
+- DET-AI-0602: AI Suggested Detection - T1595.001 Scanning IP Blocks | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1595.001
+- DET-AI-0603: AI Suggested Detection - T1595.002 Vulnerability Scanning | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1595.002
+- DET-AI-0604: AI Suggested Detection - T1595.003 Wordlist Scanning | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1595.003
+- DET-AI-0605: AI Suggested Detection - T1596 Search Open Technical Databases | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1596
+- DET-AI-0606: AI Suggested Detection - T1596.001 DNS/Passive DNS | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1596.001
+- DET-AI-0607: AI Suggested Detection - T1596.002 WHOIS | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1596.002
+- DET-AI-0608: AI Suggested Detection - T1596.003 Digital Certificates | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1596.003
+- DET-AI-0609: AI Suggested Detection - T1596.004 CDNs | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1596.004
+- DET-AI-0610: AI Suggested Detection - T1596.005 Scan Databases | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1596.005
+- DET-AI-0611: AI Suggested Detection - T1597 Search Closed Sources | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1597
+- DET-AI-0612: AI Suggested Detection - T1597.001 Threat Intel Vendors | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1597.001
+- DET-AI-0613: AI Suggested Detection - T1597.002 Purchase Technical Data | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1597.002
+- DET-AI-0614: AI Suggested Detection - T1598 Phishing for Information | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1598
+- DET-AI-0615: AI Suggested Detection - T1598.001 Spearphishing Service | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1598.001
+- DET-AI-0616: AI Suggested Detection - T1598.002 Spearphishing Attachment | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1598.002
+- DET-AI-0617: AI Suggested Detection - T1598.003 Spearphishing Link | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1598.003
+- DET-AI-0618: AI Suggested Detection - T1598.004 Spearphishing Voice | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1598.004
+- DET-AI-0619: AI Suggested Detection - T1599 Network Boundary Bridging | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1599
+- DET-AI-0620: AI Suggested Detection - T1599.001 Network Address Translation Traversal | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1599.001
+- DET-AI-0621: AI Suggested Detection - T1600 Weaken Encryption | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1600
+- DET-AI-0622: AI Suggested Detection - T1600.001 Reduce Key Space | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1600.001
+- DET-AI-0623: AI Suggested Detection - T1600.002 Disable Crypto Hardware | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1600.002
+- DET-AI-0624: AI Suggested Detection - T1601 Modify System Image | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1601
+- DET-AI-0625: AI Suggested Detection - T1601.001 Patch System Image | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1601.001
+- DET-AI-0626: AI Suggested Detection - T1601.002 Downgrade System Image | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1601.002
+- DET-AI-0627: AI Suggested Detection - T1602 Data from Configuration Repository | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1602
+- DET-AI-0628: AI Suggested Detection - T1602.001 SNMP (MIB Dump) | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1602.001
+- DET-AI-0629: AI Suggested Detection - T1602.002 Network Device Configuration Dump | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0009 | techniques=T1602.002
+- DET-AI-0630: AI Suggested Detection - T1606 Forge Web Credentials | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1606
+- DET-AI-0631: AI Suggested Detection - T1606.001 Web Cookies | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1606.001
+- DET-AI-0632: AI Suggested Detection - T1606.002 SAML Tokens | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1606.002
+- DET-AI-0633: AI Suggested Detection - T1608 Stage Capabilities | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1608
+- DET-AI-0634: AI Suggested Detection - T1608.001 Upload Malware | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1608.001
+- DET-AI-0635: AI Suggested Detection - T1608.002 Upload Tool | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1608.002
+- DET-AI-0636: AI Suggested Detection - T1608.003 Install Digital Certificate | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1608.003
+- DET-AI-0637: AI Suggested Detection - T1608.004 Drive-by Target | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1608.004
+- DET-AI-0638: AI Suggested Detection - T1608.005 Link Target | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1608.005
+- DET-AI-0639: AI Suggested Detection - T1608.006 SEO Poisoning | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1608.006
+- DET-AI-0640: AI Suggested Detection - T1609 Container Administration Command | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1609
+- DET-AI-0641: AI Suggested Detection - T1610 Deploy Container | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1610
+- DET-AI-0642: AI Suggested Detection - T1611 Escape to Host | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0004 | techniques=T1611
+- DET-AI-0643: AI Suggested Detection - T1612 Build Image on Host | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1612
+- DET-AI-0644: AI Suggested Detection - T1613 Container and Resource Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1613
+- DET-AI-0645: AI Suggested Detection - T1614 System Location Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1614
+- DET-AI-0646: AI Suggested Detection - T1614.001 System Language Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1614.001
+- DET-AI-0647: AI Suggested Detection - T1615 Group Policy Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1615
+- DET-AI-0648: AI Suggested Detection - T1619 Cloud Storage Object Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1619
+- DET-AI-0649: AI Suggested Detection - T1620 Reflective Code Loading | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1620
+- DET-AI-0650: AI Suggested Detection - T1621 Multi-Factor Authentication Request Generation | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1621
+- DET-AI-0651: AI Suggested Detection - T1622 Debugger Evasion | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005, TA0007 | techniques=T1622
+- DET-AI-0652: AI Suggested Detection - T1647 Plist File Modification | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1647
+- DET-AI-0653: AI Suggested Detection - T1648 Serverless Execution | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1648
+- DET-AI-0654: AI Suggested Detection - T1649 Steal or Forge Authentication Certificates | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0006 | techniques=T1649
+- DET-AI-0655: AI Suggested Detection - T1650 Acquire Access | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1650
+- DET-AI-0656: AI Suggested Detection - T1651 Cloud Administration Command | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1651
+- DET-AI-0657: AI Suggested Detection - T1652 Device Driver Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1652
+- DET-AI-0658: AI Suggested Detection - T1653 Power Settings | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003 | techniques=T1653
+- DET-AI-0659: AI Suggested Detection - T1654 Log Enumeration | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1654
+- DET-AI-0660: AI Suggested Detection - T1657 Financial Theft | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1657
+- DET-AI-0661: AI Suggested Detection - T1659 Content Injection | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0001, TA0011 | techniques=T1659
+- DET-AI-0662: AI Suggested Detection - T1665 Hide Infrastructure | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0011 | techniques=T1665
+- DET-AI-0663: AI Suggested Detection - T1666 Modify Cloud Resource Hierarchy | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1666
+- DET-AI-0664: AI Suggested Detection - T1667 Email Bombing | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0040 | techniques=T1667
+- DET-AI-0665: AI Suggested Detection - T1668 Exclusive Control | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003 | techniques=T1668
+- DET-AI-0666: AI Suggested Detection - T1669 Wi-Fi Networks | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0001 | techniques=T1669
+- DET-AI-0667: AI Suggested Detection - T1671 Cloud Application Integration | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0003 | techniques=T1671
+- DET-AI-0668: AI Suggested Detection - T1673 Virtual Machine Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1673
+- DET-AI-0669: AI Suggested Detection - T1674 Input Injection | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1674
+- DET-AI-0670: AI Suggested Detection - T1675 ESXi Administration Command | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1675
+- DET-AI-0671: AI Suggested Detection - T1677 Poisoned Pipeline Execution | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0002 | techniques=T1677
+- DET-AI-0672: AI Suggested Detection - T1678 Delay Execution | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1678
+- DET-AI-0673: AI Suggested Detection - T1679 Selective Exclusion | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1679
+- DET-AI-0674: AI Suggested Detection - T1680 Local Storage Discovery | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0007 | techniques=T1680
+- DET-AI-0675: AI Suggested Detection - T1681 Search Threat Vendor Data | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1681
+- DET-AI-0676: AI Suggested Detection - T1682 Query Public AI Services | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0043 | techniques=T1682
+- DET-AI-0677: AI Suggested Detection - T1683 Generate Content | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1683
+- DET-AI-0678: AI Suggested Detection - T1683.001 Written Content | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1683.001
+- DET-AI-0679: AI Suggested Detection - T1683.002 Audio-Visual Content | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0042 | techniques=T1683.002
+- DET-AI-0680: AI Suggested Detection - T1684 Social Engineering | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1684
+- DET-AI-0681: AI Suggested Detection - T1684.001 Impersonation | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1684.001
+- DET-AI-0682: AI Suggested Detection - T1684.002 Email Spoofing | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0005 | techniques=T1684.002
+- DET-AI-0683: AI Suggested Detection - T1685 Disable or Modify Tools | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1685
+- DET-AI-0684: AI Suggested Detection - T1685.001 Disable or Modify Windows Event Log | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1685.001
+- DET-AI-0685: AI Suggested Detection - T1685.002 Disable or Modify Cloud Log | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1685.002
+- DET-AI-0686: AI Suggested Detection - T1685.003 Modify or Spoof Tool UI | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1685.003
+- DET-AI-0687: AI Suggested Detection - T1685.004 Disable or Modify Linux Audit System Log | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1685.004
+- DET-AI-0688: AI Suggested Detection - T1685.005 Clear Windows Event Logs | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1685.005
+- DET-AI-0689: AI Suggested Detection - T1685.006 Clear Linux or Mac System Logs | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1685.006
+- DET-AI-0690: AI Suggested Detection - T1686 Disable or Modify System Firewall | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1686
+- DET-AI-0691: AI Suggested Detection - T1686.001 Cloud Firewall | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1686.001
+- DET-AI-0692: AI Suggested Detection - T1686.002 Network Device Firewall | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1686.002
+- DET-AI-0693: AI Suggested Detection - T1686.003 Windows Host Firewall | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1686.003
+- DET-AI-0694: AI Suggested Detection - T1687 Exploitation for Defense Impairment | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1687
+- DET-AI-0695: AI Suggested Detection - T1688 Safe Mode Boot | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1688
+- DET-AI-0696: AI Suggested Detection - T1689 Downgrade Attack | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1689
+- DET-AI-0697: AI Suggested Detection - T1690 Prevent Command History Logging | status=AI Suggested | category=application | network=both | owner=ai-assistant | tactics=TA0112 | techniques=T1690
 - DET-C-001: AWS S3 Bucket Made Public | status=provisioned | category=cloud | network=internet_connected | owner=blue-team | tactics=TA0010 | techniques=T1567.001
 - DET-E-001: Brute Force Attack – Local Windows Account | status=provisioned | category=endpoint | network=both | owner=blue-team | tactics=TA0006 | techniques=T1110.001
 - DET-E-002: Suspicious PowerShell Encoded Command Execution | status=provisioned | category=endpoint | network=internet_connected | owner=blue-team | tactics=TA0002 | techniques=T1059.001
@@ -22,29 +719,721 @@ This page is auto-generated to improve full-text search coverage for live JSON-d
 
 ## MITRE Tactics
 
-- TA0001: Initial Access | shortname=initial-access | techniques=T1078
-- TA0002: Execution | shortname=execution | techniques=T1059.001
-- TA0003: Persistence | shortname=persistence | techniques=T1078
-- TA0004: Privilege Escalation | shortname=privilege-escalation | techniques=T1078
-- TA0005: Stealth | shortname=stealth | techniques=T1078
-- TA0006: Credential Access | shortname=credential-access | techniques=T1110.001
-- TA0007: Discovery | shortname=discovery | techniques=
-- TA0008: Lateral Movement | shortname=lateral-movement | techniques=
-- TA0009: Collection | shortname=collection | techniques=
-- TA0010: Exfiltration | shortname=exfiltration | techniques=T1567.001
-- TA0011: Command and Control | shortname=command-and-control | techniques=T1071.004
-- TA0040: Impact | shortname=impact | techniques=
-- TA0042: Resource Development | shortname=resource-development | techniques=
-- TA0043: Reconnaissance | shortname=reconnaissance | techniques=
-- TA0112: Defense Impairment | shortname=defense-impairment | techniques=
+- TA0001: Initial Access | shortname=initial-access | techniques=T1078, T1078.001, T1078.002, T1078.003, T1078.004, T1091, T1133, T1189, T1190, T1195, T1195.001, T1195.002, T1195.003, T1199, T1200, T1566, T1566.001, T1566.002, T1566.003, T1566.004, T1659, T1669
+- TA0002: Execution | shortname=execution | techniques=T1047, T1053, T1053.002, T1053.003, T1053.005, T1053.006, T1053.007, T1059, T1059.001, T1059.002, T1059.003, T1059.004, T1059.005, T1059.006, T1059.007, T1059.008, T1059.009, T1059.010, T1059.011, T1059.012, T1059.013, T1072, T1106, T1127, T1127.001, T1127.002, T1127.003, T1129, T1197, T1203, T1204, T1204.001, T1204.002, T1204.003, T1204.004, T1204.005, T1559, T1559.001, T1559.002, T1559.003, T1569, T1569.001, T1569.002, T1569.003, T1574, T1574.001, T1574.004, T1574.005, T1574.006, T1574.007, T1574.008, T1574.009, T1574.010, T1574.011, T1574.012, T1574.013, T1574.014, T1609, T1610, T1648, T1651, T1674, T1675, T1677
+- TA0003: Persistence | shortname=persistence | techniques=T1037, T1037.001, T1037.002, T1037.003, T1037.004, T1037.005, T1053, T1053.002, T1053.003, T1053.005, T1053.006, T1053.007, T1078, T1078.001, T1078.002, T1078.003, T1078.004, T1098, T1098.001, T1098.002, T1098.003, T1098.004, T1098.005, T1098.006, T1098.007, T1112, T1133, T1136, T1136.001, T1136.002, T1136.003, T1137, T1137.001, T1137.002, T1137.003, T1137.004, T1137.005, T1137.006, T1176, T1176.001, T1176.002, T1197, T1205, T1205.001, T1205.002, T1505, T1505.001, T1505.002, T1505.003, T1505.004, T1505.005, T1505.006, T1525, T1542, T1542.001, T1542.002, T1542.003, T1542.004, T1542.005, T1543, T1543.001, T1543.002, T1543.003, T1543.004, T1543.005, T1546, T1546.001, T1546.002, T1546.003, T1546.004, T1546.005, T1546.006, T1546.007, T1546.008, T1546.009, T1546.010, T1546.011, T1546.012, T1546.013, T1546.014, T1546.015, T1546.016, T1546.017, T1546.018, T1547, T1547.001, T1547.002, T1547.003, T1547.004, T1547.005, T1547.006, T1547.007, T1547.008, T1547.009, T1547.010, T1547.012, T1547.013, T1547.014, T1547.015, T1554, T1556, T1556.001, T1556.002, T1556.003, T1556.004, T1556.005, T1556.006, T1556.007, T1556.008, T1556.009, T1653, T1668, T1671
+- TA0004: Privilege Escalation | shortname=privilege-escalation | techniques=T1037, T1037.001, T1037.002, T1037.003, T1037.004, T1037.005, T1053, T1053.002, T1053.003, T1053.005, T1053.006, T1053.007, T1055, T1055.001, T1055.002, T1055.003, T1055.004, T1055.005, T1055.008, T1055.009, T1055.011, T1055.012, T1055.013, T1055.014, T1055.015, T1068, T1078, T1078.001, T1078.002, T1078.003, T1078.004, T1098, T1098.001, T1098.002, T1098.003, T1098.004, T1098.005, T1098.006, T1098.007, T1134, T1134.001, T1134.002, T1134.003, T1134.004, T1134.005, T1484, T1484.001, T1484.002, T1543, T1543.001, T1543.002, T1543.003, T1543.004, T1543.005, T1546, T1546.001, T1546.002, T1546.003, T1546.004, T1546.005, T1546.006, T1546.007, T1546.008, T1546.009, T1546.010, T1546.011, T1546.012, T1546.013, T1546.014, T1546.015, T1546.016, T1546.017, T1546.018, T1547, T1547.001, T1547.002, T1547.003, T1547.004, T1547.005, T1547.006, T1547.007, T1547.008, T1547.009, T1547.010, T1547.012, T1547.013, T1547.014, T1547.015, T1548, T1548.001, T1548.002, T1548.003, T1548.004, T1548.005, T1548.006, T1611
+- TA0005: Stealth | shortname=stealth | techniques=T1006, T1014, T1027, T1027.001, T1027.002, T1027.003, T1027.004, T1027.005, T1027.006, T1027.007, T1027.008, T1027.009, T1027.010, T1027.011, T1027.012, T1027.013, T1027.014, T1027.015, T1027.016, T1027.017, T1027.018, T1036, T1036.001, T1036.002, T1036.003, T1036.004, T1036.005, T1036.006, T1036.007, T1036.008, T1036.009, T1036.010, T1036.011, T1036.012, T1055, T1055.001, T1055.002, T1055.003, T1055.004, T1055.005, T1055.008, T1055.009, T1055.011, T1055.012, T1055.013, T1055.014, T1055.015, T1070, T1070.003, T1070.004, T1070.005, T1070.006, T1070.007, T1070.008, T1070.009, T1070.010, T1078, T1078.001, T1078.002, T1078.003, T1078.004, T1127, T1127.001, T1127.002, T1127.003, T1134, T1134.001, T1134.002, T1134.003, T1134.004, T1134.005, T1140, T1197, T1202, T1205, T1205.001, T1205.002, T1211, T1216, T1216.001, T1216.002, T1218, T1218.001, T1218.002, T1218.003, T1218.004, T1218.005, T1218.007, T1218.008, T1218.009, T1218.010, T1218.011, T1218.012, T1218.013, T1218.014, T1218.015, T1220, T1221, T1480, T1480.001, T1480.002, T1497, T1497.001, T1497.002, T1497.003, T1535, T1542, T1542.001, T1542.002, T1542.003, T1542.004, T1542.005, T1564, T1564.001, T1564.002, T1564.003, T1564.004, T1564.005, T1564.006, T1564.007, T1564.008, T1564.009, T1564.010, T1564.011, T1564.012, T1564.013, T1564.014, T1574, T1574.001, T1574.004, T1574.005, T1574.006, T1574.007, T1574.008, T1574.009, T1574.010, T1574.011, T1574.012, T1574.013, T1574.014, T1612, T1620, T1622, T1678, T1679, T1684, T1684.001, T1684.002
+- TA0006: Credential Access | shortname=credential-access | techniques=T1003, T1003.001, T1003.002, T1003.003, T1003.004, T1003.005, T1003.006, T1003.007, T1003.008, T1040, T1056, T1056.001, T1056.002, T1056.003, T1056.004, T1110, T1110.001, T1110.002, T1110.003, T1110.004, T1111, T1187, T1212, T1528, T1539, T1552, T1552.001, T1552.002, T1552.003, T1552.004, T1552.005, T1552.006, T1552.007, T1552.008, T1555, T1555.001, T1555.002, T1555.003, T1555.004, T1555.005, T1555.006, T1556, T1556.001, T1556.002, T1556.003, T1556.004, T1556.005, T1556.006, T1556.007, T1556.008, T1556.009, T1557, T1557.001, T1557.002, T1557.003, T1557.004, T1558, T1558.001, T1558.002, T1558.003, T1558.004, T1558.005, T1606, T1606.001, T1606.002, T1621, T1649
+- TA0007: Discovery | shortname=discovery | techniques=T1007, T1010, T1012, T1016, T1016.001, T1016.002, T1018, T1033, T1040, T1046, T1049, T1057, T1069, T1069.001, T1069.002, T1069.003, T1082, T1083, T1087, T1087.001, T1087.002, T1087.003, T1087.004, T1120, T1124, T1135, T1201, T1217, T1482, T1497, T1497.001, T1497.002, T1497.003, T1518, T1518.001, T1518.002, T1526, T1538, T1580, T1613, T1614, T1614.001, T1615, T1619, T1622, T1652, T1654, T1673, T1680
+- TA0008: Lateral Movement | shortname=lateral-movement | techniques=T1021, T1021.001, T1021.002, T1021.003, T1021.004, T1021.005, T1021.006, T1021.007, T1021.008, T1072, T1080, T1091, T1210, T1534, T1550, T1550.001, T1550.002, T1550.003, T1550.004, T1563, T1563.001, T1563.002, T1570
+- TA0009: Collection | shortname=collection | techniques=T1005, T1025, T1039, T1056, T1056.001, T1056.002, T1056.003, T1056.004, T1074, T1074.001, T1074.002, T1113, T1114, T1114.001, T1114.002, T1114.003, T1115, T1119, T1123, T1125, T1185, T1213, T1213.001, T1213.002, T1213.003, T1213.004, T1213.005, T1213.006, T1530, T1557, T1557.001, T1557.002, T1557.003, T1557.004, T1560, T1560.001, T1560.002, T1560.003, T1602, T1602.001, T1602.002
+- TA0010: Exfiltration | shortname=exfiltration | techniques=T1011, T1011.001, T1020, T1020.001, T1029, T1030, T1041, T1048, T1048.001, T1048.002, T1048.003, T1052, T1052.001, T1537, T1567, T1567.001, T1567.002, T1567.003, T1567.004
+- TA0011: Command and Control | shortname=command-and-control | techniques=T1001, T1001.001, T1001.002, T1001.003, T1008, T1071, T1071.001, T1071.002, T1071.003, T1071.004, T1071.005, T1090, T1090.001, T1090.002, T1090.003, T1090.004, T1092, T1095, T1102, T1102.001, T1102.002, T1102.003, T1104, T1105, T1132, T1132.001, T1132.002, T1205, T1205.001, T1205.002, T1219, T1219.001, T1219.002, T1219.003, T1568, T1568.001, T1568.002, T1568.003, T1571, T1572, T1573, T1573.001, T1573.002, T1659, T1665
+- TA0040: Impact | shortname=impact | techniques=T1485, T1485.001, T1486, T1489, T1490, T1491, T1491.001, T1491.002, T1495, T1496, T1496.001, T1496.002, T1496.003, T1496.004, T1498, T1498.001, T1498.002, T1499, T1499.001, T1499.002, T1499.003, T1499.004, T1529, T1531, T1561, T1561.001, T1561.002, T1565, T1565.001, T1565.002, T1565.003, T1657, T1667
+- TA0042: Resource Development | shortname=resource-development | techniques=T1583, T1583.001, T1583.002, T1583.003, T1583.004, T1583.005, T1583.006, T1583.007, T1583.008, T1584, T1584.001, T1584.002, T1584.003, T1584.004, T1584.005, T1584.006, T1584.007, T1584.008, T1585, T1585.001, T1585.002, T1585.003, T1586, T1586.001, T1586.002, T1586.003, T1587, T1587.001, T1587.002, T1587.003, T1587.004, T1588, T1588.001, T1588.002, T1588.003, T1588.004, T1588.005, T1588.006, T1588.007, T1608, T1608.001, T1608.002, T1608.003, T1608.004, T1608.005, T1608.006, T1650, T1683, T1683.001, T1683.002
+- TA0043: Reconnaissance | shortname=reconnaissance | techniques=T1589, T1589.001, T1589.002, T1589.003, T1590, T1590.001, T1590.002, T1590.003, T1590.004, T1590.005, T1590.006, T1591, T1591.001, T1591.002, T1591.003, T1591.004, T1592, T1592.001, T1592.002, T1592.003, T1592.004, T1593, T1593.001, T1593.002, T1593.003, T1594, T1595, T1595.001, T1595.002, T1595.003, T1596, T1596.001, T1596.002, T1596.003, T1596.004, T1596.005, T1597, T1597.001, T1597.002, T1598, T1598.001, T1598.002, T1598.003, T1598.004, T1681, T1682
+- TA0112: Defense Impairment | shortname=defense-impairment | techniques=T1112, T1207, T1222, T1222.001, T1222.002, T1484, T1484.001, T1484.002, T1553, T1553.001, T1553.002, T1553.003, T1553.004, T1553.005, T1553.006, T1556, T1556.001, T1556.002, T1556.003, T1556.004, T1556.005, T1556.006, T1556.007, T1556.008, T1556.009, T1578, T1578.001, T1578.002, T1578.003, T1578.004, T1578.005, T1599, T1599.001, T1600, T1600.001, T1600.002, T1601, T1601.001, T1601.002, T1647, T1666, T1685, T1685.001, T1685.002, T1685.003, T1685.004, T1685.005, T1685.006, T1686, T1686.001, T1686.002, T1686.003, T1687, T1688, T1689, T1690
 
 ## MITRE Techniques
 
+- T1001: Data Obfuscation | tactics=TA0011 | groups=G0047 | software=S0381, S0439, S0495, S0533, S0610, S0682, S1044, S1100, S1111, S1120, S1183, S9001, S9003
+- T1001.001: Junk Data | tactics=TA0011 | groups=G0007 | software=S0016, S0022, S0134, S0435, S0514, S0559, S0574, S0588, S0626, S0632, S0647, S0682, S1020, S1047, S1164, S1246, S9020
+- T1001.002: Steganography | tactics=TA0011 | groups=G0001 | software=S0037, S0038, S0187, S0230, S0395, S0495, S0559, S0633, S0672, S1141, S1142
+- T1001.003: Protocol or Service Impersonation | tactics=TA0011 | groups=G0032, G0126, G0129 | software=S0022, S0076, S0154, S0181, S0239, S0245, S0246, S0260, S0387, S0439, S0559, S0586, S1100, S1120, S1226, S1227, S1228, S1239
+- T1003: OS Credential Dumping | tactics=TA0006 | groups=G0001, G0007, G0033, G0039, G0050, G0054, G0065, G0087, G0129, G0131, G1003, G1043, G1053 | software=S0030, S0048, S0052, S0094, S0232, S0379, S1146
+- T1003.001: LSASS Memory | tactics=TA0006 | groups=G0003, G0004, G0006, G0007, G0022, G0027, G0034, G0037, G0049, G0050, G0059, G0060, G0061, G0064, G0065, G0068, G0069, G0077, G0087, G0091, G0093, G0094, G0096, G0102, G0107, G0108, G0117, G0119, G0125, G0129, G0143, G1003, G1006, G1016, G1017, G1023, G1030, G1036, G1039, G1040, G1048, G1051, G1054, G1055 | software=S0002, S0005, S0046, S0056, S0121, S0154, S0187, S0192, S0194, S0342, S0349, S0357, S0363, S0365, S0367, S0368, S0378, S0428, S0439, S0583, S0606, S0633, S0681, S0692, S1060, S1242
+- T1003.002: Security Account Manager | tactics=TA0006 | groups=G0004, G0016, G0027, G0035, G0045, G0093, G0096, G0102, G1003, G1016, G1023, G1030, G1034, G1054 | software=S0002, S0006, S0008, S0046, S0050, S0080, S0120, S0125, S0154, S0250, S0357, S0371, S0376, S0488, S1022
+- T1003.003: NTDS | tactics=TA0006 | groups=G0004, G0007, G0034, G0035, G0037, G0045, G0096, G0102, G0114, G0117, G0125, G0129, G1004, G1015, G1016, G1017, G1051, G1054 | software=S0250, S0357, S0404, S0488
+- T1003.004: LSA Secrets | tactics=TA0006 | groups=G0004, G0016, G0027, G0035, G0045, G0049, G0064, G0069, G0077, G1003 | software=S0002, S0008, S0050, S0192, S0349, S0357, S0488, S0677, S1022
+- T1003.005: Cached Domain Credentials | tactics=TA0006 | groups=G0049, G0064, G0069, G0077 | software=S0119, S0192, S0349, S0439
+- T1003.006: DCSync | tactics=TA0006 | groups=G0129, G1004, G1006, G1053 | software=S0002
+- T1003.007: Proc Filesystem | tactics=TA0006 | groups= | software=S0179, S0349, S1109
+- T1003.008: /etc/passwd and /etc/shadow | tactics=TA0006 | groups= | software=S0349
+- T1005: Data from Local System | tactics=TA0009 | groups=G0001, G0004, G0006, G0007, G0010, G0016, G0022, G0027, G0032, G0034, G0035, G0037, G0038, G0040, G0045, G0046, G0047, G0049, G0059, G0060, G0067, G0070, G0082, G0087, G0093, G0094, G0096, G0100, G0102, G0117, G0124, G0125, G0138, G0143, G1003, G1004, G1012, G1014, G1016, G1017, G1022, G1030, G1039, G1054, G1055 | software=S0009, S0011, S0012, S0015, S0020, S0022, S0036, S0048, S0050, S0079, S0083, S0084, S0090, S0115, S0128, S0154, S0169, S0193, S0194, S0197, S0203, S0208, S0211, S0223, S0234, S0237, S0238, S0239, S0240, S0248, S0250, S0260, S0262, S0265, S0266, S0268, S0274, S0275, S0337, S0340, S0352, S0356, S0381, S0385, S0386, S0395, S0404, S0409, S0412, S0444, S0448, S0452, S0458, S0461, S0467, S0477, S0492, S0498, S0500, S0502, S0503, S0512, S0514, S0515, S0517, S0520, S0526, S0533, S0534, S0538, S0559, S0564, S0567, S0572, S0594, S0598, S0610, S0615, S0622, S0629, S0630, S0632, S0634, S0642, S0645, S0646, S0650, S0651, S0652, S0653, S0658, S0660, S0661, S0662, S0663, S0665, S0666, S0667, S0668, S0670, S0671, S0672, S0673, S0674, S0686, S0687, S0690, S0691, S0694, S0696, S1012, S1013, S1014, S1015, S1016, S1017, S1018, S1019, S1020, S1021, S1022, S1023, S1025, S1026, S1028, S1029, S1031, S1034, S1037, S1039, S1043, S1044, S1050, S1059, S1060, S1063, S1064, S1065, S1075, S1085, S1089, S1090, S1099, S1101, S1102, S1110, S1111, S1113, S1131, S1132, S1146, S1148, S1149, S1159, S1160, S1196, S1200, S1224, S1229, S1240, S1245, S1246, S9009, S9010, S9015, S9020, S9023, S9024, S9035
+- T1006: Direct Volume Access | tactics=TA0005 | groups=G1015, G1017 | software=S0404
+- T1007: System Service Discovery | tactics=TA0007 | groups=G0004, G0006, G0010, G0018, G0033, G0049, G0060, G0094, G0114, G0119, G0139, G0143, G1006, G1017, G1054 | software=S0015, S0018, S0024, S0039, S0049, S0057, S0081, S0082, S0085, S0086, S0091, S0127, S0154, S0180, S0201, S0203, S0219, S0236, S0237, S0241, S0242, S0244, S0260, S0266, S0283, S0342, S0378, S0386, S0398, S0412, S0431, S0496, S0533, S0559, S0570, S0572, S0582, S0615, S0625, S0629, S0638, S0663, S0692, S1027, S1066, S1070, S1085, S1228, S1242, S1244, S1247, S9035
+- T1008: Fallback Channels | tactics=TA0011 | groups=G0032, G0046, G0049, G0096, G1048 | software=S0017, S0021, S0022, S0023, S0034, S0044, S0051, S0058, S0059, S0062, S0084, S0085, S0089, S0117, S0211, S0236, S0260, S0265, S0266, S0269, S0348, S0376, S0377, S0401, S0409, S0444, S0476, S0495, S0501, S0504, S0512, S0534, S0538, S0586, S0603, S0610, S0622, S0629, S0666, S0668, S0674, S0699, S1019, S1020, S1039, S1084, S1172, S9010, S9023
+- T1010: Application Window Discovery | tactics=TA0007 | groups=G0032, G1001, G1017 | software=S0012, S0033, S0038, S0094, S0139, S0157, S0198, S0219, S0240, S0260, S0261, S0262, S0265, S0332, S0375, S0385, S0409, S0431, S0435, S0438, S0454, S0455, S0456, S0531, S0650, S0673, S0692, S0696, S1044, S1090, S1111, S1159, S1233, S1239
+- T1011: Exfiltration Over Other Network Medium | tactics=TA0010 | groups= | software=
+- T1011.001: Exfiltration Over Bluetooth | tactics=TA0010 | groups= | software=S0143
+- T1012: Query Registry | tactics=TA0007 | groups=G0010, G0027, G0030, G0032, G0035, G0038, G0047, G0049, G0050, G0087, G0094, G0096, G0114, G0117, G0119, G0128, G1017, G1034, G1043 | software=S0011, S0013, S0021, S0022, S0023, S0030, S0031, S0032, S0045, S0075, S0091, S0115, S0126, S0140, S0145, S0154, S0155, S0165, S0172, S0180, S0182, S0184, S0186, S0194, S0201, S0203, S0238, S0239, S0240, S0241, S0242, S0249, S0251, S0252, S0260, S0267, S0268, S0269, S0330, S0332, S0335, S0344, S0348, S0354, S0376, S0380, S0385, S0386, S0412, S0414, S0438, S0448, S0476, S0484, S0496, S0512, S0513, S0517, S0532, S0534, S0559, S0560, S0567, S0570, S0574, S0579, S0589, S0603, S0604, S0612, S0627, S0660, S0666, S0668, S0673, S0674, S0680, S0692, S1013, S1015, S1018, S1019, S1039, S1044, S1047, S1050, S1060, S1064, S1065, S1076, S1099, S1148, S1159, S1180, S1190, S1201, S1228, S1240, S1242
+- T1014: Rootkit | tactics=TA0005 | groups=G0007, G0044, G0096, G0106, G0139, G1048 | software=S0009, S0012, S0022, S0027, S0040, S0047, S0135, S0221, S0377, S0394, S0397, S0430, S0458, S0468, S0484, S0502, S0572, S0601, S0603, S0670, S1105, S1186, S1219, S1220
+- T1016: System Network Configuration Discovery | tactics=TA0007 | groups=G0004, G0006, G0010, G0012, G0018, G0019, G0022, G0027, G0030, G0032, G0035, G0038, G0045, G0049, G0050, G0059, G0069, G0073, G0081, G0093, G0094, G0096, G0102, G0114, G0121, G0125, G0126, G0128, G0129, G0139, G1001, G1006, G1008, G1009, G1015, G1016, G1017, G1036, G1040, G1043, G1044, G1051, G1054 | software=S0011, S0013, S0015, S0018, S0024, S0038, S0044, S0049, S0060, S0081, S0082, S0084, S0085, S0089, S0091, S0092, S0093, S0094, S0098, S0099, S0100, S0101, S0102, S0103, S0113, S0115, S0124, S0125, S0130, S0139, S0140, S0149, S0153, S0154, S0165, S0171, S0172, S0180, S0181, S0184, S0192, S0198, S0201, S0203, S0205, S0223, S0228, S0229, S0230, S0234, S0236, S0237, S0238, S0241, S0244, S0245, S0248, S0250, S0251, S0252, S0254, S0256, S0257, S0260, S0261, S0262, S0265, S0266, S0267, S0268, S0269, S0270, S0271, S0274, S0275, S0278, S0283, S0284, S0331, S0335, S0336, S0340, S0341, S0344, S0346, S0350, S0352, S0353, S0354, S0356, S0359, S0363, S0365, S0366, S0373, S0374, S0378, S0379, S0387, S0395, S0409, S0414, S0431, S0433, S0436, S0439, S0441, S0445, S0446, S0447, S0448, S0450, S0451, S0452, S0456, S0458, S0461, S0467, S0472, S0473, S0476, S0483, S0486, S0487, S0488, S0491, S0501, S0504, S0512, S0513, S0514, S0515, S0516, S0520, S0531, S0532, S0534, S0552, S0556, S0559, S0567, S0569, S0572, S0575, S0583, S0587, S0588, S0589, S0590, S0596, S0603, S0604, S0605, S0610, S0622, S0625, S0632, S0633, S0640, S0641, S0642, S0646, S0647, S0650, S0651, S0653, S0657, S0659, S0660, S0663, S0667, S0674, S0678, S0681, S0687, S0690, S0691, S0696, S1015, S1016, S1018, S1020, S1022, S1024, S1025, S1028, S1030, S1031, S1035, S1037, S1044, S1050, S1052, S1060, S1065, S1073, S1075, S1076, S1085, S1087, S1100, S1106, S1124, S1138, S1141, S1143, S1145, S1147, S1156, S1159, S1160, S1178, S1182, S1184, S1196, S1198, S1203, S1204, S1210, S1228, S1229, S1240, S1242, S1245, S1248, S1249, S9003, S9020, S9035
+- T1016.001: Internet Connection Discovery | tactics=TA0007 | groups=G0010, G0016, G0030, G0047, G0059, G0061, G0125, G1001, G1016, G1017, G1018 | software=S0284, S0448, S0597, S0650, S0663, S0686, S0691, S1049, S1065, S1066, S1107, S1228, S1229
+- T1016.002: Wi-Fi Discovery | tactics=TA0007 | groups=G0059 | software=S0331, S0367, S0409, S0674, S1228
+- T1018: Remote System Discovery | tactics=TA0007 | groups=G0004, G0009, G0010, G0019, G0022, G0027, G0030, G0034, G0035, G0037, G0045, G0050, G0053, G0059, G0060, G0061, G0077, G0087, G0091, G0093, G0096, G0102, G0106, G0114, G0117, G0119, G0125, G0129, G1001, G1003, G1006, G1015, G1017, G1022, G1024, G1030, G1040, G1043, G1051, G1054 | software=S0018, S0039, S0063, S0091, S0093, S0097, S0099, S0125, S0140, S0154, S0165, S0233, S0236, S0241, S0244, S0248, S0266, S0335, S0359, S0365, S0366, S0385, S0428, S0452, S0488, S0521, S0534, S0552, S0570, S0575, S0586, S0590, S0599, S0604, S0646, S0650, S0659, S0684, S0692, S0694, S0696, S0698, S1044, S1068, S1070, S1081, S1146, S1159, S1198, S1212, S1229, S1242, S9020
+- T1020: Automated Exfiltration | tactics=TA0010 | groups=G0004, G0047, G0081, G0094, G0121, G1035, G1039 | software=S0050, S0090, S0131, S0136, S0363, S0377, S0395, S0409, S0438, S0445, S0467, S0491, S0538, S0600, S0643, S1017, S1148, S1166, S1183, S1211
+- T1020.001: Traffic Duplication | tactics=TA0010 | groups= | software=
+- T1021: Remote Services | tactics=TA0008 | groups=G0102, G0143, G1003 | software=S0437, S0603, S1016, S1063
+- T1021.001: Remote Desktop Protocol | tactics=TA0008 | groups=G0001, G0006, G0022, G0032, G0035, G0037, G0040, G0045, G0046, G0049, G0051, G0059, G0061, G0065, G0080, G0087, G0091, G0094, G0096, G0102, G0108, G0114, G0117, G0119, G0143, G1001, G1015, G1016, G1017, G1023, G1024, G1030, G1032, G1043, G1051, G1054, G1055 | software=S0030, S0154, S0192, S0250, S0262, S0283, S0334, S0350, S0379, S0382, S0385, S0412, S0434, S0461, S0583, S0670, S1187
+- T1021.002: SMB/Windows Admin Shares | tactics=TA0008 | groups=G0004, G0007, G0009, G0010, G0022, G0028, G0032, G0034, G0050, G0061, G0071, G0087, G0096, G0102, G0108, G0114, G0117, G0143, G1009, G1016, G1021, G1022, G1040, G1043, G1046, G1047, G1054 | software=S0019, S0029, S0038, S0039, S0056, S0089, S0140, S0154, S0236, S0350, S0365, S0367, S0368, S0446, S0504, S0532, S0575, S0603, S0608, S0659, S0672, S0698, S1063, S1073, S1180, S1187, S1199, S1202, S1212, S1242
+- T1021.003: Distributed Component Object Model | tactics=TA0008 | groups= | software=S0154, S0363, S0692
+- T1021.004: SSH | tactics=TA0008 | groups=G0032, G0036, G0045, G0046, G0049, G0065, G0087, G0098, G0106, G0117, G0119, G0139, G0143, G1015, G1016, G1023, G1045, G1046, G1048 | software=S0154, S0363, S0599, S1187, S1242
+- T1021.005: VNC | tactics=TA0008 | groups=G0036, G0046, G0047, G0117 | software=S0266, S0279, S0412, S0484, S0670, S1014, S1160
+- T1021.006: Windows Remote Management | tactics=TA0008 | groups=G0027, G0102, G0114, G1016, G1053 | software=S0154, S0692, S1063
+- T1021.007: Cloud Services | tactics=TA0008 | groups=G0016, G1015, G1053 | software=
+- T1021.008: Direct Cloud VM Connections | tactics=TA0008 | groups= | software=
+- T1025: Data from Removable Media | tactics=TA0009 | groups=G0007, G0010, G0047, G0049 | software=S0036, S0050, S0090, S0113, S0115, S0125, S0128, S0136, S0237, S0260, S0409, S0456, S0458, S0467, S0538, S0569, S0622, S0644, S1044, S1146
+- T1027: Obfuscated Files or Information | tactics=TA0005 | groups=G0004, G0022, G0034, G0047, G0063, G0067, G0084, G0093, G0094, G0096, G0099, G0106, G0112, G0129, G0135, G1006, G1036, G1039 | software=S0012, S0013, S0030, S0045, S0051, S0062, S0063, S0070, S0091, S0094, S0117, S0124, S0126, S0132, S0137, S0138, S0140, S0142, S0148, S0150, S0154, S0167, S0182, S0187, S0189, S0196, S0197, S0198, S0201, S0203, S0229, S0240, S0242, S0244, S0259, S0260, S0264, S0265, S0266, S0283, S0331, S0332, S0335, S0336, S0353, S0354, S0355, S0369, S0377, S0384, S0393, S0428, S0434, S0445, S0446, S0447, S0449, S0458, S0461, S0465, S0467, S0476, S0482, S0499, S0500, S0502, S0504, S0511, S0512, S0516, S0517, S0518, S0559, S0560, S0562, S0575, S0584, S0593, S0594, S0596, S0598, S0604, S0605, S0607, S0608, S0615, S0622, S0623, S0624, S0625, S0627, S0632, S0633, S0635, S0640, S0641, S0647, S0650, S0651, S0659, S0660, S0681, S0690, S0694, S0696, S1018, S1025, S1028, S1035, S1039, S1053, S1063, S1064, S1066, S1085, S1086, S1090, S1099, S1104, S1105, S1111, S1118, S1130, S1138, S1149, S1161, S1183, S1213, S1226, S1228, S9007, S9008, S9015, S9020, S9025, S9027, S9033, S9037
+- T1027.001: Binary Padding | tactics=TA0005 | groups=G0002, G0016, G0040, G0060, G0065, G0094, G0126, G1024 | software=S0013, S0082, S0236, S0244, S0268, S0367, S0433, S0477, S0528, S0531, S0586, S0614, S0632, S0650, S1070, S1086, S1149, S1160, S1185, S1239, S9016, S9018
+- T1027.002: Software Packing | tactics=TA0005 | groups=G0016, G0022, G0027, G0040, G0066, G0070, G0082, G0087, G0089, G0092, G0093, G0094, G0096, G0106, G0128, G0139, G1007, G1017, G1018, G1019, G1031, G1051, G1053 | software=S0020, S0022, S0024, S0053, S0083, S0085, S0094, S0132, S0182, S0187, S0198, S0230, S0248, S0251, S0257, S0264, S0266, S0268, S0281, S0283, S0334, S0342, S0352, S0356, S0367, S0373, S0398, S0409, S0431, S0444, S0447, S0455, S0461, S0476, S0483, S0504, S0512, S0513, S0520, S0527, S0530, S0532, S0534, S0543, S0554, S0565, S0588, S0601, S0611, S0614, S0622, S0625, S0628, S0638, S0650, S0663, S0671, S0678, S0694, S0695, S1018, S1026, S1030, S1105, S1130, S1160, S1183, S1196, S1202, S1207, S1210, S1240, S9018
+- T1027.003: Steganography | tactics=TA0005 | groups=G0060, G0065, G0067, G0069, G0081, G0099, G0127, G0138, G1006 | software=S0139, S0231, S0234, S0439, S0458, S0469, S0470, S0471, S0473, S0483, S0495, S0511, S0513, S0518, S0565, S0644, S0654, S0659, S1145
+- T1027.004: Compile After Delivery | tactics=TA0005 | groups=G0047, G0069, G0106, G1041 | software=S0348, S0385, S0633, S0661, S0673, S1099
+- T1027.005: Indicator Removal from Tools | tactics=TA0005 | groups=G0009, G0010, G0022, G0040, G0049, G0093, G1048 | software=S0154, S0187, S0194, S0237, S0260, S0559, S0579, S0587, S0650
+- T1027.006: HTML Smuggling | tactics=TA0005 | groups=G0016 | software=S0634, S0650
+- T1027.007: Dynamic API Resolution | tactics=TA0005 | groups=G0032, G0094, G0129 | software=S0013, S0147, S0534, S1053, S1063, S1099, S1148, S1149, S1160, S1232, S1236, S1237, S1239, S9007, S9020, S9023, S9036
+- T1027.008: Stripped Payloads | tactics=TA0005 | groups= | software=S1048, S1153
+- T1027.009: Embedded Payloads | tactics=TA0005 | groups=G0032, G1036, G1037 | software=S0022, S0126, S0231, S0367, S0457, S0483, S0567, S0649, S1048, S1052, S1081, S1134, S1135, S1137, S1145, S1149, S1158, S1159
+- T1027.010: Command Obfuscation | tactics=TA0005 | groups=G0010, G0034, G0037, G0040, G0046, G0047, G0050, G0059, G0061, G0069, G0073, G0077, G0080, G0090, G0091, G0092, G0094, G0102, G0114, G0115, G0117, G0121, G0127, G0140, G0143, G1001, G1040, G1051, G1052 | software=S0126, S0194, S0223, S0269, S0270, S0277, S0330, S0354, S0363, S0367, S0373, S0386, S0390, S0409, S0428, S0450, S0451, S0457, S0462, S0475, S0492, S0589, S0650, S0669, S0673, S0685, S1022, S1081, S1085, S1229, S1240, S1248, S9014, S9029, S9034
+- T1027.011: Fileless Storage | tactics=TA0005 | groups=G0010, G0050 | software=S0022, S0023, S0126, S0180, S0198, S0256, S0263, S0269, S0343, S0476, S0496, S0501, S0511, S0517, S0518, S0531, S0589, S0596, S0631, S0650, S0662, S0663, S0665, S0666, S0668, S0673, S1145
+- T1027.012: LNK Icon Smuggling | tactics=TA0005 | groups=G0047, G0094, G0129 | software=S1239
+- T1027.013: Encrypted/Encoded File | tactics=TA0005 | groups=G0007, G0012, G0024, G0026, G0027, G0032, G0043, G0045, G0049, G0050, G0059, G0064, G0065, G0066, G0070, G0073, G0081, G0087, G0092, G0094, G0099, G0100, G0103, G0107, G0108, G0117, G0121, G0126, G0134, G0139, G1002, G1009, G1013, G1018, G1026, G1031, G1036, G1046, G1052, G1054 | software=S0011, S0013, S0022, S0044, S0046, S0074, S0081, S0082, S0087, S0113, S0125, S0131, S0136, S0141, S0153, S0168, S0170, S0172, S0180, S0213, S0226, S0228, S0230, S0232, S0236, S0237, S0256, S0257, S0263, S0266, S0267, S0268, S0284, S0330, S0332, S0339, S0342, S0345, S0347, S0348, S0352, S0356, S0367, S0370, S0373, S0374, S0375, S0380, S0383, S0385, S0386, S0387, S0388, S0391, S0394, S0395, S0398, S0401, S0410, S0415, S0430, S0431, S0433, S0438, S0448, S0451, S0455, S0456, S0462, S0466, S0468, S0473, S0483, S0484, S0487, S0491, S0493, S0496, S0497, S0501, S0520, S0526, S0531, S0534, S0565, S0570, S0574, S0578, S0579, S0581, S0585, S0587, S0588, S0601, S0603, S0612, S0613, S0618, S0629, S0633, S0634, S0657, S0658, S0661, S0663, S0665, S0667, S0672, S0678, S0689, S0695, S0698, S1013, S1014, S1015, S1019, S1020, S1027, S1030, S1032, S1033, S1037, S1041, S1044, S1050, S1051, S1052, S1059, S1060, S1065, S1100, S1111, S1113, S1122, S1124, S1132, S1134, S1141, S1142, S1148, S1150, S1153, S1154, S1158, S1159, S1160, S1164, S1169, S1180, S1182, S1183, S1185, S1190, S1200, S1202, S1207, S1210, S1212, S1213, S1220, S1221, S1226, S1232, S1233, S1235, S1240, S1242, S1244, S1245, S1246, S1247, S1248, S1249, S9010, S9013, S9014, S9015, S9016, S9017, S9018, S9019, S9020, S9021, S9023, S9024, S9025, S9026, S9027, S9028, S9031, S9034, S9036, S9037
+- T1027.014: Polymorphic Code | tactics=TA0005 | groups= | software=S0574
+- T1027.015: Compression | tactics=TA0005 | groups=G0021, G0027, G0047, G0065, G0090, G0094, G0103, G0126, G1018, G1055 | software=S0141, S0148, S0444, S0453, S0466, S0499, S0517, S0559, S0585, S0662, S0664, S0665, S0666, S0673, S0695, S0697, S1050, S1081, S1099, S1100, S1124, S1183, S1188, S1228, S9020
+- T1027.016: Junk Code Insertion | tactics=TA0005 | groups=G0046, G0047, G0050, G0094, G0099, G0129 | software=S0117, S0137, S0182, S0223, S0230, S0248, S0370, S0449, S0453, S0477, S0512, S0612, S0666, S1183, S9019, S9020, S9025, S9027
+- T1027.017: SVG Smuggling | tactics=TA0005 | groups= | software=
+- T1027.018: Invisible Unicode | tactics=TA0005 | groups= | software=S9010
+- T1029: Scheduled Transfer | tactics=TA0010 | groups=G0126 | software=S0045, S0126, S0154, S0200, S0211, S0223, S0265, S0283, S0395, S0409, S0444, S0596, S0667, S0668, S0696, S1019, S1100
+- T1030: Data Transfer Size Limits | tactics=TA0010 | groups=G0007, G0027, G0096, G1014, G1040 | software=S0030, S0150, S0154, S0170, S0264, S0487, S0495, S0622, S0644, S0699, S1020, S1040, S1141, S1200
+- T1033: System Owner/User Discovery | tactics=TA0007 | groups=G0004, G0022, G0027, G0032, G0034, G0035, G0038, G0040, G0046, G0047, G0049, G0050, G0051, G0059, G0061, G0067, G0069, G0073, G0081, G0082, G0087, G0093, G0094, G0096, G0102, G0112, G0114, G0121, G0125, G0128, G0143, G1001, G1006, G1014, G1017, G1035, G1036, G1046, G1051, G1054 | software=S0013, S0015, S0017, S0021, S0024, S0058, S0059, S0060, S0084, S0085, S0091, S0092, S0093, S0094, S0098, S0113, S0115, S0125, S0130, S0139, S0148, S0149, S0153, S0155, S0161, S0162, S0168, S0171, S0172, S0184, S0186, S0192, S0201, S0214, S0219, S0223, S0228, S0236, S0237, S0240, S0241, S0242, S0248, S0249, S0250, S0251, S0256, S0257, S0258, S0260, S0262, S0265, S0266, S0267, S0269, S0270, S0272, S0275, S0280, S0284, S0331, S0332, S0334, S0339, S0340, S0344, S0348, S0350, S0351, S0353, S0354, S0356, S0362, S0363, S0367, S0374, S0379, S0381, S0382, S0385, S0391, S0401, S0412, S0414, S0428, S0431, S0433, S0439, S0441, S0447, S0448, S0450, S0455, S0456, S0459, S0460, S0461, S0476, S0477, S0486, S0498, S0513, S0514, S0515, S0521, S0531, S0532, S0533, S0534, S0543, S0554, S0559, S0568, S0569, S0572, S0590, S0596, S0610, S0615, S0627, S0631, S0632, S0635, S0644, S0647, S0649, S0650, S0652, S0657, S0659, S0660, S0662, S0663, S0666, S0667, S0673, S0680, S0681, S0691, S0692, S0694, S0696, S1013, S1015, S1016, S1018, S1021, S1024, S1025, S1028, S1029, S1030, S1032, S1034, S1035, S1037, S1039, S1044, S1059, S1060, S1064, S1065, S1068, S1075, S1081, S1087, S1106, S1124, S1130, S1141, S1146, S1147, S1148, S1149, S1153, S1160, S1169, S1172, S1207, S1226, S1228, S1229, S1239, S1240, S1245, S1248, S1249, S9019, S9020, S9023, S9029, S9035, S9037
+- T1036: Masquerading | tactics=TA0005 | groups=G0007, G0034, G0045, G0049, G0050, G0060, G0068, G0112, G0127, G0128, G0133, G0139, G0140, G1003, G1007, G1016, G1030, G1035, G1046, G1052 | software=S0148, S0266, S0268, S0368, S0446, S0453, S0458, S0466, S0497, S0565, S0615, S0622, S0634, S0635, S0637, S0658, S0661, S0662, S0673, S0682, S0689, S0696, S1015, S1018, S1046, S1066, S1111, S1164, S1183, S1240, S1246, S9010, S9038
+- T1036.001: Invalid Code Signature | tactics=TA0005 | groups=G0067, G0112 | software=S0019, S0128, S0198, S0466, S0666, S1050, S1234
+- T1036.002: Right-to-Left Override | tactics=TA0005 | groups=G0004, G0029, G0060, G0098, G0137 | software=
+- T1036.003: Rename Legitimate Utilities | tactics=TA0005 | groups=G0032, G0045, G0050, G0082, G0093, G1034 | software=S0046, S1020, S1111, S1183, S9014
+- T1036.004: Masquerade Task or Service | tactics=TA0005 | groups=G0008, G0019, G0032, G0037, G0046, G0050, G0056, G0059, G0094, G0096, G0099, G0102, G0117, G0126, G0128, G0135, G0143, G1002, G1016, G1035, G1048, G1053, G1055 | software=S0013, S0022, S0118, S0126, S0140, S0148, S0169, S0178, S0180, S0223, S0236, S0259, S0260, S0261, S0343, S0345, S0352, S0356, S0367, S0409, S0410, S0438, S0439, S0444, S0449, S0471, S0491, S0495, S0527, S0533, S0534, S0538, S0554, S0581, S0588, S0601, S0607, S0629, S0630, S0647, S0663, S0668, S0688, S0690, S1011, S1013, S1027, S1031, S1033, S1042, S1044, S1052, S1064, S1070, S1090, S1130, S1134, S1140, S1217, S1226, S1239, S1242
+- T1036.005: Match Legitimate Resource Name or Location | tactics=TA0005 | groups=G0004, G0006, G0007, G0008, G0010, G0012, G0016, G0018, G0019, G0032, G0033, G0034, G0040, G0045, G0046, G0047, G0049, G0050, G0054, G0056, G0059, G0060, G0069, G0081, G0087, G0090, G0091, G0094, G0095, G0096, G0099, G0106, G0107, G0108, G0114, G0117, G0119, G0121, G0129, G0134, G0135, G0137, G0139, G0143, G1003, G1006, G1008, G1014, G1016, G1017, G1018, G1020, G1022, G1023, G1024, G1032, G1039, G1044, G1046, G1047, G1055 | software=S0013, S0015, S0058, S0070, S0072, S0081, S0083, S0084, S0085, S0086, S0125, S0128, S0136, S0138, S0141, S0144, S0171, S0182, S0187, S0188, S0196, S0198, S0259, S0260, S0268, S0269, S0274, S0334, S0340, S0353, S0356, S0386, S0395, S0402, S0409, S0410, S0445, S0446, S0455, S0458, S0459, S0468, S0475, S0477, S0482, S0483, S0484, S0491, S0493, S0495, S0496, S0500, S0501, S0520, S0526, S0531, S0533, S0534, S0559, S0560, S0562, S0565, S0567, S0578, S0582, S0583, S0586, S0587, S0588, S0589, S0595, S0600, S0605, S0606, S0622, S0625, S0629, S0630, S0631, S0652, S0661, S0665, S0666, S0668, S0669, S0687, S0690, S0694, S0697, S0698, S1011, S1014, S1017, S1018, S1019, S1022, S1032, S1034, S1035, S1039, S1041, S1042, S1046, S1050, S1063, S1070, S1074, S1078, S1084, S1090, S1099, S1100, S1124, S1153, S1158, S1160, S1182, S1183, S1196, S1197, S1201, S1203, S1217, S1228, S1236, S1237, S1238, S1239, S1242, S1248, S1249, S9008, S9015, S9019, S9030, S9031, S9033, S9034, S9035, S9037
+- T1036.006: Space after Filename | tactics=TA0005 | groups=G0082 | software=S0276
+- T1036.007: Double File Extension | tactics=TA0005 | groups=G0094, G0129 | software=S0534, S1015, S1111
+- T1036.008: Masquerade File Type | tactics=TA0005 | groups=G0129, G1017, G1043, G1054 | software=S0352, S0650, S1053, S1063, S1074, S1130, S1182, S1183, S1190, S1213, S1238, S9018, S9019
+- T1036.009: Break Process Trees | tactics=TA0005 | groups= | software=S1161, S9008
+- T1036.010: Masquerade Account Name | tactics=TA0005 | groups=G0022, G0035, G0059, G1046 | software=S0143, S0382
+- T1036.011: Overwrite Process Arguments | tactics=TA0005 | groups= | software=S1161
+- T1036.012: Browser Fingerprint | tactics=TA0005 | groups= | software=S0512
+- T1037: Boot or Logon Initialization Scripts | tactics=TA0003, TA0004 | groups=G0016, G0096, G0106, G1048 | software=S1078, S1217, S9024
+- T1037.001: Logon Script (Windows) | tactics=TA0003, TA0004 | groups=G0007, G0080 | software=S0044, S0251, S0438, S0526
+- T1037.002: Login Hook | tactics=TA0003, TA0004 | groups= | software=
+- T1037.003: Network Logon Script | tactics=TA0003, TA0004 | groups= | software=
+- T1037.004: RC Scripts | tactics=TA0003, TA0004 | groups=G0016, G1047, G1048 | software=S0278, S0394, S0687, S0690
+- T1037.005: Startup Items | tactics=TA0003, TA0004 | groups= | software=S0283
+- T1039: Data from Network Shared Drive | tactics=TA0009 | groups=G0007, G0045, G0047, G0054, G0060, G0114, G0117, G1039 | software=S0050, S0128, S0458, S0554
+- T1040: Network Sniffing | tactics=TA0006, TA0007 | groups=G0007, G0034, G0064, G0094, G0105, G1045, G1047, G1048 | software=S0019, S0174, S0357, S0363, S0367, S0378, S0443, S0587, S0590, S0661, S1154, S1186, S1203, S1204, S1206, S1224, S9024
+- T1041: Exfiltration Over C2 Channel | tactics=TA0010 | groups=G0004, G0022, G0032, G0034, G0038, G0047, G0050, G0065, G0069, G0087, G0090, G0093, G0094, G0102, G0114, G0126, G0128, G0129, G0142, G1012, G1014, G1015, G1030, G1035, G1043, G1052, G1055 | software=S0013, S0024, S0031, S0034, S0045, S0062, S0077, S0078, S0079, S0083, S0084, S0085, S0086, S0115, S0147, S0192, S0234, S0238, S0239, S0240, S0251, S0264, S0266, S0268, S0340, S0351, S0356, S0363, S0367, S0373, S0375, S0376, S0377, S0381, S0385, S0386, S0391, S0395, S0409, S0428, S0431, S0434, S0438, S0439, S0441, S0445, S0447, S0448, S0455, S0459, S0461, S0467, S0476, S0477, S0484, S0487, S0491, S0493, S0495, S0496, S0502, S0520, S0526, S0531, S0533, S0538, S0543, S0568, S0572, S0584, S0587, S0588, S0595, S0600, S0603, S0604, S0610, S0615, S0622, S0632, S0633, S0649, S0650, S0651, S0652, S0657, S0658, S0661, S0663, S0667, S0670, S0671, S0674, S0678, S0680, S0687, S0692, S0696, S1016, S1017, S1019, S1020, S1021, S1022, S1024, S1025, S1026, S1029, S1030, S1031, S1034, S1037, S1039, S1042, S1044, S1050, S1059, S1060, S1064, S1065, S1075, S1078, S1081, S1089, S1090, S1111, S1122, S1132, S1142, S1145, S1148, S1149, S1153, S1156, S1159, S1160, S1166, S1169, S1170, S1172, S1173, S1178, S1182, S1183, S1185, S1186, S1188, S1196, S1201, S1210, S1213, S1240, S1245, S1246, S1248, S1249, S9007, S9008, S9014, S9015, S9020, S9031, S9032, S9035
+- T1046: Network Service Discovery | tactics=TA0007 | groups=G0019, G0027, G0030, G0032, G0037, G0039, G0045, G0049, G0050, G0059, G0077, G0080, G0081, G0087, G0096, G0098, G0105, G0106, G0114, G0117, G0129, G0135, G0139, G1003, G1016, G1017, G1030, G1032, G1039, G1043, G1051 | software=S0020, S0061, S0089, S0093, S0117, S0125, S0154, S0192, S0233, S0250, S0260, S0341, S0363, S0374, S0378, S0412, S0458, S0532, S0572, S0583, S0590, S0598, S0601, S0604, S0608, S0683, S0692, S0698, S1063, S1073, S1081, S1144, S1146, S1180, S1185
+- T1047: Windows Management Instrumentation | tactics=TA0002 | groups=G0009, G0016, G0019, G0027, G0030, G0032, G0034, G0037, G0038, G0045, G0046, G0047, G0049, G0050, G0059, G0061, G0065, G0069, G0093, G0096, G0099, G0102, G0108, G0112, G0114, G0119, G0129, G0143, G1003, G1006, G1016, G1017, G1018, G1021, G1022, G1032, G1043, G1044, G1047, G1051, G1054, G1055 | software=S0062, S0089, S0151, S0154, S0156, S0184, S0194, S0223, S0237, S0241, S0250, S0251, S0256, S0264, S0265, S0267, S0270, S0283, S0331, S0339, S0340, S0357, S0363, S0365, S0366, S0367, S0368, S0373, S0375, S0376, S0378, S0380, S0381, S0386, S0396, S0449, S0457, S0476, S0483, S0488, S0496, S0532, S0534, S0546, S0553, S0559, S0568, S0589, S0603, S0605, S0616, S0617, S0618, S0640, S0650, S0654, S0663, S0673, S0674, S0688, S0692, S0698, S1028, S1032, S1039, S1044, S1063, S1064, S1066, S1068, S1070, S1081, S1085, S1086, S1111, S1124, S1129, S1130, S1139, S1141, S1152, S1155, S1160, S1178, S1193, S1199, S1228, S1239, S1242, S9020, S9026, S9031, S9035
+- T1048: Exfiltration Over Alternative Protocol | tactics=TA0010 | groups=G0139, G1040 | software=S0203, S0428, S0482, S0503, S0631, S0641, S0677
+- T1048.001: Exfiltration Over Symmetric Encrypted Non-C2 Protocol | tactics=TA0010 | groups= | software=
+- T1048.002: Exfiltration Over Asymmetric Encrypted Non-C2 Protocol | tactics=TA0010 | groups=G0007, G1012, G1046, G1054 | software=S0483, S1040, S9011
+- T1048.003: Exfiltration Over Unencrypted Non-C2 Protocol | tactics=TA0010 | groups=G0032, G0037, G0049, G0050, G0061, G0064, G0076, G0102, G0129, G1045, G1052 | software=S0050, S0095, S0107, S0125, S0190, S0212, S0252, S0281, S0331, S0335, S0356, S0428, S0466, S0487, S0492, S0674, S1040, S1043, S1116, S1124, S1228, S1245
+- T1049: System Network Connections Discovery | tactics=TA0007 | groups=G0004, G0006, G0010, G0018, G0022, G0027, G0030, G0032, G0033, G0034, G0045, G0049, G0050, G0059, G0069, G0081, G0082, G0093, G0096, G0114, G0129, G0135, G0138, G0139, G1001, G1006, G1016, G1017, G1022, G1023, G1032, G1047 | software=S0013, S0018, S0038, S0039, S0063, S0089, S0091, S0094, S0102, S0104, S0125, S0153, S0154, S0165, S0180, S0184, S0192, S0198, S0236, S0237, S0241, S0244, S0251, S0283, S0335, S0356, S0363, S0374, S0378, S0439, S0443, S0445, S0449, S0452, S0456, S0458, S0488, S0532, S0533, S0554, S0567, S0575, S0579, S0589, S0625, S0633, S0638, S0650, S0678, S0681, S0696, S1032, S1060, S1075, S1081, S1085, S1091, S1141, S1144, S1228
+- T1052: Exfiltration Over Physical Medium | tactics=TA0010 | groups= | software=
+- T1052.001: Exfiltration over USB | tactics=TA0010 | groups=G0081, G0129 | software=S0035, S0092, S0125, S0136, S0409
+- T1053: Scheduled Task/Job | tactics=TA0002, TA0003, TA0004 | groups= | software=S0447
+- T1053.002: At | tactics=TA0002, TA0003, TA0004 | groups=G0026, G0027, G0060 | software=S0110, S0233, S0488
+- T1053.003: Cron | tactics=TA0002, TA0003, TA0004 | groups=G0082, G0106, G1023 | software=S0163, S0198, S0341, S0374, S0401, S0468, S0504, S0587, S0588, S0599, S1107, S1198
+- T1053.005: Scheduled Task | tactics=TA0002, TA0003, TA0004 | groups=G0016, G0019, G0021, G0022, G0032, G0034, G0035, G0037, G0038, G0040, G0045, G0046, G0047, G0049, G0050, G0051, G0059, G0060, G0061, G0064, G0067, G0069, G0075, G0080, G0082, G0087, G0091, G0093, G0094, G0095, G0096, G0099, G0102, G0108, G0114, G0117, G0126, G0129, G0142, G1001, G1002, G1003, G1006, G1014, G1016, G1018, G1022, G1034, G1035, G1036, G1039, G1043, G1044, G1053 | software=S0013, S0024, S0038, S0044, S0046, S0050, S0111, S0125, S0126, S0128, S0140, S0147, S0148, S0166, S0167, S0168, S0170, S0184, S0189, S0194, S0198, S0223, S0226, S0237, S0248, S0250, S0251, S0260, S0262, S0264, S0266, S0269, S0331, S0335, S0350, S0360, S0363, S0367, S0368, S0375, S0379, S0382, S0384, S0390, S0396, S0409, S0414, S0417, S0431, S0438, S0439, S0446, S0447, S0449, S0458, S0475, S0476, S0477, S0483, S0500, S0504, S0516, S0527, S0532, S0534, S0538, S0546, S0581, S0584, S0588, S0589, S0603, S0606, S0629, S0632, S0648, S0650, S0671, S0673, S0680, S0688, S0697, S1011, S1013, S1014, S1015, S1018, S1034, S1039, S1042, S1043, S1058, S1064, S1081, S1087, S1088, S1089, S1133, S1135, S1140, S1147, S1149, S1152, S1160, S1166, S1169, S1180, S1182, S1190, S1199, S1207, S1228, S1235, S1236, S1239, S1240, S1242, S1247, S9001, S9019, S9023, S9030, S9031, S9032
+- T1053.006: Systemd Timers | tactics=TA0002, TA0003, TA0004 | groups= | software=
+- T1053.007: Container Orchestration Job | tactics=TA0002, TA0003, TA0004 | groups= | software=
+- T1055: Process Injection | tactics=TA0004, TA0005 | groups=G0010, G0047, G0050, G0067, G0068, G0080, G0082, G0091, G0094, G0096, G0102, G1018, G1023, G1043, G1047 | software=S0024, S0032, S0040, S0044, S0084, S0093, S0154, S0168, S0176, S0198, S0201, S0206, S0226, S0240, S0247, S0260, S0266, S0331, S0332, S0347, S0348, S0363, S0376, S0378, S0380, S0398, S0436, S0438, S0446, S0469, S0470, S0473, S0496, S0533, S0534, S0554, S0561, S0579, S0581, S0596, S0614, S0633, S0650, S0660, S0664, S0670, S0681, S0692, S0695, S1039, S1050, S1059, S1065, S1074, S1081, S1100, S1105, S1122, S1159, S1181, S9019, S9020, S9021, S9023, S9025
+- T1055.001: Dynamic-link Library Injection | tactics=TA0004, TA0005 | groups=G0010, G0024, G0032, G0065, G0081, G0092, G0094, G0102, G0135, G1026 | software=S0011, S0012, S0018, S0021, S0022, S0024, S0038, S0055, S0081, S0082, S0089, S0125, S0126, S0135, S0154, S0167, S0182, S0192, S0194, S0241, S0250, S0265, S0273, S0335, S0367, S0412, S0449, S0455, S0456, S0457, S0458, S0460, S0461, S0467, S0484, S0501, S0575, S0576, S0581, S0596, S0603, S0613, S0615, S0666, S0681, S1018, S1026, S1027, S1039, S1044, S1066, S1081, S1210, S1229, S1239, S1242
+- T1055.002: Portable Executable Injection | tactics=TA0004, TA0005 | groups=G0078, G0106 | software=S0030, S0260, S0330, S0342, S0681, S1063, S1138, S1145, S1158, S1229, S9024, S9037
+- T1055.003: Thread Execution Hijacking | tactics=TA0004, TA0005 | groups= | software=S0094, S0168, S0579, S1145
+- T1055.004: Asynchronous Procedure Call | tactics=TA0004, TA0005 | groups=G0061 | software=S0199, S0260, S0438, S0483, S0484, S0517, S1018, S1039, S1081, S1085, S1207, S9018
+- T1055.005: Thread Local Storage | tactics=TA0004, TA0005 | groups= | software=S0386, S1237
+- T1055.008: Ptrace System Calls | tactics=TA0004, TA0005 | groups= | software=S1109
+- T1055.009: Proc Memory | tactics=TA0004, TA0005 | groups= | software=
+- T1055.011: Extra Window Memory Injection | tactics=TA0004, TA0005 | groups= | software=S0091, S0177
+- T1055.012: Process Hollowing | tactics=TA0004, TA0005 | groups=G0027, G0040, G0045, G0078, G0094, G0099, G1018, G1043 | software=S0038, S0127, S0128, S0154, S0189, S0198, S0226, S0229, S0234, S0266, S0331, S0344, S0354, S0367, S0373, S0386, S0447, S0483, S0534, S0567, S0650, S0660, S0662, S0689, S1018, S1065, S1086, S1111, S1130, S1138, S1207, S1213, S9012, S9016, S9018
+- T1055.013: Process Doppelgänging | tactics=TA0004, TA0005 | groups=G0077 | software=S0242, S0534
+- T1055.014: VDSO Hijacking | tactics=TA0004, TA0005 | groups= | software=
+- T1055.015: ListPlanting | tactics=TA0004, TA0005 | groups= | software=S0260
+- T1056: Input Capture | tactics=TA0006, TA0009 | groups=G0087, G1044, G1046 | software=S0381, S0631, S0641, S1059, S1060, S1131, S1245
+- T1056.001: Keylogging | tactics=TA0006, TA0009 | groups=G0004, G0007, G0012, G0022, G0027, G0032, G0034, G0043, G0045, G0049, G0050, G0054, G0059, G0068, G0082, G0085, G0087, G0094, G0096, G0130, G0131, G1001, G1016, G1017, G1023, G1044 | software=S0004, S0012, S0013, S0017, S0018, S0019, S0021, S0023, S0030, S0032, S0033, S0038, S0045, S0050, S0058, S0062, S0070, S0072, S0076, S0088, S0089, S0090, S0094, S0113, S0115, S0125, S0128, S0130, S0148, S0149, S0152, S0154, S0161, S0167, S0170, S0187, S0192, S0194, S0198, S0201, S0213, S0234, S0240, S0247, S0248, S0253, S0257, S0260, S0261, S0262, S0279, S0282, S0283, S0330, S0331, S0332, S0334, S0336, S0337, S0338, S0339, S0342, S0348, S0356, S0363, S0373, S0375, S0378, S0379, S0381, S0385, S0387, S0409, S0410, S0412, S0414, S0428, S0434, S0437, S0438, S0439, S0447, S0454, S0455, S0467, S0526, S0531, S0533, S0567, S0569, S0593, S0595, S0622, S0625, S0643, S0649, S0650, S0652, S0660, S0662, S0670, S0673, S0692, S1012, S1016, S1044, S1050, S1059, S1066, S1087, S1090, S1111, S1122, S1146, S1149, S1159, S1207, S1226, S1233, S1235, S1239, S1245, S1249, S9013, S9017, S9020
+- T1056.002: GUI Input Capture | tactics=TA0006, TA0009 | groups=G0085, G1039 | software=S0274, S0276, S0278, S0279, S0281, S0455, S0482, S0658, S0692, S1122, S1153, S9032, S9036
+- T1056.003: Web Portal Capture | tactics=TA0006, TA0009 | groups=G0094, G1035 | software=S1022, S1116
+- T1056.004: Credential API Hooking | tactics=TA0006, TA0009 | groups=G0068 | software=S0182, S0251, S0266, S0330, S0353, S0363, S0386, S0412, S0416, S0484, S1154
+- T1057: Process Discovery | tactics=TA0007 | groups=G0004, G0006, G0007, G0009, G0010, G0012, G0021, G0022, G0032, G0033, G0038, G0044, G0046, G0047, G0049, G0059, G0067, G0069, G0081, G0082, G0094, G0100, G0106, G0112, G0114, G0121, G0125, G0126, G0129, G0138, G0139, G1001, G1006, G1017, G1022, G1023, G1040, G1048, G1051, G1053, G1054 | software=S0011, S0013, S0015, S0017, S0018, S0021, S0022, S0030, S0031, S0032, S0034, S0038, S0044, S0045, S0049, S0057, S0059, S0062, S0063, S0064, S0065, S0069, S0079, S0081, S0088, S0089, S0091, S0093, S0094, S0115, S0125, S0127, S0139, S0141, S0142, S0144, S0148, S0149, S0151, S0154, S0161, S0162, S0170, S0180, S0182, S0184, S0192, S0194, S0198, S0201, S0203, S0208, S0211, S0216, S0219, S0223, S0229, S0236, S0237, S0238, S0239, S0240, S0241, S0242, S0244, S0247, S0248, S0249, S0251, S0252, S0254, S0256, S0257, S0260, S0265, S0266, S0267, S0268, S0270, S0271, S0273, S0277, S0278, S0283, S0330, S0331, S0332, S0333, S0334, S0335, S0344, S0345, S0346, S0348, S0351, S0355, S0356, S0363, S0367, S0373, S0385, S0386, S0393, S0396, S0409, S0410, S0412, S0414, S0428, S0431, S0434, S0435, S0436, S0441, S0445, S0446, S0448, S0449, S0451, S0452, S0455, S0456, S0458, S0460, S0461, S0464, S0467, S0468, S0472, S0473, S0476, S0477, S0482, S0484, S0486, S0491, S0497, S0501, S0503, S0512, S0516, S0517, S0528, S0531, S0532, S0533, S0534, S0559, S0562, S0567, S0572, S0575, S0579, S0581, S0582, S0586, S0595, S0596, S0599, S0600, S0605, S0606, S0607, S0611, S0615, S0617, S0622, S0625, S0626, S0627, S0629, S0630, S0638, S0640, S0644, S0650, S0652, S0657, S0659, S0660, S0661, S0662, S0663, S0664, S0666, S0670, S0672, S0674, S0681, S0687, S0688, S0692, S0693, S0694, S0695, S0696, S1013, S1016, S1017, S1018, S1027, S1039, S1044, S1048, S1050, S1053, S1059, S1060, S1063, S1064, S1065, S1066, S1072, S1073, S1075, S1078, S1081, S1085, S1087, S1090, S1100, S1105, S1107, S1111, S1114, S1122, S1124, S1129, S1130, S1132, S1133, S1139, S1141, S1146, S1147, S1149, S1153, S1159, S1160, S1164, S1178, S1185, S1191, S1199, S1202, S1210, S1212, S1228, S1229, S1230, S1233, S1239, S1242, S1244, S1245, S1247, S9001, S9012, S9015, S9019, S9020, S9023, S9024, S9031, S9032, S9035, S9036
+- T1059: Command and Scripting Interpreter | tactics=TA0002 | groups=G0004, G0035, G0037, G0038, G0046, G0049, G0050, G0053, G0067, G0073, G0087, G0107, G0117, G0124, G0129, G1031, G1035 | software=S0023, S0032, S0167, S0219, S0234, S0330, S0334, S0363, S0374, S0434, S0460, S0486, S0487, S0598, S0618, S0695, S1110, S1130, S1151, S1154, S1192, S1227, S9032
 - T1059.001: PowerShell | tactics=TA0002 | groups=G0007, G0009, G0010, G0016, G0021, G0022, G0027, G0032, G0033, G0034, G0035, G0037, G0038, G0040, G0045, G0046, G0047, G0049, G0050, G0051, G0052, G0059, G0060, G0061, G0062, G0064, G0065, G0069, G0073, G0076, G0078, G0079, G0080, G0082, G0084, G0087, G0090, G0091, G0092, G0093, G0094, G0096, G0099, G0100, G0102, G0105, G0108, G0114, G0115, G0117, G0119, G0121, G0125, G0129, G0131, G0133, G0139, G0140, G0142, G0143, G1001, G1003, G1006, G1012, G1015, G1016, G1017, G1018, G1019, G1021, G1022, G1023, G1024, G1031, G1034, G1035, G1039, G1040, G1043, G1044, G1046, G1048, G1051, G1053, G1055 | software=S0037, S0053, S0126, S0129, S0145, S0150, S0151, S0154, S0170, S0184, S0186, S0192, S0194, S0196, S0198, S0223, S0234, S0241, S0250, S0256, S0266, S0269, S0270, S0273, S0330, S0341, S0352, S0354, S0356, S0360, S0363, S0367, S0371, S0379, S0381, S0382, S0385, S0386, S0387, S0389, S0390, S0393, S0417, S0441, S0447, S0450, S0457, S0476, S0488, S0491, S0496, S0499, S0511, S0512, S0514, S0517, S0521, S0526, S0534, S0546, S0553, S0554, S0583, S0591, S0613, S0622, S0625, S0633, S0648, S0649, S0650, S0660, S0669, S0670, S0673, S0674, S0677, S0679, S0680, S0681, S0685, S0688, S0689, S0692, S0695, S1012, S1018, S1023, S1024, S1030, S1032, S1039, S1046, S1058, S1060, S1065, S1070, S1081, S1085, S1086, S1111, S1117, S1129, S1132, S1138, S1140, S1141, S1149, S1151, S1155, S1173, S1178, S1183, S1193, S1196, S1199, S1201, S1202, S1212, S1213, S1229, S1242, S1244, S1245, S9001, S9008, S9019, S9032, S9034, S9036, S9039
+- T1059.002: AppleScript | tactics=TA0002 | groups= | software=S0281, S0482, S0595, S1048, S1153, S9010
+- T1059.003: Windows Command Shell | tactics=TA0002 | groups=G0004, G0006, G0007, G0010, G0012, G0018, G0022, G0026, G0027, G0028, G0032, G0035, G0037, G0039, G0040, G0045, G0046, G0047, G0049, G0050, G0051, G0054, G0059, G0060, G0061, G0067, G0069, G0070, G0075, G0078, G0080, G0081, G0082, G0090, G0091, G0092, G0093, G0094, G0095, G0096, G0102, G0108, G0114, G0117, G0119, G0125, G0126, G0127, G0128, G0129, G0133, G0139, G0140, G0143, G1013, G1016, G1017, G1021, G1022, G1023, G1030, G1031, G1032, G1035, G1037, G1039, G1040, G1043, G1046, G1048, G1051, G1052, G1054 | software=S0004, S0009, S0011, S0012, S0013, S0015, S0017, S0020, S0022, S0025, S0030, S0031, S0034, S0044, S0045, S0046, S0053, S0065, S0068, S0069, S0070, S0071, S0074, S0080, S0082, S0083, S0084, S0085, S0086, S0087, S0088, S0094, S0106, S0109, S0115, S0117, S0124, S0126, S0128, S0132, S0139, S0142, S0146, S0147, S0148, S0149, S0153, S0154, S0156, S0158, S0159, S0164, S0170, S0171, S0180, S0184, S0185, S0186, S0187, S0198, S0199, S0200, S0201, S0202, S0206, S0211, S0221, S0229, S0232, S0233, S0234, S0237, S0238, S0239, S0241, S0243, S0244, S0246, S0247, S0249, S0250, S0251, S0253, S0254, S0256, S0258, S0259, S0260, S0262, S0263, S0264, S0265, S0266, S0267, S0268, S0269, S0270, S0271, S0275, S0280, S0283, S0284, S0330, S0332, S0333, S0334, S0336, S0338, S0339, S0342, S0343, S0345, S0346, S0347, S0348, S0350, S0354, S0356, S0360, S0363, S0367, S0369, S0370, S0373, S0375, S0376, S0379, S0381, S0382, S0385, S0387, S0389, S0390, S0391, S0394, S0395, S0396, S0400, S0412, S0414, S0428, S0431, S0435, S0436, S0439, S0444, S0446, S0447, S0448, S0449, S0451, S0452, S0453, S0455, S0457, S0459, S0461, S0462, S0464, S0469, S0470, S0475, S0477, S0481, S0493, S0495, S0496, S0500, S0504, S0514, S0520, S0526, S0532, S0533, S0534, S0543, S0546, S0547, S0553, S0554, S0564, S0567, S0572, S0575, S0576, S0582, S0586, S0588, S0593, S0594, S0610, S0611, S0612, S0623, S0625, S0629, S0630, S0631, S0632, S0634, S0638, S0639, S0643, S0647, S0650, S0651, S0652, S0653, S0660, S0662, S0666, S0668, S0669, S0670, S0673, S0674, S0681, S0688, S0689, S0692, S0696, S0697, S0698, S1011, S1014, S1015, S1017, S1018, S1019, S1020, S1021, S1028, S1029, S1030, S1031, S1032, S1034, S1035, S1037, S1039, S1043, S1044, S1049, S1050, S1052, S1060, S1063, S1065, S1066, S1068, S1070, S1081, S1085, S1087, S1089, S1099, S1111, S1129, S1130, S1132, S1135, S1141, S1145, S1147, S1150, S1155, S1156, S1159, S1160, S1168, S1170, S1172, S1182, S1183, S1190, S1191, S1193, S1196, S1199, S1211, S1212, S1228, S1229, S1239, S1240, S1242, S1244, S1247, S9001, S9002, S9007, S9018, S9029, S9032, S9035
+- T1059.004: Unix Shell | tactics=TA0002 | groups=G0096, G0106, G0139, G0143, G1015, G1017, G1041, G1047, G1048, G1052 | software=S0021, S0077, S0198, S0220, S0265, S0279, S0352, S0369, S0377, S0401, S0402, S0410, S0451, S0466, S0468, S0482, S0492, S0502, S0504, S0584, S0587, S0599, S0600, S0601, S0641, S0647, S0658, S0690, S1016, S1105, S1107, S1108, S1109, S1114, S1123, S1153, S1161, S1163, S1184, S1198, S1203, S1217, S1219, S1222, S1224, S9008, S9015
+- T1059.005: Visual Basic | tactics=TA0002 | groups=G0010, G0021, G0032, G0034, G0040, G0046, G0047, G0049, G0050, G0059, G0060, G0062, G0064, G0065, G0067, G0069, G0075, G0078, G0080, G0082, G0085, G0087, G0090, G0091, G0092, G0094, G0095, G0099, G0100, G0112, G0121, G0126, G0129, G0134, G0140, G0142, G1001, G1006, G1008, G1016, G1018, G1026, G1039, G1044, G1052, G1054 | software=S0147, S0154, S0170, S0198, S0223, S0226, S0228, S0234, S0240, S0244, S0250, S0263, S0264, S0268, S0269, S0283, S0332, S0336, S0341, S0343, S0352, S0367, S0373, S0375, S0380, S0386, S0387, S0389, S0414, S0428, S0441, S0442, S0447, S0455, S0458, S0475, S0477, S0483, S0496, S0528, S0530, S0531, S0559, S0582, S0585, S0589, S0631, S0648, S0650, S0669, S0679, S0689, S0695, S0696, S1014, S1018, S1030, S1037, S1039, S1064, S1086, S1111, S1122, S1132, S1142, S1149, S1178, S1193, S9001, S9020
+- T1059.006: Python | tactics=TA0002 | groups=G0010, G0016, G0035, G0060, G0067, G0069, G0087, G0094, G0095, G0106, G0128, G0131, G1006, G1021, G1039, G1048, G1052, G1055 | software=S0154, S0192, S0196, S0234, S0276, S0332, S0369, S0374, S0377, S0387, S0409, S0428, S0459, S0482, S0492, S0547, S0581, S0583, S0631, S0647, S0681, S0692, S0695, S1032, S1035, S1120, S1164, S1187, S1189, S1213, S1217, S1218, S1223, S1245, S9013, S9024, S9035
+- T1059.007: JavaScript | tactics=TA0002 | groups=G0010, G0021, G0037, G0046, G0050, G0069, G0077, G0080, G0091, G0092, G0094, G0099, G0119, G0120, G0121, G0126, G0129, G0140, G1006, G1019, G1031, G1033, G1035, G1037, G1038, G1052 | software=S0154, S0223, S0228, S0260, S0283, S0332, S0341, S0356, S0373, S0417, S0455, S0476, S0482, S0622, S0631, S0634, S0640, S0646, S0648, S0650, S0673, S0695, S1075, S1116, S1124, S1138, S1144, S1160, S1180, S1183, S1246, S1248, S1249, S9003, S9008, S9010, S9031, S9034
+- T1059.008: Network Device CLI | tactics=TA0002 | groups= | software=S1186, S9013, S9014
+- T1059.009: Cloud API | tactics=TA0002 | groups=G0016, G0139, G1053 | software=S1091, S9009
+- T1059.010: AutoHotKey & AutoIT | tactics=TA0002 | groups=G0087 | software=S0530, S1017, S1111, S1207, S1213
+- T1059.011: Lua | tactics=TA0002 | groups= | software=S0125, S0396, S0428, S1188, S1240
+- T1059.012: Hypervisor CLI | tactics=TA0002 | groups=G1048 | software=S1073, S1096, S1218
+- T1059.013: Container CLI/API | tactics=TA0002 | groups=G0139 | software=
+- T1068: Exploitation for Privilege Escalation | tactics=TA0004 | groups=G0007, G0010, G0016, G0027, G0037, G0049, G0050, G0061, G0064, G0068, G0080, G0107, G0125, G0128, G0131, G1002, G1004, G1015, G1017, G1019, G1043, G1048 | software=S0044, S0050, S0125, S0154, S0176, S0260, S0363, S0378, S0484, S0601, S0603, S0623, S0654, S0658, S0664, S0672, S1151, S1181, S1247
+- T1069: Permission Groups Discovery | tactics=TA0007 | groups=G0022, G0092, G0096, G1015, G1016, G1017 | software=S0233, S0266, S0335, S0445, S0483, S0623
+- T1069.001: Local Groups | tactics=TA0007 | groups=G0010, G0018, G0049, G0114, G0131, G1001, G1017 | software=S0039, S0060, S0082, S0091, S0154, S0165, S0170, S0184, S0201, S0236, S0265, S0378, S0381, S0521, S0572, S0650, S0692, S0696, S1141, S1179, S1198
+- T1069.002: Domain Groups | tactics=TA0007 | groups=G0004, G0010, G0035, G0046, G0049, G0100, G0129, G1004, G1015, G1017, G1022, G1032, G1051 | software=S0039, S0105, S0154, S0165, S0170, S0184, S0236, S0417, S0488, S0496, S0514, S0516, S0521, S0552, S0554, S0692, S1063, S1068, S1081, S1138, S1160, S1242, S9035
+- T1069.003: Cloud Groups | tactics=TA0007 | groups= | software=S0677, S0684, S1091
+- T1070: Indicator Removal | tactics=TA0005 | groups=G0032, G0129, G1023, G1044 | software=S0089, S0229, S0239, S0332, S0448, S0449, S0455, S0461, S0527, S0559, S0568, S0589, S0596, S0603, S0673, S0691, S0692, S0695, S0696, S0697, S1044, S1085, S1132, S1135, S1159, S1161, S9029
+- T1070.003: Clear Command History | tactics=TA0005 | groups=G0032, G0045, G0059, G0096, G0139, G0143, G1023, G1051 | software=S0601, S0641, S1203
+- T1070.004: File Deletion | tactics=TA0005 | groups=G0007, G0016, G0022, G0026, G0027, G0032, G0034, G0035, G0037, G0040, G0043, G0045, G0047, G0049, G0050, G0051, G0053, G0059, G0060, G0061, G0080, G0081, G0082, G0087, G0089, G0091, G0094, G0096, G0102, G0106, G0114, G0120, G0129, G0139, G0143, G1003, G1013, G1017, G1023, G1032, G1039, G1040, G1043, G1048, G1051, G1052, G1054 | software=S0011, S0013, S0015, S0021, S0022, S0030, S0032, S0044, S0045, S0053, S0062, S0067, S0069, S0070, S0074, S0081, S0083, S0085, S0087, S0091, S0093, S0094, S0106, S0107, S0113, S0115, S0125, S0127, S0136, S0139, S0141, S0147, S0148, S0149, S0151, S0153, S0155, S0161, S0162, S0164, S0168, S0172, S0176, S0180, S0181, S0195, S0196, S0201, S0203, S0208, S0211, S0223, S0228, S0233, S0234, S0238, S0239, S0240, S0249, S0251, S0253, S0256, S0257, S0259, S0260, S0263, S0264, S0265, S0267, S0268, S0269, S0271, S0274, S0277, S0279, S0282, S0283, S0284, S0330, S0332, S0342, S0344, S0345, S0346, S0347, S0348, S0350, S0352, S0353, S0354, S0356, S0370, S0372, S0374, S0380, S0381, S0382, S0385, S0386, S0390, S0391, S0395, S0396, S0398, S0401, S0409, S0410, S0412, S0414, S0416, S0428, S0431, S0434, S0435, S0437, S0438, S0439, S0441, S0442, S0443, S0444, S0447, S0448, S0451, S0453, S0455, S0456, S0461, S0462, S0466, S0475, S0491, S0493, S0495, S0496, S0498, S0499, S0502, S0504, S0512, S0513, S0517, S0520, S0527, S0531, S0533, S0534, S0556, S0559, S0561, S0562, S0567, S0582, S0583, S0584, S0586, S0587, S0589, S0593, S0598, S0601, S0603, S0607, S0615, S0622, S0625, S0629, S0630, S0632, S0650, S0654, S0657, S0662, S0663, S0666, S0673, S0674, S0679, S0688, S0689, S0690, S0692, S0697, S1014, S1015, S1016, S1017, S1018, S1019, S1020, S1022, S1027, S1032, S1034, S1039, S1043, S1044, S1047, S1050, S1059, S1065, S1081, S1105, S1111, S1130, S1132, S1133, S1135, S1141, S1142, S1147, S1148, S1150, S1151, S1154, S1160, S1161, S1164, S1166, S1167, S1170, S1178, S1179, S1181, S1182, S1184, S1188, S1192, S1196, S1198, S1199, S1200, S1202, S1207, S1212, S1239, S1242, S1244, S1246, S1247, S9007, S9012, S9015, S9019, S9020, S9021, S9024, S9025
+- T1070.005: Network Share Connection Removal | tactics=TA0005 | groups=G0027 | software=S0039, S0260, S0400, S1159
+- T1070.006: Timestomp | tactics=TA0005 | groups=G0007, G0016, G0032, G0050, G0082, G0094, G0106, G0114, G0129, G1023, G1048 | software=S0020, S0021, S0066, S0072, S0078, S0081, S0083, S0136, S0140, S0141, S0150, S0154, S0164, S0168, S0181, S0185, S0239, S0260, S0352, S0363, S0387, S0393, S0438, S0520, S0568, S0570, S0586, S0603, S0641, S0666, S0687, S1016, S1031, S1059, S1090, S1100, S1135, S1149, S1161, S1164, S1181, S1226, S9023, S9024
+- T1070.007: Clear Network Connection History and Configurations | tactics=TA0005 | groups=G1017, G1048 | software=S0559
+- T1070.008: Clear Mailbox Data | tactics=TA0005 | groups=G1015, G1044 | software=S0477, S1142
+- T1070.009: Clear Persistence | tactics=TA0005 | groups= | software=S0013, S0083, S0085, S0148, S0385, S0500, S0517, S0534, S0559, S0632, S0669, S1130, S1132, S1190, S1232
+- T1070.010: Relocate Malware | tactics=TA0005 | groups= | software=S9015
+- T1071: Application Layer Protocol | tactics=TA0011 | groups=G0059, G0106, G0139, G1032, G1047 | software=S0034, S0038, S0532, S0601, S0623, S0633, S0660, S1084, S1130, S1147
+- T1071.001: Web Protocols | tactics=TA0011 | groups=G0004, G0007, G0010, G0026, G0027, G0032, G0034, G0038, G0047, G0049, G0050, G0059, G0060, G0061, G0064, G0067, G0069, G0070, G0071, G0073, G0075, G0080, G0081, G0082, G0083, G0085, G0087, G0090, G0092, G0094, G0096, G0100, G0102, G0106, G0112, G0114, G0121, G0125, G0126, G0127, G0129, G0139, G0142, G1002, G1013, G1014, G1016, G1034, G1035, G1036, G1039, G1041, G1042, G1043, G1044, G1051, G1055 | software=S0003, S0009, S0011, S0013, S0015, S0019, S0020, S0022, S0023, S0024, S0030, S0031, S0034, S0037, S0042, S0043, S0044, S0045, S0046, S0048, S0049, S0050, S0051, S0052, S0053, S0054, S0059, S0060, S0062, S0064, S0065, S0066, S0067, S0068, S0070, S0072, S0074, S0078, S0081, S0082, S0084, S0085, S0086, S0087, S0089, S0091, S0094, S0115, S0125, S0126, S0127, S0128, S0137, S0138, S0140, S0141, S0144, S0147, S0148, S0153, S0154, S0159, S0162, S0168, S0170, S0171, S0172, S0184, S0186, S0187, S0192, S0196, S0198, S0200, S0207, S0226, S0230, S0237, S0238, S0239, S0240, S0241, S0243, S0244, S0249, S0250, S0251, S0257, S0258, S0260, S0264, S0265, S0266, S0267, S0268, S0269, S0275, S0276, S0282, S0284, S0330, S0331, S0333, S0334, S0335, S0337, S0339, S0340, S0341, S0342, S0345, S0348, S0352, S0353, S0355, S0356, S0363, S0367, S0371, S0374, S0375, S0378, S0381, S0382, S0384, S0385, S0386, S0388, S0391, S0396, S0398, S0401, S0409, S0412, S0428, S0430, S0435, S0436, S0439, S0441, S0442, S0444, S0445, S0447, S0448, S0449, S0453, S0455, S0456, S0458, S0459, S0460, S0466, S0469, S0470, S0472, S0473, S0475, S0476, S0477, S0482, S0483, S0484, S0491, S0493, S0495, S0496, S0497, S0500, S0502, S0504, S0512, S0513, S0514, S0516, S0518, S0520, S0526, S0527, S0531, S0533, S0534, S0538, S0543, S0554, S0559, S0561, S0564, S0569, S0578, S0582, S0584, S0588, S0589, S0594, S0595, S0596, S0597, S0598, S0599, S0600, S0603, S0604, S0610, S0616, S0622, S0629, S0631, S0632, S0633, S0635, S0636, S0643, S0647, S0649, S0650, S0652, S0653, S0657, S0659, S0660, S0661, S0662, S0664, S0666, S0668, S0671, S0673, S0674, S0678, S0680, S0682, S0686, S0687, S0689, S0691, S0694, S0695, S0696, S0699, S1014, S1015, S1017, S1018, S1019, S1020, S1022, S1023, S1024, S1025, S1026, S1028, S1029, S1030, S1031, S1035, S1037, S1042, S1046, S1047, S1050, S1051, S1059, S1060, S1063, S1064, S1065, S1066, S1074, S1075, S1076, S1081, S1099, S1100, S1105, S1106, S1108, S1110, S1112, S1115, S1119, S1120, S1130, S1132, S1141, S1144, S1148, S1149, S1153, S1155, S1156, S1160, S1163, S1168, S1169, S1172, S1178, S1182, S1183, S1184, S1185, S1186, S1187, S1188, S1189, S1190, S1192, S1193, S1196, S1198, S1200, S1201, S1202, S1207, S1209, S1210, S1213, S1221, S1222, S1223, S1226, S1228, S1229, S1239, S1240, S1245, S1246, S1248, S1249, S9003, S9007, S9008, S9010, S9015, S9028, S9029, S9031, S9032, S9034, S9035, S9037
+- T1071.002: File Transfer Protocols | tactics=TA0011 | groups=G0035, G0083, G0094, G0096, G1054 | software=S0019, S0154, S0161, S0201, S0265, S0353, S0409, S0412, S0428, S0438, S0464, S0465, S0596, S0699, S1081, S1088, S1089, S1228, S1229, S1242
+- T1071.003: Mail Protocols | tactics=TA0011 | groups=G0007, G0010, G0050, G0083, G0094, G1052 | software=S0022, S0023, S0125, S0126, S0137, S0138, S0201, S0247, S0251, S0331, S0337, S0351, S0395, S0477, S0495, S1042, S1090, S1142, S1152, S1173
 - T1071.004: DNS | tactics=TA0011 | groups=G0004, G0026, G0046, G0049, G0080, G0081, G0087, G0096, G0114, G0140, G1003 | software=S0013, S0022, S0070, S0124, S0125, S0145, S0146, S0154, S0157, S0167, S0170, S0184, S0228, S0260, S0269, S0338, S0354, S0360, S0377, S0477, S0495, S0504, S0514, S0559, S0596, S0615, S0633, S0663, S0666, S0690, S0699, S1014, S1015, S1019, S1020, S1021, S1027, S1047, S1063, S1090, S1111, S9001, S9015
+- T1071.005: Publish/Subscribe Protocols | tactics=TA0011 | groups= | software=S0026
+- T1072: Software Deployment Tools | tactics=TA0002, TA0008 | groups=G0028, G0034, G0050, G0091, G0129, G1051, G1055 | software=S0041
+- T1074: Data Staged | tactics=TA0009 | groups=G0102, G1015, G1017, G1032, G1055 | software=S0641, S1019, S1020, S1076
+- T1074.001: Local Data Staging | tactics=TA0009 | groups=G0007, G0022, G0027, G0030, G0032, G0035, G0040, G0045, G0053, G0065, G0069, G0087, G0090, G0093, G0094, G0102, G0114, G0119, G0121, G0129, G0135, G0139, G1016, G1017, G1023, G1030, G1046, G1048 | software=S0012, S0013, S0024, S0035, S0036, S0038, S0045, S0062, S0081, S0084, S0090, S0094, S0113, S0128, S0136, S0147, S0149, S0169, S0170, S0196, S0197, S0198, S0247, S0249, S0251, S0260, S0261, S0264, S0265, S0274, S0335, S0337, S0340, S0343, S0353, S0373, S0386, S0395, S0409, S0438, S0443, S0458, S0503, S0526, S0538, S0567, S0593, S0615, S0622, S0629, S0644, S0647, S0650, S0651, S0652, S0667, S0673, S1012, S1015, S1016, S1029, S1037, S1042, S1043, S1044, S1059, S1060, S1075, S1090, S1101, S1104, S1109, S1110, S1124, S1142, S1149, S1153, S1154, S1168, S1172, S1196, S1210, S1213, S1222, S1233, S1235, S1245, S1246, S9010, S9013, S9020, S9022, S9035, S9036
+- T1074.002: Remote Data Staging | tactics=TA0009 | groups=G0007, G0027, G0037, G0045, G0061, G0065, G0114, G1019, G1022, G1041, G1054 | software=S1043
 - T1078: Valid Accounts | tactics=TA0001, TA0003, TA0004, TA0005 | groups=G0001, G0004, G0007, G0008, G0011, G0016, G0026, G0027, G0032, G0034, G0035, G0037, G0039, G0045, G0046, G0049, G0051, G0053, G0061, G0064, G0065, G0085, G0087, G0091, G0093, G0096, G0102, G0114, G0117, G0119, G0122, G1004, G1005, G1015, G1017, G1021, G1024, G1032, G1033, G1040, G1041, G1043, G1048, G1051, G1055 | software=S0038, S0053, S0362, S0567, S0599, S0604, S9036
+- T1078.001: Default Accounts | tactics=TA0001, TA0003, TA0004, TA0005 | groups=G0059, G1003, G1016, G1048 | software=S0537, S0603
+- T1078.002: Domain Accounts | tactics=TA0001, TA0003, TA0004, TA0005 | groups=G0019, G0022, G0028, G0034, G0049, G0059, G0092, G0102, G0114, G0119, G0143, G1017, G1021, G1022, G1023, G1030, G1040, G1043, G1055 | software=S0140, S0154, S0446, S0603, S1024
+- T1078.003: Local Accounts | tactics=TA0001, TA0003, TA0004, TA0005 | groups=G0010, G0016, G0046, G0050, G0051, G0056, G0081, G0094, G0125, G1040, G1041, G1047 | software=S0154, S0221, S0367, S0368, S1202
+- T1078.004: Cloud Accounts | tactics=TA0001, TA0003, TA0004, TA0005 | groups=G0004, G0007, G0016, G0064, G0125, G1004, G1015, G1023, G1053, G1055 | software=S0683, S0684, S1091, S9008, S9009
+- T1080: Taint Shared Content | tactics=TA0008 | groups=G0012, G0047, G0060, G1021, G1039 | software=S0132, S0133, S0260, S0386, S0458, S0575, S0603
+- T1082: System Information Discovery | tactics=TA0007 | groups=G0004, G0010, G0012, G0018, G0022, G0026, G0032, G0034, G0038, G0040, G0046, G0047, G0049, G0050, G0054, G0059, G0061, G0067, G0069, G0073, G0081, G0082, G0094, G0096, G0100, G0102, G0106, G0108, G0112, G0121, G0124, G0126, G0128, G0129, G0139, G0143, G1001, G1008, G1009, G1012, G1015, G1016, G1018, G1020, G1026, G1034, G1035, G1036, G1039, G1040, G1043, G1044, G1051, G1052, G1053, G1054, G1055 | software=S0013, S0015, S0017, S0021, S0022, S0024, S0031, S0032, S0043, S0045, S0046, S0048, S0051, S0058, S0059, S0060, S0062, S0065, S0079, S0081, S0082, S0083, S0084, S0085, S0086, S0088, S0089, S0091, S0093, S0094, S0096, S0098, S0105, S0106, S0113, S0115, S0124, S0125, S0130, S0137, S0139, S0140, S0141, S0142, S0144, S0148, S0149, S0151, S0153, S0155, S0156, S0157, S0161, S0165, S0171, S0172, S0176, S0180, S0181, S0182, S0184, S0186, S0192, S0196, S0198, S0199, S0201, S0203, S0205, S0208, S0211, S0214, S0215, S0216, S0217, S0218, S0219, S0223, S0228, S0229, S0230, S0233, S0236, S0237, S0238, S0239, S0240, S0241, S0242, S0244, S0245, S0247, S0248, S0249, S0250, S0251, S0252, S0253, S0254, S0257, S0259, S0260, S0262, S0264, S0265, S0266, S0267, S0268, S0270, S0271, S0272, S0275, S0280, S0283, S0284, S0330, S0331, S0332, S0334, S0337, S0339, S0340, S0344, S0346, S0348, S0350, S0351, S0352, S0353, S0354, S0355, S0356, S0363, S0373, S0374, S0376, S0378, S0379, S0380, S0381, S0382, S0384, S0385, S0386, S0387, S0388, S0391, S0395, S0402, S0409, S0410, S0412, S0414, S0417, S0428, S0431, S0433, S0439, S0441, S0445, S0447, S0448, S0449, S0450, S0451, S0453, S0454, S0455, S0456, S0457, S0460, S0461, S0462, S0464, S0467, S0468, S0473, S0475, S0476, S0482, S0483, S0484, S0486, S0487, S0493, S0496, S0501, S0504, S0512, S0513, S0514, S0516, S0520, S0531, S0532, S0533, S0534, S0543, S0546, S0547, S0553, S0554, S0556, S0559, S0567, S0568, S0569, S0572, S0584, S0585, S0587, S0596, S0601, S0603, S0604, S0610, S0615, S0622, S0627, S0631, S0632, S0634, S0635, S0641, S0642, S0644, S0646, S0647, S0649, S0650, S0652, S0657, S0658, S0659, S0660, S0662, S0663, S0665, S0666, S0667, S0669, S0670, S0673, S0674, S0679, S0680, S0681, S0687, S0688, S0690, S0691, S0692, S0693, S0697, S1013, S1015, S1016, S1018, S1019, S1020, S1022, S1025, S1026, S1028, S1029, S1030, S1031, S1034, S1037, S1039, S1048, S1052, S1059, S1060, S1064, S1065, S1066, S1068, S1070, S1073, S1078, S1081, S1085, S1086, S1100, S1107, S1111, S1121, S1122, S1124, S1129, S1130, S1138, S1141, S1142, S1145, S1147, S1148, S1152, S1153, S1155, S1156, S1159, S1160, S1166, S1167, S1168, S1169, S1172, S1178, S1180, S1182, S1183, S1184, S1185, S1186, S1190, S1196, S1198, S1199, S1200, S1202, S1207, S1210, S1212, S1213, S1222, S1228, S1229, S1234, S1239, S1240, S1242, S1244, S1245, S1246, S1248, S1249, S9001, S9002, S9008, S9010, S9019, S9020, S9023, S9024, S9025, S9029, S9031, S9034, S9035, S9037, S9039
+- T1083: File and Directory Discovery | tactics=TA0007 | groups=G0004, G0007, G0010, G0012, G0018, G0022, G0026, G0030, G0032, G0034, G0035, G0040, G0044, G0045, G0047, G0050, G0054, G0059, G0060, G0069, G0070, G0077, G0081, G0082, G0087, G0094, G0096, G0100, G0114, G0117, G0121, G0124, G0125, G0129, G0139, G0142, G1007, G1014, G1015, G1016, G1017, G1022, G1023, G1035, G1039, G1040, G1047, G1048, G1051, G1052, G1054 | software=S0011, S0013, S0015, S0020, S0021, S0022, S0023, S0031, S0034, S0035, S0036, S0045, S0048, S0049, S0050, S0051, S0055, S0059, S0062, S0063, S0064, S0065, S0066, S0069, S0070, S0072, S0078, S0079, S0081, S0083, S0086, S0088, S0089, S0090, S0091, S0093, S0094, S0106, S0113, S0115, S0124, S0125, S0127, S0128, S0129, S0131, S0136, S0139, S0141, S0142, S0144, S0147, S0148, S0149, S0153, S0154, S0157, S0161, S0180, S0181, S0182, S0184, S0192, S0193, S0198, S0201, S0203, S0208, S0211, S0212, S0216, S0219, S0226, S0229, S0234, S0235, S0236, S0237, S0238, S0239, S0240, S0242, S0248, S0249, S0250, S0251, S0252, S0255, S0259, S0260, S0263, S0265, S0266, S0268, S0271, S0272, S0275, S0277, S0283, S0330, S0332, S0337, S0339, S0340, S0344, S0345, S0346, S0347, S0348, S0350, S0351, S0354, S0356, S0363, S0366, S0368, S0375, S0376, S0378, S0385, S0387, S0402, S0409, S0410, S0412, S0414, S0428, S0431, S0434, S0435, S0436, S0437, S0438, S0439, S0443, S0444, S0446, S0447, S0448, S0452, S0455, S0456, S0458, S0461, S0466, S0467, S0468, S0472, S0473, S0475, S0488, S0491, S0492, S0493, S0496, S0497, S0498, S0512, S0516, S0520, S0526, S0533, S0534, S0547, S0559, S0562, S0564, S0567, S0572, S0575, S0576, S0582, S0586, S0587, S0592, S0598, S0599, S0600, S0603, S0604, S0607, S0610, S0611, S0612, S0615, S0616, S0618, S0622, S0623, S0625, S0628, S0629, S0630, S0632, S0633, S0635, S0638, S0640, S0642, S0643, S0644, S0647, S0650, S0651, S0652, S0657, S0658, S0659, S0660, S0661, S0663, S0665, S0666, S0670, S0672, S0673, S0674, S0686, S0687, S0689, S0692, S0693, S0697, S1016, S1017, S1018, S1022, S1023, S1025, S1027, S1028, S1031, S1034, S1040, S1042, S1043, S1044, S1053, S1058, S1059, S1060, S1065, S1068, S1070, S1073, S1089, S1090, S1096, S1099, S1100, S1101, S1102, S1105, S1109, S1111, S1114, S1121, S1122, S1125, S1129, S1130, S1135, S1139, S1140, S1141, S1142, S1148, S1149, S1150, S1153, S1156, S1159, S1160, S1162, S1167, S1169, S1170, S1179, S1184, S1185, S1191, S1194, S1196, S1198, S1199, S1200, S1202, S1212, S1229, S1234, S1242, S1244, S1245, S1246, S1247, S9002, S9009, S9015, S9020, S9027, S9030, S9031, S9035, S9038, S9039
+- T1087: Account Discovery | tactics=TA0007 | groups=G0143, G1015, G1016 | software=S0445, S0658, S1065, S1229, S1239
+- T1087.001: Local Account | tactics=TA0007 | groups=G0004, G0006, G0010, G0018, G0022, G0027, G0030, G0033, G0049, G0050, G0096, G0114, G0117, G1009, G1017, G1039, G1044, G1051 | software=S0038, S0039, S0049, S0063, S0081, S0084, S0085, S0091, S0125, S0165, S0192, S0194, S0196, S0223, S0233, S0236, S0239, S0241, S0244, S0260, S0265, S0266, S0331, S0363, S0378, S0452, S0453, S0476, S0516, S0521, S0534, S0537, S0570, S0598, S0603, S0649, S1015, S1145, S1146, S1148, S1159, S1240, S1242, S1245, S9001
+- T1087.002: Domain Account | tactics=TA0007 | groups=G0004, G0010, G0030, G0033, G0034, G0035, G0037, G0045, G0046, G0049, G0060, G0069, G0096, G0102, G0114, G0117, G0129, G1004, G1015, G1016, G1017, G1022, G1032, G1039, G1043, G1046, G1053, G1054, G1055 | software=S0018, S0039, S0105, S0154, S0165, S0184, S0239, S0363, S0378, S0476, S0483, S0488, S0516, S0521, S0534, S0552, S0603, S0635, S0692, S1022, S1063, S1068, S1146, S1159, S1160, S1242, S9035, S9037
+- T1087.003: Email Account | tactics=TA0007 | groups=G0034, G0059, G0092, G1039 | software=S0093, S0266, S0358, S0367, S0413, S0531, S0635, S0681
+- T1087.004: Cloud Account | tactics=TA0007 | groups=G0016, G1053 | software=S0677, S0684, S1091
+- T1090: Proxy | tactics=TA0011 | groups=G0010, G0034, G0047, G0052, G0059, G0069, G0096, G0108, G0117, G0124, G1004, G1005, G1006, G1015, G1017, G1019, G1021, G1052, G1054 | software=S0040, S0108, S0117, S0198, S0207, S0245, S0246, S0262, S0263, S0268, S0273, S0283, S0332, S0347, S0348, S0376, S0378, S0384, S0386, S0412, S0435, S0436, S0456, S0461, S0487, S0508, S0615, S0629, S0669, S0670, S0690, S1044, S1051, S1081, S1099, S1114, S1121, S1141, S1144, S1187, S1189, S1190, S1197, S1210, S1212, S1229
+- T1090.001: Internal Proxy | tactics=TA0011 | groups=G0010, G0030, G0032, G0041, G0087, G0126, G1016, G1017, G1047 | software=S0009, S0023, S0031, S0038, S0051, S0141, S0154, S0260, S0265, S0502, S0512, S0556, S0603, S0633, S0699, S1059, S1060, S1100, S1198, S1227, S9010, S9015, S9023
+- T1090.002: External Proxy | tactics=TA0011 | groups=G0007, G0016, G0022, G0032, G0045, G0053, G0069, G0087, G0091, G0093, G0131 | software=S0019, S0141, S0223, S0260, S0266, S0439, S0444, S0650, S0699, S1084, S9003
+- T1090.003: Multi-hop Proxy | tactics=TA0011 | groups=G0007, G0016, G0030, G0047, G0065, G0085, G0100, G0128, G1003, G1017, G1051 | software=S0022, S0183, S0276, S0281, S0282, S0342, S0366, S0384, S0386, S0438, S0491, S0604, S0623, S0641, S0687, S1087, S1100, S1106, S1107, S1144, S1184, S9001
+- T1090.004: Domain Fronting | tactics=TA0011 | groups=G0016 | software=S0154, S0175, S0649, S0699
+- T1091: Replication Through Removable Media | tactics=TA0001, TA0008 | groups=G0007, G0012, G0046, G0047, G0081, G0129, G1007, G1014 | software=S0013, S0023, S0028, S0062, S0092, S0115, S0130, S0132, S0136, S0143, S0385, S0386, S0452, S0458, S0603, S0608, S0650, S1074, S1130, S1230
+- T1092: Communication Through Removable Media | tactics=TA0011 | groups=G0007 | software=S0023, S0136
+- T1095: Non-Application Layer Protocol | tactics=TA0011 | groups=G0022, G0037, G0047, G0068, G0125, G0129, G0135, G1002, G1003, G1013, G1022, G1048 | software=S0011, S0013, S0019, S0021, S0022, S0032, S0034, S0043, S0055, S0076, S0083, S0084, S0115, S0125, S0141, S0149, S0154, S0155, S0158, S0172, S0198, S0221, S0234, S0260, S0262, S0268, S0335, S0352, S0394, S0430, S0436, S0455, S0456, S0461, S0498, S0501, S0502, S0504, S0515, S0556, S0582, S0587, S0596, S0615, S0629, S0630, S0650, S0660, S0662, S0666, S0670, S0681, S0699, S1016, S1029, S1031, S1044, S1049, S1051, S1059, S1060, S1063, S1073, S1078, S1084, S1085, S1099, S1100, S1105, S1114, S1121, S1140, S1142, S1144, S1153, S1163, S1187, S1189, S1200, S1203, S1204, S1219, S1221, S1227, S1239, S1245, S9001, S9023
+- T1098: Account Manipulation | tactics=TA0003, TA0004 | groups=G0032, G0125, G1015, G1055 | software=S0002, S0274, S9008
+- T1098.001: Additional Cloud Credentials | tactics=TA0003, TA0004 | groups=G1053 | software=S1091
+- T1098.002: Additional Email Delegate Permissions | tactics=TA0003, TA0004 | groups=G0007, G0016, G0059 | software=
+- T1098.003: Additional Cloud Roles | tactics=TA0003, TA0004 | groups=G1004, G1015, G1053 | software=
+- T1098.004: SSH Authorized Keys | tactics=TA0003, TA0004 | groups=G0139, G1006, G1045 | software=S0468, S0482, S0658
+- T1098.005: Device Registration | tactics=TA0003, TA0004 | groups=G0016 | software=S0677
+- T1098.006: Additional Container Cluster Roles | tactics=TA0003, TA0004 | groups= | software=
+- T1098.007: Additional Local or Domain Groups | tactics=TA0003, TA0004 | groups=G0022, G0035, G0059, G0094, G0096, G1016, G1023 | software=S0039, S0382, S0649, S1111
+- T1102: Web Service | tactics=TA0011 | groups=G0010, G0037, G0047, G0050, G0061, G0100, G0106, G0117, G0129, G0139, G0140, G1011, G1039, G1044, G1055 | software=S0198, S0335, S0508, S0534, S0546, S0547, S0561, S0589, S0600, S0601, S0635, S0649, S0674, S0689, S1039, S1063, S1066, S1081, S1086, S1124, S1130, S1147, S1149, S1160, S1178, S1221, S1240, S9015, S9019, S9031
+- T1102.001: Dead Drop Resolver | tactics=TA0011 | groups=G0040, G0048, G0060, G0094, G0096, G0106 | software=S0013, S0051, S0069, S0128, S0148, S0341, S0373, S0455, S0518, S0528, S0531, S0674, S1051, S1201, S1221, S9010, S9034
+- T1102.002: Bidirectional Communication | tactics=TA0011 | groups=G0005, G0007, G0008, G0010, G0032, G0034, G0046, G0047, G0059, G0067, G0069, G0087, G0094, G0128, G1001, G1005 | software=S0025, S0026, S0042, S0046, S0054, S0069, S0126, S0128, S0213, S0215, S0216, S0218, S0229, S0240, S0244, S0248, S0265, S0270, S0333, S0363, S0379, S0393, S0511, S0531, S0538, S0651, S0657, S0660, S1023, S1035, S1168, S1170, S1171, S1172, S1201, S1210, S1222, S9035
+- T1102.003: One-Way Communication | tactics=TA0011 | groups=G0047, G0065 | software=S0037, S0052, S0455, S0568, S1164, S1210
+- T1104: Multi-Stage Channels | tactics=TA0011 | groups=G0022, G0032, G0069, G0096 | software=S0022, S0031, S0069, S0220, S0476, S0534, S1086, S1141, S1160, S1206
+- T1105: Ingress Tool Transfer | tactics=TA0011 | groups=G0004, G0007, G0010, G0012, G0016, G0021, G0022, G0026, G0027, G0032, G0034, G0035, G0040, G0044, G0045, G0046, G0047, G0049, G0050, G0059, G0060, G0061, G0064, G0065, G0066, G0067, G0068, G0069, G0075, G0078, G0080, G0081, G0082, G0087, G0090, G0091, G0092, G0093, G0094, G0096, G0099, G0102, G0106, G0107, G0112, G0114, G0117, G0119, G0120, G0121, G0123, G0125, G0127, G0128, G0129, G0130, G0131, G0133, G0135, G0136, G0138, G0139, G0140, G0142, G0143, G1001, G1002, G1008, G1009, G1013, G1014, G1015, G1016, G1017, G1018, G1020, G1021, G1032, G1034, G1035, G1036, G1040, G1043, G1046, G1051, G1055 | software=S0009, S0011, S0012, S0013, S0015, S0017, S0020, S0022, S0023, S0024, S0032, S0042, S0044, S0051, S0053, S0054, S0055, S0070, S0074, S0077, S0078, S0079, S0080, S0081, S0082, S0083, S0084, S0085, S0086, S0087, S0088, S0092, S0093, S0094, S0095, S0106, S0109, S0115, S0118, S0124, S0125, S0128, S0130, S0132, S0134, S0137, S0139, S0140, S0141, S0144, S0145, S0147, S0148, S0150, S0153, S0154, S0160, S0164, S0166, S0168, S0170, S0171, S0180, S0184, S0185, S0187, S0190, S0192, S0196, S0198, S0199, S0200, S0201, S0203, S0204, S0206, S0207, S0208, S0210, S0211, S0213, S0214, S0215, S0217, S0218, S0223, S0226, S0228, S0229, S0230, S0234, S0236, S0239, S0240, S0241, S0247, S0249, S0250, S0251, S0254, S0255, S0256, S0257, S0258, S0260, S0262, S0263, S0264, S0265, S0266, S0267, S0268, S0270, S0271, S0272, S0274, S0275, S0283, S0284, S0330, S0331, S0332, S0333, S0334, S0336, S0337, S0339, S0340, S0341, S0342, S0344, S0345, S0347, S0348, S0351, S0352, S0353, S0354, S0356, S0360, S0363, S0367, S0369, S0373, S0374, S0376, S0379, S0380, S0381, S0382, S0385, S0386, S0387, S0388, S0390, S0394, S0395, S0396, S0398, S0401, S0402, S0404, S0409, S0412, S0414, S0428, S0430, S0431, S0435, S0436, S0437, S0438, S0439, S0442, S0444, S0445, S0447, S0450, S0451, S0453, S0455, S0456, S0457, S0459, S0461, S0462, S0465, S0468, S0469, S0470, S0471, S0472, S0473, S0475, S0476, S0482, S0483, S0484, S0486, S0487, S0491, S0492, S0493, S0495, S0496, S0497, S0498, S0499, S0500, S0501, S0502, S0504, S0511, S0513, S0514, S0515, S0516, S0518, S0520, S0526, S0527, S0528, S0530, S0531, S0532, S0533, S0534, S0546, S0547, S0553, S0554, S0559, S0561, S0564, S0567, S0568, S0569, S0572, S0574, S0579, S0585, S0586, S0587, S0588, S0589, S0592, S0595, S0596, S0598, S0599, S0600, S0601, S0604, S0608, S0610, S0613, S0614, S0615, S0616, S0624, S0625, S0626, S0627, S0628, S0629, S0630, S0631, S0632, S0633, S0635, S0636, S0639, S0642, S0643, S0646, S0647, S0648, S0649, S0650, S0651, S0652, S0653, S0657, S0658, S0659, S0661, S0662, S0663, S0664, S0665, S0666, S0667, S0668, S0669, S0670, S0671, S0672, S0674, S0680, S0681, S0685, S0686, S0687, S0688, S0689, S0691, S0692, S0694, S0695, S0696, S1012, S1013, S1014, S1015, S1016, S1017, S1018, S1019, S1020, S1021, S1023, S1025, S1026, S1028, S1030, S1034, S1035, S1039, S1044, S1048, S1059, S1060, S1063, S1064, S1065, S1066, S1074, S1081, S1085, S1086, S1087, S1088, S1089, S1090, S1099, S1110, S1111, S1112, S1114, S1115, S1118, S1124, S1130, S1138, S1140, S1148, S1149, S1152, S1159, S1160, S1166, S1168, S1170, S1171, S1172, S1173, S1182, S1183, S1185, S1187, S1189, S1192, S1193, S1211, S1217, S1222, S1224, S1228, S1229, S1239, S1240, S1245, S1246, S1248, S1249, S9001, S9007, S9008, S9010, S9014, S9015, S9016, S9019, S9020, S9021, S9023, S9028, S9031, S9032, S9034
+- T1106: Native API | tactics=TA0002 | groups=G0010, G0032, G0034, G0045, G0047, G0067, G0078, G0081, G0082, G0090, G0091, G0092, G0094, G0098, G0114, G0126, G0129, G1008, G1022, G1051 | software=S0011, S0013, S0022, S0032, S0045, S0083, S0084, S0085, S0126, S0128, S0141, S0147, S0148, S0154, S0161, S0180, S0198, S0234, S0239, S0240, S0242, S0256, S0259, S0260, S0266, S0268, S0354, S0356, S0363, S0367, S0384, S0385, S0386, S0391, S0395, S0396, S0398, S0412, S0416, S0431, S0434, S0435, S0438, S0444, S0445, S0446, S0447, S0448, S0449, S0453, S0455, S0456, S0457, S0458, S0466, S0470, S0471, S0475, S0477, S0483, S0484, S0493, S0496, S0499, S0501, S0512, S0517, S0518, S0521, S0531, S0534, S0537, S0554, S0561, S0562, S0569, S0570, S0574, S0575, S0576, S0579, S0595, S0603, S0606, S0607, S0610, S0611, S0612, S0614, S0615, S0622, S0623, S0625, S0627, S0629, S0630, S0631, S0632, S0638, S0640, S0650, S0651, S0652, S0653, S0659, S0661, S0662, S0663, S0666, S0667, S0668, S0669, S0670, S0678, S0680, S0681, S0687, S0688, S0689, S0692, S0693, S0694, S0695, S0696, S0697, S0698, S1013, S1015, S1016, S1018, S1020, S1025, S1033, S1034, S1039, S1044, S1050, S1052, S1053, S1058, S1059, S1060, S1063, S1064, S1065, S1066, S1070, S1073, S1076, S1078, S1081, S1085, S1087, S1089, S1090, S1099, S1100, S1111, S1122, S1129, S1139, S1145, S1149, S1151, S1152, S1160, S1169, S1170, S1172, S1179, S1180, S1190, S1200, S1202, S1207, S1210, S1226, S1227, S1228, S1229, S1232, S1233, S1234, S1236, S1237, S1239, S1242, S1244, S1247, S9001, S9007, S9012, S9016, S9018, S9020, S9021, S9025, S9027, S9032, S9033, S9036, S9037, S9038
+- T1110: Brute Force | tactics=TA0006 | groups=G0007, G0010, G0035, G0049, G0053, G0082, G0087, G0096, G0105, G0117, G1001, G1003, G1030, G1053, G1055 | software=S0220, S0378, S0488, S0572, S0583, S0599, S0650
 - T1110.001: Password Guessing | tactics=TA0006 | groups=G0007, G0016, G1055 | software=S0020, S0341, S0367, S0374, S0453, S0488, S0532, S0598, S0698
+- T1110.002: Password Cracking | tactics=TA0006 | groups=G0022, G0035, G0037, G1045 | software=S0056
+- T1110.003: Password Spraying | tactics=TA0006 | groups=G0007, G0016, G0032, G0064, G0077, G0114, G0122, G0125, G1001, G1003, G1030 | software=S0362, S0413, S0488, S0606
+- T1110.004: Credential Stuffing | tactics=TA0006 | groups=G0114, G1055 | software=S0266
+- T1111: Multi-Factor Authentication Interception | tactics=TA0006 | groups=G0094, G0114, G1004, G1044 | software=S0018, S1104, S9003
+- T1112: Modify Registry | tactics=TA0003, TA0112 | groups=G0010, G0027, G0030, G0035, G0040, G0047, G0049, G0050, G0059, G0061, G0073, G0078, G0082, G0091, G0092, G0094, G0096, G0102, G0108, G0119, G0143, G1003, G1006, G1014, G1017, G1031, G1043, G1044, G1051 | software=S0011, S0012, S0013, S0019, S0022, S0023, S0031, S0032, S0045, S0075, S0090, S0115, S0126, S0140, S0142, S0148, S0154, S0157, S0158, S0180, S0198, S0203, S0205, S0210, S0229, S0239, S0240, S0242, S0245, S0254, S0256, S0260, S0261, S0262, S0263, S0266, S0267, S0268, S0269, S0271, S0330, S0331, S0332, S0334, S0336, S0342, S0343, S0348, S0350, S0356, S0376, S0385, S0386, S0397, S0412, S0428, S0438, S0441, S0444, S0447, S0455, S0457, S0467, S0476, S0488, S0496, S0501, S0511, S0517, S0518, S0527, S0531, S0533, S0537, S0559, S0560, S0568, S0569, S0570, S0572, S0576, S0579, S0583, S0589, S0596, S0603, S0608, S0611, S0612, S0631, S0640, S0649, S0650, S0660, S0662, S0663, S0664, S0665, S0666, S0668, S0669, S0670, S0673, S0674, S0677, S0679, S0691, S0692, S0697, S1011, S1025, S1033, S1047, S1050, S1058, S1059, S1060, S1066, S1068, S1070, S1090, S1099, S1131, S1132, S1149, S1178, S1180, S1181, S1190, S1199, S1201, S1202, S1226, S1230, S1242, S1247, S9023, S9025, S9032
+- T1113: Screen Capture | tactics=TA0009 | groups=G0007, G0035, G0043, G0046, G0047, G0049, G0059, G0060, G0069, G0070, G0087, G0091, G0094, G0115, G1017, G1019, G1035, G1044, G1055 | software=S0004, S0013, S0017, S0021, S0023, S0030, S0032, S0044, S0050, S0062, S0086, S0088, S0089, S0090, S0094, S0098, S0113, S0115, S0128, S0143, S0147, S0148, S0151, S0152, S0153, S0154, S0161, S0163, S0167, S0182, S0184, S0187, S0192, S0194, S0198, S0199, S0203, S0213, S0216, S0217, S0223, S0234, S0235, S0240, S0248, S0251, S0257, S0260, S0261, S0265, S0270, S0271, S0273, S0275, S0277, S0279, S0282, S0283, S0330, S0331, S0332, S0337, S0338, S0339, S0340, S0344, S0348, S0351, S0356, S0363, S0375, S0379, S0380, S0381, S0385, S0386, S0387, S0398, S0409, S0412, S0417, S0428, S0431, S0437, S0438, S0454, S0455, S0456, S0458, S0467, S0476, S0484, S0495, S0533, S0546, S0582, S0591, S0592, S0593, S0622, S0629, S0631, S0633, S0643, S0644, S0647, S0649, S0652, S0657, S0658, S0660, S0662, S0663, S0667, S0674, S0680, S0681, S0686, S0692, S1016, S1034, S1044, S1050, S1059, S1060, S1063, S1064, S1065, S1081, S1087, S1090, S1107, S1122, S1142, S1148, S1149, S1153, S1156, S1159, S1185, S1196, S1201, S1207, S1209, S1213, S1229, S1239, S1240, S9007, S9020, S9031
+- T1114: Email Collection | tactics=TA0009 | groups=G0059, G0122, G1003, G1015 | software=S0367, S1201
+- T1114.001: Local Email Collection | tactics=TA0009 | groups=G0006, G0059, G0090, G0114, G1035, G1039, G1041, G1054 | software=S0030, S0050, S0115, S0192, S0226, S0363, S0367, S0526, S0594, S0650, S1142
+- T1114.002: Remote Email Collection | tactics=TA0009 | groups=G0004, G0006, G0007, G0016, G0035, G0059, G0077, G0085, G0094, G0114, G0125, G1033, G1055 | software=S0053, S0395, S0413, S0476
+- T1114.003: Email Forwarding Rule | tactics=TA0009 | groups=G0094, G0122, G1004, G1015, G1033 | software=
+- T1115: Clipboard Data | tactics=TA0009 | groups=G0049, G0082, G0087, G0094 | software=S0004, S0044, S0050, S0148, S0170, S0240, S0250, S0253, S0257, S0261, S0282, S0283, S0330, S0331, S0332, S0334, S0356, S0363, S0373, S0375, S0381, S0409, S0438, S0454, S0455, S0467, S0530, S0531, S0569, S0652, S0660, S0692, S1066, S1111, S1122, S1146, S1149, S1207, S1226, S1233, S1245
+- T1119: Automated Collection | tactics=TA0009 | groups=G0004, G0006, G0007, G0027, G0037, G0040, G0045, G0047, G0049, G0053, G0081, G0114, G0121, G0125, G0129, G0142, G1003, G1030, G1035, G1039, G1055 | software=S0090, S0098, S0128, S0136, S0148, S0170, S0198, S0238, S0239, S0244, S0251, S0257, S0260, S0339, S0363, S0378, S0395, S0428, S0438, S0443, S0445, S0455, S0458, S0466, S0467, S0476, S0491, S0538, S0597, S0622, S0684, S0699, S1017, S1043, S1044, S1078, S1091, S1101, S1109, S1111, S1131, S1148, S1183, S1213, S9008, S9035
+- T1120: Peripheral Device Discovery | tactics=TA0007 | groups=G0007, G0010, G0020, G0047, G0049, G0067, G0135, G0139, G1017 | software=S0013, S0045, S0062, S0089, S0098, S0113, S0115, S0128, S0136, S0148, S0149, S0234, S0251, S0283, S0366, S0381, S0385, S0409, S0438, S0452, S0454, S0458, S0467, S0481, S0538, S0603, S0612, S0644, S0647, S0650, S0673, S0679, S0686, S1026, S1027, S1044, S1064, S1089, S1090, S1139, S1149, S1150, S1167, S1199, S1202, S1230, S9038
+- T1123: Audio Capture | tactics=TA0009 | groups=G0067, G1055 | software=S0021, S0098, S0115, S0143, S0152, S0163, S0192, S0194, S0213, S0234, S0240, S0257, S0260, S0282, S0283, S0332, S0334, S0336, S0338, S0339, S0379, S0409, S0434, S0438, S0454, S0467, S1016, S1090, S1146, S1185
+- T1124: System Time Discovery | tactics=TA0007 | groups=G0010, G0012, G0032, G0046, G0060, G0089, G0094, G0114, G0121, G0126, G0128, G1012, G1017, G1048 | software=S0011, S0013, S0017, S0039, S0091, S0098, S0115, S0126, S0139, S0140, S0148, S0149, S0237, S0238, S0251, S0260, S0264, S0267, S0268, S0275, S0330, S0331, S0335, S0344, S0351, S0353, S0373, S0376, S0380, S0396, S0417, S0439, S0450, S0455, S0466, S0467, S0471, S0501, S0531, S0534, S0554, S0559, S0574, S0586, S0588, S0596, S0603, S0608, S0615, S0622, S0650, S0657, S0660, S0673, S0678, S0690, S0692, S0694, S1033, S1034, S1043, S1044, S1051, S1053, S1064, S1081, S1087, S1111, S1134, S1147, S1148, S1159, S1178, S1227, S1228, S1233, S1244, S1246, S9001, S9010, S9020
+- T1125: Video Capture | tactics=TA0009 | groups=G0046, G0091, G1003, G1055 | software=S0021, S0098, S0115, S0152, S0192, S0234, S0260, S0262, S0265, S0283, S0331, S0332, S0334, S0336, S0338, S0363, S0379, S0385, S0409, S0412, S0428, S0434, S0461, S0467, S0591, S0644, S0660, S0670, S1050, S1087, S1209
+- T1127: Trusted Developer Utilities Proxy Execution | tactics=TA0002, TA0005 | groups= | software=
+- T1127.001: MSBuild | tactics=TA0002, TA0005 | groups= | software=S0013, S0363, S9023
+- T1127.002: ClickOnce | tactics=TA0002, TA0005 | groups= | software=
+- T1127.003: JamPlus | tactics=TA0002, TA0005 | groups= | software=
+- T1129: Shared Modules | tactics=TA0002 | groups=G0129 | software=S0032, S0196, S0203, S0352, S0373, S0377, S0415, S0438, S0455, S0467, S0501, S0520, S0567, S0603, S0607, S0661, S0673, S1039, S1078, S1154, S1185
+- T1132: Data Encoding | tactics=TA0011 | groups=G1047 | software=S0128, S0132, S0362, S0386, S0699, S9003, S9035
+- T1132.001: Standard Encoding | tactics=TA0011 | groups=G0032, G0034, G0040, G0060, G0064, G0069, G0073, G0081, G0125, G0127, G1044 | software=S0014, S0015, S0030, S0032, S0044, S0045, S0053, S0081, S0083, S0084, S0085, S0093, S0113, S0124, S0128, S0129, S0137, S0144, S0154, S0170, S0171, S0184, S0187, S0200, S0223, S0251, S0264, S0265, S0266, S0268, S0269, S0270, S0275, S0284, S0332, S0338, S0340, S0352, S0354, S0356, S0367, S0373, S0374, S0376, S0377, S0379, S0385, S0409, S0410, S0414, S0439, S0441, S0458, S0459, S0472, S0476, S0487, S0495, S0514, S0520, S0543, S0559, S0603, S0610, S0631, S0632, S0633, S0649, S0650, S0653, S0663, S0673, S0674, S0678, S0696, S1018, S1020, S1021, S1024, S1026, S1030, S1031, S1037, S1039, S1047, S1060, S1076, S1078, S1085, S1099, S1108, S1110, S1112, S1115, S1116, S1117, S1138, S1141, S1145, S1156, S1160, S1166, S1169, S1183, S1190, S1193, S1196, S1198, S1202, S1240, S9015, S9028, S9037
+- T1132.002: Non-Standard Encoding | tactics=TA0011 | groups=G0094 | software=S0022, S0031, S0239, S0260, S0346, S0495, S0596, S0681, S0687, S1035, S1046, S1090, S1100, S1149, S1189, S1239, S9007
+- T1133: External Remote Services | tactics=TA0001, TA0003 | groups=G0004, G0007, G0016, G0026, G0027, G0034, G0035, G0049, G0053, G0065, G0093, G0094, G0096, G0099, G0102, G0114, G0115, G0139, G1003, G1004, G1015, G1016, G1017, G1024, G1040, G1041, G1047, G1055 | software=S0362, S0599, S0600, S0601, S1060
+- T1134: Access Token Manipulation | tactics=TA0004, TA0005 | groups=G0030, G0037, G0108 | software=S0038, S0058, S0194, S0203, S0363, S0378, S0446, S0562, S0576, S0607, S0622, S0625, S0633, S0666, S0697, S1060, S1068, S1210, S1242
+- T1134.001: Token Impersonation/Theft | tactics=TA0004, TA0005 | groups=G0007, G0061 | software=S0140, S0154, S0182, S0192, S0367, S0439, S0456, S0496, S0570, S0603, S0623, S0692, S1011, S1081, S1229, S9033, S9036
+- T1134.002: Create Process with Token | tactics=TA0004, TA0005 | groups=G0010, G0032 | software=S0239, S0344, S0356, S0363, S0378, S0412, S0456, S0496, S0501, S0689, S1239
+- T1134.003: Make and Impersonate Token | tactics=TA0004, TA0005 | groups=G1016, G1043 | software=S0154, S0692, S1060
+- T1134.004: Parent PID Spoofing | tactics=TA0004, TA0005 | groups= | software=S0154, S0356, S0501, S1111
+- T1134.005: SID-History Injection | tactics=TA0004, TA0005 | groups= | software=S0002, S0363
+- T1135: Network Share Discovery | tactics=TA0007 | groups=G0006, G0035, G0050, G0054, G0081, G0082, G0087, G0096, G0102, G0105, G0114, G0131, G1016, G1032, G1043, G1051 | software=S0013, S0039, S0154, S0165, S0192, S0233, S0236, S0250, S0251, S0260, S0266, S0363, S0365, S0367, S0444, S0458, S0483, S0488, S0534, S0570, S0575, S0603, S0606, S0611, S0612, S0616, S0617, S0618, S0625, S0638, S0640, S0650, S0659, S0660, S0686, S0689, S0692, S0696, S1053, S1068, S1073, S1075, S1081, S1085, S1129, S1139, S1141, S1159, S1160, S1180, S1181, S1199, S1202, S1212, S1242, S1244, S1247
+- T1136: Create Account | tactics=TA0003 | groups=G0119, G1015, G1045 | software=S1199
+- T1136.001: Local Account | tactics=TA0003 | groups=G0022, G0035, G0059, G0077, G0087, G0094, G0096, G0102, G0117, G0119, G0139, G1016, G1023, G1034 | software=S0030, S0039, S0084, S0085, S0143, S0192, S0274, S0363, S0382, S0394, S0412, S0493, S0601, S0649, S1111
+- T1136.002: Domain Account | tactics=TA0003 | groups=G0093, G0102, G0125, G1043, G1051 | software=S0029, S0039, S0192, S0363
+- T1136.003: Cloud Account | tactics=TA0003 | groups=G0016, G1004 | software=S0677
+- T1137: Office Application Startup | tactics=TA0003 | groups=G0047, G0050 | software=
+- T1137.001: Office Template Macros | tactics=TA0003 | groups=G0069 | software=S0154, S0475, S9026
+- T1137.002: Office Test | tactics=TA0003 | groups=G0007 | software=
+- T1137.003: Outlook Forms | tactics=TA0003 | groups= | software=S0358
+- T1137.004: Outlook Home Page | tactics=TA0003 | groups=G0049 | software=S0358
+- T1137.005: Outlook Rules | tactics=TA0003 | groups= | software=S0358
+- T1137.006: Add-ins | tactics=TA0003 | groups=G0019 | software=S0268, S1142, S1143
+- T1140: Deobfuscate/Decode Files or Information | tactics=TA0005 | groups=G0004, G0007, G0010, G0012, G0021, G0027, G0032, G0034, G0045, G0046, G0047, G0049, G0060, G0065, G0069, G0073, G0078, G0081, G0082, G0087, G0090, G0092, G0094, G0106, G0126, G0128, G0129, G0139, G1006, G1016, G1017, G1021, G1026, G1030, G1035, G1036, G1043, G1046 | software=S0011, S0013, S0022, S0024, S0032, S0052, S0115, S0126, S0127, S0140, S0141, S0147, S0154, S0160, S0180, S0182, S0188, S0189, S0196, S0223, S0226, S0230, S0234, S0236, S0239, S0240, S0251, S0255, S0257, S0258, S0260, S0263, S0264, S0266, S0268, S0269, S0270, S0279, S0280, S0284, S0330, S0331, S0335, S0344, S0347, S0348, S0352, S0353, S0354, S0355, S0356, S0361, S0367, S0369, S0373, S0375, S0377, S0386, S0388, S0390, S0394, S0395, S0398, S0401, S0402, S0409, S0414, S0415, S0428, S0430, S0434, S0436, S0439, S0443, S0444, S0447, S0448, S0455, S0456, S0457, S0458, S0461, S0466, S0468, S0469, S0470, S0473, S0475, S0476, S0477, S0482, S0487, S0492, S0495, S0496, S0499, S0501, S0502, S0511, S0512, S0513, S0514, S0515, S0516, S0517, S0518, S0520, S0526, S0531, S0532, S0534, S0543, S0546, S0547, S0554, S0560, S0562, S0565, S0567, S0574, S0575, S0576, S0579, S0581, S0582, S0584, S0585, S0588, S0589, S0596, S0598, S0601, S0603, S0604, S0610, S0611, S0612, S0613, S0614, S0615, S0618, S0622, S0623, S0624, S0628, S0629, S0631, S0632, S0634, S0635, S0636, S0637, S0638, S0640, S0641, S0642, S0647, S0650, S0653, S0660, S0661, S0663, S0665, S0666, S0667, S0669, S0670, S0673, S0674, S0678, S0681, S0687, S0689, S0690, S0697, S1012, S1013, S1014, S1016, S1018, S1019, S1022, S1025, S1026, S1027, S1028, S1030, S1031, S1032, S1039, S1041, S1046, S1047, S1050, S1051, S1052, S1053, S1059, S1060, S1063, S1065, S1066, S1076, S1078, S1085, S1086, S1097, S1100, S1105, S1110, S1111, S1112, S1113, S1115, S1117, S1118, S1119, S1120, S1122, S1123, S1130, S1133, S1134, S1138, S1139, S1140, S1141, S1142, S1143, S1145, S1147, S1148, S1149, S1150, S1153, S1158, S1159, S1160, S1164, S1168, S1170, S1172, S1173, S1179, S1180, S1182, S1183, S1186, S1190, S1199, S1200, S1202, S1207, S1210, S1212, S1213, S1219, S1221, S1222, S1223, S1224, S1226, S1227, S1228, S1232, S1235, S1236, S1239, S1240, S1244, S1245, S1247, S1248, S1249, S9001, S9007, S9010, S9011, S9014, S9015, S9016, S9018, S9019, S9021, S9023, S9024, S9025, S9026, S9027, S9028, S9029, S9031, S9032, S9033, S9034, S9035, S9036, S9037
+- T1176: Software Extensions | tactics=TA0003 | groups= | software=
+- T1176.001: Browser Extensions | tactics=TA0003 | groups=G0094 | software=S0402, S0482, S0531, S1122, S1201, S1213
+- T1176.002: IDE Extensions | tactics=TA0003 | groups=G0129 | software=
+- T1185: Browser Session Hijacking | tactics=TA0009 | groups=G0094 | software=S0154, S0266, S0331, S0384, S0386, S0483, S0484, S0530, S0531, S0631, S0650, S1201, S1207, S9003
+- T1187: Forced Authentication | tactics=TA0006 | groups=G0035, G0079 | software=S0634
+- T1189: Drive-by Compromise | tactics=TA0001 | groups=G0001, G0007, G0010, G0012, G0027, G0032, G0035, G0040, G0048, G0050, G0056, G0059, G0060, G0065, G0066, G0067, G0068, G0070, G0073, G0077, G0082, G0095, G0112, G0124, G0134, G0138, G1006, G1012, G1020, G1034, G1035 | software=S0215, S0216, S0451, S0482, S0483, S0496, S0531, S0606, S1086, S1124
+- T1190: Exploit Public-Facing Application | tactics=TA0001 | groups=G0001, G0004, G0007, G0016, G0027, G0034, G0035, G0045, G0046, G0059, G0065, G0069, G0087, G0093, G0094, G0096, G0098, G0106, G0108, G0115, G0117, G0123, G0125, G0135, G1003, G1006, G1009, G1016, G1017, G1021, G1022, G1023, G1030, G1032, G1035, G1040, G1041, G1043, G1045, G1048, G1051, G1053, G1054, G1055 | software=S0224, S0225, S0412, S0516, S0623, S1105, S1184, S1242, S9023
+- T1195: Supply Chain Compromise | tactics=TA0001 | groups=G0034, G0049, G1003 | software=S1148, S1213
+- T1195.001: Compromise Software Dependencies and Development Tools | tactics=TA0001 | groups= | software=S0658, S1246, S9008, S9010, S9034
+- T1195.002: Compromise Software Supply Chain | tactics=TA0001 | groups=G0027, G0034, G0035, G0046, G0080, G0096, G0115, G1034, G1036 | software=S0222, S0493, S0562
+- T1195.003: Compromise Hardware Supply Chain | tactics=TA0001 | groups= | software=
+- T1197: BITS Jobs | tactics=TA0002, TA0003, TA0005 | groups=G0040, G0065, G0087, G0096, G0102 | software=S0154, S0190, S0201, S0333, S0534, S0554, S0652, S0654
+- T1199: Trusted Relationship | tactics=TA0001 | groups=G0007, G0016, G0027, G0034, G0045, G0115, G0125, G1004, G1005, G1039, G1041, G1055 | software=
+- T1200: Hardware Additions | tactics=TA0001 | groups=G0105 | software=
+- T1201: Password Policy Discovery | tactics=TA0007 | groups=G0010, G0049, G0114 | software=S0039, S0236, S0378, S0488
+- T1202: Indirect Command Execution | tactics=TA0005 | groups=G0032, G1039 | software=S0193, S0379
+- T1203: Exploitation for Client Execution | tactics=TA0002 | groups=G0001, G0005, G0007, G0012, G0016, G0018, G0022, G0027, G0032, G0034, G0035, G0040, G0049, G0050, G0060, G0062, G0064, G0065, G0066, G0067, G0069, G0080, G0081, G0089, G0096, G0098, G0100, G0121, G0126, G0129, G0131, G0134, G0138, G0142, G1002, G1003, G1007, G1011, G1031, G1041, G1048 | software=S0154, S0239, S0243, S0260, S0331, S0341, S0374, S0391, S0396, S0458, S0578, S1065, S1154, S1207
+- T1204: User Execution | tactics=TA0002 | groups=G1004, G1015 | software=S1130, S1213
+- T1204.001: Malicious Link | tactics=TA0002 | groups=G0007, G0010, G0016, G0021, G0022, G0034, G0040, G0046, G0047, G0049, G0050, G0059, G0061, G0064, G0065, G0066, G0069, G0080, G0082, G0085, G0087, G0090, G0092, G0094, G0095, G0098, G0099, G0102, G0103, G0112, G0120, G0121, G0128, G0129, G0134, G0140, G0142, G1006, G1011, G1014, G1018, G1020, G1031, G1034, G1035, G1037, G1038, G1039, G1052 | software=S0198, S0367, S0435, S0436, S0453, S0475, S0499, S0528, S0530, S0531, S0534, S0561, S0584, S0585, S0644, S0646, S0649, S0650, S0669, S1017, S1018, S1030, S1039, S1086, S1124, S1138, S1160, S1242, S9026
+- T1204.002: Malicious File | tactics=TA0002 | groups=G0005, G0007, G0012, G0013, G0016, G0018, G0019, G0021, G0027, G0032, G0034, G0035, G0037, G0040, G0045, G0046, G0047, G0048, G0049, G0050, G0056, G0059, G0060, G0061, G0062, G0064, G0065, G0066, G0067, G0068, G0069, G0070, G0073, G0075, G0078, G0079, G0080, G0081, G0082, G0084, G0085, G0087, G0089, G0090, G0091, G0092, G0094, G0095, G0098, G0099, G0100, G0102, G0103, G0107, G0112, G0119, G0121, G0126, G0127, G0129, G0130, G0131, G0133, G0134, G0136, G0137, G0138, G0140, G0142, G1001, G1002, G1006, G1007, G1008, G1011, G1012, G1018, G1026, G1031, G1033, G1036, G1039, G1046, G1052, G1054, G1055 | software=S0011, S0013, S0148, S0198, S0234, S0240, S0260, S0263, S0266, S0268, S0331, S0332, S0340, S0348, S0356, S0367, S0373, S0384, S0389, S0390, S0402, S0428, S0433, S0435, S0447, S0453, S0455, S0458, S0464, S0465, S0476, S0482, S0483, S0491, S0496, S0499, S0520, S0526, S0527, S0528, S0531, S0561, S0584, S0585, S0606, S0622, S0631, S0634, S0635, S0637, S0642, S0648, S0650, S0660, S0665, S0669, S0670, S0696, S1013, S1014, S1017, S1018, S1021, S1026, S1027, S1030, S1037, S1039, S1042, S1063, S1064, S1065, S1066, S1070, S1075, S1086, S1087, S1088, S1100, S1111, S1122, S1142, S1160, S1169, S1183, S1213, S1229, S1230, S1236, S1238, S1240, S1242, S1246, S9020, S9026, S9031, S9035, S9037
+- T1204.003: Malicious Image | tactics=TA0002 | groups=G0139 | software=
+- T1204.004: Malicious Copy and Paste | tactics=TA0002 | groups=G0069, G0094, G1052 | software=S1229
+- T1204.005: Malicious Library | tactics=TA0002 | groups=G1052 | software=
+- T1205: Traffic Signaling | tactics=TA0003, TA0005, TA0011 | groups=G0094, G0129, G1048 | software=S0022, S0220, S0221, S0430, S0446, S0519, S0587, S0641, S0664, S1114, S1118, S1201, S1203, S1219, S1228, S1239, S9011
+- T1205.001: Port Knocking | tactics=TA0003, TA0005, TA0011 | groups=G0056, G1048 | software=S1059, S1060, S1204, S1219
+- T1205.002: Socket Filters | tactics=TA0003, TA0005, TA0011 | groups= | software=S0587, S1123, S1161, S1224
+- T1207: Rogue Domain Controller | tactics=TA0112 | groups= | software=S0002
+- T1210: Exploitation of Remote Services | tactics=TA0008 | groups=G0007, G0027, G0035, G0045, G0046, G0069, G0102, G0117, G0131, G1003, G1006 | software=S0143, S0260, S0266, S0363, S0366, S0367, S0368, S0378, S0532, S0603, S0606, S0608, S0650
+- T1211: Exploitation for Stealth | tactics=TA0005 | groups=G0007, G1047 | software=
+- T1212: Exploitation for Credential Access | tactics=TA0006 | groups=G1048 | software=
+- T1213: Data from Information Repositories | tactics=TA0009 | groups=G0007 | software=S1148, S1196
+- T1213.001: Confluence | tactics=TA0009 | groups=G1004 | software=S9009
+- T1213.002: Sharepoint | tactics=TA0009 | groups=G0004, G0007, G0114, G0125, G1004, G1024, G1055 | software=S0227, S9009
+- T1213.003: Code Repositories | tactics=TA0009 | groups=G0096, G1004, G1015 | software=S9008, S9009, S9010
+- T1213.004: Customer Relationship Management Software | tactics=TA0009 | groups= | software=
+- T1213.005: Messaging Applications | tactics=TA0009 | groups=G0117, G1004, G1015 | software=S9009
+- T1213.006: Databases | tactics=TA0009 | groups=G0010, G0034, G0037, G1041 | software=S0598, S1146, S9010
+- T1216: System Script Proxy Execution | tactics=TA0005 | groups= | software=
+- T1216.001: PubPrn | tactics=TA0005 | groups=G0050 | software=
+- T1216.002: SyncAppvPublishingServer | tactics=TA0005 | groups= | software=
+- T1217: Browser Information Discovery | tactics=TA0007 | groups=G0082, G0094, G0114, G0117, G1015, G1017, G1036 | software=S0079, S0274, S0363, S0409, S0567, S0673, S0681, S1012, S1042, S1060, S1122, S1153, S1185, S1196, S1213, S1240, S1246, S9010
+- T1218: System Binary Proxy Execution | tactics=TA0005 | groups=G0032, G1017 | software=
+- T1218.001: Compiled HTML File | tactics=TA0005 | groups=G0049, G0070, G0082, G0091, G0096 | software=S0373
+- T1218.002: Control Panel | tactics=TA0005 | groups= | software=S0172, S0260
+- T1218.003: CMSTP | tactics=TA0005 | groups=G0069, G0080 | software=S1149, S1202
+- T1218.004: InstallUtil | tactics=TA0005 | groups=G0045, G0129 | software=S0631, S0689, S1018, S1155
+- T1218.005: Mshta | tactics=TA0005 | groups=G0016, G0032, G0046, G0047, G0050, G0069, G0082, G0094, G0100, G0121, G0127, G0129, G0140, G0142, G1006, G1008, G1018 | software=S0147, S0223, S0228, S0250, S0341, S0379, S0414, S0455, S0589, S1155, S1213
+- T1218.007: Msiexec | tactics=TA0005 | groups=G0021, G0075, G0082, G0092, G0095, G0128 | software=S0038, S0381, S0449, S0451, S0455, S0481, S0483, S0528, S0530, S0531, S0584, S0592, S0611, S0631, S0650, S0662, S1052, S1122, S1130, S1160, S1240, S9021, S9034
+- T1218.008: Odbcconf | tactics=TA0005 | groups=G0080 | software=S1039, S1130
+- T1218.009: Regsvcs/Regasm | tactics=TA0005 | groups= | software=S0331
+- T1218.010: Regsvr32 | tactics=TA0005 | groups=G0009, G0050, G0065, G0073, G0080, G0090, G0094, G0100, G0108, G0127, G1053 | software=S0021, S0087, S0229, S0250, S0270, S0284, S0341, S0367, S0373, S0384, S0476, S0481, S0554, S0568, S0622, S0650, S0698, S1018, S1030, S1047, S1130, S1155, S1239
+- T1218.011: Rundll32 | tactics=TA0005 | groups=G0007, G0008, G0022, G0032, G0034, G0046, G0047, G0050, G0052, G0059, G0069, G0073, G0082, G0092, G0094, G0096, G0102, G0108, G0125, G0127, G0140, G0143, G1034, G1039, G1048, G1053 | software=S0032, S0044, S0045, S0046, S0074, S0081, S0082, S0093, S0113, S0137, S0139, S0141, S0142, S0143, S0147, S0148, S0154, S0167, S0196, S0204, S0236, S0244, S0250, S0255, S0256, S0260, S0267, S0268, S0342, S0353, S0356, S0368, S0381, S0382, S0412, S0438, S0452, S0461, S0481, S0483, S0512, S0518, S0520, S0554, S0559, S0568, S0576, S0589, S0606, S0634, S0635, S0637, S0650, S0698, S1026, S1027, S1030, S1039, S1044, S1050, S1052, S1064, S1100, S1122, S1130, S1160, S1183, S1190, S1196
+- T1218.012: Verclsid | tactics=TA0005 | groups= | software=S0499
+- T1218.013: Mavinject | tactics=TA0005 | groups= | software=S1239
+- T1218.014: MMC | tactics=TA0005 | groups=G1051 | software=
+- T1218.015: Electron Applications | tactics=TA0005 | groups= | software=S1213
+- T1219: Remote Access Tools | tactics=TA0011 | groups=G0008, G0034, G0046, G0049, G0080, G0105, G0115, G0139, G1024, G1032, G1043, G1051 | software=S0030, S0148, S0266, S0384, S0554, S0601, S1245
+- T1219.001: IDE Tunneling | tactics=TA0011 | groups=G0129 | software=
+- T1219.002: Remote Desktop Software | tactics=TA0011 | groups=G0048, G0069, G0076, G0094, G0120, G0129, G1015, G1046, G1052, G1053, G1055 | software=S1242
+- T1219.003: Remote Access Hardware | tactics=TA0011 | groups= | software=
+- T1220: XSL Script Processing | tactics=TA0005 | groups=G0080, G0126 | software=S0373
+- T1221: Template Injection | tactics=TA0005 | groups=G0007, G0035, G0047, G0079, G0081, G0100, G0142, G1054 | software=S0631, S0670
+- T1222: File and Directory Permissions Modification | tactics=TA0112 | groups= | software=S1242
+- T1222.001: Windows Permissions | tactics=TA0112 | groups=G0102, G1046 | software=S0201, S0366, S0446, S0531, S0570, S0612, S0693, S1068, S1180, S9002
+- T1222.002: Linux and Mac Permissions | tactics=TA0112 | groups=G0050, G0106, G0139 | software=S0281, S0352, S0402, S0482, S0587, S0598, S0599, S0658, S1070, S1105, S9013
+- T1480: Execution Guardrails | tactics=TA0005 | groups=G0047, G0099, G1043, G1052 | software=S0504, S0562, S0570, S0603, S0634, S0635, S0636, S0637, S0678, S1035, S1052, S1111, S1130, S1133, S1143, S1149, S1150, S1161, S1178, S1179, S1180, S1183, S1184, S1185, S1194, S1199, S1200, S1202, S1210, S1212, S1239, S1240, S1242, S9001, S9003, S9010, S9019, S9020, S9023, S9026, S9034, S9039
+- T1480.001: Environmental Keying | tactics=TA0005 | groups=G0020, G0096 | software=S0141, S0240, S0260, S0685, S1100, S1145, S1228, S1239
+- T1480.002: Mutual Exclusion | tactics=TA0005 | groups=G0082, G0094 | software=S0012, S0013, S0168, S0496, S0562, S0632, S1070, S1161, S1183, S1196, S1202, S1236, S1239, S1242, S1247, S9019, S9023, S9024
+- T1482: Domain Trust Discovery | tactics=TA0007 | groups=G0030, G0059, G0061, G0114, G1006, G1024, G1043, G1046, G1053, G1054 | software=S0105, S0194, S0266, S0359, S0363, S0378, S0483, S0521, S0534, S0552, S0650, S1063, S1071, S1081, S1124, S1145, S1146, S1159, S1160, S9035
+- T1484: Domain or Tenant Policy Modification | tactics=TA0004, TA0112 | groups= | software=
+- T1484.001: Group Policy Modification | tactics=TA0004, TA0112 | groups=G0096, G0119, G1021, G1053, G1055 | software=S0363, S0554, S0688, S0697, S1058, S1199, S1202, S1242
+- T1484.002: Trust Modification | tactics=TA0004, TA0112 | groups=G1015, G1053 | software=S0677
+- T1485: Data Destruction | tactics=TA0040 | groups=G0032, G0034, G0082, G1004, G1053, G1055 | software=S0089, S0139, S0140, S0195, S0238, S0265, S0341, S0364, S0365, S0380, S0496, S0604, S0607, S0659, S0688, S0689, S0693, S0697, S1125, S1133, S1134, S1135, S1167, S1178, S9008, S9030, S9038, S9039
+- T1485.001: Lifecycle-Triggered Deletion | tactics=TA0040 | groups= | software=
+- T1486: Data Encrypted for Impact | tactics=TA0040 | groups=G0034, G0046, G0059, G0061, G0082, G0092, G0096, G0119, G1015, G1024, G1032, G1036, G1043, G1046, G1050, G1051, G1053, G1055 | software=S0140, S0242, S0341, S0366, S0368, S0370, S0372, S0389, S0400, S0446, S0449, S0457, S0481, S0496, S0554, S0556, S0570, S0575, S0576, S0583, S0595, S0605, S0606, S0607, S0611, S0612, S0616, S0617, S0618, S0625, S0638, S0639, S0640, S0654, S0658, S0659, S1033, S1053, S1058, S1068, S1070, S1073, S1096, S1111, S1129, S1133, S1137, S1139, S1150, S1162, S1178, S1180, S1181, S1191, S1194, S1199, S1202, S1212, S1242, S1244, S1247, S9020
+- T1489: Service Stop | tactics=TA0040 | groups=G0032, G0034, G0094, G0102, G0119, G1004, G1051 | software=S0365, S0366, S0400, S0431, S0446, S0449, S0457, S0481, S0496, S0533, S0556, S0575, S0576, S0582, S0583, S0604, S0605, S0607, S0611, S0625, S0638, S0640, S0659, S0688, S0697, S1053, S1058, S1068, S1073, S1096, S1139, S1150, S1181, S1191, S1194, S1199, S1202, S1211, S1212, S1217, S1242, S1244, S1245, S1247, S9013, S9014, S9015
+- T1490: Inhibit System Recovery | tactics=TA0040 | groups=G0034, G0102, G1015, G1043, G1051, G1053, G1055 | software=S0132, S0260, S0365, S0366, S0389, S0400, S0446, S0449, S0457, S0481, S0496, S0570, S0575, S0576, S0583, S0605, S0608, S0611, S0612, S0616, S0617, S0618, S0638, S0640, S0654, S0659, S0673, S0688, S0697, S1058, S1068, S1070, S1073, S1111, S1129, S1135, S1136, S1139, S1150, S1162, S1180, S1181, S1199, S1202, S1212, S1242, S1244, S1247
+- T1491: Defacement | tactics=TA0040 | groups= | software=
+- T1491.001: Internal Defacement | tactics=TA0040 | groups=G0032, G0047, G1043 | software=S0332, S0659, S0688, S1068, S1070, S1139, S1150, S1178, S1212, S1242, S9030
+- T1491.002: External Defacement | tactics=TA0040 | groups=G0034, G1003 | software=
+- T1495: Firmware Corruption | tactics=TA0040 | groups= | software=S0266, S0606
+- T1496: Resource Hijacking | tactics=TA0040 | groups= | software=
+- T1496.001: Compute Hijacking | tactics=TA0040 | groups=G0096, G0106, G0108, G0139 | software=S0434, S0451, S0468, S0486, S0492, S0532, S0599, S0601, S1111
+- T1496.002: Bandwidth Hijacking | tactics=TA0040 | groups= | software=
+- T1496.003: SMS Pumping | tactics=TA0040 | groups= | software=
+- T1496.004: Cloud Service Hijacking | tactics=TA0040 | groups= | software=
+- T1497: Virtualization/Sandbox Evasion | tactics=TA0005, TA0007 | groups=G0012, G1031, G1052 | software=S0023, S0046, S0147, S0148, S0268, S0331, S0380, S0455, S0483, S0484, S0499, S0534, S0554, S0666, S1020, S1030, S1039, S1070, S1130, S1183, S1207, S1240
+- T1497.001: System Checks | tactics=TA0005, TA0007 | groups=G0012, G0047, G0049, G0090, G0094, G0120, G1017 | software=S0013, S0024, S0094, S0182, S0192, S0226, S0237, S0240, S0242, S0248, S0260, S0264, S0270, S0332, S0333, S0337, S0352, S0354, S0373, S0396, S0428, S0438, S0439, S0527, S0531, S0532, S0559, S0561, S0576, S0588, S0612, S0626, S0627, S0637, S0644, S0650, S0657, S0679, S0689, S1018, S1019, S1039, S1048, S1064, S1066, S1070, S1086, S1087, S1111, S1122, S1130, S1145, S1147, S1159, S1160, S1179, S1180, S1207, S1213, S9018
+- T1497.002: User Activity Based Checks | tactics=TA0005, TA0007 | groups=G0012, G0046 | software=S0154, S0439, S0543, S1239, S9026
+- T1497.003: Time Based Checks | tactics=TA0005, TA0007 | groups= | software=S0115, S0266, S0268, S0386, S0396, S0439, S0447, S0453, S0493, S0512, S0513, S0534, S0554, S0559, S0561, S0565, S0574, S0584, S0588, S0595, S0611, S0626, S0627, S0632, S0642, S0650, S0658, S0660, S0671, S0689, S0694, S0697, S1018, S1034, S1039, S1059, S1063, S1064, S1066, S1086, S1132, S1138, S1141, S1212, S1229, S9003, S9023
+- T1498: Network Denial of Service | tactics=TA0040 | groups=G0007 | software=S0532, S1107
+- T1498.001: Direct Network Flood | tactics=TA0040 | groups= | software=
+- T1498.002: Reflection Amplification | tactics=TA0040 | groups= | software=
+- T1499: Endpoint Denial of Service | tactics=TA0040 | groups=G0034 | software=S0052, S0412
+- T1499.001: OS Exhaustion Flood | tactics=TA0040 | groups= | software=
+- T1499.002: Service Exhaustion Flood | tactics=TA0040 | groups= | software=
+- T1499.003: Application Exhaustion Flood | tactics=TA0040 | groups= | software=
+- T1499.004: Application or System Exploitation | tactics=TA0040 | groups= | software=S0604
+- T1505: Server Software Component | tactics=TA0003 | groups= | software=
+- T1505.001: SQL Stored Procedures | tactics=TA0003 | groups= | software=S0603
+- T1505.002: Transport Agent | tactics=TA0003 | groups= | software=S0395
+- T1505.003: Web Shell | tactics=TA0003 | groups=G0007, G0009, G0016, G0027, G0034, G0035, G0049, G0050, G0059, G0065, G0081, G0082, G0087, G0093, G0094, G0117, G0123, G0125, G0129, G0131, G0135, G1003, G1009, G1012, G1016, G1017, G1023, G1030, G1041, G1043, G1051 | software=S0020, S0072, S0073, S0185, S0578, S0598, S1108, S1110, S1112, S1113, S1115, S1117, S1118, S1119, S1120, S1163, S1187, S1188, S1189, S9014, S9024, S9028
+- T1505.004: IIS Components | tactics=TA0003 | groups= | software=S0072, S0258, S1022
+- T1505.005: Terminal Services DLL | tactics=TA0003 | groups= | software=
+- T1505.006: vSphere Installation Bundles | tactics=TA0003 | groups=G1048 | software=S1218
+- T1518: Software Discovery | tactics=TA0007 | groups=G0060, G0069, G0081, G0100, G0112, G0121, G0124, G0129, G1001, G1008, G1017 | software=S0024, S0062, S0126, S0148, S0154, S0229, S0260, S0384, S0431, S0445, S0455, S0467, S0472, S0482, S0526, S0534, S0598, S0623, S0646, S0650, S0652, S0658, S0674, S1042, S1064, S1065, S1099, S1124, S1141, S1148, S1153, S1183, S1185, S1228, S1240, S1245, S9010, S9029
+- T1518.001: Security Software Discovery | tactics=TA0007 | groups=G0010, G0012, G0019, G0040, G0047, G0061, G0069, G0080, G0081, G0082, G0089, G0094, G0102, G0106, G0112, G0121, G0139, G0143, G1008, G1018, G1022, G1026, G1040, G1043, G1044, G1051, G1053 | software=S0023, S0046, S0057, S0062, S0088, S0091, S0098, S0108, S0113, S0115, S0125, S0142, S0143, S0148, S0171, S0176, S0182, S0184, S0196, S0201, S0223, S0244, S0249, S0256, S0257, S0260, S0267, S0270, S0283, S0284, S0330, S0337, S0339, S0363, S0368, S0373, S0380, S0381, S0388, S0396, S0455, S0457, S0467, S0468, S0469, S0471, S0472, S0473, S0476, S0483, S0484, S0491, S0492, S0501, S0513, S0531, S0534, S0553, S0559, S0568, S0579, S0595, S0603, S0611, S0646, S0650, S0652, S0653, S0657, S0658, S0666, S0673, S0679, S0680, S0681, S0688, S0689, S0692, S1013, S1025, S1028, S1029, S1039, S1044, S1060, S1063, S1065, S1066, S1091, S1111, S1122, S1130, S1141, S1149, S1159, S1160, S1179, S1180, S1193, S1213, S1228, S1234, S1239, S1240, S1244, S9019, S9023, S9024, S9026, S9032, S9037
+- T1518.002: Backup Software Discovery | tactics=TA0007 | groups=G0102 | software=
+- T1525: Implant Internal Image | tactics=TA0003 | groups= | software=
+- T1526: Cloud Service Discovery | tactics=TA0007 | groups=G1053 | software=S0677, S0684, S1091, S9009
+- T1528: Steal Application Access Token | tactics=TA0006 | groups=G0007, G0016 | software=S0677, S0683, S9008, S9009
+- T1529: System Shutdown/Reboot | tactics=TA0040 | groups=G0032, G0067, G0082, G1051 | software=S0140, S0332, S0365, S0368, S0372, S0449, S0582, S0607, S0689, S0697, S1033, S1053, S1070, S1111, S1125, S1133, S1135, S1136, S1149, S1160, S1167, S1178, S1207, S1242, S9038
+- T1530: Data from Cloud Storage | tactics=TA0009 | groups=G0117, G0125, G1015, G1044, G1053 | software=S0677, S0683, S1091, S9009
+- T1531: Account Access Removal | tactics=TA0040 | groups=G1004, G1024 | software=S0372, S0576, S0688, S1134
+- T1534: Internal Spearphishing | tactics=TA0008 | groups=G0047, G0065, G0069, G0094, G0099, G1001 | software=S9030
+- T1535: Unused/Unsupported Cloud Regions | tactics=TA0005 | groups= | software=
+- T1537: Transfer Data to Cloud Account | tactics=TA0010 | groups=G1032, G1039, G1053 | software=
+- T1538: Cloud Service Dashboard | tactics=TA0007 | groups=G1015 | software=
+- T1539: Steal Web Session Cookie | tactics=TA0006 | groups=G0030, G0034, G0094, G0120, G1014, G1015, G1033, G1044 | software=S0467, S0492, S0531, S0568, S0631, S0650, S0657, S0658, S1111, S1140, S1146, S1148, S1201, S1207, S1213, S1240, S9003, S9010, S9020
+- T1542: Pre-OS Boot | tactics=TA0003, TA0005 | groups= | software=
+- T1542.001: System Firmware | tactics=TA0003, TA0005 | groups= | software=S0001, S0047, S0397
+- T1542.002: Component Firmware | tactics=TA0003, TA0005 | groups=G0020 | software=S0687
+- T1542.003: Bootkit | tactics=TA0003, TA0005 | groups=G0007, G0032, G0096 | software=S0112, S0114, S0182, S0266, S0484, S0689
+- T1542.004: ROMMONkit | tactics=TA0003, TA0005 | groups= | software=
+- T1542.005: TFTP Boot | tactics=TA0003, TA0005 | groups= | software=
+- T1543: Create or Modify System Process | tactics=TA0003, TA0004 | groups= | software=S0401, S1121, S1142, S1152, S1184, S1194, S9015
+- T1543.001: Launch Agent | tactics=TA0003, TA0004 | groups=G1052 | software=S0162, S0198, S0235, S0274, S0276, S0277, S0279, S0281, S0282, S0352, S0369, S0482, S0492, S0497, S0595, S0690, S1016, S1048, S1153, S1245, S9010
+- T1543.002: Systemd Service | tactics=TA0003, TA0004 | groups=G0106, G0139, G1015 | software=S0192, S0401, S0410, S0601, S0663, S1078, S1198, S1222, S9008
+- T1543.003: Windows Service | tactics=TA0003, TA0004 | groups=G0004, G0008, G0022, G0027, G0030, G0032, G0046, G0049, G0050, G0056, G0073, G0080, G0081, G0082, G0094, G0096, G0102, G0105, G0108, G0139, G0143, G1006, G1021, G1030, G1043, G1051 | software=S0004, S0012, S0013, S0022, S0024, S0029, S0032, S0038, S0044, S0046, S0050, S0071, S0074, S0081, S0082, S0086, S0089, S0118, S0127, S0140, S0141, S0142, S0149, S0154, S0164, S0169, S0172, S0176, S0180, S0181, S0182, S0194, S0203, S0204, S0205, S0206, S0210, S0230, S0236, S0239, S0259, S0260, S0261, S0263, S0265, S0266, S0268, S0332, S0335, S0342, S0343, S0345, S0347, S0350, S0356, S0363, S0366, S0367, S0386, S0387, S0412, S0438, S0439, S0444, S0451, S0481, S0491, S0493, S0495, S0501, S0504, S0533, S0560, S0567, S0570, S0584, S0603, S0604, S0608, S0612, S0625, S0629, S0630, S0650, S0660, S0663, S0664, S0665, S0666, S0692, S0697, S1031, S1033, S1037, S1044, S1049, S1070, S1090, S1099, S1100, S1158, S1202, S1211, S1226, S1232, S1235, S1239, S1244, S1247
+- T1543.004: Launch Daemon | tactics=TA0003, TA0004 | groups= | software=S0352, S0451, S0482, S0497, S0584, S0595, S0658, S0690, S1105, S1219
+- T1543.005: Container Service | tactics=TA0003, TA0004 | groups= | software=
+- T1546: Event Triggered Execution | tactics=TA0003, TA0004 | groups= | software=S0658, S1091, S1164
+- T1546.001: Change Default File Association | tactics=TA0003, TA0004 | groups=G0094 | software=S0692
+- T1546.002: Screensaver | tactics=TA0003, TA0004 | groups= | software=S0168
+- T1546.003: Windows Management Instrumentation Event Subscription | tactics=TA0003, TA0004 | groups=G0010, G0016, G0061, G0064, G0065, G0075, G0108, G0129, G1001, G1013 | software=S0053, S0150, S0202, S0371, S0376, S0378, S0511, S0682, S0692, S1020, S1059, S1081, S1085
+- T1546.004: Unix Shell Configuration Modification | tactics=TA0003, TA0004 | groups=G1052 | software=S0362, S0658, S0690, S1078, S9014
+- T1546.005: Trap | tactics=TA0003, TA0004 | groups= | software=
+- T1546.006: LC_LOAD_DYLIB Addition | tactics=TA0003, TA0004 | groups= | software=
+- T1546.007: Netsh Helper DLL | tactics=TA0003, TA0004 | groups= | software=S0108
+- T1546.008: Accessibility Features | tactics=TA0003, TA0004 | groups=G0001, G0009, G0016, G0022, G0096, G0117 | software=S0363
+- T1546.009: AppCert DLLs | tactics=TA0003, TA0004 | groups= | software=S0196
+- T1546.010: AppInit DLLs | tactics=TA0003, TA0004 | groups=G0087 | software=S0098, S0107, S0458
+- T1546.011: Application Shimming | tactics=TA0003, TA0004 | groups=G0046 | software=S0444, S0461, S0517
+- T1546.012: Image File Execution Options Injection | tactics=TA0003, TA0004 | groups= | software=S0461, S0559
+- T1546.013: PowerShell Profile | tactics=TA0003, TA0004 | groups=G0010 | software=
+- T1546.014: Emond | tactics=TA0003, TA0004 | groups= | software=
+- T1546.015: Component Object Model Hijacking | tactics=TA0003, TA0004 | groups=G0007 | software=S0044, S0045, S0126, S0127, S0256, S0356, S0670, S0679, S0692, S1050, S1064
+- T1546.016: Installer Packages | tactics=TA0003, TA0004 | groups= | software=S0584, S9008
+- T1546.017: Udev Rules | tactics=TA0003, TA0004 | groups= | software=S1219
+- T1546.018: Python Startup Hooks | tactics=TA0003, TA0004 | groups= | software=
+- T1547: Boot or Logon Autostart Execution | tactics=TA0003, TA0004 | groups=G1044 | software=S0083, S0084, S0567, S0651, S0653
+- T1547.001: Registry Run Keys / Startup Folder | tactics=TA0003, TA0004 | groups=G0004, G0007, G0010, G0012, G0016, G0019, G0021, G0022, G0024, G0026, G0027, G0032, G0035, G0037, G0040, G0046, G0047, G0048, G0050, G0051, G0056, G0059, G0060, G0064, G0065, G0067, G0069, G0070, G0073, G0078, G0080, G0081, G0087, G0091, G0094, G0096, G0100, G0102, G0106, G0112, G0121, G0126, G0128, G0129, G0139, G0140, G0142, G1014, G1016, G1018, G1036, G1039, G1043, G1046, G1052, G1055 | software=S0004, S0011, S0012, S0013, S0015, S0018, S0028, S0030, S0031, S0032, S0034, S0035, S0036, S0044, S0045, S0046, S0053, S0058, S0062, S0070, S0074, S0080, S0081, S0082, S0085, S0087, S0088, S0089, S0090, S0093, S0094, S0113, S0115, S0124, S0127, S0128, S0131, S0136, S0137, S0139, S0141, S0144, S0145, S0147, S0148, S0152, S0153, S0159, S0167, S0168, S0170, S0172, S0178, S0182, S0186, S0192, S0194, S0196, S0198, S0199, S0204, S0207, S0226, S0228, S0235, S0244, S0247, S0249, S0250, S0251, S0253, S0254, S0256, S0259, S0260, S0262, S0265, S0266, S0267, S0268, S0270, S0330, S0331, S0332, S0334, S0336, S0337, S0338, S0340, S0341, S0345, S0348, S0353, S0355, S0356, S0363, S0367, S0371, S0373, S0375, S0381, S0382, S0385, S0386, S0389, S0396, S0397, S0409, S0414, S0417, S0428, S0433, S0439, S0441, S0442, S0444, S0446, S0449, S0455, S0456, S0458, S0461, S0471, S0483, S0484, S0491, S0499, S0500, S0512, S0513, S0531, S0532, S0534, S0546, S0553, S0561, S0568, S0570, S0582, S0586, S0608, S0622, S0630, S0631, S0632, S0635, S0640, S0644, S0647, S0649, S0650, S0652, S0660, S0662, S0663, S0665, S0666, S0669, S0670, S0692, S0696, S1018, S1021, S1025, S1026, S1027, S1029, S1035, S1037, S1041, S1044, S1053, S1066, S1074, S1086, S1111, S1122, S1130, S1138, S1145, S1150, S1160, S1182, S1199, S1207, S1212, S1213, S1228, S1230, S1236, S1239, S1242, S1245, S1247, S9010, S9018, S9019, S9020, S9032, S9034, S9037
+- T1547.002: Authentication Package | tactics=TA0003, TA0004 | groups= | software=S0143
+- T1547.003: Time Providers | tactics=TA0003, TA0004 | groups= | software=
+- T1547.004: Winlogon Helper DLL | tactics=TA0003, TA0004 | groups=G0010, G0081, G0102 | software=S0168, S0200, S0351, S0375, S0379, S0387, S0534, S1066, S1202, S1242
+- T1547.005: Security Support Provider | tactics=TA0003, TA0004 | groups= | software=S0002, S0194, S0363
+- T1547.006: Kernel Modules and Extensions | tactics=TA0003, TA0004 | groups= | software=S0468, S0502, S1219
+- T1547.007: Re-opened Applications | tactics=TA0003, TA0004 | groups= | software=
+- T1547.008: LSASS Driver | tactics=TA0003, TA0004 | groups= | software=S0176, S0208
+- T1547.009: Shortcut Modification | tactics=TA0003, TA0004 | groups=G0032, G0065, G0078, G0087 | software=S0004, S0028, S0031, S0035, S0053, S0058, S0085, S0089, S0153, S0168, S0170, S0172, S0244, S0260, S0265, S0267, S0270, S0339, S0356, S0363, S0373, S0439, S0531, S0534, S0652
+- T1547.010: Port Monitors | tactics=TA0003, TA0004 | groups= | software=
+- T1547.012: Print Processors | tactics=TA0003, TA0004 | groups=G1006 | software=S0501, S0666
+- T1547.013: XDG Autostart Entries | tactics=TA0003, TA0004 | groups=G1052 | software=S0192, S0198, S0235, S0410, S1078, S1245
+- T1547.014: Active Setup | tactics=TA0003, TA0004 | groups= | software=S0012
+- T1547.015: Login Items | tactics=TA0003, TA0004 | groups= | software=S0198, S0281, S0690
+- T1548: Abuse Elevation Control Mechanism | tactics=TA0004 | groups=G1048 | software=S1130
+- T1548.001: Setuid and Setgid | tactics=TA0004 | groups= | software=S0276, S0401
+- T1548.002: Bypass User Account Control | tactics=TA0004 | groups=G0016, G0027, G0040, G0060, G0067, G0069, G0080, G0082, G0120, G1006, G1051 | software=S0074, S0089, S0116, S0129, S0132, S0134, S0140, S0141, S0148, S0154, S0182, S0192, S0230, S0250, S0254, S0260, S0262, S0275, S0332, S0356, S0363, S0378, S0444, S0447, S0458, S0501, S0527, S0531, S0570, S0584, S0606, S0612, S0633, S0640, S0660, S0662, S0666, S0669, S0670, S0692, S1018, S1039, S1068, S1081, S1111, S1130, S1149, S1199, S1202, S1242, S9007
+- T1548.003: Sudo and Sudo Caching | tactics=TA0004 | groups= | software=S0154, S0279, S0281, S9008
+- T1548.004: Elevated Execution with Prompt | tactics=TA0004 | groups= | software=S0402
+- T1548.005: Temporary Elevated Cloud Access | tactics=TA0004 | groups= | software=
+- T1548.006: TCC Manipulation | tactics=TA0004 | groups= | software=S0658
+- T1550: Use Alternate Authentication Material | tactics=TA0008 | groups= | software=S0661
+- T1550.001: Application Access Token | tactics=TA0008 | groups=G0007, G0125 | software=S0683, S1023, S9008
+- T1550.002: Pass the Hash | tactics=TA0008 | groups=G0006, G0007, G0050, G0093, G0094, G0096, G0102, G0114, G0143, G1003, G1016 | software=S0002, S0122, S0154, S0363, S0376, S0378, S0488, S1081
+- T1550.003: Pass the Ticket | tactics=TA0008 | groups=G0016, G0050, G0060 | software=S0002, S0053, S0192
+- T1550.004: Web Session Cookie | tactics=TA0008 | groups=G1033 | software=
+- T1552: Unsecured Credentials | tactics=TA0006 | groups=G1017 | software=S0373, S1091, S1111, S1131
+- T1552.001: Credentials In Files | tactics=TA0006 | groups=G0022, G0049, G0064, G0069, G0077, G0092, G0094, G0117, G0119, G0139, G1003, G1015, G1016, G1039 | software=S0067, S0089, S0117, S0192, S0226, S0262, S0266, S0283, S0331, S0344, S0349, S0363, S0367, S0378, S0583, S0601, S0677, S1183, S9008, S9009
+- T1552.002: Credentials in Registry | tactics=TA0006 | groups=G0050, G1039, G1055 | software=S0075, S0194, S0266, S0331, S0476, S1022, S1183
+- T1552.003: Shell History | tactics=TA0006 | groups= | software=S0599
+- T1552.004: Private Keys | tactics=TA0006 | groups=G0094, G0106, G0139, G1015, G1017, G1053 | software=S0002, S0283, S0363, S0377, S0409, S0599, S0601, S0661, S0677, S1060, S1196
+- T1552.005: Cloud Instance Metadata API | tactics=TA0006 | groups=G0139 | software=S0601, S0683, S9008, S9009
+- T1552.006: Group Policy Preferences | tactics=TA0006 | groups=G0064, G0102 | software=S0194, S0692, S9022
+- T1552.007: Container API | tactics=TA0006 | groups= | software=S0683
+- T1552.008: Chat Messages | tactics=TA0006 | groups=G1004 | software=
+- T1553: Subvert Trust Controls | tactics=TA0112 | groups=G0001 | software=S9008
+- T1553.001: Gatekeeper Bypass | tactics=TA0112 | groups= | software=S0352, S0369, S0402, S0658, S1016, S1153
+- T1553.002: Code Signing | tactics=TA0112 | groups=G0012, G0021, G0032, G0037, G0039, G0040, G0044, G0045, G0046, G0049, G0052, G0056, G0065, G0091, G0092, G0093, G0094, G0096, G0102, G0129, G1009, G1014, G1015, G1031, G1034, G1051, G1054 | software=S0091, S0144, S0148, S0154, S0163, S0168, S0170, S0187, S0210, S0234, S0262, S0266, S0284, S0342, S0372, S0377, S0415, S0455, S0475, S0491, S0501, S0504, S0520, S0527, S0534, S0559, S0584, S0603, S0611, S0624, S0646, S0650, S0663, S0697, S0698, S1016, S1070, S1149, S1150, S1151, S1183, S1196, S1197, S1213, S1226, S1228, S1232, S1233, S1235, S1238, S1239, S1240, S9024
+- T1553.003: SIP and Trust Provider Hijacking | tactics=TA0112 | groups= | software=
+- T1553.004: Install Root Certificate | tactics=TA0112 | groups= | software=S0009, S0148, S0160, S0281, S9003
+- T1553.005: Mark-of-the-Web Bypass | tactics=TA0112 | groups=G0016, G0082, G0092 | software=S0650, S1025
+- T1553.006: Code Signing Policy Modification | tactics=TA0112 | groups=G0010, G0087 | software=S0009, S0089, S0664
+- T1554: Compromise Host Software Binary | tactics=TA0003 | groups=G1023, G1048 | software=S0377, S0486, S0487, S0595, S0604, S0641, S0658, S1104, S1115, S1116, S1118, S1119, S1120, S1121, S1136, S1184, S9010, S9014
+- T1555: Credentials from Password Stores | tactics=TA0006 | groups=G0037, G0038, G0049, G0064, G0069, G0077, G0087, G0096, G0120, G1001, G1017, G1026 | software=S0002, S0048, S0050, S0113, S0138, S0167, S0192, S0198, S0262, S0331, S0349, S0373, S0378, S0435, S0447, S0484, S0526, S1111, S1122, S1146, S1156, S1207, S1240, S1246, S9022
+- T1555.001: Keychain | tactics=TA0006 | groups=G1052 | software=S0274, S0278, S0279, S0349, S0363, S0690, S1016, S1153, S1185, S1246, S9010
+- T1555.002: Securityd Memory | tactics=TA0006 | groups= | software=S0276
+- T1555.003: Credentials from Web Browsers | tactics=TA0006 | groups=G0021, G0022, G0034, G0037, G0038, G0040, G0049, G0064, G0067, G0069, G0077, G0092, G0094, G0096, G0100, G0128, G0130, G1001, G1004, G1017, G1026, G1039, G1044 | software=S0002, S0048, S0050, S0089, S0093, S0094, S0113, S0115, S0130, S0132, S0138, S0144, S0153, S0161, S0192, S0198, S0226, S0240, S0251, S0262, S0266, S0279, S0283, S0331, S0344, S0349, S0356, S0363, S0365, S0367, S0385, S0387, S0409, S0428, S0434, S0435, S0436, S0447, S0484, S0492, S0526, S0528, S0530, S0531, S0629, S0631, S0650, S0657, S0670, S0681, S0692, S1042, S1122, S1146, S1148, S1156, S1201, S1207, S1213, S1240, S1245, S1246, S9010, S9022
+- T1555.004: Windows Credential Manager | tactics=TA0006 | groups=G0010, G0038, G0049, G0102 | software=S0002, S0194, S0240, S0349, S0476, S0526, S0629, S0681, S0692
+- T1555.005: Password Managers | tactics=TA0006 | groups=G0027, G0117, G0119, G1004, G1015, G1048, G1053 | software=S0266, S0279, S0652, S1245
+- T1555.006: Cloud Secrets Management Stores | tactics=TA0006 | groups=G0125, G1053 | software=S1091, S9008, S9009
+- T1556: Modify Authentication Process | tactics=TA0003, TA0006, TA0112 | groups=G1016 | software=S0377, S0487, S0692, S9013
+- T1556.001: Domain Controller Authentication | tactics=TA0003, TA0006, TA0112 | groups=G0114 | software=S0007
+- T1556.002: Password Filter DLL | tactics=TA0003, TA0006, TA0112 | groups=G0041, G0049, G1054 | software=S0125
+- T1556.003: Pluggable Authentication Modules | tactics=TA0003, TA0006, TA0112 | groups= | software=S0377, S0468
+- T1556.004: Network Device Authentication | tactics=TA0003, TA0006, TA0112 | groups= | software=S0519, S1104, S9013
+- T1556.005: Reversible Encryption | tactics=TA0003, TA0006, TA0112 | groups= | software=
+- T1556.006: Multi-Factor Authentication | tactics=TA0003, TA0006, TA0112 | groups=G1015 | software=S0677, S1104
+- T1556.007: Hybrid Identity | tactics=TA0003, TA0006, TA0112 | groups=G0016 | software=S0677
+- T1556.008: Network Provider DLL | tactics=TA0003, TA0006, TA0112 | groups= | software=
+- T1556.009: Conditional Access Policies | tactics=TA0003, TA0006, TA0112 | groups=G1015, G1053 | software=
+- T1557: Adversary-in-the-Middle | tactics=TA0006, TA0009 | groups=G0094, G0129, G1041 | software=S0281, S1131, S1188, S9003
+- T1557.001: Name Resolution Poisoning and SMB Relay | tactics=TA0006, TA0009 | groups=G0032, G0102 | software=S0174, S0192, S0357, S0363, S0378
+- T1557.002: ARP Cache Poisoning | tactics=TA0006, TA0009 | groups=G0003, G1014 | software=
+- T1557.003: DHCP Spoofing | tactics=TA0006, TA0009 | groups= | software=
+- T1557.004: Evil Twin | tactics=TA0006, TA0009 | groups=G0007 | software=
+- T1558: Steal or Forge Kerberos Tickets | tactics=TA0006 | groups=G1024 | software=
+- T1558.001: Golden Ticket | tactics=TA0006 | groups=G0004 | software=S0002, S0363, S0633, S1071
+- T1558.002: Silver Ticket | tactics=TA0006 | groups= | software=S0002, S0363, S0677, S1071
+- T1558.003: Kerberoasting | tactics=TA0006 | groups=G0046, G0102, G0119 | software=S0194, S0357, S0363, S0692, S1063, S1071
+- T1558.004: AS-REP Roasting | tactics=TA0006 | groups= | software=S1071
+- T1558.005: Ccache Files | tactics=TA0006 | groups= | software=S0357
+- T1559: Inter-Process Communication | tactics=TA0002 | groups= | software=S0022, S0537, S0687, S1078, S1100, S1123, S1130, S1141, S1150, S1172, S1200, S1229, S1239, S1244, S9024
+- T1559.001: Component Object Model | tactics=TA0002 | groups=G0047, G0069, G0094, G1051 | software=S0223, S0260, S0266, S0386, S0458, S0666, S0691, S0692, S0698, S1015, S1039, S1044, S1066, S1130, S1160, S1236, S1238, S9037
+- T1559.002: Dynamic Data Exchange | tactics=TA0002 | groups=G0007, G0040, G0046, G0065, G0067, G0069, G0080, G0084, G0092, G0121, G1002 | software=S0148, S0223, S0237, S0387, S0391, S0428, S0458, S0476
+- T1559.003: XPC Services | tactics=TA0002 | groups= | software=
+- T1560: Archive Collected Data | tactics=TA0009 | groups=G0001, G0004, G0007, G0032, G0035, G0037, G0040, G0045, G0050, G0065, G1003, G1014, G1043 | software=S0010, S0045, S0091, S0093, S0113, S0187, S0198, S0249, S0251, S0253, S0257, S0267, S0279, S0331, S0343, S0356, S0363, S0375, S0395, S0409, S0445, S0454, S0456, S0487, S0515, S0517, S0521, S0567, S0586, S0622, S0657, S0658, S0667, S0681, S1012, S1039, S1101, S1140, S1148, S1196, S1206, S9032, S9036
+- T1560.001: Archive via Utility | tactics=TA0009 | groups=G0004, G0006, G0007, G0010, G0022, G0030, G0045, G0052, G0054, G0059, G0060, G0061, G0064, G0069, G0084, G0087, G0093, G0094, G0096, G0102, G0114, G0117, G0125, G0129, G0143, G1006, G1016, G1017, G1022, G1023, G1024, G1030, G1032, G1039, G1040, G1041, G1048, G1054, G1055 | software=S0062, S0160, S0187, S0192, S0196, S0212, S0260, S0264, S0274, S0278, S0332, S0339, S0340, S0378, S0428, S0439, S0441, S0458, S0466, S0538, S0622, S0647, S1022, S1040, S1043, S1141, S1168, S1210, S1228, S1239, S1245, S1246, S9010, S9035
+- T1560.002: Archive via Library | tactics=TA0009 | groups=G0027, G0032 | software=S0053, S0086, S0091, S0127, S0260, S0348, S0352, S0354, S0467, S0642, S0661, S1044, S1141
+- T1560.003: Archive via Custom Method | tactics=TA0009 | groups=G0030, G0032, G0037, G0052, G0094, G0129, G1048 | software=S0035, S0036, S0038, S0045, S0072, S0092, S0098, S0169, S0172, S0198, S0258, S0260, S0264, S0352, S0391, S0409, S0438, S0439, S0443, S0448, S0458, S0491, S0503, S0603, S0615, S0657, S0661, S1030, S1042, S1044, S1059
+- T1561: Disk Wipe | tactics=TA0040 | groups= | software=
+- T1561.001: Disk Content Wipe | tactics=TA0040 | groups=G0032, G0047, G1055 | software=S0364, S0380, S0576, S0689, S0697, S1010, S1068, S1111, S1125, S1133, S1134, S1167, S1205
+- T1561.002: Disk Structure Wipe | tactics=TA0040 | groups=G0032, G0034, G0067, G0082, G1003, G1055 | software=S0140, S0364, S0380, S0607, S0689, S0693, S0697, S1134, S1135, S1136, S1151, S1178, S9002
+- T1563: Remote Service Session Hijacking | tactics=TA0008 | groups= | software=
+- T1563.001: SSH Hijacking | tactics=TA0008 | groups= | software=S1220
+- T1563.002: RDP Hijacking | tactics=TA0008 | groups=G0001 | software=S0366
+- T1564: Hide Artifacts | tactics=TA0005 | groups= | software=S0332, S0402, S0482, S0670, S1011, S1066, S9025
+- T1564.001: Hidden Files and Directories | tactics=TA0005 | groups=G0007, G0032, G0046, G0050, G0081, G0106, G0125, G0129, G0134, G1014, G1016, G1039 | software=S0013, S0015, S0162, S0198, S0260, S0262, S0274, S0277, S0278, S0282, S0331, S0339, S0352, S0366, S0369, S0402, S0409, S0428, S0434, S0438, S0439, S0447, S0448, S0451, S0475, S0484, S0497, S0533, S0569, S0584, S0595, S0612, S0634, S0650, S0658, S0660, S0663, S1043, S1105, S1111, S1153, S1176, S1219, S1230, S1236
+- T1564.002: Hidden Users | tactics=TA0005 | groups=G0035, G0094 | software=S0649
+- T1564.003: Hidden Window | tactics=TA0005 | groups=G0007, G0009, G0022, G0046, G0047, G0050, G0052, G0059, G0073, G0078, G0079, G0094, G0099, G0126, G0133, G1022, G1051, G1055 | software=S0013, S0037, S0250, S0260, S0262, S0266, S0331, S0332, S0360, S0373, S0386, S0387, S0431, S0437, S0441, S0455, S0466, S0491, S0500, S0625, S0669, S0670, S0686, S0688, S0692, S1020, S1053, S1076, S1086, S1087, S1089, S1152, S1172, S1199, S1213, S1226, S1237, S1244, S1245, S9001, S9010, S9019, S9034
+- T1564.004: NTFS File Attributes | tactics=TA0005 | groups=G0050 | software=S0019, S0027, S0139, S0145, S0168, S0361, S0373, S0397, S0404, S0476, S0504, S0570, S0612, S1052, S1160
+- T1564.005: Hidden File System | tactics=TA0005 | groups=G0020, G0041 | software=S0019, S0022, S0114, S0126
+- T1564.006: Run Virtual Instance | tactics=TA0005 | groups= | software=S0449, S0451, S0481
+- T1564.007: VBA Stomping | tactics=TA0005 | groups= | software=
+- T1564.008: Email Hiding Rules | tactics=TA0005 | groups=G0085, G1015 | software=
+- T1564.009: Resource Forking | tactics=TA0005 | groups= | software=S0276, S0402
+- T1564.010: Process Argument Spoofing | tactics=TA0005 | groups= | software=S0154, S0615
+- T1564.011: Ignore Process Interrupts | tactics=TA0005 | groups=G0094, G1041, G1048 | software=S0402, S0588, S1161, S1184, S9008
+- T1564.012: File/Path Exclusions | tactics=TA0005 | groups=G0010 | software=
+- T1564.013: Bind Mounts | tactics=TA0005 | groups= | software=
+- T1564.014: Extended Attributes | tactics=TA0005 | groups= | software=
+- T1565: Data Manipulation | tactics=TA0040 | groups=G1016 | software=S9014
+- T1565.001: Stored Data Manipulation | tactics=TA0040 | groups=G0082 | software=S0562, S1135
+- T1565.002: Transmitted Data Manipulation | tactics=TA0040 | groups=G0082 | software=S0395, S0455, S0530, S9010
+- T1565.003: Runtime Data Manipulation | tactics=TA0040 | groups=G0082 | software=
+- T1566: Phishing | tactics=TA0001 | groups=G0001, G0069, G0094, G0115, G1032, G1041, G1049, G1055 | software=S0009, S1073, S1139
+- T1566.001: Spearphishing Attachment | tactics=TA0001 | groups=G0005, G0006, G0007, G0012, G0013, G0016, G0018, G0019, G0021, G0027, G0032, G0034, G0035, G0037, G0040, G0045, G0046, G0047, G0048, G0049, G0050, G0060, G0061, G0062, G0064, G0065, G0066, G0067, G0068, G0069, G0073, G0075, G0078, G0079, G0080, G0081, G0082, G0084, G0085, G0087, G0089, G0090, G0091, G0092, G0094, G0095, G0096, G0098, G0099, G0100, G0102, G0103, G0112, G0121, G0126, G0127, G0129, G0130, G0131, G0133, G0134, G0136, G0137, G0138, G0140, G0142, G1002, G1008, G1011, G1012, G1018, G1026, G1031, G1033, G1035, G1036, G1039, G1054 | software=S0011, S0148, S0198, S0234, S0240, S0266, S0268, S0331, S0332, S0340, S0346, S0356, S0367, S0373, S0428, S0433, S0447, S0453, S0455, S0458, S0476, S0483, S0496, S0499, S0520, S0528, S0585, S0622, S0631, S0634, S0642, S0648, S0650, S0660, S0665, S0669, S0670, S0673, S0696, S1013, S1014, S1017, S1018, S1030, S1039, S1064, S1065, S1066, S1075, S1086, S1087, S1111, S1160, S1183, S1207, S1213, S1242, S9020, S9035, S9037
+- T1566.002: Spearphishing Link | tactics=TA0001 | groups=G0006, G0010, G0016, G0021, G0022, G0032, G0034, G0040, G0046, G0049, G0050, G0059, G0061, G0064, G0065, G0066, G0069, G0080, G0085, G0087, G0090, G0092, G0094, G0095, G0098, G0099, G0102, G0103, G0112, G0120, G0121, G0128, G0129, G0134, G0140, G0142, G1006, G1011, G1014, G1018, G1020, G1037, G1039, G1044, G1046, G1054 | software=S0198, S0266, S0367, S0453, S0476, S0499, S0528, S0530, S0531, S0534, S0561, S0584, S0585, S0646, S0650, S0669, S0677, S1017, S1018, S1030, S1039, S1086, S1111, S1122, S1124, S1160, S1213, S1229, S1242, S9026
+- T1566.003: Spearphishing via Service | tactics=TA0001 | groups=G0016, G0032, G0037, G0049, G0059, G0070, G0112, G0130, G1011, G1012, G1022, G1036, G1046, G1052 | software=S1100
+- T1566.004: Spearphishing Voice | tactics=TA0001 | groups=G1046 | software=
+- T1567: Exfiltration Over Web Service | tactics=TA0010 | groups=G0007, G0059, G1043, G1052 | software=S0508, S0547, S0622, S1168, S1171, S1179, S1245
 - T1567.001: Exfiltration to Code Repository | tactics=TA0010 | groups= | software=S0363, S9008
+- T1567.002: Exfiltration to Cloud Storage | tactics=TA0010 | groups=G0010, G0027, G0046, G0065, G0069, G0094, G0102, G0114, G0119, G0125, G0128, G0129, G0142, G1001, G1003, G1005, G1006, G1014, G1015, G1021, G1022, G1024, G1051, G1052, G1053 | software=S0037, S0240, S0340, S0363, S0538, S0629, S0635, S0651, S0660, S1023, S1040, S1102, S1170, S1172, S1222, S9034
+- T1567.003: Exfiltration to Text Storage Sites | tactics=TA0010 | groups= | software=
+- T1567.004: Exfiltration Over Webhook | tactics=TA0010 | groups= | software=S9008
+- T1568: Dynamic Resolution | tactics=TA0011 | groups=G0016, G0047, G0094, G0099, G0134, G1002, G1018, G1042 | software=S0034, S0148, S0268, S0332, S0449, S0559, S0666, S0671, S1087, S9015
+- T1568.001: Fast Flux DNS | tactics=TA0011 | groups=G0045, G0047, G0092 | software=S0032, S0385, S1025
+- T1568.002: Domain Generation Algorithms | tactics=TA0011 | groups=G0096, G0127 | software=S0023, S0051, S0150, S0222, S0360, S0373, S0377, S0386, S0456, S0508, S0531, S0534, S0596, S0600, S0608, S0615, S0650, S0673, S1015, S1019, S1087, S9023
+- T1568.003: DNS Calculation | tactics=TA0011 | groups=G0005 | software=
+- T1569: System Services | tactics=TA0002 | groups= | software=
+- T1569.001: Launchctl | tactics=TA0002 | groups= | software=S0274, S0451, S0584, S0658, S1048, S1153
+- T1569.002: Service Execution | tactics=TA0002 | groups=G0004, G0037, G0046, G0050, G0082, G0087, G0091, G0096, G0102, G0108, G0114, G1032, G1036, G1043, G1047, G1051 | software=S0029, S0032, S0039, S0056, S0123, S0127, S0140, S0141, S0154, S0166, S0176, S0191, S0192, S0203, S0238, S0250, S0260, S0357, S0363, S0365, S0368, S0376, S0378, S0398, S0412, S0438, S0439, S0451, S0457, S0481, S0491, S0504, S0533, S0583, S0606, S0612, S0660, S0663, S0664, S0668, S0689, S0697, S0698, S1060, S1063, S1111, S1132, S1134, S1181, S1202, S1247
+- T1569.003: Systemctl | tactics=TA0002 | groups=G0139 | software=
+- T1570: Lateral Tool Transfer | tactics=TA0008 | groups=G0010, G0034, G0050, G0051, G0059, G0093, G0096, G0102, G0114, G1003, G1007, G1017, G1030, G1032, G1043, G1046, G1047, G1048, G1051 | software=S0029, S0062, S0095, S0106, S0140, S0190, S0357, S0361, S0365, S0366, S0367, S0372, S0404, S0457, S0532, S0603, S0698, S1017, S1068, S1132, S1139, S1180, S1217, S1218, S1229, S1242, S9030
+- T1571: Non-Standard Port | tactics=TA0011 | groups=G0032, G0034, G0046, G0047, G0050, G0059, G0064, G0069, G0090, G0091, G0099, G0105, G0106, G1003, G1042, G1047, G1052 | software=S0013, S0021, S0148, S0149, S0153, S0237, S0239, S0245, S0246, S0262, S0263, S0266, S0352, S0367, S0376, S0385, S0412, S0428, S0455, S0491, S0493, S0515, S0574, S0687, S1016, S1031, S1049, S1078, S1085, S1130, S1145, S1155, S1211, S1217, S1218, S1245, S1246, S9001, S9010, S9023, S9024
+- T1572: Protocol Tunneling | tactics=TA0011 | groups=G0037, G0046, G0049, G0059, G0065, G0080, G0114, G0117, G0129, G1003, G1015, G1016, G1021, G1045, G1055 | software=S0022, S0038, S0154, S0173, S0508, S0604, S0650, S0687, S0699, S1015, S1020, S1027, S1044, S1063, S1141, S1144, S1187, S1189, S9015, S9023, S9024
+- T1573: Encrypted Channel | tactics=TA0011 | groups=G0016, G0059, G0081, G1002 | software=S0032, S0198, S0367, S0498, S0631, S0662, S0681, S1012, S1016, S1046, S1198
+- T1573.001: Symmetric Cryptography | tactics=TA0011 | groups=G0007, G0012, G0032, G0038, G0060, G0064, G0069, G0100, G0126, G0128, G0129, G1017, G1039, G1052 | software=S0003, S0009, S0010, S0011, S0012, S0013, S0021, S0022, S0023, S0030, S0032, S0034, S0037, S0038, S0045, S0050, S0053, S0060, S0065, S0066, S0068, S0074, S0076, S0077, S0081, S0082, S0087, S0091, S0113, S0127, S0128, S0132, S0134, S0137, S0141, S0144, S0148, S0149, S0153, S0154, S0159, S0162, S0168, S0170, S0171, S0180, S0181, S0187, S0198, S0200, S0203, S0220, S0230, S0234, S0244, S0245, S0254, S0256, S0260, S0262, S0266, S0268, S0271, S0272, S0275, S0284, S0333, S0336, S0342, S0344, S0348, S0352, S0356, S0367, S0371, S0377, S0381, S0384, S0394, S0395, S0409, S0430, S0431, S0433, S0435, S0436, S0438, S0439, S0455, S0472, S0486, S0495, S0501, S0512, S0514, S0520, S0532, S0534, S0537, S0559, S0569, S0574, S0582, S0586, S0603, S0610, S0615, S0627, S0629, S0630, S0632, S0633, S0641, S0649, S0650, S0653, S0658, S0661, S0663, S0664, S0670, S0674, S0678, S1022, S1026, S1031, S1034, S1039, S1059, S1060, S1065, S1076, S1078, S1085, S1099, S1100, S1106, S1110, S1114, S1115, S1119, S1141, S1144, S1145, S1160, S1166, S1169, S1193, S1196, S1202, S1218, S1222, S1223, S1224, S1226, S1227, S1228, S1229, S1239, S9001, S9007, S9019, S9020, S9023, S9032, S9037
+- T1573.002: Asymmetric Cryptography | tactics=TA0011 | groups=G0037, G0049, G0061, G0080, G0081, G1018, G1039, G1042, G1044, G1047, G1051 | software=S0017, S0018, S0022, S0023, S0045, S0087, S0094, S0117, S0126, S0150, S0154, S0168, S0180, S0183, S0192, S0202, S0223, S0250, S0251, S0332, S0335, S0342, S0363, S0366, S0382, S0384, S0409, S0428, S0438, S0448, S0455, S0483, S0491, S0496, S0514, S0515, S0531, S0534, S0556, S0587, S0588, S0600, S0615, S0627, S0632, S0633, S0641, S0668, S0673, S0687, S0699, S1035, S1051, S1065, S1081, S1085, S1105, S1121, S1122, S1123, S1141, S1144, S1155, S1163, S1169, S1172, S1184, S1192, S1198, S1203, S1210, S1213, S1219, S1224, S9015, S9017, S9019, S9023, S9035
+- T1574: Hijack Execution Flow | tactics=TA0002, TA0005 | groups= | software=S0354, S0444, S0567, S1018, S1105, S1111, S1130, S1147, S9024
+- T1574.001: DLL | tactics=TA0002, TA0005 | groups=G0019, G0022, G0027, G0032, G0040, G0045, G0048, G0050, G0060, G0069, G0073, G0081, G0090, G0093, G0096, G0098, G0099, G0107, G0114, G0120, G0121, G0126, G0129, G0131, G0135, G0143, G1006, G1008, G1014, G1016, G1021, G1034, G1046, G1047, G1054 | software=S0009, S0013, S0032, S0070, S0074, S0098, S0109, S0113, S0127, S0128, S0134, S0153, S0176, S0182, S0194, S0230, S0260, S0275, S0280, S0354, S0363, S0373, S0384, S0398, S0415, S0455, S0458, S0477, S0528, S0530, S0538, S0554, S0579, S0582, S0585, S0612, S0624, S0629, S0630, S0631, S0650, S0660, S0661, S0662, S0663, S0664, S1041, S1046, S1059, S1063, S1097, S1100, S1101, S1102, S1111, S1130, S1183, S1213, S1226, S1227, S1228, S1229, S1230, S1232, S1233, S1235, S1236, S1237, S1239, S9020, S9025, S9026, S9027, S9029, S9031
+- T1574.004: Dylib Hijacking | tactics=TA0002, TA0005 | groups= | software=S0363
+- T1574.005: Executable Installer File Permissions Weakness | tactics=TA0002, TA0005 | groups=G0129 | software=
+- T1574.006: Dynamic Linker Hijacking | tactics=TA0002, TA0005 | groups=G0096, G0106, G0143 | software=S0377, S0394, S0601, S0658, S1105, S1220, S9024
+- T1574.007: Path Interception by PATH Environment Variable | tactics=TA0002, TA0005 | groups= | software=S0194, S0363, S1111, S9015
+- T1574.008: Path Interception by Search Order Hijacking | tactics=TA0002, TA0005 | groups= | software=S0194, S0363
+- T1574.009: Path Interception by Unquoted Path | tactics=TA0002, TA0005 | groups= | software=S0194, S0363
+- T1574.010: Services File Permissions Weakness | tactics=TA0002, TA0005 | groups= | software=S0089
+- T1574.011: Services Registry Permissions Weakness | tactics=TA0002, TA0005 | groups= | software=
+- T1574.012: COR_PROFILER | tactics=TA0002, TA0005 | groups=G0108 | software=S1066
+- T1574.013: KernelCallbackTable | tactics=TA0002, TA0005 | groups=G0032 | software=S0182
+- T1574.014: AppDomainManager | tactics=TA0002, TA0005 | groups= | software=S1152
+- T1578: Modify Cloud Compute Infrastructure | tactics=TA0112 | groups= | software=
+- T1578.001: Create Snapshot | tactics=TA0112 | groups= | software=S1091
+- T1578.002: Create Cloud Instance | tactics=TA0112 | groups=G1004, G1015 | software=
+- T1578.003: Delete Cloud Instance | tactics=TA0112 | groups=G1004, G1053 | software=
+- T1578.004: Revert Cloud Instance | tactics=TA0112 | groups= | software=
+- T1578.005: Modify Cloud Compute Configurations | tactics=TA0112 | groups= | software=
+- T1580: Cloud Infrastructure Discovery | tactics=TA0007 | groups=G1015, G1053 | software=S1091, S9009
+- T1583: Acquire Infrastructure | tactics=TA0042 | groups=G0034, G0094, G0119, G1003, G1030, G1033, G1041, G1052 | software=
+- T1583.001: Domains | tactics=TA0042 | groups=G0006, G0007, G0027, G0032, G0034, G0035, G0044, G0045, G0046, G0047, G0049, G0050, G0059, G0065, G0069, G0082, G0090, G0092, G0094, G0099, G0122, G0128, G0129, G0134, G0136, G0137, G0139, G0140, G1001, G1002, G1006, G1011, G1012, G1015, G1018, G1033, G1035, G1036, G1041, G1042, G1044, G1046, G1052, G1055 | software=S1111, S1130, S1207
+- T1583.002: DNS Server | tactics=TA0042 | groups=G0001, G1001, G1041 | software=
+- T1583.003: Virtual Private Server | tactics=TA0042 | groups=G0001, G0007, G0035, G0047, G0099, G0125, G1003, G1004, G1012, G1035, G1036, G1041, G1043, G1044, G1052, G1055 | software=
+- T1583.004: Server | tactics=TA0042 | groups=G0034, G0093, G0094, G1006, G1012, G1020, G1055 | software=
+- T1583.005: Botnet | tactics=TA0042 | groups=G0004, G0125, G1023 | software=
+- T1583.006: Web Services | tactics=TA0042 | groups=G0007, G0010, G0016, G0025, G0032, G0046, G0047, G0050, G0059, G0069, G0094, G0099, G0125, G0128, G0129, G0136, G0140, G0142, G1005, G1006, G1018, G1031, G1038, G1051, G1052, G1055 | software=
+- T1583.007: Serverless | tactics=TA0042 | groups= | software=
+- T1583.008: Malvertising | tactics=TA0042 | groups=G1020 | software=S1130
+- T1584: Compromise Infrastructure | tactics=TA0042 | groups= | software=
+- T1584.001: Domains | tactics=TA0042 | groups=G0006, G0059, G0094, G0134, G1008, G1020 | software=S1138
+- T1584.002: DNS Server | tactics=TA0042 | groups=G1004, G1041 | software=
+- T1584.003: Virtual Private Server | tactics=TA0042 | groups=G0010, G1017 | software=
+- T1584.004: Server | tactics=TA0042 | groups=G0010, G0023, G0032, G0034, G0035, G0065, G0119, G1006, G1017, G1034 | software=
+- T1584.005: Botnet | tactics=TA0042 | groups=G0001, G0034, G0099, G0125, G1017 | software=
+- T1584.006: Web Services | tactics=TA0042 | groups=G0010, G1006, G1012, G1035 | software=S1138
+- T1584.007: Serverless | tactics=TA0042 | groups= | software=
+- T1584.008: Network Devices | tactics=TA0042 | groups=G0007, G0065, G0128, G1017 | software=
+- T1585: Establish Accounts | tactics=TA0042 | groups=G0025, G0094, G0117, G1003, G1052 | software=
+- T1585.001: Social Media Accounts | tactics=TA0042 | groups=G0003, G0032, G0034, G0050, G0059, G0065, G0094, G0117, G1001, G1011, G1012, G1015, G1033, G1036, G1050, G1051, G1052, G1055 | software=
+- T1585.002: Email Accounts | tactics=TA0042 | groups=G0006, G0032, G0034, G0059, G0065, G0094, G0102, G0119, G0122, G0129, G1001, G1011, G1012, G1033, G1036, G1044, G1051, G1052, G1055 | software=
+- T1585.003: Cloud Accounts | tactics=TA0042 | groups=G1046 | software=
+- T1586: Compromise Accounts | tactics=TA0042 | groups= | software=
+- T1586.001: Social Media Accounts | tactics=TA0042 | groups=G0034, G0065 | software=
+- T1586.002: Email Accounts | tactics=TA0042 | groups=G0007, G0016, G0049, G0059, G0065, G0090, G0094, G0099, G0129, G0136, G1001, G1004, G1033, G1037 | software=
+- T1586.003: Cloud Accounts | tactics=TA0042 | groups=G0016, G0099 | software=
+- T1587: Develop Capabilities | tactics=TA0042 | groups=G0094, G1036, G1052 | software=
+- T1587.001: Malware | tactics=TA0042 | groups=G0003, G0004, G0010, G0016, G0032, G0034, G0046, G0049, G0094, G0099, G0119, G0129, G0139, G1007, G1009, G1014, G1016, G1036, G1039, G1040, G1045, G1048, G1052, G1054, G1055 | software=
+- T1587.002: Code Signing Certificates | tactics=TA0042 | groups=G0040, G0056, G1034 | software=
+- T1587.003: Digital Certificates | tactics=TA0042 | groups=G0016, G0047, G0056, G1053 | software=
+- T1587.004: Exploits | tactics=TA0042 | groups=G0065, G1017, G1048 | software=
+- T1588: Obtain Capabilities | tactics=TA0042 | groups= | software=
+- T1588.001: Malware | tactics=TA0042 | groups=G0006, G0010, G0069, G0092, G0099, G0135, G0138, G0140, G0143, G1003, G1004, G1006, G1013, G1014, G1015, G1018, G1048, G1055 | software=
+- T1588.002: Tool | tactics=TA0042 | groups=G0003, G0004, G0006, G0007, G0008, G0010, G0011, G0016, G0027, G0030, G0032, G0034, G0035, G0037, G0040, G0045, G0046, G0047, G0049, G0050, G0051, G0052, G0053, G0059, G0060, G0061, G0064, G0069, G0073, G0076, G0077, G0078, G0079, G0080, G0082, G0087, G0090, G0091, G0092, G0093, G0094, G0096, G0098, G0099, G0100, G0102, G0105, G0107, G0108, G0114, G0122, G0129, G0135, G0136, G0137, G0143, G1001, G1002, G1004, G1005, G1006, G1007, G1009, G1013, G1014, G1015, G1016, G1017, G1018, G1021, G1032, G1033, G1040, G1041, G1044, G1045, G1046, G1051, G1052, G1054, G1055 | software=S0681
+- T1588.003: Code Signing Certificates | tactics=TA0042 | groups=G0027, G0049, G0061, G0094, G0098, G0102, G0129 | software=S0576
+- T1588.004: Digital Certificates | tactics=TA0042 | groups=G0032, G0098, G0122, G0129, G1014, G1041, G1048 | software=
+- T1588.005: Exploits | tactics=TA0042 | groups=G0094, G1003 | software=
+- T1588.006: Vulnerabilities | tactics=TA0042 | groups=G0034, G1017, G1053 | software=
+- T1588.007: Artificial Intelligence | tactics=TA0042 | groups=G0007, G1052 | software=S9039
+- T1589: Gather Victim Identity Information | tactics=TA0043 | groups=G0050, G0059, G1001, G1004, G1015, G1016, G1017, G1033, G1052, G1055 | software=
+- T1589.001: Credentials | tactics=TA0043 | groups=G0007, G0059, G0065, G0114, G1004 | software=
+- T1589.002: Email Addresses | tactics=TA0043 | groups=G0032, G0034, G0050, G0059, G0094, G0122, G0125, G0127, G1001, G1004, G1011, G1017, G1031, G1036 | software=S0677
+- T1589.003: Employee Names | tactics=TA0043 | groups=G0034, G0094, G0122 | software=
+- T1590: Gather Victim Network Information | tactics=TA0043 | groups=G0119, G0125, G1017 | software=
+- T1590.001: Domain Properties | tactics=TA0043 | groups=G0034 | software=S0677
+- T1590.002: DNS | tactics=TA0043 | groups= | software=
+- T1590.003: Network Trust Dependencies | tactics=TA0043 | groups= | software=
+- T1590.004: Network Topology | tactics=TA0043 | groups=G0069, G1016, G1017, G1045 | software=
+- T1590.005: IP Addresses | tactics=TA0043 | groups=G0059, G0125, G0138 | software=
+- T1590.006: Network Security Appliances | tactics=TA0043 | groups=G1017 | software=
+- T1591: Gather Victim Org Information | tactics=TA0043 | groups=G0007, G0032, G0046, G0094, G1017, G1036, G1054 | software=
+- T1591.001: Determine Physical Locations | tactics=TA0043 | groups=G0059 | software=
+- T1591.002: Business Relationships | tactics=TA0043 | groups=G0034, G0035, G1004 | software=
+- T1591.003: Identify Business Tempo | tactics=TA0043 | groups= | software=
+- T1591.004: Identify Roles | tactics=TA0043 | groups=G0046, G1001, G1004, G1017 | software=
+- T1592: Gather Victim Host Information | tactics=TA0043 | groups=G1017 | software=
+- T1592.001: Hardware | tactics=TA0043 | groups= | software=
+- T1592.002: Software | tactics=TA0043 | groups=G0034, G0059, G0138 | software=
+- T1592.003: Firmware | tactics=TA0043 | groups= | software=
+- T1592.004: Client Configurations | tactics=TA0043 | groups=G0125 | software=
+- T1593: Search Open Websites/Domains | tactics=TA0043 | groups=G0034, G0099, G0129, G1017, G1033, G1052 | software=
+- T1593.001: Social Media | tactics=TA0043 | groups=G0094, G1011, G1052 | software=
+- T1593.002: Search Engines | tactics=TA0043 | groups=G0094 | software=
+- T1593.003: Code Repositories | tactics=TA0043 | groups=G0125, G1004, G1052 | software=S9008
+- T1594: Search Victim-Owned Websites | tactics=TA0043 | groups=G0034, G0094, G0122, G1011, G1017, G1038 | software=
+- T1595: Active Scanning | tactics=TA0043 | groups= | software=
+- T1595.001: Scanning IP Blocks | tactics=TA0043 | groups=G0139, G1003 | software=
+- T1595.002: Vulnerability Scanning | tactics=TA0043 | groups=G0007, G0016, G0034, G0035, G0059, G0065, G0096, G0123, G0139, G0143, G1003, G1006, G1035, G1055 | software=
+- T1595.003: Wordlist Scanning | tactics=TA0043 | groups=G0096, G0123 | software=
+- T1596: Search Open Technical Databases | tactics=TA0043 | groups=G0007, G0094 | software=
+- T1596.001: DNS/Passive DNS | tactics=TA0043 | groups= | software=
+- T1596.002: WHOIS | tactics=TA0043 | groups= | software=
+- T1596.003: Digital Certificates | tactics=TA0043 | groups= | software=
+- T1596.004: CDNs | tactics=TA0043 | groups= | software=
+- T1596.005: Scan Databases | tactics=TA0043 | groups=G0096, G1017 | software=
+- T1597: Search Closed Sources | tactics=TA0043 | groups=G1011 | software=
+- T1597.001: Threat Intel Vendors | tactics=TA0043 | groups= | software=
+- T1597.002: Purchase Technical Data | tactics=TA0043 | groups=G1004 | software=
+- T1598: Phishing for Information | tactics=TA0043 | groups=G0007, G0094, G0128, G1015, G1036 | software=
+- T1598.001: Spearphishing Service | tactics=TA0043 | groups= | software=
+- T1598.002: Spearphishing Attachment | tactics=TA0043 | groups=G0035, G0121, G1008, G1033 | software=
+- T1598.003: Spearphishing Link | tactics=TA0043 | groups=G0007, G0034, G0035, G0040, G0050, G0059, G0094, G0121, G0122, G0128, G0129, G1012, G1015, G1033, G1036 | software=S0649, S0677, S9003
+- T1598.004: Spearphishing Voice | tactics=TA0043 | groups=G1004, G1015 | software=
+- T1599: Network Boundary Bridging | tactics=TA0112 | groups=G0096 | software=
+- T1599.001: Network Address Translation Traversal | tactics=TA0112 | groups= | software=
+- T1600: Weaken Encryption | tactics=TA0112 | groups= | software=
+- T1600.001: Reduce Key Space | tactics=TA0112 | groups= | software=
+- T1600.002: Disable Crypto Hardware | tactics=TA0112 | groups= | software=
+- T1601: Modify System Image | tactics=TA0112 | groups= | software=S9013
+- T1601.001: Patch System Image | tactics=TA0112 | groups= | software=S0519
+- T1601.002: Downgrade System Image | tactics=TA0112 | groups= | software=
+- T1602: Data from Configuration Repository | tactics=TA0009 | groups= | software=
+- T1602.001: SNMP (MIB Dump) | tactics=TA0009 | groups= | software=
+- T1602.002: Network Device Configuration Dump | tactics=TA0009 | groups=G1045 | software=S9010
+- T1606: Forge Web Credentials | tactics=TA0006 | groups= | software=
+- T1606.001: Web Cookies | tactics=TA0006 | groups= | software=
+- T1606.002: SAML Tokens | tactics=TA0006 | groups= | software=S0677
+- T1608: Stage Capabilities | tactics=TA0042 | groups=G0129 | software=
+- T1608.001: Upload Malware | tactics=TA0042 | groups=G0027, G0034, G0046, G0047, G0049, G0050, G0090, G0092, G0094, G0099, G0129, G0139, G0140, G1001, G1002, G1006, G1008, G1011, G1014, G1018, G1020, G1031, G1033, G1036, G1043, G1044, G1052 | software=S9008
+- T1608.002: Upload Tool | tactics=TA0042 | groups=G0027, G1051 | software=
+- T1608.003: Install Digital Certificate | tactics=TA0042 | groups=G1041 | software=
+- T1608.004: Drive-by Target | tactics=TA0042 | groups=G0027, G0035, G0046, G0050, G0134, G1012, G1014, G1020 | software=
+- T1608.005: Link Target | tactics=TA0042 | groups=G0046, G0122, G1014 | software=
+- T1608.006: SEO Poisoning | tactics=TA0042 | groups=G1020 | software=
+- T1609: Container Administration Command | tactics=TA0002 | groups=G0139 | software=S0599, S0601, S0623, S0683
+- T1610: Deploy Container | tactics=TA0002 | groups=G0139 | software=S0599, S0600, S0683
+- T1611: Escape to Host | tactics=TA0004 | groups=G0139 | software=S0600, S0601, S0623, S0683
+- T1612: Build Image on Host | tactics=TA0005 | groups= | software=
+- T1613: Container and Resource Discovery | tactics=TA0007 | groups=G0139 | software=S0601, S0683
+- T1614: System Location Discovery | tactics=TA0007 | groups=G1008, G1017 | software=S0013, S0115, S0262, S0332, S0461, S0481, S0632, S0673, S1018, S1025, S1111, S1124, S1138, S1148, S1153, S1240, S1245, S1248, S1249, S9010, S9019, S9030, S9031, S9034
+- T1614.001: System Language Discovery | tactics=TA0007 | groups=G0004, G1026, G1043, G1053, G1054 | software=S0083, S0085, S0242, S0330, S0446, S0449, S0483, S0496, S0534, S0543, S0546, S0547, S0611, S0616, S0625, S0632, S0640, S0652, S0658, S0691, S0696, S1122, S1138, S1153, S1180, S1183, S1199, S1200, S1202, S1228, S1240, S9010, S9020
+- T1615: Group Policy Discovery | tactics=TA0007 | groups=G0010 | software=S0082, S0363, S0521, S1141, S1159
+- T1619: Cloud Storage Object Discovery | tactics=TA0007 | groups= | software=S0683, S1091, S9009
+- T1620: Reflective Code Loading | tactics=TA0005 | groups=G0032, G0046, G0047, G0094 | software=S0013, S0022, S0154, S0194, S0367, S0447, S0595, S0625, S0661, S0666, S0681, S0689, S0692, S0695, S1022, S1059, S1063, S1081, S1085, S1143, S1145, S1213, S9001, S9011, S9032, S9033
+- T1621: Multi-Factor Authentication Request Generation | tactics=TA0006 | groups=G0016, G1004, G1015 | software=
+- T1622: Debugger Evasion | tactics=TA0005, TA0007 | groups=G0129 | software=S0013, S0240, S0595, S0694, S1018, S1039, S1060, S1066, S1070, S1087, S1111, S1130, S1145, S1160, S1183, S1200, S1202, S1207, S1213, S1228, S1239, S9019, S9027, S9037
+- T1647: Plist File Modification | tactics=TA0112 | groups= | software=S0658, S1153
+- T1648: Serverless Execution | tactics=TA0002 | groups= | software=S1091
+- T1649: Steal or Forge Authentication Certificates | tactics=TA0006 | groups=G0016 | software=S0002, S0677
+- T1650: Acquire Access | tactics=TA0042 | groups=G1051 | software=
+- T1651: Cloud Administration Command | tactics=TA0002 | groups=G0016, G1055 | software=S0677, S1091
+- T1652: Device Driver Discovery | tactics=TA0007 | groups=G1051 | software=S0125, S0376, S1139
+- T1653: Power Settings | tactics=TA0003 | groups= | software=S1186, S1188
+- T1654: Log Enumeration | tactics=TA0007 | groups=G0129, G0143, G1003, G1017, G1023 | software=S1091, S1159, S1191, S1194, S1246
+- T1657: Financial Theft | tactics=TA0040 | groups=G0083, G0094, G1015, G1016, G1021, G1024, G1026, G1032, G1040, G1049, G1050, G1051, G1052, G1053, G1055 | software=S1111, S1240, S1245, S1246, S1247, S9004, S9010
+- T1659: Content Injection | tactics=TA0001, TA0011 | groups=G1019 | software=S1088
+- T1665: Hide Infrastructure | tactics=TA0011 | groups=G0016, G0128 | software=S1111, S1164, S1206
+- T1666: Modify Cloud Resource Hierarchy | tactics=TA0112 | groups= | software=
+- T1667: Email Bombing | tactics=TA0040 | groups=G1046 | software=
+- T1668: Exclusive Control | tactics=TA0003 | groups= | software=
+- T1669: Wi-Fi Networks | tactics=TA0001 | groups=G0007 | software=
+- T1671: Cloud Application Integration | tactics=TA0003 | groups= | software=
+- T1673: Virtual Machine Discovery | tactics=TA0007 | groups=G1048 | software=S1096, S1217, S1242, S9019
+- T1674: Input Injection | tactics=TA0002 | groups=G0046 | software=
+- T1675: ESXi Administration Command | tactics=TA0002 | groups=G1048 | software=S1217
+- T1677: Poisoned Pipeline Execution | tactics=TA0002 | groups= | software=S9008
+- T1678: Delay Execution | tactics=TA0005 | groups=G0094, G0129 | software=S0275, S1230, S1239, S1242, S9001, S9008, S9010, S9014, S9015, S9019, S9024, S9031, S9032, S9033, S9037, S9038
+- T1679: Selective Exclusion | tactics=TA0005 | groups=G1055 | software=S1244, S1245, S1247, S9030, S9038, S9039
+- T1680: Local Storage Discovery | tactics=TA0007 | groups=G0032, G0040, G0081, G0094, G0114, G0126, G0139, G0142, G1017, G1022 | software=S0013, S0044, S0091, S0115, S0137, S0172, S0181, S0208, S0234, S0238, S0239, S0248, S0251, S0253, S0259, S0260, S0263, S0265, S0267, S0271, S0340, S0351, S0353, S0356, S0376, S0438, S0446, S0448, S0456, S0458, S0471, S0472, S0473, S0488, S0491, S0496, S0516, S0520, S0526, S0533, S0564, S0586, S0587, S0596, S0607, S0616, S0617, S0625, S0630, S0638, S0663, S0667, S0672, S0678, S0680, S0689, S0692, S0697, S1016, S1026, S1027, S1044, S1048, S1049, S1060, S1065, S1068, S1070, S1073, S1075, S1085, S1087, S1089, S1100, S1111, S1139, S1147, S1150, S1151, S1168, S1199, S1202, S1228, S1239, S1242, S1244, S9031, S9038
+- T1681: Search Threat Vendor Data | tactics=TA0043 | groups=G1048, G1052 | software=
+- T1682: Query Public AI Services | tactics=TA0043 | groups=G0094, G1044 | software=
+- T1683: Generate Content | tactics=TA0042 | groups= | software=
+- T1683.001: Written Content | tactics=TA0042 | groups=G0099, G1052 | software=
+- T1683.002: Audio-Visual Content | tactics=TA0042 | groups=G0099, G1052 | software=
+- T1684: Social Engineering | tactics=TA0005 | groups= | software=
+- T1684.001: Impersonation | tactics=TA0005 | groups=G0007, G0069, G0090, G0094, G0096, G0099, G1004, G1015, G1031, G1033, G1044, G1046, G1052, G1054, G1055 | software=S1131, S9037
+- T1684.002: Email Spoofing | tactics=TA0005 | groups= | software=
+- T1685: Disable or Modify Tools | tactics=TA0112 | groups=G0010, G0024, G0032, G0037, G0047, G0059, G0060, G0069, G0078, G0082, G0092, G0094, G0096, G0102, G0106, G0119, G0139, G0143, G1015, G1018, G1023, G1024, G1030, G1031, G1032, G1040, G1043, G1047, G1048, G1051, G1052, G1054 | software=S0004, S0058, S0061, S0130, S0132, S0144, S0154, S0201, S0223, S0228, S0249, S0252, S0253, S0266, S0279, S0331, S0334, S0336, S0372, S0377, S0400, S0412, S0434, S0446, S0449, S0455, S0457, S0468, S0477, S0481, S0482, S0484, S0491, S0496, S0531, S0534, S0554, S0559, S0576, S0579, S0583, S0595, S0601, S0603, S0605, S0608, S0611, S0638, S0640, S0650, S0659, S0669, S0670, S0688, S0689, S0692, S0695, S0697, S1048, S1063, S1065, S1097, S1111, S1114, S1130, S1135, S1169, S1178, S1180, S1184, S1199, S1200, S1202, S1206, S1207, S1213, S1234, S1240, S1242, S1244, S9008, S9013, S9014, S9017, S9019, S9024, S9039
+- T1685.001: Disable or Modify Windows Event Log | tactics=TA0112 | groups=G0027, G0059 | software=S0645
+- T1685.002: Disable or Modify Cloud Log | tactics=TA0112 | groups=G0016 | software=S1091
+- T1685.003: Modify or Spoof Tool UI | tactics=TA0112 | groups= | software=S9014
+- T1685.004: Disable or Modify Linux Audit System Log | tactics=TA0112 | groups= | software=S0377
+- T1685.005: Clear Windows Event Logs | tactics=TA0112 | groups=G0007, G0035, G0050, G0053, G0061, G0082, G0096, G0114, G0119, G0125, G0143, G1017, G1040, G1054 | software=S0032, S0089, S0182, S0192, S0203, S0242, S0253, S0365, S0368, S0412, S0532, S0607, S0645, S0688, S0697, S0698, S1060, S1068, S1133, S1135, S1159, S1178, S1199, S1202, S1212, S1242
+- T1685.006: Clear Linux or Mac System Logs | tactics=TA0112 | groups=G0106, G0139, G1041, G1045 | software=S0279, S1016, S1164, S1206
+- T1686: Disable or Modify System Firewall | tactics=TA0112 | groups=G0008, G0035, G0046, G0082, G0094, G0106, G0139, G1022, G1043, G1045, G1047, G1048, G1051 | software=S0013, S0031, S0088, S0108, S0260, S0336, S0376, S0412, S0492, S0531, S1032, S1161, S1178, S1211, S1223
+- T1686.001: Cloud Firewall | tactics=TA0112 | groups= | software=S1091
+- T1686.002: Network Device Firewall | tactics=TA0112 | groups=G0082 | software=S0531, S0687
+- T1686.003: Windows Host Firewall | tactics=TA0112 | groups=G0032, G0049, G0059, G1009, G1054, G1055 | software=S0125, S0132, S0245, S0246, S0263, S0334, S0385, S1181, S9023
+- T1687: Exploitation for Defense Impairment | tactics=TA0112 | groups= | software=
+- T1688: Safe Mode Boot | tactics=TA0112 | groups= | software=S0496, S1053, S1070, S1202, S1212, S1242, S1247
+- T1689: Downgrade Attack | tactics=TA0112 | groups= | software=S0692, S1180
+- T1690: Prevent Command History Logging | tactics=TA0112 | groups=G0082, G1041, G1048, G1051 | software=S0692, S1161, S1186, S1217, S9015, S9024
 
 ## MITRE Groups
 
@@ -225,179 +1614,826 @@ This page is auto-generated to improve full-text search coverage for live JSON-d
 
 ## MITRE Software
 
+- S0001: Trojan.Mebromi | type=malware
+- S0002: Mimikatz | type=tool
+- S0003: RIPTIDE | type=malware
+- S0004: TinyZBot | type=malware
+- S0005: Windows Credential Editor | type=tool
+- S0006: pwdump | type=tool
+- S0007: Skeleton Key | type=malware
+- S0008: gsecdump | type=tool
+- S0009: Hikit | type=malware
+- S0010: Lurid | type=malware
+- S0011: Taidoor | type=malware
+- S0012: PoisonIvy | type=malware
 - S0013: PlugX | type=malware
+- S0014: BS2005 | type=malware
+- S0015: Ixeshe | type=malware
+- S0016: P2P ZeuS | type=malware
+- S0017: BISCUIT | type=malware
+- S0018: Sykipot | type=malware
+- S0019: Regin | type=malware
 - S0020: China Chopper | type=malware
+- S0021: Derusbi | type=malware
 - S0022: Uroburos | type=malware
+- S0023: CHOPSTICK | type=malware
+- S0024: Dyre | type=malware
+- S0025: CALENDAR | type=malware
+- S0026: GLOOXMAIL | type=malware
+- S0027: Zeroaccess | type=malware
+- S0028: SHIPSHAPE | type=malware
+- S0029: PsExec | type=tool
+- S0030: Carbanak | type=malware
+- S0031: BACKSPACE | type=malware
+- S0032: gh0st RAT | type=malware
+- S0033: NetTraveler | type=malware
+- S0034: NETEAGLE | type=malware
+- S0035: SPACESHIP | type=malware
+- S0036: FLASHFLOOD | type=malware
 - S0037: HAMMERTOSS | type=malware
 - S0038: Duqu | type=malware
+- S0039: Net | type=tool
+- S0040: HTRAN | type=tool
+- S0041: Wiper | type=malware
+- S0042: LOWBALL | type=malware
+- S0043: BUBBLEWRAP | type=malware
+- S0044: JHUHUGIT | type=malware
+- S0045: ADVSTORESHELL | type=malware
+- S0046: CozyCar | type=malware
+- S0047: Hacking Team UEFI Rootkit | type=malware
+- S0048: PinchDuke | type=malware
+- S0049: GeminiDuke | type=malware
+- S0050: CosmicDuke | type=malware
+- S0051: MiniDuke | type=malware
+- S0052: OnionDuke | type=malware
 - S0053: SeaDuke | type=malware
+- S0054: CloudDuke | type=malware
+- S0055: RARSTONE | type=malware
+- S0056: Net Crawler | type=malware
+- S0057: Tasklist | type=tool
+- S0058: SslMM | type=malware
+- S0059: WinMM | type=malware
+- S0060: Sys10 | type=malware
+- S0061: HDoor | type=malware
+- S0062: DustySky | type=malware
+- S0063: SHOTPUT | type=malware
+- S0064: ELMER | type=malware
+- S0065: 4H RAT | type=malware
+- S0066: 3PARA RAT | type=malware
+- S0067: pngdowner | type=malware
+- S0068: httpclient | type=malware
+- S0069: BLACKCOFFEE | type=malware
 - S0070: HTTPBrowser | type=malware
+- S0071: hcdLoader | type=malware
+- S0072: OwaAuth | type=malware
+- S0073: ASPXSpy | type=malware
+- S0074: Sakula | type=malware
+- S0075: Reg | type=tool
+- S0076: FakeM | type=malware
+- S0077: CallMe | type=malware
+- S0078: Psylo | type=malware
+- S0079: MobileOrder | type=malware
+- S0080: Mivast | type=malware
+- S0081: Elise | type=malware
+- S0082: Emissary | type=malware
+- S0083: Misdat | type=malware
+- S0084: Mis-Type | type=malware
+- S0085: S-Type | type=malware
+- S0086: ZLib | type=malware
+- S0087: Hi-Zor | type=malware
+- S0088: Kasidet | type=malware
+- S0089: BlackEnergy | type=malware
+- S0090: Rover | type=malware
+- S0091: Epic | type=malware
+- S0092: Agent.btz | type=malware
+- S0093: Backdoor.Oldrea | type=malware
+- S0094: Trojan.Karagany | type=malware
+- S0095: ftp | type=tool
+- S0096: Systeminfo | type=tool
+- S0097: Ping | type=tool
+- S0098: T9000 | type=malware
+- S0099: Arp | type=tool
+- S0100: ipconfig | type=tool
+- S0101: ifconfig | type=tool
+- S0102: nbtstat | type=tool
+- S0103: route | type=tool
+- S0104: netstat | type=tool
+- S0105: dsquery | type=tool
+- S0106: cmd | type=tool
+- S0107: Cherry Picker | type=malware
+- S0108: netsh | type=tool
+- S0109: WEBC2 | type=malware
+- S0110: at | type=tool
+- S0111: schtasks | type=tool
+- S0112: ROCKBOOT | type=malware
+- S0113: Prikormka | type=malware
+- S0114: BOOTRASH | type=malware
+- S0115: Crimson | type=malware
+- S0116: UACMe | type=tool
+- S0117: XTunnel | type=malware
+- S0118: Nidiran | type=malware
+- S0119: Cachedump | type=tool
+- S0120: Fgdump | type=tool
+- S0121: Lslsass | type=tool
+- S0122: Pass-The-Hash Toolkit | type=tool
+- S0123: xCmd | type=tool
 - S0124: Pisloader | type=malware
 - S0125: Remsec | type=malware
 - S0126: ComRAT | type=malware
+- S0127: BBSRAT | type=malware
+- S0128: BADNEWS | type=malware
 - S0129: AutoIt backdoor | type=malware
+- S0130: Unknown Logger | type=malware
+- S0131: TINYTYPHON | type=malware
+- S0132: H1N1 | type=malware
+- S0133: Miner-C | type=malware
+- S0134: Downdelph | type=malware
+- S0135: HIDEDRV | type=malware
+- S0136: USBStealer | type=malware
+- S0137: CORESHELL | type=malware
+- S0138: OLDBAIT | type=malware
+- S0139: PowerDuke | type=malware
+- S0140: Shamoon | type=malware
+- S0141: Winnti for Windows | type=malware
+- S0142: StreamEx | type=malware
+- S0143: Flame | type=malware
+- S0144: ChChes | type=malware
 - S0145: POWERSOURCE | type=malware
 - S0146: TEXTMATE | type=malware
+- S0147: Pteranodon | type=malware
+- S0148: RTM | type=malware
+- S0149: MoonWind | type=malware
 - S0150: POSHSPY | type=malware
 - S0151: HALFBAKED | type=malware
+- S0152: EvilGrab | type=malware
+- S0153: RedLeaves | type=malware
 - S0154: Cobalt Strike | type=malware
+- S0155: WINDSHIELD | type=malware
+- S0156: KOMPROGO | type=malware
 - S0157: SOUNDBITE | type=malware
+- S0158: PHOREAL | type=malware
+- S0159: SNUGRIDE | type=malware
+- S0160: certutil | type=tool
+- S0161: XAgentOSX | type=malware
+- S0162: Komplex | type=malware
+- S0163: Janicab | type=malware
+- S0164: TDTESS | type=malware
+- S0165: OSInfo | type=malware
+- S0166: RemoteCMD | type=malware
 - S0167: Matryoshka | type=malware
+- S0168: Gazer | type=malware
+- S0169: RawPOS | type=malware
 - S0170: Helminth | type=malware
+- S0171: Felismus | type=malware
+- S0172: Reaver | type=malware
+- S0173: FLIPSIDE | type=malware
+- S0174: Responder | type=tool
+- S0175: meek | type=tool
+- S0176: Wingbird | type=malware
+- S0177: Power Loader | type=malware
+- S0178: Truvasys | type=malware
+- S0179: MimiPenguin | type=tool
+- S0180: Volgmer | type=malware
+- S0181: FALLCHILL | type=malware
+- S0182: FinFisher | type=malware
+- S0183: Tor | type=tool
 - S0184: POWRUNER | type=malware
+- S0185: SEASHARPEE | type=malware
 - S0186: DownPaper | type=malware
+- S0187: Daserf | type=malware
+- S0188: Starloader | type=malware
+- S0189: ISMInjector | type=malware
+- S0190: BITSAdmin | type=tool
+- S0191: Winexe | type=tool
 - S0192: Pupy | type=tool
+- S0193: Forfiles | type=tool
 - S0194: PowerSploit | type=tool
+- S0195: SDelete | type=tool
 - S0196: PUNCHBUGGY | type=malware
+- S0197: PUNCHTRACK | type=malware
 - S0198: NETWIRE | type=malware
+- S0199: TURNEDUP | type=malware
+- S0200: Dipsind | type=malware
+- S0201: JPIN | type=malware
+- S0202: adbupd | type=malware
+- S0203: Hydraq | type=malware
+- S0204: Briba | type=malware
+- S0205: Naid | type=malware
+- S0206: Wiarp | type=malware
+- S0207: Vasport | type=malware
+- S0208: Pasam | type=malware
+- S0210: Nerex | type=malware
+- S0211: Linfo | type=malware
+- S0212: CORALDECK | type=malware
+- S0213: DOGCALL | type=malware
+- S0214: HAPPYWORK | type=malware
+- S0215: KARAE | type=malware
+- S0216: POORAIM | type=malware
+- S0217: SHUTTERSPEED | type=malware
+- S0218: SLOWDRIFT | type=malware
+- S0219: WINERACK | type=malware
+- S0220: Chaos | type=malware
+- S0221: Umbreon | type=malware
+- S0222: CCBkdr | type=malware
 - S0223: POWERSTATS | type=malware
+- S0224: Havij | type=tool
+- S0225: sqlmap | type=tool
+- S0226: Smoke Loader | type=malware
+- S0227: spwebmember | type=tool
 - S0228: NanHaiShu | type=malware
+- S0229: Orz | type=malware
+- S0230: ZeroT | type=malware
+- S0231: Invoke-PSImage | type=tool
+- S0232: HOMEFRY | type=malware
+- S0233: MURKYTOP | type=malware
 - S0234: Bandook | type=malware
+- S0235: CrossRAT | type=malware
+- S0236: Kwampirs | type=malware
+- S0237: GravityRAT | type=malware
+- S0238: Proxysvc | type=malware
+- S0239: Bankshot | type=malware
+- S0240: ROKRAT | type=malware
 - S0241: RATANKBA | type=malware
+- S0242: SynAck | type=malware
+- S0243: DealersChoice | type=malware
+- S0244: Comnie | type=malware
+- S0245: BADCALL | type=malware
+- S0246: HARDRAIN | type=malware
+- S0247: NavRAT | type=malware
+- S0248: yty | type=malware
+- S0249: Gold Dragon | type=malware
 - S0250: Koadic | type=tool
+- S0251: Zebrocy | type=malware
+- S0252: Brave Prince | type=malware
+- S0253: RunningRAT | type=malware
+- S0254: PLAINTEE | type=malware
+- S0255: DDKONG | type=malware
 - S0256: Mosquito | type=malware
+- S0257: VERMIN | type=malware
+- S0258: RGDoor | type=malware
+- S0259: InnaputRAT | type=malware
 - S0260: InvisiMole | type=malware
+- S0261: Catchamas | type=malware
+- S0262: QuasarRAT | type=tool
+- S0263: TYPEFRAME | type=malware
+- S0264: OopsIE | type=malware
+- S0265: Kazuar | type=malware
 - S0266: TrickBot | type=malware
+- S0267: FELIXROOT | type=malware
+- S0268: Bisonal | type=malware
 - S0269: QUADAGENT | type=malware
 - S0270: RogueRobin | type=malware
+- S0271: KEYMARBLE | type=malware
+- S0272: NDiskMonitor | type=malware
 - S0273: Socksbot | type=malware
+- S0274: Calisto | type=malware
+- S0275: UPPERCUT | type=malware
+- S0276: Keydnap | type=malware
+- S0277: FruitFly | type=malware
+- S0278: iKitten | type=malware
+- S0279: Proton | type=malware
+- S0280: MirageFox | type=malware
+- S0281: Dok | type=malware
+- S0282: MacSpy | type=malware
+- S0283: jRAT | type=malware
+- S0284: More_eggs | type=malware
 - S0330: Zeus Panda | type=malware
+- S0331: Agent Tesla | type=malware
+- S0332: Remcos | type=tool
+- S0333: UBoatRAT | type=malware
+- S0334: DarkComet | type=malware
+- S0335: Carbon | type=malware
+- S0336: NanoCore | type=malware
+- S0337: BadPatch | type=malware
 - S0338: Cobian RAT | type=malware
+- S0339: Micropsia | type=malware
+- S0340: Octopus | type=malware
 - S0341: Xbash | type=malware
+- S0342: GreyEnergy | type=malware
+- S0343: Exaramel for Windows | type=malware
+- S0344: Azorult | type=malware
+- S0345: Seasalt | type=malware
+- S0346: OceanSalt | type=malware
+- S0347: AuditCred | type=malware
+- S0348: Cardinal RAT | type=malware
+- S0349: LaZagne | type=tool
+- S0350: zwShell | type=malware
+- S0351: Cannon | type=malware
 - S0352: OSX_OCEANLOTUS.D | type=malware
+- S0353: NOKKI | type=malware
 - S0354: Denis | type=malware
+- S0355: Final1stspy | type=malware
 - S0356: KONNI | type=malware
+- S0357: Impacket | type=tool
+- S0358: Ruler | type=tool
+- S0359: Nltest | type=tool
 - S0360: BONDUPDATER | type=malware
+- S0361: Expand | type=tool
 - S0362: Linux Rabbit | type=malware
 - S0363: Empire | type=tool
+- S0364: RawDisk | type=tool
+- S0365: Olympic Destroyer | type=malware
+- S0366: WannaCry | type=malware
 - S0367: Emotet | type=malware
+- S0368: NotPetya | type=malware
+- S0369: CoinTicker | type=malware
+- S0370: SamSam | type=malware
 - S0371: POWERTON | type=malware
+- S0372: LockerGoga | type=malware
+- S0373: Astaroth | type=malware
 - S0374: SpeakUp | type=malware
+- S0375: Remexi | type=malware
+- S0376: HOPLIGHT | type=malware
 - S0377: Ebury | type=malware
+- S0378: PoshC2 | type=tool
 - S0379: Revenge RAT | type=malware
+- S0380: StoneDrill | type=malware
 - S0381: FlawedAmmyy | type=malware
 - S0382: ServHelper | type=malware
+- S0383: FlawedGrace | type=malware
+- S0384: Dridex | type=malware
 - S0385: njRAT | type=malware
 - S0386: Ursnif | type=malware
 - S0387: KeyBoy | type=malware
+- S0388: YAHOYAH | type=malware
 - S0389: JCry | type=malware
 - S0390: SQLRat | type=malware
+- S0391: HAWKBALL | type=malware
 - S0393: PowerStallion | type=malware
+- S0394: HiddenWasp | type=malware
+- S0395: LightNeuron | type=malware
+- S0396: EvilBunny | type=malware
+- S0397: LoJax | type=malware
+- S0398: HyperBro | type=malware
+- S0400: RobbinHood | type=malware
+- S0401: Exaramel for Linux | type=malware
+- S0402: OSX/Shlayer | type=malware
+- S0404: esentutl | type=tool
+- S0409: Machete | type=malware
+- S0410: Fysbis | type=malware
+- S0412: ZxShell | type=malware
+- S0413: MailSniper | type=tool
+- S0414: BabyShark | type=malware
+- S0415: BOOSTWRITE | type=malware
+- S0416: RDFSNIFFER | type=malware
 - S0417: GRIFFON | type=malware
+- S0428: PoetRAT | type=malware
+- S0430: Winnti for Linux | type=malware
+- S0431: HotCroissant | type=malware
+- S0433: Rifdoor | type=malware
+- S0434: Imminent Monitor | type=tool
+- S0435: PLEAD | type=malware
+- S0436: TSCookie | type=malware
+- S0437: Kivars | type=malware
+- S0438: Attor | type=malware
+- S0439: Okrum | type=malware
 - S0441: PowerShower | type=malware
+- S0442: VBShower | type=malware
+- S0443: MESSAGETAP | type=malware
+- S0444: ShimRat | type=malware
+- S0445: ShimRatReporter | type=tool
+- S0446: Ryuk | type=malware
 - S0447: Lokibot | type=malware
+- S0448: Rising Sun | type=malware
+- S0449: Maze | type=malware
 - S0450: SHARPSTATS | type=malware
+- S0451: LoudMiner | type=malware
+- S0452: USBferry | type=malware
 - S0453: Pony | type=malware
+- S0454: Cadelspy | type=malware
+- S0455: Metamorfo | type=malware
+- S0456: Aria-body | type=malware
 - S0457: Netwalker | type=malware
+- S0458: Ramsay | type=malware
+- S0459: MechaFlounder | type=malware
+- S0460: Get2 | type=malware
+- S0461: SDBbot | type=malware
+- S0462: CARROTBAT | type=malware
+- S0464: SYSCON | type=malware
+- S0465: CARROTBALL | type=tool
+- S0466: WindTail | type=malware
+- S0467: TajMahal | type=malware
+- S0468: Skidmap | type=malware
+- S0469: ABK | type=malware
+- S0470: BBK | type=malware
+- S0471: build_downer | type=malware
+- S0472: down_new | type=malware
+- S0473: Avenger | type=malware
+- S0475: BackConfig | type=malware
 - S0476: Valak | type=malware
 - S0477: Goopy | type=malware
+- S0481: Ragnar Locker | type=malware
+- S0482: Bundlore | type=malware
+- S0483: IcedID | type=malware
+- S0484: Carberp | type=malware
+- S0486: Bonadan | type=malware
+- S0487: Kessel | type=malware
 - S0488: CrackMapExec | type=tool
 - S0491: StrongPity | type=malware
+- S0492: CookieMiner | type=malware
+- S0493: GoldenSpy | type=malware
 - S0495: RDAT | type=malware
 - S0496: REvil | type=malware
+- S0497: Dacls | type=malware
+- S0498: Cryptoistic | type=malware
 - S0499: Hancitor | type=malware
+- S0500: MCMD | type=tool
+- S0501: PipeMon | type=malware
+- S0502: Drovorub | type=malware
+- S0503: FrameworkPOS | type=malware
 - S0504: Anchor | type=malware
+- S0508: ngrok | type=tool
 - S0511: RegDuke | type=malware
 - S0512: FatDuke | type=malware
+- S0513: LiteDuke | type=malware
 - S0514: WellMess | type=malware
+- S0515: WellMail | type=malware
+- S0516: SoreFang | type=malware
 - S0517: Pillowmint | type=malware
+- S0518: PolyglotDuke | type=malware
+- S0519: SYNful Knock | type=malware
+- S0520: BLINDINGCAN | type=malware
 - S0521: BloodHound | type=tool
 - S0526: KGH_SPY | type=malware
+- S0527: CSPY Downloader | type=tool
+- S0528: Javali | type=malware
+- S0530: Melcoz | type=malware
+- S0531: Grandoreiro | type=malware
 - S0532: Lucifer | type=malware
+- S0533: SLOTHFULMEDIA | type=malware
 - S0534: Bazar | type=malware
+- S0537: HyperStack | type=malware
+- S0538: Crutch | type=malware
+- S0543: Spark | type=malware
 - S0546: SharpStage | type=malware
+- S0547: DropBook | type=malware
+- S0552: AdFind | type=tool
 - S0553: MoleNet | type=malware
 - S0554: Egregor | type=malware
+- S0556: Pay2Key | type=malware
 - S0559: SUNBURST | type=malware
+- S0560: TEARDROP | type=malware
+- S0561: GuLoader | type=malware
+- S0562: SUNSPOT | type=malware
+- S0564: BlackMould | type=malware
+- S0565: Raindrop | type=malware
 - S0567: Dtrack | type=malware
+- S0568: EVILNUM | type=malware
+- S0569: Explosive | type=malware
+- S0570: BitPaymer | type=malware
+- S0572: Caterpillar WebShell | type=malware
+- S0574: BendyBear | type=malware
+- S0575: Conti | type=malware
+- S0576: MegaCortex | type=malware
+- S0578: SUPERNOVA | type=malware
+- S0579: Waterbear | type=malware
+- S0581: IronNetInjector | type=tool
+- S0582: LookBack | type=malware
 - S0583: Pysa | type=malware
+- S0584: AppleJeus | type=malware
+- S0585: Kerrdown | type=malware
+- S0586: TAINTEDSCRIBE | type=malware
+- S0587: Penquin | type=malware
+- S0588: GoldMax | type=malware
+- S0589: Sibot | type=malware
+- S0590: NBTscan | type=tool
 - S0591: ConnectWise | type=tool
+- S0592: RemoteUtilities | type=tool
+- S0593: ECCENTRICBANDWAGON | type=malware
+- S0594: Out1 | type=tool
+- S0595: ThiefQuest | type=malware
 - S0596: ShadowPad | type=malware
+- S0597: GoldFinder | type=malware
 - S0598: P.A.S. Webshell | type=malware
 - S0599: Kinsing | type=malware
+- S0600: Doki | type=malware
+- S0601: Hildegard | type=malware
+- S0603: Stuxnet | type=malware
 - S0604: Industroyer | type=malware
+- S0605: EKANS | type=malware
+- S0606: Bad Rabbit | type=malware
+- S0607: KillDisk | type=malware
+- S0608: Conficker | type=malware
+- S0610: SideTwist | type=malware
+- S0611: Clop | type=malware
+- S0612: WastedLocker | type=malware
 - S0613: PS1 | type=malware
+- S0614: CostaBricks | type=malware
 - S0615: SombRAT | type=malware
+- S0616: DEATHRANSOM | type=malware
+- S0617: HELLOKITTY | type=malware
+- S0618: FIVEHANDS | type=malware
 - S0622: AppleSeed | type=malware
+- S0623: Siloscape | type=malware
+- S0624: Ecipekac | type=malware
 - S0625: Cuba | type=malware
+- S0626: P8RAT | type=malware
+- S0627: SodaMaster | type=malware
+- S0628: FYAnti | type=malware
+- S0629: RainyDay | type=malware
+- S0630: Nebulae | type=malware
+- S0631: Chaes | type=malware
+- S0632: GrimAgent | type=malware
 - S0633: Sliver | type=tool
+- S0634: EnvyScout | type=malware
+- S0635: BoomBox | type=malware
+- S0636: VaporRage | type=malware
+- S0637: NativeZone | type=malware
+- S0638: Babuk | type=malware
+- S0639: Seth-Locker | type=malware
+- S0640: Avaddon | type=malware
+- S0641: Kobalos | type=malware
+- S0642: BADFLICK | type=malware
+- S0643: Peppy | type=malware
+- S0644: ObliqueRAT | type=malware
+- S0645: Wevtutil | type=tool
+- S0646: SpicyOmelette | type=malware
+- S0647: Turian | type=malware
 - S0648: JSS Loader | type=malware
 - S0649: SMOKEDHAM | type=malware
 - S0650: QakBot | type=malware
+- S0651: BoxCaon | type=malware
+- S0652: MarkiRAT | type=malware
+- S0653: xCaon | type=malware
+- S0654: ProLock | type=malware
+- S0657: BLUELIGHT | type=malware
+- S0658: XCSSET | type=malware
+- S0659: Diavol | type=malware
 - S0660: Clambling | type=malware
+- S0661: FoggyWeb | type=malware
+- S0662: RCSession | type=malware
 - S0663: SysUpdate | type=malware
+- S0664: Pandora | type=malware
+- S0665: ThreatNeedle | type=malware
 - S0666: Gelsemium | type=malware
+- S0667: Chrommme | type=malware
+- S0668: TinyTurla | type=malware
 - S0669: KOCTOPUS | type=malware
 - S0670: WarzoneRAT | type=malware
+- S0671: Tomiris | type=malware
+- S0672: Zox | type=malware
 - S0673: DarkWatchman | type=malware
 - S0674: CharmPower | type=malware
 - S0677: AADInternals | type=tool
+- S0678: Torisma | type=malware
 - S0679: Ferocious | type=malware
 - S0680: LitePower | type=malware
 - S0681: Lizar | type=malware
+- S0682: TrailBlazer | type=malware
+- S0683: Peirates | type=tool
+- S0684: ROADTools | type=tool
 - S0685: PowerPunch | type=malware
+- S0686: QuietSieve | type=malware
+- S0687: Cyclops Blink | type=malware
 - S0688: Meteor | type=malware
 - S0689: WhisperGate | type=malware
 - S0690: Green Lambert | type=malware
+- S0691: Neoichor | type=malware
 - S0692: SILENTTRINITY | type=tool
+- S0693: CaddyWiper | type=malware
+- S0694: DRATzarus | type=malware
 - S0695: Donut | type=tool
+- S0696: Flagpro | type=malware
+- S0697: HermeticWiper | type=malware
 - S0698: HermeticWizard | type=malware
 - S0699: Mythic | type=tool
+- S1010: VPNFilter | type=malware
+- S1011: Tarrask | type=malware
 - S1012: PowerLess | type=malware
+- S1013: ZxxZ | type=malware
 - S1014: DanBot | type=malware
 - S1015: Milan | type=malware
+- S1016: MacMa | type=malware
+- S1017: OutSteel | type=malware
 - S1018: Saint Bot | type=malware
 - S1019: Shark | type=malware
 - S1020: Kevin | type=malware
 - S1021: DnsSystem | type=malware
+- S1022: IceApple | type=malware
 - S1023: CreepyDrive | type=malware
 - S1024: CreepySnail | type=malware
+- S1025: Amadey | type=malware
+- S1026: Mongall | type=malware
 - S1027: Heyoka Backdoor | type=malware
+- S1028: Action RAT | type=malware
+- S1029: AuTo Stealer | type=malware
 - S1030: Squirrelwaffle | type=malware
+- S1031: PingPull | type=malware
 - S1032: PyDCrypt | type=malware
+- S1033: DCSrv | type=malware
+- S1034: StrifeWater | type=malware
+- S1035: Small Sieve | type=malware
+- S1037: STARWHALE | type=malware
 - S1039: Bumblebee | type=malware
+- S1040: Rclone | type=tool
+- S1041: Chinoxy | type=malware
+- S1042: SUGARDUMP | type=malware
+- S1043: ccf32 | type=malware
+- S1044: FunnyDream | type=malware
 - S1046: PowGoop | type=malware
 - S1047: Mori | type=malware
+- S1048: macOS.OSAMiner | type=malware
+- S1049: SUGARUSH | type=malware
+- S1050: PcShare | type=tool
+- S1051: KEYPLUG | type=malware
+- S1052: DEADEYE | type=malware
+- S1053: AvosLocker | type=malware
 - S1058: Prestige | type=malware
+- S1059: metaMain | type=malware
 - S1060: Mafalda | type=malware
 - S1063: Brute Ratel C4 | type=tool
+- S1064: SVCReady | type=malware
 - S1065: Woody RAT | type=malware
+- S1066: DarkTortilla | type=malware
+- S1068: BlackCat | type=malware
 - S1070: Black Basta | type=malware
+- S1071: Rubeus | type=tool
+- S1072: Industroyer2 | type=malware
+- S1073: Royal | type=malware
+- S1074: ANDROMEDA | type=malware
+- S1075: KOPILUWAK | type=malware
+- S1076: QUIETCANARY | type=malware
+- S1078: RotaJakiro | type=malware
 - S1081: BADHATCH | type=malware
+- S1084: QUIETEXIT | type=malware
 - S1085: Sardonic | type=malware
 - S1086: Snip3 | type=malware
+- S1087: AsyncRAT | type=tool
+- S1088: Disco | type=malware
+- S1089: SharpDisco | type=malware
 - S1090: NightClub | type=malware
+- S1091: Pacu | type=tool
+- S1096: Cheerscrypt | type=malware
+- S1097: HUI Loader | type=malware
+- S1099: Samurai | type=malware
+- S1100: Ninja | type=malware
+- S1101: LoFiSe | type=malware
+- S1102: Pcexter | type=malware
+- S1104: SLOWPULSE | type=malware
+- S1105: COATHANGER | type=malware
+- S1106: NGLite | type=malware
+- S1107: NKAbuse | type=malware
+- S1108: PULSECHECK | type=malware
+- S1109: PACEMAKER | type=malware
+- S1110: SLIGHTPULSE | type=malware
 - S1111: DarkGate | type=malware
+- S1112: STEADYPULSE | type=malware
+- S1113: RAPIDPULSE | type=malware
+- S1114: ZIPLINE | type=malware
+- S1115: WIREFIRE | type=malware
+- S1116: WARPWIRE | type=malware
 - S1117: GLASSTOKEN | type=malware
+- S1118: BUSHWALK | type=malware
+- S1119: LIGHTWIRE | type=malware
+- S1120: FRAMESTING | type=malware
+- S1121: LITTLELAMB.WOOLTEA | type=malware
+- S1122: Mispadu | type=malware
+- S1123: PITSTOP | type=malware
+- S1124: SocGholish | type=malware
+- S1125: AcidRain | type=malware
 - S1129: Akira | type=malware
+- S1130: Raspberry Robin | type=malware
+- S1131: NPPSPY | type=tool
 - S1132: IPsec Helper | type=malware
+- S1133: Apostle | type=malware
+- S1134: DEADWOOD | type=malware
+- S1135: MultiLayer Wiper | type=malware
+- S1136: BFG Agonizer | type=malware
+- S1137: Moneybird | type=malware
 - S1138: Gootloader | type=malware
+- S1139: INC Ransomware | type=malware
 - S1140: Spica | type=malware
 - S1141: LunarWeb | type=malware
+- S1142: LunarMail | type=malware
+- S1143: LunarLoader | type=malware
+- S1144: FRP | type=tool
+- S1145: Pikabot | type=malware
+- S1146: MgBot | type=malware
+- S1147: Nightdoor | type=malware
+- S1148: Raccoon Stealer | type=malware
 - S1149: CHIMNEYSWEEP | type=malware
+- S1150: ROADSWEEP | type=malware
 - S1151: ZeroCleare | type=malware
+- S1152: IMAPLoader | type=malware
+- S1153: Cuckoo Stealer | type=malware
+- S1154: VersaMem | type=malware
 - S1155: Covenant | type=tool
+- S1156: Manjusaka | type=malware
+- S1158: DUSTPAN | type=malware
+- S1159: DUSTTRAP | type=malware
+- S1160: Latrodectus | type=malware
+- S1161: BPFDoor | type=malware
+- S1162: Playcrypt | type=malware
+- S1163: SnappyTCP | type=malware
+- S1164: UPSTYLE | type=malware
+- S1166: Solar | type=malware
+- S1167: AcidPour | type=malware
+- S1168: SampleCheck5000 | type=malware
+- S1169: Mango | type=malware
+- S1170: ODAgent | type=malware
+- S1171: OilCheck | type=malware
+- S1172: OilBooster | type=malware
 - S1173: PowerExchange | type=malware
+- S1176: attrib | type=tool
 - S1178: ShrinkLocker | type=malware
+- S1179: Exbyte | type=malware
+- S1180: BlackByte Ransomware | type=malware
+- S1181: BlackByte 2.0 Ransomware | type=malware
+- S1182: MagicRAT | type=malware
 - S1183: StrelaStealer | type=malware
+- S1184: BOLDMOVE | type=malware
+- S1185: LightSpy | type=malware
+- S1186: Line Dancer | type=malware
+- S1187: reGeorg | type=malware
+- S1188: Line Runner | type=malware
+- S1189: Neo-reGeorg | type=malware
+- S1190: Kapeka | type=malware
+- S1191: Megazord | type=malware
+- S1192: NICECURL | type=malware
 - S1193: TAMECAT | type=malware
+- S1194: Akira _v2 | type=malware
 - S1196: Troll Stealer | type=malware
+- S1197: GoBear | type=malware
+- S1198: Gomir | type=malware
 - S1199: LockBit 2.0 | type=malware
+- S1200: StealBit | type=malware
 - S1201: TRANSLATEXT | type=malware
 - S1202: LockBit 3.0 | type=malware
+- S1203: J-magic | type=malware
+- S1204: cd00r | type=malware
+- S1205: cipher.exe | type=tool
+- S1206: JumbledPath | type=malware
+- S1207: XLoader | type=malware
+- S1209: Quick Assist | type=tool
+- S1210: Sagerunex | type=malware
+- S1211: Hannotog | type=malware
 - S1212: RansomHub | type=malware
 - S1213: Lumma Stealer | type=malware
+- S1217: VIRTUALPITA | type=malware
+- S1218: VIRTUALPIE | type=malware
+- S1219: REPTILE | type=malware
+- S1220: MEDUSA | type=malware
+- S1221: MOPSLED | type=malware
+- S1222: RIFLESPINE | type=malware
+- S1223: THINCRUST | type=malware
+- S1224: CASTLETAP | type=malware
+- S1226: BOOKWORM | type=malware
+- S1227: StarProxy | type=malware
+- S1228: PUBLOAD | type=malware
 - S1229: Havoc | type=malware
+- S1230: HIUPAN | type=malware
+- S1232: SplatDropper | type=malware
+- S1233: PAKLOG | type=malware
+- S1234: SplatCloak | type=malware
+- S1235: CorKLOG | type=malware
+- S1236: CLAIMLOADER | type=malware
+- S1237: CANONSTAGER | type=malware
+- S1238: STATICPLUGIN | type=malware
+- S1239: TONESHELL | type=malware
+- S1240: RedLine Stealer | type=malware
 - S1242: Qilin | type=malware
 - S1244: Medusa Ransomware | type=malware
 - S1245: InvisibleFerret | type=malware
+- S1246: BeaverTail | type=malware
+- S1247: Embargo | type=malware
+- S1248: XORIndex Loader | type=malware
+- S1249: HexEval Loader | type=malware
 - S9001: SystemBC | type=malware
+- S9002: Diskpart | type=tool
+- S9003: evilginx2 | type=tool
+- S9004: Crocodilus | type=malware
+- S9007: HTTPTroy | type=malware
 - S9008: Shai-Hulud | type=malware
+- S9009: TruffleHog | type=tool
+- S9010: GlassWorm | type=malware
+- S9011: BRUSHFIRE | type=malware
+- S9012: TRAILBLAZE | type=malware
+- S9013: DRYHOOK | type=malware
+- S9014: PHASEJAM | type=malware
 - S9015: BRICKSTORM | type=malware
+- S9016: Caminho | type=malware
+- S9017: DCRAT | type=tool
+- S9018: HeartCrypt | type=malware
 - S9019: PureCrypter | type=malware
+- S9020: LODEINFO | type=malware
+- S9021: DOWNIISSA | type=malware
+- S9022: MirrorStealer | type=malware
+- S9023: HiddenFace | type=malware
+- S9024: SPAWNCHIMERA | type=malware
+- S9025: NOOPLDR | type=malware
+- S9026: ROAMINGHOUSE | type=malware
+- S9027: ANELLDR | type=malware
+- S9028: PHPsert | type=malware
+- S9029: IronWind | type=malware
+- S9030: SameCoin | type=malware
+- S9031: AshTag | type=malware
 - S9032: MuddyViper | type=malware
+- S9033: Fooder | type=malware
 - S9034: Tsundere Botnet | type=malware
+- S9035: LAMEHUG | type=malware
 - S9036: LP-Notes | type=malware
+- S9037: RustyWater | type=malware
+- S9038: DynoWiper | type=malware
 - S9039: LazyWiper | type=malware
 
 ## MITRE Detection Strategies

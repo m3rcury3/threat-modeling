@@ -39,6 +39,7 @@ Use actor pages to answer "what do we detect for this adversary?" and tactic pag
 | 🟢 **Provisioned** | Detection is active and tuned in the SIEM / EDR |
 | 🟡 **In Testing** | Detection deployed but undergoing validation and tuning |
 | 🔵 **Planned** | Requirement identified; detection not yet built |
+| 🟣 **AI Suggested** | Automatically generated starter detection requiring engineering validation |
 
 ---
 

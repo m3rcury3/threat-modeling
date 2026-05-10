@@ -6,6 +6,14 @@ This section is maintained from live ATT&CK content, not static tactic snapshots
 
 <div id="tactics-meta">Loading...</div>
 
+## Tactic Search
+
+<label>Tactic Search:
+  <input type="text" id="tactics-search" placeholder="Search Tactic ID or name">
+</label>
+
+<div id="tactics-filter-summary">Loading...</div>
+
 ## All MITRE Tactics and Detection Statistics Per Tactic
 
 <div id="tactics-stats-table">Loading...</div>

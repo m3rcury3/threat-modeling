@@ -11,6 +11,10 @@
   }
 
   function detectionDocUrl(detection) {
+    const sourceFile = detection?.source_file || "";
+    if (sourceFile) {
+      return `https://github.com/m3rcury3/threat-modeling/blob/main/${encodeURI(sourceFile)}`;
+    }
     const id = detection?.detection_id || "";
     const category = detection?.category || "";
     if (!id || !category) return "";
@@ -18,15 +22,26 @@
   }
 
   function statusBadge(status) {
-    const normalized = String(status || "unknown").toLowerCase();
+    const normalized = String(status || "unknown")
+      .toLowerCase()
+      .replaceAll(" ", "_")
+      .replaceAll("-", "_");
     const map = {
       provisioned: "🟢 Provisioned",
       in_testing: "🟡 In Testing",
       planned: "🔵 Planned",
       deprecated: "⚫ Deprecated",
+      ai_suggested: "🟣 AI Suggested",
       unknown: "⚪ Unknown",
     };
     return map[normalized] || `⚪ ${esc(status)}`;
+  }
+
+  function normalizeStatus(status) {
+    return String(status || "unknown")
+      .toLowerCase()
+      .replaceAll(" ", "_")
+      .replaceAll("-", "_");
   }
 
   function strategyLinksForDetection(detectionId, crosswalk) {
@@ -56,16 +71,66 @@
         <li>In Testing: ${esc(byStatus.in_testing || 0)}</li>
         <li>Planned: ${esc(byStatus.planned || 0)}</li>
         <li>Deprecated: ${esc(byStatus.deprecated || 0)}</li>
+        <li>AI Suggested: ${esc(byStatus["AI Suggested"] || 0)}</li>
       </ul>
     `;
   }
 
-  function renderTable(index, mapping) {
+  function applyFilters(detections, crosswalk, filters) {
+    const techniqueNeedle = String(filters.technique || "")
+      .trim()
+      .toUpperCase();
+
+    return detections.filter((d) => {
+      const category = String(d.category || "").toLowerCase();
+      const status = normalizeStatus(d.status);
+
+      if (filters.category && category !== String(filters.category).toLowerCase()) {
+        return false;
+      }
+
+      if (filters.status && status !== normalizeStatus(filters.status)) {
+        return false;
+      }
+
+      if (filters.aiSuggestedOnly && normalizeStatus(d.status) !== "ai_suggested") {
+        return false;
+      }
+
+      if (filters.hasStrategyOnly) {
+        const entries = crosswalk?.[d.detection_id] || [];
+        if (!entries.length) {
+          return false;
+        }
+      }
+
+      if (techniqueNeedle) {
+        const techniques = Array.isArray(d.mitre_techniques) ? d.mitre_techniques : [];
+        const hasMatch = techniques.some((t) => String(t || "").toUpperCase().includes(techniqueNeedle));
+        if (!hasMatch) {
+          return false;
+        }
+      }
+
+      return true;
+    });
+  }
+
+  function renderSummary(filteredCount, totalCount) {
+    const summary = document.getElementById("detections-filter-summary");
+    if (!summary) return;
+    summary.innerHTML = `<p>Showing <strong>${esc(filteredCount)}</strong> of <strong>${esc(totalCount)}</strong> detections.</p>`;
+  }
+
+  function renderTable(index, mapping, filters) {
     const root = document.getElementById("detections-status-table");
     if (!root) return;
     const crosswalk = mapping?.mappings?.detection_strategy_crosswalk || {};
+    const detections = index.detections || [];
+    const filtered = applyFilters(detections, crosswalk, filters);
+    renderSummary(filtered.length, detections.length);
 
-    const rows = (index.detections || [])
+    const rows = filtered
       .slice()
       .sort((a, b) => String(a.detection_id || "").localeCompare(String(b.detection_id || "")))
       .map((d) => {
@@ -111,6 +176,86 @@
     `;
   }
 
+  function readFilters() {
+    const ai = document.getElementById("filter-ai-suggested");
+    const hasStrategy = document.getElementById("filter-has-strategy");
+    const category = document.getElementById("filter-category");
+    const status = document.getElementById("filter-status");
+    const technique = document.getElementById("filter-technique-id");
+    return {
+      aiSuggestedOnly: Boolean(ai?.checked),
+      hasStrategyOnly: Boolean(hasStrategy?.checked),
+      category: category?.value || "",
+      status: status?.value || "",
+      technique: technique?.value || "",
+    };
+  }
+
+  function fillSelect(selectId, values) {
+    const select = document.getElementById(selectId);
+    if (!select) return;
+    const current = select.value;
+
+    select.innerHTML = `<option value="">All</option>`;
+    values.forEach((v) => {
+      const opt = document.createElement("option");
+      opt.value = v;
+      opt.textContent = v;
+      select.appendChild(opt);
+    });
+
+    if (current && values.includes(current)) {
+      select.value = current;
+    }
+  }
+
+  function populateFilterOptions(index) {
+    const detections = index?.detections || [];
+    const categories = Array.from(
+      new Set(
+        detections
+          .map((d) => String(d.category || "").trim())
+          .filter(Boolean)
+      )
+    ).sort((a, b) => a.localeCompare(b));
+
+    const statuses = Array.from(
+      new Set(
+        detections
+          .map((d) => String(d.status || "").trim())
+          .filter(Boolean)
+      )
+    ).sort((a, b) => a.localeCompare(b));
+
+    fillSelect("filter-category", categories);
+    fillSelect("filter-status", statuses);
+  }
+
+  function bindFilterEvents(onChange) {
+    const ai = document.getElementById("filter-ai-suggested");
+    const hasStrategy = document.getElementById("filter-has-strategy");
+    const category = document.getElementById("filter-category");
+    const status = document.getElementById("filter-status");
+    const technique = document.getElementById("filter-technique-id");
+    const clear = document.getElementById("filter-clear");
+
+    if (ai) ai.addEventListener("change", onChange);
+    if (hasStrategy) hasStrategy.addEventListener("change", onChange);
+    if (category) category.addEventListener("change", onChange);
+    if (status) status.addEventListener("change", onChange);
+    if (technique) technique.addEventListener("input", onChange);
+    if (clear) {
+      clear.addEventListener("click", function () {
+        if (ai) ai.checked = false;
+        if (hasStrategy) hasStrategy.checked = false;
+        if (category) category.value = "";
+        if (status) status.value = "";
+        if (technique) technique.value = "";
+        onChange();
+      });
+    }
+  }
+
   async function loadDetectionIndex() {
     const url = new URL("../data/detection_index.json", window.location.href);
     const response = await fetch(url.toString(), { cache: "no-store" });
@@ -135,10 +280,15 @@
 
     try {
       const [index, mapping] = await Promise.all([loadDetectionIndex(), loadMapping()]);
+      populateFilterOptions(index);
       renderMeta(index);
-      renderTable(index, mapping);
+      const rerender = function () {
+        renderTable(index, mapping, readFilters());
+      };
+      bindFilterEvents(rerender);
+      rerender();
     } catch (error) {
-      ["detections-meta", "detections-status-table"].forEach((id) => {
+      ["detections-meta", "detections-filter-summary", "detections-status-table"].forEach((id) => {
         const node = document.getElementById(id);
         if (node) {
           node.innerHTML = `<p>Failed to load detections data: ${esc(error.message || error)}</p>`;

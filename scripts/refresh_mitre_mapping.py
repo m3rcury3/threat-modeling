@@ -13,6 +13,7 @@ from __future__ import annotations
 import datetime as dt
 import json
 import pathlib
+import re
 import urllib.request
 
 import yaml
@@ -72,6 +73,7 @@ def load_local_detections() -> list[dict]:
             "threat_actors": frontmatter.get("threat_actors", []),
             "mitre_tactics": frontmatter.get("mitre_tactics", []),
             "mitre_techniques": frontmatter.get("mitre_techniques", []),
+            "mitre_detection_strategies": frontmatter.get("mitre_detection_strategies", []),
             "owner": frontmatter.get("owner", "unknown"),
             "created": frontmatter.get("created"),
             "last_updated": frontmatter.get("last_updated"),
@@ -155,10 +157,25 @@ def build_mapping(local_detections: list[dict], stix_bundle: dict) -> dict:
         if obj_type == "intrusion-set":
             group_id = attack_id(obj, ("G",))
             if group_id:
+                aliases = sorted(
+                    {
+                        str(a).strip()
+                        for a in (to_list(obj.get("aliases")) + to_list(obj.get("x_mitre_aliases")))
+                        if str(a).strip()
+                    }
+                )
+                keyword_set: set[str] = set()
+                for source in [obj.get("name", "")] + aliases:
+                    for token in re.split(r"[^A-Za-z0-9]+", str(source)):
+                        token = token.strip().lower()
+                        if len(token) >= 3:
+                            keyword_set.add(token)
                 groups_by_stix[obj["id"]] = {
                     "group_id": group_id,
                     "name": obj.get("name", group_id),
                     "url": attack_url_for_id(group_id),
+                    "aliases": aliases,
+                    "keywords": sorted(keyword_set),
                 }
 
         elif obj_type in ("tool", "malware"):
@@ -320,6 +337,8 @@ def build_mapping(local_detections: list[dict], stix_bundle: dict) -> dict:
                 "group_id": group["group_id"],
                 "name": group["name"],
                 "url": group.get("url", attack_url_for_id(group["group_id"])),
+                "aliases": group.get("aliases", []),
+                "keywords": group.get("keywords", []),
                 "mapped_techniques": technique_ids,
                 "mapped_detections": covered_detections,
             }
