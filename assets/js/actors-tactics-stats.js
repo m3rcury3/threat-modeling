@@ -67,10 +67,59 @@
     root.innerHTML = `<table><thead><tr>${thead}</tr></thead><tbody>${tbody}</tbody></table>`;
   }
 
+  function normalizeStatus(status) {
+    return String(status || "unknown")
+      .toLowerCase()
+      .replaceAll(" ", "_")
+      .replaceAll("-", "_");
+  }
+
+  function formatStatusLabel(status) {
+    const raw = String(status || "");
+    if (!raw) return "Unknown";
+    return raw
+      .replaceAll("_", " ")
+      .split(" ")
+      .map((p) => (p ? p[0].toUpperCase() + p.slice(1) : p))
+      .join(" ");
+  }
+
+  function populateStatusFilter(selectId, detections) {
+    const select = document.getElementById(selectId);
+    if (!select) return;
+
+    const statuses = Array.from(
+      new Set((detections || []).map((d) => String(d.status || "")).filter(Boolean))
+    ).sort((a, b) => a.localeCompare(b));
+
+    const previous = select.value;
+    select.innerHTML = `<option value="">All statuses</option>`;
+    statuses.forEach((s) => {
+      const option = document.createElement("option");
+      option.value = normalizeStatus(s);
+      option.textContent = formatStatusLabel(s);
+      select.appendChild(option);
+    });
+    if (previous && Array.from(select.options).some((o) => o.value === previous)) {
+      select.value = previous;
+    }
+  }
+
+  function hasMappedDetectionStatus(detectionIds, detectionById, selectedStatus) {
+    if (!selectedStatus) return true;
+    return (detectionIds || []).some((id) => normalizeStatus(detectionById[id]?.status) === selectedStatus);
+  }
+
+  function setFilterSummary(elementId, filteredCount, totalCount) {
+    const node = document.getElementById(elementId);
+    if (!node) return;
+    node.innerHTML = `<p>Showing <strong>${esc(filteredCount)}</strong> of <strong>${esc(totalCount)}</strong> rows.</p>`;
+  }
+
   function statusBreakdown(detectionIds, byId) {
-    const stats = { provisioned: 0, in_testing: 0, planned: 0, deprecated: 0, other: 0 };
+    const stats = { provisioned: 0, in_testing: 0, planned: 0, deprecated: 0, ai_suggested: 0, other: 0 };
     detectionIds.forEach((id) => {
-      const status = (byId[id]?.status || "other").toLowerCase();
+      const status = normalizeStatus(byId[id]?.status || "other");
       if (status in stats) {
         stats[status] += 1;
       } else {
@@ -100,6 +149,19 @@
     const tactics = mapping.mappings?.tactics || [];
     const detections = index.detections || [];
     const detectionById = Object.fromEntries(detections.map((d) => [d.detection_id, d]));
+    const statusSelect = document.getElementById("actors-mapped-status-filter");
+
+    populateStatusFilter("actors-mapped-status-filter", detections);
+
+    const selectedStatus = statusSelect?.value || "";
+    const filteredGroups = groups.filter((g) =>
+      hasMappedDetectionStatus(g.mapped_detections || [], detectionById, selectedStatus)
+    );
+    const filteredTactics = tactics.filter((t) =>
+      hasMappedDetectionStatus(t.mapped_detections || [], detectionById, selectedStatus)
+    );
+
+    setFilterSummary("actors-filter-summary", filteredGroups.length, groups.length);
 
     if (meta) {
       meta.innerHTML = `
@@ -115,7 +177,7 @@
     renderTable(
       "actors-groups-table",
       ["Group ID", "Group Name", "Mapped Techniques", "Mapped Detections"],
-      groups.map((g) => [
+      filteredGroups.map((g) => [
         link(g.group_id || "-", g.url || mitreUrlById(g.group_id)),
         link(g.name || "-", g.url || mitreUrlById(g.group_id)),
         buildTechniqueLinks(g.mapped_techniques || []),
@@ -134,8 +196,9 @@
         "In Testing",
         "Planned",
         "Deprecated",
+        "AI Suggested",
       ],
-      tactics.map((t) => {
+      filteredTactics.map((t) => {
         const detIds = t.mapped_detections || [];
         const s = statusBreakdown(detIds, detectionById);
         return [
@@ -147,6 +210,7 @@
           esc(s.in_testing),
           esc(s.planned),
           esc(s.deprecated),
+          esc(s.ai_suggested),
         ];
       })
     );
@@ -157,6 +221,16 @@
     const tactics = mapping.mappings?.tactics || [];
     const detections = index.detections || [];
     const detectionById = Object.fromEntries(detections.map((d) => [d.detection_id, d]));
+    const statusSelect = document.getElementById("tactics-mapped-status-filter");
+
+    populateStatusFilter("tactics-mapped-status-filter", detections);
+
+    const selectedStatus = statusSelect?.value || "";
+    const filteredTactics = tactics.filter((t) =>
+      hasMappedDetectionStatus(t.mapped_detections || [], detectionById, selectedStatus)
+    );
+
+    setFilterSummary("tactics-filter-summary", filteredTactics.length, tactics.length);
 
     if (meta) {
       meta.innerHTML = `
@@ -179,8 +253,9 @@
         "In Testing",
         "Planned",
         "Deprecated",
+        "AI Suggested",
       ],
-      tactics.map((t) => {
+      filteredTactics.map((t) => {
         const detIds = t.mapped_detections || [];
         const s = statusBreakdown(detIds, detectionById);
         return [
@@ -192,6 +267,7 @@
           esc(s.in_testing),
           esc(s.planned),
           esc(s.deprecated),
+          esc(s.ai_suggested),
         ];
       })
     );
@@ -206,14 +282,32 @@
 
     try {
       const { mapping, index } = await loadData();
-      if (isActorsPage) {
-        renderActorsPage(mapping, index);
-      }
-      if (isTacticsPage) {
-        renderTacticsPage(mapping, index);
-      }
+
+      const rerender = function () {
+        if (isActorsPage) {
+          renderActorsPage(mapping, index);
+        }
+        if (isTacticsPage) {
+          renderTacticsPage(mapping, index);
+        }
+      };
+
+      const actorsFilter = document.getElementById("actors-mapped-status-filter");
+      const tacticsFilter = document.getElementById("tactics-mapped-status-filter");
+      if (actorsFilter) actorsFilter.addEventListener("change", rerender);
+      if (tacticsFilter) tacticsFilter.addEventListener("change", rerender);
+
+      rerender();
     } catch (err) {
-      const targets = ["actors-meta", "actors-groups-table", "actors-tactic-stats-table", "tactics-meta", "tactics-stats-table"];
+      const targets = [
+        "actors-meta",
+        "actors-filter-summary",
+        "actors-groups-table",
+        "actors-tactic-stats-table",
+        "tactics-meta",
+        "tactics-filter-summary",
+        "tactics-stats-table",
+      ];
       targets.forEach((id) => {
         const node = document.getElementById(id);
         if (node) {
