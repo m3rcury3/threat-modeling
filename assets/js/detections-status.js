@@ -29,6 +29,20 @@
     return map[normalized] || `⚪ ${esc(status)}`;
   }
 
+  function strategyLinksForDetection(detectionId, crosswalk) {
+    const entries = crosswalk?.[detectionId] || [];
+    if (!entries.length) return "-";
+    return entries
+      .map((s) => {
+        const id = s.strategy_id || "-";
+        const name = s.name || "";
+        const label = `${id} ${name}`.trim();
+        const url = s.url || `https://attack.mitre.org/detectionstrategies/${encodeURIComponent(id)}`;
+        return `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>`;
+      })
+      .join("<br>");
+  }
+
   function renderMeta(index) {
     const root = document.getElementById("detections-meta");
     if (!root) return;
@@ -46,9 +60,10 @@
     `;
   }
 
-  function renderTable(index) {
+  function renderTable(index, mapping) {
     const root = document.getElementById("detections-status-table");
     if (!root) return;
+    const crosswalk = mapping?.mappings?.detection_strategy_crosswalk || {};
 
     const rows = (index.detections || [])
       .slice()
@@ -69,6 +84,7 @@
             <td>${linked}</td>
             <td>${esc(d.category || "-")}</td>
             <td>${statusBadge(d.status)}</td>
+            <td>${strategyLinksForDetection(d.detection_id, crosswalk)}</td>
             <td>${network || "-"}</td>
             <td>${esc(d.owner || "-")}</td>
             <td>${esc(d.last_updated || "-")}</td>
@@ -84,6 +100,7 @@
             <th>Detection</th>
             <th>Category</th>
             <th>Deployment Status</th>
+            <th>MITRE Detection Strategies</th>
             <th>Network Applicability</th>
             <th>Owner</th>
             <th>Last Updated</th>
@@ -103,14 +120,23 @@
     return response.json();
   }
 
+  async function loadMapping() {
+    const url = new URL("../data/mitre_live_mapping.json", window.location.href);
+    const response = await fetch(url.toString(), { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`Failed to load MITRE mapping: HTTP ${response.status}`);
+    }
+    return response.json();
+  }
+
   document.addEventListener("DOMContentLoaded", async function () {
     const active = document.getElementById("detections-status-table");
     if (!active) return;
 
     try {
-      const index = await loadDetectionIndex();
+      const [index, mapping] = await Promise.all([loadDetectionIndex(), loadMapping()]);
       renderMeta(index);
-      renderTable(index);
+      renderTable(index, mapping);
     } catch (error) {
       ["detections-meta", "detections-status-table"].forEach((id) => {
         const node = document.getElementById(id);
