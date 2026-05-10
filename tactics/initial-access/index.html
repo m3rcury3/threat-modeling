@@ -10,9 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://m3rcury3.github.io/threat-modeling/identity/DET-I-001/">
+        <link rel="canonical" href="https://m3rcury3.github.io/threat-modeling/tactics/initial-access/">
       
       
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../execution/">
       
       
         
@@ -23,7 +27,7 @@
     
     
       
-        <title>[DET-I-001] Impossible Travel - SOC Detection Requirements</title>
+        <title>Initial Access (TA0001) - SOC Detection Requirements</title>
       
     
     
@@ -74,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#det-i-001-impossible-travel" class="md-skip">
+        <a href="#initial-access-ta0001" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              [DET-I-001] Impossible Travel
+              Initial Access (TA0001)
             
           </span>
         </div>
@@ -259,11 +263,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../tactics/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -522,28 +528,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -561,7 +570,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -579,7 +588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tactics/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -604,10 +613,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../tactics/initial-access/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Initial Access (TA0001)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -623,6 +659,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#priority-gaps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Priority Gaps
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#planned-next-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Planned Next Rules
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-threat-actors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related Threat Actors
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -635,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tactics/execution/" class="md-nav__link">
+      <a href="../execution/" class="md-nav__link">
         
   
   
@@ -663,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tactics/credential-access/" class="md-nav__link">
+      <a href="../credential-access/" class="md-nav__link">
         
   
   
@@ -691,7 +780,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tactics/command-and-control/" class="md-nav__link">
+      <a href="../command-and-control/" class="md-nav__link">
         
   
   
@@ -719,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tactics/exfiltration/" class="md-nav__link">
+      <a href="../exfiltration/" class="md-nav__link">
         
   
   
@@ -891,10 +980,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#description" class="md-nav__link">
+  <a href="#priority-gaps" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Description
+        Priority Gaps
       
     </span>
   </a>
@@ -902,10 +991,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#use-case" class="md-nav__link">
+  <a href="#planned-next-rules" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case
+        Planned Next Rules
       
     </span>
   </a>
@@ -913,54 +1002,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-sources" class="md-nav__link">
+  <a href="#related-threat-actors" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Data Sources
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#logic-query" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Logic / Query
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#alert-thresholds" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Alert Thresholds
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#response-actions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Response Actions
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        References
+        Related Threat Actors
       
     </span>
   </a>
@@ -984,7 +1029,7 @@
 
 
   
-    <a href="https://github.com/m3rcury3/threat-modeling/edit/main/docs/identity/DET-I-001.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/m3rcury3/threat-modeling/edit/main/docs/tactics/initial-access.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -992,120 +1037,24 @@
   
 
 
-<h1 id="det-i-001-impossible-travel">[DET-I-001] Impossible Travel<a class="headerlink" href="#det-i-001-impossible-travel" title="Permanent link">&para;</a></h1>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Detection ID</strong></td>
-<td>DET-I-001</td>
-</tr>
-<tr>
-<td><strong>Category</strong></td>
-<td>Identity</td>
-</tr>
-<tr>
-<td><strong>Status</strong></td>
-<td>🟢 Provisioned</td>
-</tr>
-<tr>
-<td><strong>MITRE Technique</strong></td>
-<td><a href="https://attack.mitre.org/techniques/T1078/">T1078 – Valid Accounts</a></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
-<p>Detects when the same user account authenticates successfully from two geographically distant locations within a timeframe that is physically impossible given normal travel constraints (&lt; 2 hours apart, different countries).</p>
-<h2 id="use-case">Use Case<a class="headerlink" href="#use-case" title="Permanent link">&para;</a></h2>
-<p>Account compromise can be identified by correlating successful logon events from IP addresses that resolve to different countries within a short window.</p>
-<h2 id="data-sources">Data Sources<a class="headerlink" href="#data-sources" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Data Source</th>
-<th>Platform</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Azure AD Sign-In Logs</td>
-<td>Azure / Entra ID</td>
-<td><code>SigninLogs</code> table in Log Analytics</td>
-</tr>
-<tr>
-<td>Okta System Log</td>
-<td>SaaS / IdP</td>
-<td><code>authentication.success</code> events</td>
-</tr>
-<tr>
-<td>GeoIP enrichment</td>
-<td>Threat Intel</td>
-<td>MaxMind GeoLite2 or Azure built-in</td>
-</tr>
-</tbody>
-</table>
-<h2 id="logic-query">Logic / Query<a class="headerlink" href="#logic-query" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c">// Microsoft Sentinel – KQL (Azure AD Sign-In Logs)</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">SigninLogs</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">ResultType</span><span class="w"> </span><span class="p">==</span><span class="w"> </span><span class="mi">0</span><span class="w">  </span><span class="c">// Successful logon</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p">|</span><span class="w"> </span><span class="k">extend</span><span class="w"> </span><span class="n">Country</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">tostring</span><span class="p">(</span><span class="n">LocationDetails</span><span class="err">.</span><span class="n">countryOrRegion</span><span class="p">)</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">|</span><span class="w"> </span><span class="k">summarize</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="n">Countries</span><span class="w">       </span><span class="p">=</span><span class="w"> </span><span class="n">make_set</span><span class="p">(</span><span class="n">Country</span><span class="p">),</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="n">IPs</span><span class="w">             </span><span class="p">=</span><span class="w"> </span><span class="n">make_set</span><span class="p">(</span><span class="n">IPAddress</span><span class="p">),</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="n">LogonCount</span><span class="w">      </span><span class="p">=</span><span class="w"> </span><span class="k">count</span><span class="p">(),</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="n">FirstSeen</span><span class="w">       </span><span class="p">=</span><span class="w"> </span><span class="n">min</span><span class="p">(</span><span class="n">TimeGenerated</span><span class="p">),</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="n">LastSeen</span><span class="w">        </span><span class="p">=</span><span class="w"> </span><span class="n">max</span><span class="p">(</span><span class="n">TimeGenerated</span><span class="p">)</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="k">by</span><span class="w"> </span><span class="n">UserPrincipalName</span><span class="p">,</span><span class="w"> </span><span class="n">bin</span><span class="p">(</span><span class="n">TimeGenerated</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="n">h</span><span class="p">)</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">array_length</span><span class="p">(</span><span class="n">Countries</span><span class="p">)</span><span class="w"> </span><span class="p">&gt;</span><span class="w"> </span><span class="mi">1</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">|</span><span class="w"> </span><span class="k">extend</span><span class="w"> </span><span class="n">TimeDeltaHours</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">datetime_diff</span><span class="p">(</span><span class="s">&quot;hour&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">LastSeen</span><span class="p">,</span><span class="w"> </span><span class="n">FirstSeen</span><span class="p">)</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="p">|</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">TimeDeltaHours</span><span class="w"> </span><span class="p">&lt;</span><span class="w"> </span><span class="mi">2</span>
-</code></pre></div>
-<h2 id="alert-thresholds">Alert Thresholds<a class="headerlink" href="#alert-thresholds" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Time window</td>
-<td>2 hours</td>
-</tr>
-<tr>
-<td>Distance threshold</td>
-<td>Any two different countries</td>
-</tr>
-<tr>
-<td>Severity</td>
-<td>High</td>
-</tr>
-<tr>
-<td>Confidence</td>
-<td>High</td>
-</tr>
-</tbody>
-</table>
-<h2 id="response-actions">Response Actions<a class="headerlink" href="#response-actions" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Contact the user via an out-of-band channel to verify the logons.</li>
-<li>Force a password reset and MFA re-registration if compromise suspected.</li>
-<li>Revoke all active sessions via Azure AD / Okta.</li>
-<li>Review recent activity for data exfiltration indicators.</li>
-</ol>
-<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<h1 id="initial-access-ta0001">Initial Access (TA0001)<a class="headerlink" href="#initial-access-ta0001" title="Permanent link">&para;</a></h1>
+<p>This tactic currently has no provisioned detection in this repository.</p>
+<h2 id="priority-gaps">Priority Gaps<a class="headerlink" href="#priority-gaps" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://attack.mitre.org/techniques/T1078/">MITRE ATT&amp;CK – T1078</a></li>
-<li><a href="https://learn.microsoft.com/en-us/azure/sentinel/detect-threats-built-in">Microsoft Sentinel – Built-in analytic rules</a></li>
-<li><a href="https://github.com/m3rcury3/threat-modeling/blob/main/detections/identity/DET-I-001.md">Full detection file on GitHub</a></li>
+<li>T1566.001 Spearphishing Attachment</li>
+<li>T1566.002 Spearphishing Link</li>
+<li>T1566.003 Spearphishing via Service</li>
+</ul>
+<h2 id="planned-next-rules">Planned Next Rules<a class="headerlink" href="#planned-next-rules" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Email attachment detonation behavior</li>
+<li>Malicious URL click-through and redirect patterns</li>
+<li>External sender plus unusual attachment macro behavior</li>
+</ul>
+<h2 id="related-threat-actors">Related Threat Actors<a class="headerlink" href="#related-threat-actors" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Muddywater (G0069)</li>
+<li>Generic credential abuse campaigns</li>
 </ul>
 
 

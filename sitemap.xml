@@ -60,4 +60,28 @@
          <loc>https://m3rcury3.github.io/threat-modeling/network/DET-N-001/</loc>
          <lastmod>2026-05-10</lastmod>
     </url>
+    <url>
+         <loc>https://m3rcury3.github.io/threat-modeling/tactics/</loc>
+         <lastmod>2026-05-10</lastmod>
+    </url>
+    <url>
+         <loc>https://m3rcury3.github.io/threat-modeling/tactics/command-and-control/</loc>
+         <lastmod>2026-05-10</lastmod>
+    </url>
+    <url>
+         <loc>https://m3rcury3.github.io/threat-modeling/tactics/credential-access/</loc>
+         <lastmod>2026-05-10</lastmod>
+    </url>
+    <url>
+         <loc>https://m3rcury3.github.io/threat-modeling/tactics/execution/</loc>
+         <lastmod>2026-05-10</lastmod>
+    </url>
+    <url>
+         <loc>https://m3rcury3.github.io/threat-modeling/tactics/exfiltration/</loc>
+         <lastmod>2026-05-10</lastmod>
+    </url>
+    <url>
+         <loc>https://m3rcury3.github.io/threat-modeling/tactics/initial-access/</loc>
+         <lastmod>2026-05-10</lastmod>
+    </url>
 </urlset>
