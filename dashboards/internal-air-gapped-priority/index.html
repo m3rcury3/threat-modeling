@@ -997,6 +997,7 @@
 <li>Detections are included when <code>network_applicability</code> contains <code>both</code> or <code>air_gapped</code>.</li>
 <li>Higher priority goes to detections that are still <code>Planned</code>, <code>AI Suggested</code>, or <code>In Testing</code>.</li>
 <li>Detection families mapped to <code>host</code>, <code>internal-network</code>, <code>access-control</code>, and <code>self-monitoring</code> are ranked ahead of broader application or intelligence-only detections.</li>
+<li>Tactics are weighted in reverse kill chain order to prioritize detecting threats already operating within the network: <code>Exfiltration</code> (TA0040) and <code>Collection</code> (TA0011) score highest, while <code>Reconnaissance</code> (TA0001) and <code>Resource Development</code> (TA0002) score lowest. This approach assumes the threat actor has already passed the perimeter and focuses on detecting active compromise.</li>
 </ul>
 <h2 id="snapshot">Snapshot<a class="headerlink" href="#snapshot" title="Permanent link">&para;</a></h2>
 <div id="priority-meta">Loading...</div>

@@ -72,19 +72,20 @@
 
   function tacticScore(mitreTactics) {
     const values = Array.isArray(mitreTactics) ? mitreTactics : [mitreTactics];
+    // Reversed kill chain: prioritizes detecting threats already in the network (exfiltration first)
     const weights = {
-      TA0006: 50,
-      TA0007: 45,
-      TA0001: 44,
-      TA0002: 42,
-      TA0003: 40,
-      TA0004: 38,
-      TA0005: 36,
-      TA0008: 34,
-      TA0009: 28,
-      TA0010: 20,
-      TA0011: 18,
-      TA0040: 16,
+      TA0040: 50, // Exfiltration - already stealing data (highest priority)
+      TA0011: 48, // Collection - actively collecting data
+      TA0010: 46, // Lateral Movement - moving through the network
+      TA0009: 44, // Discovery - mapping/enumerating the network
+      TA0008: 42, // Credential Access - stealing credentials
+      TA0007: 40, // Defense Evasion - hiding their presence
+      TA0006: 38, // Privilege Escalation - escalating within network
+      TA0005: 36, // Persistence - maintaining presence
+      TA0004: 34, // Execution - executing code/commands
+      TA0003: 32, // Initial Access - first entry point
+      TA0002: 20, // Resource Development - early prep (lower priority)
+      TA0001: 10, // Reconnaissance - external reconnaissance (lowest priority)
     };
     return values.reduce((highest, value) => Math.max(highest, weights[String(value || "").toUpperCase()] || 0), 0);
   }
