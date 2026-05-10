@@ -1,3 +1,23 @@
+---
+detection_id: DET-C-001
+title: AWS S3 Bucket Made Public
+threat_actors:
+  - generic_data_exfiltration
+category: cloud
+status: provisioned
+network_applicability: internet_connected
+created: 2025-02-14
+last_updated: 2025-05-10
+owner: blue-team
+mitre_tactics:
+  - TA0010
+mitre_techniques:
+  - T1567.001
+coverage_gaps:
+  - "Does not detect server-side encryption configuration changes"
+  - "Does not detect bucket versioning abuse patterns"
+---
+
 # [DET-C-001] AWS S3 Bucket Made Public
 
 | Field | Value |
@@ -7,7 +27,7 @@
 | **Category** | Cloud |
 | **Status** | Provisioned |
 | **Created** | 2025-02-14 |
-| **Last Updated** | 2025-04-30 |
+| **Last Updated** | 2025-05-10 |
 | **Owner** | blue-team |
 
 ---

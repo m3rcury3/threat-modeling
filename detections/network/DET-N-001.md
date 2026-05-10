@@ -1,3 +1,23 @@
+---
+detection_id: DET-N-001
+title: DNS Beaconing to Suspicious Domain
+threat_actors:
+  - generic_code_execution
+category: network
+status: in_testing
+network_applicability: internet_connected
+created: 2025-03-10
+last_updated: 2025-05-10
+owner: blue-team
+mitre_tactics:
+  - TA0011
+mitre_techniques:
+  - T1071.004
+coverage_gaps:
+  - "Does not detect DNS tunneling (exfil over DNS)"
+  - "Cannot detect DoH/DoT traffic bypassing DNS firewall"
+---
+
 # [DET-N-001] DNS Beaconing to Suspicious Domain
 
 | Field | Value |
@@ -7,7 +27,7 @@
 | **Category** | Network |
 | **Status** | In Testing |
 | **Created** | 2025-03-10 |
-| **Last Updated** | 2025-05-01 |
+| **Last Updated** | 2025-05-10 |
 | **Owner** | blue-team |
 
 ---

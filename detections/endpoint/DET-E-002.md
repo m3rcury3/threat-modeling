@@ -1,3 +1,23 @@
+---
+detection_id: DET-E-002
+title: Suspicious PowerShell Encoded Command Execution
+threat_actors:
+  - muddywater
+  - generic_code_execution
+category: endpoint
+status: provisioned
+network_applicability: internet_connected
+created: 2025-02-01
+last_updated: 2025-05-10
+owner: blue-team
+mitre_tactics:
+  - TA0002
+mitre_techniques:
+  - T1059.001
+coverage_gaps:
+  - "Fileless malware delivery via PowerShell remoting (CredSSP, PS Remoting)"
+---
+
 # [DET-E-002] Suspicious PowerShell Encoded Command Execution
 
 | Field | Value |
@@ -7,7 +27,7 @@
 | **Category** | Endpoint |
 | **Status** | Provisioned |
 | **Created** | 2025-02-01 |
-| **Last Updated** | 2025-04-20 |
+| **Last Updated** | 2025-05-10 |
 | **Owner** | blue-team |
 
 ---

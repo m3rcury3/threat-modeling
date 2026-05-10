@@ -17,14 +17,16 @@ Each page in this site corresponds to a **detection requirement** — a structur
 
 ---
 
-## 📂 Detection Categories
+## Detection Grouping
 
-| Category | Description |
+This site is intentionally grouped by adversary behavior, not by platform silo.
+
+| Grouping | Description |
 |----------|-------------|
-| [Endpoint](endpoint/index.md) | Host-based detections for Windows, Linux, and macOS endpoints |
-| [Network](network/index.md) | Network traffic and protocol-level detections |
-| [Identity](identity/index.md) | Authentication, authorisation, and identity anomaly detections |
-| [Cloud](cloud/index.md) | Cloud platform detections for AWS, Azure, and GCP |
+| [Threat Actors](actors/index.md) | Coverage by intrusion set and campaign profile (for example Muddywater) |
+| [Tactics](tactics/index.md) | Coverage by MITRE ATT&CK tactic and attack phase |
+
+Use actor pages to answer "what do we detect for this adversary?" and tactic pages to answer "which attack phases are covered or missing?"
 
 ---
 
@@ -42,8 +44,8 @@ Each page in this site corresponds to a **detection requirement** — a structur
 
 1. Copy `templates/detection-template.md` from the repository.
 2. Create a new file in `detections/<category>/DET-X-NNN.md`.
-3. Fill in all fields.
-4. Add a corresponding page under `docs/<category>/` and update `mkdocs.yml`.
+3. Fill in all fields, including threat actor and ATT&CK tactic metadata.
+4. Link the rule from one or more pages in `docs/actors/` and `docs/tactics/`, then update `mkdocs.yml` if needed.
 5. Open a Pull Request — the site rebuilds automatically on merge.
 
 See the project [README](https://github.com/m3rcury3/threat-modeling#readme) for full contribution guidelines.

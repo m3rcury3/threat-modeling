@@ -1,13 +1,32 @@
+---
+detection_id: DET-X-XXX
+title: Threat Actor Detection Title
+threat_actors:
+  - actor_id_1
+  - actor_id_2
+category: endpoint  # endpoint, network, identity, cloud, email, application
+status: planned     # planned, in_testing, provisioned, deprecated
+network_applicability: both  # internet_connected, air_gapped, both
+created: YYYY-MM-DD
+last_updated: YYYY-MM-DD
+owner: analyst-github-handle
+mitre_tactics:
+  - TA0006
+mitre_techniques:
+  - T1110.001
+coverage_gaps: []
+---
+
 # [DET-X-XXX] Threat Actor Detection Title
 
 | Field | Value |
 |-------|-------|
 | **Detection ID** | DET-X-XXX |
 | **Title** | Short descriptive title tied to a specific threat actor, intrusion set, or campaign |
-| **Threat Actor / Group** | e.g., APT29 \| FIN7 \| Lazarus Group \| Unknown Cluster |
-| **Actor Aliases** | Alternate names, vendor names, campaign names |
+| **Threat Actors** | References to `actor_id` from `data/actors.json` |
 | **Category** | Endpoint \| Network \| Identity \| Cloud \| Email \| Application |
-| **Status** | Planned \| In Testing \| Provisioned |
+| **Status** | Planned \| In Testing \| Provisioned \| Deprecated |
+| **Network Applicability** | Internet Connected \| Air-Gapped \| Both |
 | **Created** | YYYY-MM-DD |
 | **Last Updated** | YYYY-MM-DD |
 | **Owner** | analyst-github-handle |

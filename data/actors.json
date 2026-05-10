@@ -1,0 +1,137 @@
+{
+  "actors": [
+    {
+      "actor_id": "muddywater",
+      "name": "Muddywater",
+      "aliases": [
+        "Static Kitten",
+        "COBALT LILAC",
+        "Earth Vetala"
+      ],
+      "mitre_group_ids": [
+        "G0069"
+      ],
+      "source": "mitre",
+      "description": "Muddywater is a suspected Iranian APT group that has been active since at least 2017, targeting organizations primarily in government, energy, telecommunications, and IT sectors across the Middle East and North Africa region.",
+      "operational_profile": {
+        "targeting": [
+          "government",
+          "energy",
+          "telecommunications",
+          "IT sector"
+        ],
+        "geography": [
+          "Middle East",
+          "North Africa",
+          "Central Asia"
+        ],
+        "preferred_networks": [
+          "internet_connected"
+        ],
+        "tradecraft_summary": "Multi-stage infection chain with custom malware (Meterpreter variants, Powerstager), living-off-the-land techniques, and MITRE ATT&CK alignment in execution and persistence phases."
+      },
+      "known_techniques": [
+        "T1110.001",
+        "T1059.001",
+        "T1566.001",
+        "T1566.002",
+        "T1203",
+        "T1547.009",
+        "T1140",
+        "T1574.008"
+      ],
+      "recent_campaigns": [
+        "Operation EmailThief (2023)",
+        "TerraMalware Campaign (2024)"
+      ],
+      "created": "2025-05-10",
+      "last_updated": "2025-05-10"
+    },
+    {
+      "actor_id": "generic_credential_abuse",
+      "name": "Generic Credential Abuse (Any Threat Actor)",
+      "aliases": [],
+      "mitre_group_ids": [],
+      "source": "custom",
+      "description": "Generic detection for common credential abuse and brute force techniques used by many threat actors, malware families, and opportunistic attackers.",
+      "operational_profile": {
+        "targeting": [
+          "any"
+        ],
+        "geography": [
+          "global"
+        ],
+        "preferred_networks": [
+          "both"
+        ],
+        "tradecraft_summary": "Opportunistic password guessing, spray attacks, and lateral movement using compromised credentials."
+      },
+      "known_techniques": [
+        "T1110.001",
+        "T1110.002",
+        "T1110.003",
+        "T1110.004"
+      ],
+      "recent_campaigns": [],
+      "created": "2025-05-10",
+      "last_updated": "2025-05-10"
+    },
+    {
+      "actor_id": "generic_code_execution",
+      "name": "Generic Code Execution (Any Threat Actor)",
+      "aliases": [],
+      "mitre_group_ids": [],
+      "source": "custom",
+      "description": "Generic detection for command execution and script-based malware delivery used across multiple threat actors and malware families.",
+      "operational_profile": {
+        "targeting": [
+          "any"
+        ],
+        "geography": [
+          "global"
+        ],
+        "preferred_networks": [
+          "internet_connected"
+        ],
+        "tradecraft_summary": "Living-off-the-land techniques, PowerShell abuse, encoded command execution, and fileless malware delivery."
+      },
+      "known_techniques": [
+        "T1059.001",
+        "T1059.003",
+        "T1086",
+        "T1140"
+      ],
+      "recent_campaigns": [],
+      "created": "2025-05-10",
+      "last_updated": "2025-05-10"
+    },
+    {
+      "actor_id": "generic_data_exfiltration",
+      "name": "Generic Data Exfiltration (Insider Threat / Misconfiguration)",
+      "aliases": [],
+      "mitre_group_ids": [],
+      "source": "custom",
+      "description": "Generic detection for data exposure, misconfiguration, and exfiltration patterns that may indicate insider threats, compromised credentials, or cloud misconfigurations.",
+      "operational_profile": {
+        "targeting": [
+          "any"
+        ],
+        "geography": [
+          "global"
+        ],
+        "preferred_networks": [
+          "both"
+        ],
+        "tradecraft_summary": "Unauthorized access to cloud resources, API abuse, bucket/share permission escalation, and bulk data download patterns."
+      },
+      "known_techniques": [
+        "T1567.001",
+        "T1020",
+        "T1537"
+      ],
+      "recent_campaigns": [],
+      "created": "2025-05-10",
+      "last_updated": "2025-05-10"
+    }
+  ]
+}

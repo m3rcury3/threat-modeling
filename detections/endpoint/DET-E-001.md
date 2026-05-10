@@ -1,3 +1,21 @@
+---
+detection_id: DET-E-001
+title: Brute Force Attack – Local Windows Account
+threat_actors:
+  - generic_credential_abuse
+category: endpoint
+status: provisioned
+network_applicability: both
+created: 2025-01-15
+last_updated: 2025-05-10
+owner: blue-team
+mitre_tactics:
+  - TA0006
+mitre_techniques:
+  - T1110.001
+coverage_gaps: []
+---
+
 # [DET-E-001] Brute Force Attack – Local Windows Account
 
 | Field | Value |
@@ -7,7 +25,7 @@
 | **Category** | Endpoint |
 | **Status** | Provisioned |
 | **Created** | 2025-01-15 |
-| **Last Updated** | 2025-04-20 |
+| **Last Updated** | 2025-05-10 |
 | **Owner** | blue-team |
 
 ---

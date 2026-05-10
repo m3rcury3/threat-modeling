@@ -1,3 +1,23 @@
+---
+detection_id: DET-I-001
+title: Impossible Travel – Simultaneous Logons from Different Countries
+threat_actors:
+  - generic_credential_abuse
+category: identity
+status: provisioned
+network_applicability: both
+created: 2025-01-28
+last_updated: 2025-05-10
+owner: blue-team
+mitre_tactics:
+  - TA0001
+mitre_techniques:
+  - T1078
+coverage_gaps:
+  - "Does not detect impossible travel via proxy/VPN"
+  - "Does not correlate with legitimate business travel schedules"
+---
+
 # [DET-I-001] Impossible Travel – Simultaneous Logons from Different Countries
 
 | Field | Value |
@@ -7,7 +27,7 @@
 | **Category** | Identity |
 | **Status** | Provisioned |
 | **Created** | 2025-01-28 |
-| **Last Updated** | 2025-04-15 |
+| **Last Updated** | 2025-05-10 |
 | **Owner** | blue-team |
 
 ---

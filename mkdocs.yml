@@ -53,16 +53,17 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Endpoint:
-      - Overview: endpoint/index.md
-      - DET-E-001 – Brute Force: endpoint/DET-E-001.md
-      - DET-E-002 – PowerShell Encoded Command: endpoint/DET-E-002.md
-  - Network:
-      - Overview: network/index.md
-      - DET-N-001 – DNS Beaconing: network/DET-N-001.md
-  - Identity:
-      - Overview: identity/index.md
-      - DET-I-001 – Impossible Travel: identity/DET-I-001.md
-  - Cloud:
-      - Overview: cloud/index.md
-      - DET-C-001 – S3 Bucket Made Public: cloud/DET-C-001.md
+  - Threat Actors:
+      - Overview: actors/index.md
+      - Muddywater (G0069): actors/muddywater.md
+      - Generic Threats: actors/generic-threats.md
+  - Tactics:
+    - Overview: tactics/index.md
+    - Initial Access (TA0001): tactics/initial-access.md
+    - Execution (TA0002): tactics/execution.md
+    - Credential Access (TA0006): tactics/credential-access.md
+    - Command and Control (TA0011): tactics/command-and-control.md
+    - Exfiltration (TA0010): tactics/exfiltration.md
+  - Dashboards:
+      - Coverage: dashboards/coverage.md
+      - Gaps & Roadmap: dashboards/gaps.md
