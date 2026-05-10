@@ -34,8 +34,8 @@
   }
 
   async function loadData() {
-    const mappingUrl = new URL("../../data/mitre_live_mapping.json", window.location.href);
-    const indexUrl = new URL("../../data/detection_index.json", window.location.href);
+    const mappingUrl = new URL("../data/mitre_live_mapping.json", window.location.href);
+    const indexUrl = new URL("../data/detection_index.json", window.location.href);
     const [mappingRes, indexRes] = await Promise.all([
       fetch(mappingUrl.toString(), { cache: "no-store" }),
       fetch(indexUrl.toString(), { cache: "no-store" }),
