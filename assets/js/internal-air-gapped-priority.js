@@ -179,7 +179,7 @@
   }
 
   async function loadDetectionIndex() {
-    const url = new URL("../data/detection_index.json", window.location.href);
+    const url = new URL("../../data/detection_index.json", window.location.href);
     const response = await fetch(url.toString(), { cache: "no-store" });
     if (!response.ok) {
       throw new Error(`Failed to load detection index: HTTP ${response.status}`);
