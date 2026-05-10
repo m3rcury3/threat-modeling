@@ -1,0 +1,180 @@
+{
+  "generated_at": "2026-05-10T07:37:08.588018+00:00",
+  "total_detections": 5,
+  "detections": [
+    {
+      "detection_id": "DET-C-001",
+      "title": "AWS S3 Bucket Made Public",
+      "category": "cloud",
+      "status": "provisioned",
+      "network_applicability": [
+        "internet_connected"
+      ],
+      "threat_actors": [
+        "generic_data_exfiltration"
+      ],
+      "mitre_tactics": [
+        "TA0010"
+      ],
+      "mitre_techniques": [
+        "T1567.001"
+      ],
+      "owner": "blue-team",
+      "created": "2025-02-14",
+      "last_updated": "2025-05-10",
+      "coverage_gaps": [
+        "Does not detect server-side encryption configuration changes",
+        "Does not detect bucket versioning abuse patterns"
+      ],
+      "source_file": "detections/cloud/DET-C-001.md"
+    },
+    {
+      "detection_id": "DET-E-001",
+      "title": "Brute Force Attack \u2013 Local Windows Account",
+      "category": "endpoint",
+      "status": "provisioned",
+      "network_applicability": [
+        "both"
+      ],
+      "threat_actors": [
+        "generic_credential_abuse"
+      ],
+      "mitre_tactics": [
+        "TA0006"
+      ],
+      "mitre_techniques": [
+        "T1110.001"
+      ],
+      "owner": "blue-team",
+      "created": "2025-01-15",
+      "last_updated": "2025-05-10",
+      "coverage_gaps": [],
+      "source_file": "detections/endpoint/DET-E-001.md"
+    },
+    {
+      "detection_id": "DET-E-002",
+      "title": "Suspicious PowerShell Encoded Command Execution",
+      "category": "endpoint",
+      "status": "provisioned",
+      "network_applicability": [
+        "internet_connected"
+      ],
+      "threat_actors": [
+        "muddywater",
+        "generic_code_execution"
+      ],
+      "mitre_tactics": [
+        "TA0002"
+      ],
+      "mitre_techniques": [
+        "T1059.001"
+      ],
+      "owner": "blue-team",
+      "created": "2025-02-01",
+      "last_updated": "2025-05-10",
+      "coverage_gaps": [
+        "Fileless malware delivery via PowerShell remoting (CredSSP, PS Remoting)"
+      ],
+      "source_file": "detections/endpoint/DET-E-002.md"
+    },
+    {
+      "detection_id": "DET-I-001",
+      "title": "Impossible Travel \u2013 Simultaneous Logons from Different Countries",
+      "category": "identity",
+      "status": "provisioned",
+      "network_applicability": [
+        "both"
+      ],
+      "threat_actors": [
+        "generic_credential_abuse"
+      ],
+      "mitre_tactics": [
+        "TA0001"
+      ],
+      "mitre_techniques": [
+        "T1078"
+      ],
+      "owner": "blue-team",
+      "created": "2025-01-28",
+      "last_updated": "2025-05-10",
+      "coverage_gaps": [
+        "Does not detect impossible travel via proxy/VPN",
+        "Does not correlate with legitimate business travel schedules"
+      ],
+      "source_file": "detections/identity/DET-I-001.md"
+    },
+    {
+      "detection_id": "DET-N-001",
+      "title": "DNS Beaconing to Suspicious Domain",
+      "category": "network",
+      "status": "in_testing",
+      "network_applicability": [
+        "internet_connected"
+      ],
+      "threat_actors": [
+        "generic_code_execution"
+      ],
+      "mitre_tactics": [
+        "TA0011"
+      ],
+      "mitre_techniques": [
+        "T1071.004"
+      ],
+      "owner": "blue-team",
+      "created": "2025-03-10",
+      "last_updated": "2025-05-10",
+      "coverage_gaps": [
+        "Does not detect DNS tunneling (exfil over DNS)",
+        "Cannot detect DoH/DoT traffic bypassing DNS firewall"
+      ],
+      "source_file": "detections/network/DET-N-001.md"
+    }
+  ],
+  "by_status": {
+    "in_testing": 1,
+    "provisioned": 4
+  },
+  "by_category": {
+    "cloud": 1,
+    "endpoint": 2,
+    "identity": 1,
+    "network": 1
+  },
+  "by_network_applicability": {
+    "both": 2,
+    "internet_connected": 3
+  },
+  "by_threat_actor": {
+    "generic_code_execution": [
+      "DET-E-002",
+      "DET-N-001"
+    ],
+    "generic_credential_abuse": [
+      "DET-E-001",
+      "DET-I-001"
+    ],
+    "generic_data_exfiltration": [
+      "DET-C-001"
+    ],
+    "muddywater": [
+      "DET-E-002"
+    ]
+  },
+  "by_mitre_technique": {
+    "T1059.001": [
+      "DET-E-002"
+    ],
+    "T1071.004": [
+      "DET-N-001"
+    ],
+    "T1078": [
+      "DET-I-001"
+    ],
+    "T1110.001": [
+      "DET-E-001"
+    ],
+    "T1567.001": [
+      "DET-C-001"
+    ]
+  }
+}

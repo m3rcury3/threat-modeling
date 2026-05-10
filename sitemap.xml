@@ -9,14 +9,6 @@
          <lastmod>2026-05-10</lastmod>
     </url>
     <url>
-         <loc>https://m3rcury3.github.io/threat-modeling/actors/generic-threats/</loc>
-         <lastmod>2026-05-10</lastmod>
-    </url>
-    <url>
-         <loc>https://m3rcury3.github.io/threat-modeling/actors/muddywater/</loc>
-         <lastmod>2026-05-10</lastmod>
-    </url>
-    <url>
          <loc>https://m3rcury3.github.io/threat-modeling/cloud/</loc>
          <lastmod>2026-05-10</lastmod>
     </url>
@@ -25,11 +17,7 @@
          <lastmod>2026-05-10</lastmod>
     </url>
     <url>
-         <loc>https://m3rcury3.github.io/threat-modeling/dashboards/coverage/</loc>
-         <lastmod>2026-05-10</lastmod>
-    </url>
-    <url>
-         <loc>https://m3rcury3.github.io/threat-modeling/dashboards/gaps/</loc>
+         <loc>https://m3rcury3.github.io/threat-modeling/dashboards/live-mapping/</loc>
          <lastmod>2026-05-10</lastmod>
     </url>
     <url>
@@ -62,26 +50,6 @@
     </url>
     <url>
          <loc>https://m3rcury3.github.io/threat-modeling/tactics/</loc>
-         <lastmod>2026-05-10</lastmod>
-    </url>
-    <url>
-         <loc>https://m3rcury3.github.io/threat-modeling/tactics/command-and-control/</loc>
-         <lastmod>2026-05-10</lastmod>
-    </url>
-    <url>
-         <loc>https://m3rcury3.github.io/threat-modeling/tactics/credential-access/</loc>
-         <lastmod>2026-05-10</lastmod>
-    </url>
-    <url>
-         <loc>https://m3rcury3.github.io/threat-modeling/tactics/execution/</loc>
-         <lastmod>2026-05-10</lastmod>
-    </url>
-    <url>
-         <loc>https://m3rcury3.github.io/threat-modeling/tactics/exfiltration/</loc>
-         <lastmod>2026-05-10</lastmod>
-    </url>
-    <url>
-         <loc>https://m3rcury3.github.io/threat-modeling/tactics/initial-access/</loc>
          <lastmod>2026-05-10</lastmod>
     </url>
 </urlset>
