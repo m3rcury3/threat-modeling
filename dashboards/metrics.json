@@ -1,0 +1,331 @@
+{
+  "generated_at": "2025-05-10T00:00:00Z",
+  "generated_by": "Manual (Phase 4.1)",
+  "version": "1.0.0",
+  "global": {
+    "total_detections": 5,
+    "total_threat_actors": 4,
+    "total_techniques": 5,
+    "coverage_percentage": 8.3
+  },
+  "by_status": {
+    "provisioned": {
+      "count": 4,
+      "percentage": 80,
+      "detections": [
+        "DET-E-001",
+        "DET-E-002",
+        "DET-C-001",
+        "DET-I-001"
+      ]
+    },
+    "in_testing": {
+      "count": 1,
+      "percentage": 20,
+      "detections": [
+        "DET-N-001"
+      ]
+    },
+    "planned": {
+      "count": 0,
+      "percentage": 0,
+      "detections": []
+    },
+    "deprecated": {
+      "count": 0,
+      "percentage": 0,
+      "detections": []
+    }
+  },
+  "by_category": {
+    "endpoint": {
+      "count": 2,
+      "percentage": 40,
+      "detections": [
+        "DET-E-001",
+        "DET-E-002"
+      ]
+    },
+    "network": {
+      "count": 1,
+      "percentage": 20,
+      "detections": [
+        "DET-N-001"
+      ]
+    },
+    "identity": {
+      "count": 1,
+      "percentage": 20,
+      "detections": [
+        "DET-I-001"
+      ]
+    },
+    "cloud": {
+      "count": 1,
+      "percentage": 20,
+      "detections": [
+        "DET-C-001"
+      ]
+    },
+    "email": {
+      "count": 0,
+      "percentage": 0,
+      "detections": []
+    },
+    "application": {
+      "count": 0,
+      "percentage": 0,
+      "detections": []
+    }
+  },
+  "by_network_applicability": {
+    "internet_connected": {
+      "count": 3,
+      "percentage": 60,
+      "detections": [
+        "DET-E-002",
+        "DET-N-001",
+        "DET-C-001"
+      ]
+    },
+    "air_gapped": {
+      "count": 0,
+      "percentage": 0,
+      "detections": []
+    },
+    "both": {
+      "count": 2,
+      "percentage": 40,
+      "detections": [
+        "DET-E-001",
+        "DET-I-001"
+      ]
+    }
+  },
+  "by_threat_actor": {
+    "muddywater": {
+      "actor_id": "muddywater",
+      "name": "Muddywater",
+      "mitre_group_id": "G0069",
+      "total_known_techniques": 12,
+      "detected_techniques": 1,
+      "coverage_percentage": 8.3,
+      "detections": [
+        "DET-E-002"
+      ]
+    },
+    "generic_credential_abuse": {
+      "actor_id": "generic_credential_abuse",
+      "name": "Generic Credential Abuse (Any Threat Actor)",
+      "mitre_group_id": null,
+      "source": "custom",
+      "detected_techniques": 2,
+      "coverage_percentage": 100,
+      "detections": [
+        "DET-E-001",
+        "DET-I-001"
+      ]
+    },
+    "generic_code_execution": {
+      "actor_id": "generic_code_execution",
+      "name": "Generic Code Execution (Any Threat Actor)",
+      "mitre_group_id": null,
+      "source": "custom",
+      "detected_techniques": 2,
+      "coverage_percentage": 100,
+      "detections": [
+        "DET-E-002",
+        "DET-N-001"
+      ]
+    },
+    "generic_data_exfiltration": {
+      "actor_id": "generic_data_exfiltration",
+      "name": "Generic Data Exfiltration (Insider Threat / Misconfiguration)",
+      "mitre_group_id": null,
+      "source": "custom",
+      "detected_techniques": 1,
+      "coverage_percentage": 100,
+      "detections": [
+        "DET-C-001"
+      ]
+    }
+  },
+  "by_mitre_tactic": {
+    "TA0001": {
+      "tactic_name": "Initial Access",
+      "count": 0,
+      "percentage": 0,
+      "detections": []
+    },
+    "TA0002": {
+      "tactic_name": "Execution",
+      "count": 1,
+      "percentage": 20,
+      "detections": [
+        "DET-E-002"
+      ]
+    },
+    "TA0003": {
+      "tactic_name": "Persistence",
+      "count": 0,
+      "percentage": 0,
+      "detections": []
+    },
+    "TA0004": {
+      "tactic_name": "Privilege Escalation",
+      "count": 0,
+      "percentage": 0,
+      "detections": []
+    },
+    "TA0005": {
+      "tactic_name": "Defense Evasion",
+      "count": 0,
+      "percentage": 0,
+      "detections": []
+    },
+    "TA0006": {
+      "tactic_name": "Credential Access",
+      "count": 1,
+      "percentage": 20,
+      "detections": [
+        "DET-E-001"
+      ]
+    },
+    "TA0007": {
+      "tactic_name": "Discovery",
+      "count": 0,
+      "percentage": 0,
+      "detections": []
+    },
+    "TA0008": {
+      "tactic_name": "Lateral Movement",
+      "count": 0,
+      "percentage": 0,
+      "detections": []
+    },
+    "TA0009": {
+      "tactic_name": "Collection",
+      "count": 0,
+      "percentage": 0,
+      "detections": []
+    },
+    "TA0010": {
+      "tactic_name": "Exfiltration",
+      "count": 1,
+      "percentage": 20,
+      "detections": [
+        "DET-C-001"
+      ]
+    },
+    "TA0011": {
+      "tactic_name": "Command & Control",
+      "count": 1,
+      "percentage": 20,
+      "detections": [
+        "DET-N-001"
+      ]
+    },
+    "TA0012": {
+      "tactic_name": "Impact",
+      "count": 0,
+      "percentage": 0,
+      "detections": []
+    }
+  },
+  "critical_gaps": [
+    {
+      "gap_id": "GAP-001",
+      "phase": "Initial Access",
+      "description": "No detection for email phishing or malicious link delivery",
+      "techniques": [
+        "T1566.001",
+        "T1566.002",
+        "T1566.003"
+      ],
+      "impact": "All threat actors begin with email phishing",
+      "priority": "CRITICAL",
+      "effort_estimate": "Medium (2-3 sprints)"
+    },
+    {
+      "gap_id": "GAP-002",
+      "phase": "Persistence",
+      "description": "No detection for scheduled task or registry persistence",
+      "techniques": [
+        "T1053.005",
+        "T1547.001"
+      ],
+      "impact": "Post-compromise persistence across all APTs",
+      "priority": "CRITICAL",
+      "effort_estimate": "Low-Medium (1-2 sprints)"
+    },
+    {
+      "gap_id": "GAP-003",
+      "phase": "Lateral Movement",
+      "description": "No detection for multi-hop SMB or WMI lateral movement",
+      "techniques": [
+        "T1021.002",
+        "T1021.006",
+        "T1570"
+      ],
+      "impact": "Post-compromise internal movement",
+      "priority": "CRITICAL",
+      "effort_estimate": "Medium-High (3 sprints)"
+    },
+    {
+      "gap_id": "GAP-004",
+      "phase": "Command & Control",
+      "description": "No detection for HTTP/HTTPS encrypted C2",
+      "techniques": [
+        "T1071.001"
+      ],
+      "impact": "Cannot detect encrypted C2 channels",
+      "priority": "HIGH",
+      "effort_estimate": "High (3-4 sprints)"
+    },
+    {
+      "gap_id": "GAP-005",
+      "phase": "Credential Access",
+      "description": "No detection for credential dumping (LSASS, SAM)",
+      "techniques": [
+        "T1003.001",
+        "T1003.002"
+      ],
+      "impact": "Post-compromise credential theft",
+      "priority": "HIGH",
+      "effort_estimate": "Medium (2 sprints)"
+    }
+  ],
+  "roadmap": {
+    "q2_2025": {
+      "quarter": "Q2 2025",
+      "target_detections": 3,
+      "target_coverage": "50% Initial Access",
+      "planned_detections": [
+        "DET-E-003 (Email Attachment Detection)",
+        "DET-E-004 (Spear-phishing Link)",
+        "DET-N-002 (HTTP C2)"
+      ]
+    },
+    "q3_2025": {
+      "quarter": "Q3 2025",
+      "target_detections": 4,
+      "target_coverage": "25% Persistence",
+      "planned_detections": [
+        "DET-E-005 (Scheduled Task)",
+        "DET-E-006 (Registry Run Key)",
+        "DET-N-003 (SMB Lateral)",
+        "DET-N-004 (WMI Lateral)"
+      ]
+    },
+    "q4_2025": {
+      "quarter": "Q4 2025",
+      "target_detections": 3,
+      "target_coverage": "50% Exfiltration",
+      "planned_detections": [
+        "DET-C-002 (Bulk Download)",
+        "DET-N-005 (DNS Exfil)",
+        "DET-C-003 (Mailbox Delegation)"
+      ]
+    }
+  }
+}

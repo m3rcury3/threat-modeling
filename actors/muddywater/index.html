@@ -10,31 +10,31 @@
       
       
       
-        <link rel="canonical" href="https://m3rcury3.github.io/threat-modeling/identity/">
+        <link rel="canonical" href="https://m3rcury3.github.io/threat-modeling/actors/muddywater/">
       
       
-        <link rel="prev" href="../network/DET-N-001/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="DET-I-001/">
+        <link rel="next" href="../generic-threats/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Overview - SOC Detection Requirements</title>
+        <title>Muddywater (G0069) - SOC Detection Requirements</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -53,7 +53,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#identity-detections" class="md-skip">
+        <a href="#muddywater-g0069" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="SOC Detection Requirements" class="md-header__button md-logo" aria-label="SOC Detection Requirements" data-md-component="logo">
+    <a href="../.." title="SOC Detection Requirements" class="md-header__button md-logo" aria-label="SOC Detection Requirements" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Muddywater (G0069)
             
           </span>
         </div>
@@ -226,7 +226,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -243,8 +243,6 @@
   
   
   
-    
-  
   
     
     
@@ -252,13 +250,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../endpoint/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../endpoint/" class="md-tabs__link">
           
   
   
@@ -277,11 +273,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../actors/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -301,7 +299,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../dashboards/coverage/" class="md-tabs__link">
+        <a href="../../dashboards/coverage/" class="md-tabs__link">
           
   
   
@@ -341,7 +339,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="SOC Detection Requirements" class="md-nav__button md-logo" aria-label="SOC Detection Requirements" data-md-component="logo">
+    <a href="../.." title="SOC Detection Requirements" class="md-nav__button md-logo" aria-label="SOC Detection Requirements" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -371,7 +369,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -395,31 +393,28 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -437,7 +432,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -461,13 +456,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -476,7 +468,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1" >
         
           
-          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
             
   
   
@@ -512,7 +504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../endpoint/" class="md-nav__link">
+      <a href="../../endpoint/" class="md-nav__link">
         
   
   
@@ -540,7 +532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../endpoint/DET-E-001/" class="md-nav__link">
+      <a href="../../endpoint/DET-E-001/" class="md-nav__link">
         
   
   
@@ -568,7 +560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../endpoint/DET-E-002/" class="md-nav__link">
+      <a href="../../endpoint/DET-E-002/" class="md-nav__link">
         
   
   
@@ -610,13 +602,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -625,7 +614,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
         
           
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
             
   
   
@@ -661,7 +650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../network/" class="md-nav__link">
+      <a href="../../network/" class="md-nav__link">
         
   
   
@@ -689,7 +678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../network/DET-N-001/" class="md-nav__link">
+      <a href="../../network/DET-N-001/" class="md-nav__link">
         
   
   
@@ -722,31 +711,28 @@
                 
   
   
-    
   
   
-  
     
     
     
     
       
       
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
         
           
-          
         
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
         
           
-          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
             
   
   
@@ -764,7 +750,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -779,19 +765,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../identity/" class="md-nav__link">
         
   
   
@@ -807,7 +784,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -820,7 +796,7 @@
   
   
     <li class="md-nav__item">
-      <a href="DET-I-001/" class="md-nav__link">
+      <a href="../../identity/DET-I-001/" class="md-nav__link">
         
   
   
@@ -862,13 +838,10 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
@@ -877,7 +850,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
         
           
-          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
             
   
   
@@ -913,7 +886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cloud/" class="md-nav__link">
+      <a href="../../cloud/" class="md-nav__link">
         
   
   
@@ -941,7 +914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cloud/DET-C-001/" class="md-nav__link">
+      <a href="../../cloud/DET-C-001/" class="md-nav__link">
         
   
   
@@ -981,28 +954,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -1020,7 +996,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1038,7 +1014,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../actors/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -1063,10 +1039,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../actors/muddywater/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Muddywater (G0069)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1082,6 +1085,193 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#threat-profile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Threat Profile
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Threat Profile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#known-malware-families" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Known Malware Families
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#known-campaigns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Known Campaigns
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mitre-attck-coverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MITRE ATT&amp;CK Coverage
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MITRE ATT&amp;CK Coverage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tactics-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tactics &amp; Techniques
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detection-coverage-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detection Coverage Summary
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Detection Coverage Summary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#coverage-by-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coverage by Domain
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roadmap-planned-detections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Roadmap – Planned Detections
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Roadmap – Planned Detections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-q2-2025-initial-access-persistence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 1 (Q2 2025) – Initial Access &amp; Persistence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-q3-2025-lateral-movement-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 2 (Q3 2025) – Lateral Movement &amp; Collection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-q4-2025-exfiltration-c2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 3 (Q4 2025) – Exfiltration &amp; C2
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        References
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-contribute" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Contribute
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1094,7 +1284,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../actors/generic-threats/" class="md-nav__link">
+      <a href="../generic-threats/" class="md-nav__link">
         
   
   
@@ -1183,7 +1373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dashboards/coverage/" class="md-nav__link">
+      <a href="../../dashboards/coverage/" class="md-nav__link">
         
   
   
@@ -1211,7 +1401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dashboards/gaps/" class="md-nav__link">
+      <a href="../../dashboards/gaps/" class="md-nav__link">
         
   
   
@@ -1259,6 +1449,181 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#threat-profile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Threat Profile
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Threat Profile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#known-malware-families" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Known Malware Families
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#known-campaigns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Known Campaigns
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mitre-attck-coverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MITRE ATT&amp;CK Coverage
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MITRE ATT&amp;CK Coverage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tactics-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tactics &amp; Techniques
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detection-coverage-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detection Coverage Summary
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Detection Coverage Summary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#coverage-by-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coverage by Domain
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roadmap-planned-detections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Roadmap – Planned Detections
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Roadmap – Planned Detections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-q2-2025-initial-access-persistence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 1 (Q2 2025) – Initial Access &amp; Persistence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-q3-2025-lateral-movement-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 2 (Q3 2025) – Lateral Movement &amp; Collection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-q4-2025-exfiltration-c2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 3 (Q4 2025) – Exfiltration &amp; C2
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        References
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-contribute" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Contribute
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1274,7 +1639,7 @@
 
 
   
-    <a href="https://github.com/m3rcury3/threat-modeling/edit/main/docs/identity/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/m3rcury3/threat-modeling/edit/main/docs/actors/muddywater.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1282,25 +1647,231 @@
   
 
 
-<h1 id="identity-detections">Identity Detections<a class="headerlink" href="#identity-detections" title="Permanent link">&para;</a></h1>
-<p>Authentication, authorisation, and identity anomaly detection requirements.</p>
+<h1 id="muddywater-g0069">Muddywater (G0069)<a class="headerlink" href="#muddywater-g0069" title="Permanent link">&para;</a></h1>
+<p><img alt="MITRE ATT&amp;CK Group" src="https://img.shields.io/badge/MITRE-G0069-blue" /></p>
+<p><strong>Group Names:</strong> Static Kitten, COBALT LILAC, Earth Vetala</p>
+<p><strong>Origin:</strong> Iran (suspected)</p>
+<p><strong>Active Since:</strong> 2017</p>
+<p><strong>Primary Targets:</strong> Government, energy, telecommunications, IT sectors in Middle East, North Africa, Central Asia</p>
 <hr />
+<h2 id="threat-profile">Threat Profile<a class="headerlink" href="#threat-profile" title="Permanent link">&para;</a></h2>
+<p>Muddywater is a suspected Iranian state-sponsored APT group known for conducting espionage campaigns against critical infrastructure and government entities across the Middle East and Central Asia. The group is characterized by:</p>
+<ul>
+<li><strong>Multi-stage infection chains</strong> with custom malware variants</li>
+<li><strong>Living-off-the-land techniques</strong> leveraging built-in OS tools (PowerShell, WMI, scheduled tasks)</li>
+<li><strong>Email-based initial access</strong> using spear-phishing with malicious attachments or links</li>
+<li><strong>Extensive command-and-control infrastructure</strong> using both HTTP and DNS channels</li>
+<li><strong>Rapid malware iteration</strong> leading to multiple Meterpreter and PowerShell-based variants</li>
+</ul>
+<h3 id="known-malware-families">Known Malware Families<a class="headerlink" href="#known-malware-families" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Powerstager</strong> — PowerShell-based first-stage payload downloader</li>
+<li><strong>Meterpreter variants</strong> — Metasploit framework-based second-stage implant</li>
+<li><strong>Custom backdoors</strong> — Various malware families tied to specific campaigns</li>
+</ul>
+<h3 id="known-campaigns">Known Campaigns<a class="headerlink" href="#known-campaigns" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
+<th>Campaign</th>
+<th>Period</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Operation EmailThief</td>
+<td>2023</td>
+<td>Credential harvesting via email-based delivery</td>
+</tr>
+<tr>
+<td>TerraMalware</td>
+<td>2024</td>
+<td>Infrastructure targeting</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="mitre-attck-coverage">MITRE ATT&amp;CK Coverage<a class="headerlink" href="#mitre-attck-coverage" title="Permanent link">&para;</a></h2>
+<h3 id="tactics-techniques">Tactics &amp; Techniques<a class="headerlink" href="#tactics-techniques" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Tactic</th>
+<th>Technique</th>
 <th>Detection ID</th>
-<th>Title</th>
+<th>Coverage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>TA0001 – Initial Access</strong></td>
+<td>T1566.001 (Phishing: Spearphishing Attachment)</td>
+<td>❌ Planned</td>
+<td>Not yet detected</td>
+</tr>
+<tr>
+<td><strong>TA0001 – Initial Access</strong></td>
+<td>T1566.002 (Phishing: Spearphishing Link)</td>
+<td>❌ Planned</td>
+<td>Not yet detected</td>
+</tr>
+<tr>
+<td><strong>TA0002 – Execution</strong></td>
+<td>T1059.001 (PowerShell)</td>
+<td>✅ <a href="../../endpoint/DET-E-002/">DET-E-002</a></td>
+<td>Provisioned</td>
+</tr>
+<tr>
+<td><strong>TA0002 – Execution</strong></td>
+<td>T1203 (Exploitation for Client Execution)</td>
+<td>❌ Not Planned</td>
+<td>Limited vendor support</td>
+</tr>
+<tr>
+<td><strong>TA0003 – Persistence</strong></td>
+<td>T1547.009 (Boot or Logon Initialization Scripts)</td>
+<td>❌ Planned</td>
+<td>Not yet detected</td>
+</tr>
+<tr>
+<td><strong>TA0005 – Defense Evasion</strong></td>
+<td>T1140 (Deobfuscate/Decode Files or Information)</td>
+<td>❌ Covered via DET-E-002</td>
+<td>Partially detected</td>
+</tr>
+<tr>
+<td><strong>TA0007 – Discovery</strong></td>
+<td>T1087 (Account Discovery)</td>
+<td>❌ Planned</td>
+<td>Not yet detected</td>
+</tr>
+<tr>
+<td><strong>TA0008 – Lateral Movement</strong></td>
+<td>T1570 (Lateral Tool Transfer)</td>
+<td>❌ Planned</td>
+<td>Not yet detected</td>
+</tr>
+<tr>
+<td><strong>TA0009 – Collection</strong></td>
+<td>T1115 (Clipboard Data)</td>
+<td>❌ Planned</td>
+<td>Not yet detected</td>
+</tr>
+<tr>
+<td><strong>TA0010 – Exfiltration</strong></td>
+<td>T1020 (Automated Exfiltration)</td>
+<td>❌ Planned</td>
+<td>Not yet detected</td>
+</tr>
+<tr>
+<td><strong>TA0011 – Command &amp; Control</strong></td>
+<td>T1071.004 (DNS)</td>
+<td>✅ <a href="../../network/DET-N-001/">DET-N-001</a></td>
+<td>In Testing</td>
+</tr>
+<tr>
+<td><strong>TA0011 – Command &amp; Control</strong></td>
+<td>T1071.001 (HTTP/HTTPS)</td>
+<td>❌ Planned</td>
+<td>Not yet detected</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="detection-coverage-summary">Detection Coverage Summary<a class="headerlink" href="#detection-coverage-summary" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Detections for Muddywater:    1 (Provisioned) + 0 (In Testing) = 1 Active
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Coverage:                     1 / 12 known techniques = 8.3%
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>Enabled Tactics:              Execution (via PowerShell)
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>Partial Coverage:             Command &amp; Control (DNS only)
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>Gaps:                         Initial Access, Persistence, Discovery, 
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>                              Lateral Movement, Exfiltration
+</code></pre></div>
+<h3 id="coverage-by-domain">Coverage by Domain<a class="headerlink" href="#coverage-by-domain" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Domain</th>
+<th>Detections</th>
 <th>Status</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="DET-I-001/">DET-I-001</a></td>
-<td>Impossible Travel – Simultaneous Logons from Different Countries</td>
-<td>🟢 Provisioned</td>
+<td><strong>Endpoint</strong></td>
+<td>1</td>
+<td>Provisioned</td>
+</tr>
+<tr>
+<td><strong>Network</strong></td>
+<td>1</td>
+<td>In Testing</td>
+</tr>
+<tr>
+<td><strong>Identity</strong></td>
+<td>0</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Cloud</strong></td>
+<td>0</td>
+<td>—</td>
 </tr>
 </tbody>
 </table>
+<hr />
+<h2 id="roadmap-planned-detections">Roadmap – Planned Detections<a class="headerlink" href="#roadmap-planned-detections" title="Permanent link">&para;</a></h2>
+<h3 id="phase-1-q2-2025-initial-access-persistence">Phase 1 (Q2 2025) – Initial Access &amp; Persistence<a class="headerlink" href="#phase-1-q2-2025-initial-access-persistence" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] Email attachment detonation patterns (T1193)</li>
+<li>[ ] Scheduled task persistence creation (T1053.005)</li>
+<li>[ ] Registry modification for persistence (T1112)</li>
+</ul>
+<h3 id="phase-2-q3-2025-lateral-movement-collection">Phase 2 (Q3 2025) – Lateral Movement &amp; Collection<a class="headerlink" href="#phase-2-q3-2025-lateral-movement-collection" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] Lateral tool transfer detection (T1570)</li>
+<li>[ ] Process hollowing or injection (T1055)</li>
+<li>[ ] Screen capture activity (T1113)</li>
+</ul>
+<h3 id="phase-3-q4-2025-exfiltration-c2">Phase 3 (Q4 2025) – Exfiltration &amp; C2<a class="headerlink" href="#phase-3-q4-2025-exfiltration-c2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>[ ] Bulk data download patterns (T1020.001)</li>
+<li>[ ] HTTP C2 beacon detection (T1071.001)</li>
+<li>[ ] Uncommon port usage for C2 (T1571)</li>
+</ul>
+<hr />
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://attack.mitre.org/groups/G0069/">MITRE ATT&amp;CK Group G0069 – Muddywater</a></li>
+<li><a href="https://www.recordedfuture.com/research/">Recorded Future – Muddywater APT</a></li>
+<li><a href="https://www.mandiant.com/">Mandiant – Muddywater Activity</a></li>
+<li><a href="https://www.dragos.com/">Dragos – Industrial Control System Threats</a></li>
+</ul>
+<hr />
+<h2 id="how-to-contribute">How to Contribute<a class="headerlink" href="#how-to-contribute" title="Permanent link">&para;</a></h2>
+<p>To request additional detections for Muddywater:</p>
+<ol>
+<li><strong>Report a gap:</strong> Open an <a href="https://github.com/m3rcury3/threat-modeling/issues">issue on GitHub</a> with:</li>
+<li>The MITRE technique ID (e.g., T1053.005)</li>
+<li>Observable behavior or artifact</li>
+<li>
+<p>Log sources available in your environment</p>
+</li>
+<li>
+<p><strong>Propose a detection:</strong> Submit a PR with:</p>
+<ul>
+<li>Detection filled using the <a href="https://github.com/m3rcury3/threat-modeling/blob/main/templates/detection-template.md">detection template</a></li>
+</ul>
+</li>
+<li>YAML frontmatter including <code>threat_actors: [muddywater]</code></li>
+<li>
+<p>Validation logic or KQL/Sigma rule</p>
+</li>
+<li>
+<p><strong>Share threat intelligence:</strong> Contribute IOCs, malware samples, or campaign indicators via <a href="https://github.com/m3rcury3/threat-modeling/discussions">GitHub Discussions</a></p>
+</li>
+</ol>
 
 
 
@@ -1356,10 +1927,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "search.share", "search.suggest", "content.code.copy", "content.action.edit"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "search.share", "search.suggest", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
