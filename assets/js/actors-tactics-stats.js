@@ -110,6 +110,20 @@
     return (detectionIds || []).some((id) => normalizeStatus(detectionById[id]?.status) === selectedStatus);
   }
 
+  function hasGroupSearchMatch(group, query) {
+    const q = String(query || "").trim().toLowerCase();
+    if (!q) return true;
+    const haystack = [
+      String(group.group_id || ""),
+      String(group.name || ""),
+      ...(Array.isArray(group.aliases) ? group.aliases : []),
+      ...(Array.isArray(group.keywords) ? group.keywords : []),
+    ]
+      .join(" ")
+      .toLowerCase();
+    return haystack.includes(q);
+  }
+
   function setFilterSummary(elementId, filteredCount, totalCount) {
     const node = document.getElementById(elementId);
     if (!node) return;
@@ -149,17 +163,10 @@
     const tactics = mapping.mappings?.tactics || [];
     const detections = index.detections || [];
     const detectionById = Object.fromEntries(detections.map((d) => [d.detection_id, d]));
-    const statusSelect = document.getElementById("actors-mapped-status-filter");
-
-    populateStatusFilter("actors-mapped-status-filter", detections);
-
-    const selectedStatus = statusSelect?.value || "";
-    const filteredGroups = groups.filter((g) =>
-      hasMappedDetectionStatus(g.mapped_detections || [], detectionById, selectedStatus)
-    );
-    const filteredTactics = tactics.filter((t) =>
-      hasMappedDetectionStatus(t.mapped_detections || [], detectionById, selectedStatus)
-    );
+    const groupSearch = document.getElementById("actors-group-search");
+    const query = groupSearch?.value || "";
+    const filteredGroups = groups.filter((g) => hasGroupSearchMatch(g, query));
+    const filteredTactics = tactics;
 
     setFilterSummary("actors-filter-summary", filteredGroups.length, groups.length);
 
@@ -176,13 +183,35 @@
 
     renderTable(
       "actors-groups-table",
-      ["Group ID", "Group Name", "Mapped Techniques", "Mapped Detections"],
-      filteredGroups.map((g) => [
-        link(g.group_id || "-", g.url || mitreUrlById(g.group_id)),
-        link(g.name || "-", g.url || mitreUrlById(g.group_id)),
-        buildTechniqueLinks(g.mapped_techniques || []),
-        buildDetectionLinks(g.mapped_detections || [], detectionById),
-      ])
+      [
+        "Group ID",
+        "Group Name",
+        "Aliases",
+        "Keywords",
+        "Mapped Techniques",
+        "Mapped Detections",
+        "AI Suggested",
+        "In Testing",
+        "Planned",
+        "Provisioned",
+        "Deprecated",
+      ],
+      filteredGroups.map((g) => {
+        const s = statusBreakdown(g.mapped_detections || [], detectionById);
+        return [
+          link(g.group_id || "-", g.url || mitreUrlById(g.group_id)),
+          link(g.name || "-", g.url || mitreUrlById(g.group_id)),
+          (g.aliases || []).length ? esc(g.aliases.join(", ")) : "-",
+          (g.keywords || []).length ? esc(g.keywords.join(", ")) : "-",
+          buildTechniqueLinks(g.mapped_techniques || []),
+          buildDetectionLinks(g.mapped_detections || [], detectionById),
+          esc(s.ai_suggested),
+          esc(s.in_testing),
+          esc(s.planned),
+          esc(s.provisioned),
+          esc(s.deprecated),
+        ];
+      })
     );
 
     renderTable(
@@ -292,9 +321,9 @@
         }
       };
 
-      const actorsFilter = document.getElementById("actors-mapped-status-filter");
+      const actorsFilter = document.getElementById("actors-group-search");
       const tacticsFilter = document.getElementById("tactics-mapped-status-filter");
-      if (actorsFilter) actorsFilter.addEventListener("change", rerender);
+      if (actorsFilter) actorsFilter.addEventListener("input", rerender);
       if (tacticsFilter) tacticsFilter.addEventListener("change", rerender);
 
       rerender();
