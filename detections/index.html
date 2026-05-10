@@ -10,27 +10,31 @@
       
       
       
-        <link rel="canonical" href="https://m3rcury3.github.io/threat-modeling/network/DET-N-001/">
+        <link rel="canonical" href="https://m3rcury3.github.io/threat-modeling/detections/">
       
       
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../actors/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>[DET-N-001] DNS Beaconing to Suspicious Domain - SOC Detection Requirements</title>
+        <title>Overview - SOC Detection Requirements</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,7 +53,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#det-n-001-dns-beaconing-to-suspicious-domain" class="md-skip">
+        <a href="#detections" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +94,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="SOC Detection Requirements" class="md-header__button md-logo" aria-label="SOC Detection Requirements" data-md-component="logo">
+    <a href=".." title="SOC Detection Requirements" class="md-header__button md-logo" aria-label="SOC Detection Requirements" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              [DET-N-001] DNS Beaconing to Suspicious Domain
+              Overview
             
           </span>
         </div>
@@ -222,7 +226,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href=".." class="md-tabs__link">
         
   
   
@@ -239,11 +243,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../detections/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -263,7 +269,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../actors/" class="md-tabs__link">
+        <a href="../actors/" class="md-tabs__link">
           
   
   
@@ -283,7 +289,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../tactics/" class="md-tabs__link">
+        <a href="../tactics/" class="md-tabs__link">
           
   
   
@@ -303,7 +309,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../dashboards/live-mapping/" class="md-tabs__link">
+        <a href="../dashboards/live-mapping/" class="md-tabs__link">
           
   
   
@@ -343,7 +349,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="SOC Detection Requirements" class="md-nav__button md-logo" aria-label="SOC Detection Requirements" data-md-component="logo">
+    <a href=".." title="SOC Detection Requirements" class="md-nav__button md-logo" aria-label="SOC Detection Requirements" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -373,7 +379,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -397,28 +403,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -436,7 +445,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -451,10 +460,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../detections/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -470,6 +506,48 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#snapshot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Snapshot
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#all-detections-and-deployment-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        All Detections and Deployment Status
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -543,7 +621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../actors/" class="md-nav__link">
+      <a href="../actors/" class="md-nav__link">
         
   
   
@@ -632,7 +710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tactics/" class="md-nav__link">
+      <a href="../tactics/" class="md-nav__link">
         
   
   
@@ -721,7 +799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dashboards/live-mapping/" class="md-nav__link">
+      <a href="../dashboards/live-mapping/" class="md-nav__link">
         
   
   
@@ -776,10 +854,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#description" class="md-nav__link">
+  <a href="#snapshot" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Description
+        Snapshot
       
     </span>
   </a>
@@ -787,65 +865,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#use-case" class="md-nav__link">
+  <a href="#all-detections-and-deployment-status" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Use Case
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-sources" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Data Sources
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#logic-query" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Logic / Query
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#alert-thresholds" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Alert Thresholds
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#response-actions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Response Actions
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        References
+        All Detections and Deployment Status
       
     </span>
   </a>
@@ -869,7 +892,7 @@
 
 
   
-    <a href="https://github.com/m3rcury3/threat-modeling/edit/main/docs/network/DET-N-001.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/m3rcury3/threat-modeling/edit/main/docs/detections/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -877,111 +900,13 @@
   
 
 
-<h1 id="det-n-001-dns-beaconing-to-suspicious-domain">[DET-N-001] DNS Beaconing to Suspicious Domain<a class="headerlink" href="#det-n-001-dns-beaconing-to-suspicious-domain" title="Permanent link">&para;</a></h1>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Detection ID</strong></td>
-<td>DET-N-001</td>
-</tr>
-<tr>
-<td><strong>Category</strong></td>
-<td>Network</td>
-</tr>
-<tr>
-<td><strong>Status</strong></td>
-<td>🟡 In Testing</td>
-</tr>
-<tr>
-<td><strong>MITRE Technique</strong></td>
-<td><a href="https://attack.mitre.org/techniques/T1071/004/">T1071.004 – DNS</a></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
-<p>Detects internal hosts making highly regular DNS queries to the same external domain at a consistent interval, characteristic of C2 beacon check-ins using DNS as the transport channel.</p>
-<h2 id="use-case">Use Case<a class="headerlink" href="#use-case" title="Permanent link">&para;</a></h2>
-<p>Command-and-control frameworks use periodic DNS queries to maintain a covert channel. Regular beaconing produces a distinct time-series signature — high query frequency, low jitter, single target domain.</p>
-<h2 id="data-sources">Data Sources<a class="headerlink" href="#data-sources" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Data Source</th>
-<th>Platform</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>DNS Query Logs</td>
-<td>Infra / Network</td>
-<td>Recursive resolver or DNS firewall logs</td>
-</tr>
-<tr>
-<td>Zeek dns.log</td>
-<td>Network Sensor</td>
-<td>Fields: <code>id.orig_h</code>, <code>query</code>, <code>rcode_name</code></td>
-</tr>
-<tr>
-<td>Azure DNS Analytics</td>
-<td>Cloud</td>
-<td>DNS query logs forwarded to Log Analytics</td>
-</tr>
-</tbody>
-</table>
-<h2 id="logic-query">Logic / Query<a class="headerlink" href="#logic-query" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>// Splunk SPL – DNS beaconing via consistent query intervals
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>index=dns sourcetype=zeek_dns
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>| bucket _time span=1h
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>| stats count as QueryCount, dc(query) as UniqDomains by src_ip, _time
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>| where QueryCount &gt; 60 AND UniqDomains == 1
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>| eval BeaconRate = QueryCount / 60
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>| where BeaconRate &gt;= 0.8
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>| table _time, src_ip, QueryCount, UniqDomains, BeaconRate
-</code></pre></div>
-<h2 id="alert-thresholds">Alert Thresholds<a class="headerlink" href="#alert-thresholds" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Threshold</td>
-<td>≥ 60 queries/hour to a single domain</td>
-</tr>
-<tr>
-<td>Severity</td>
-<td>High</td>
-</tr>
-<tr>
-<td>Confidence</td>
-<td>Medium</td>
-</tr>
-</tbody>
-</table>
-<h2 id="response-actions">Response Actions<a class="headerlink" href="#response-actions" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Check domain reputation (VirusTotal, PassiveDNS).</li>
-<li>Block the domain at the DNS firewall and perimeter.</li>
-<li>Capture a full packet trace from the source host.</li>
-<li>Isolate the host if C2 communication is confirmed.</li>
-</ol>
-<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="https://attack.mitre.org/techniques/T1071/004/">MITRE ATT&amp;CK – T1071.004</a></li>
-<li><a href="https://docs.zeek.org/en/master/scripts/base/protocols/dns/main.zeek.html">Zeek DNS log reference</a></li>
-<li><a href="https://github.com/m3rcury3/threat-modeling/blob/main/detections/network/DET-N-001.md">Full detection file on GitHub</a></li>
-</ul>
+<h1 id="detections">Detections<a class="headerlink" href="#detections" title="Permanent link">&para;</a></h1>
+<p>This page lists all detections tracked in the repository and their current deployment status.</p>
+<h2 id="snapshot">Snapshot<a class="headerlink" href="#snapshot" title="Permanent link">&para;</a></h2>
+<div id="detections-meta">Loading...</div>
+
+<h2 id="all-detections-and-deployment-status">All Detections and Deployment Status<a class="headerlink" href="#all-detections-and-deployment-status" title="Permanent link">&para;</a></h2>
+<div id="detections-status-table">Loading...</div>
 
 
 
@@ -1037,16 +962,16 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "search.share", "search.suggest", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "search.share", "search.suggest", "content.code.copy", "content.action.edit"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../../assets/js/live-mapping.js"></script>
+        <script src="../assets/js/live-mapping.js"></script>
       
-        <script src="../../assets/js/actors-tactics-stats.js"></script>
+        <script src="../assets/js/actors-tactics-stats.js"></script>
       
-        <script src="../../assets/js/detections-status.js"></script>
+        <script src="../assets/js/detections-status.js"></script>
       
     
   </body>
