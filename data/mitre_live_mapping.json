@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-08-05T03:23:00.216302+00:00",
+  "generated_at": "2026-08-06T05:26:04.727715+00:00",
   "source": {
     "mitre_stix_url": "https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/enterprise-attack/enterprise-attack.json",
-    "object_count": 25843
+    "object_count": 26086
   },
   "counts": {
     "local_detections": 702,
     "mapped_techniques": 697,
     "mapped_tactics": 15,
-    "mapped_groups": 170,
-    "mapped_software": 821,
+    "mapped_groups": 172,
+    "mapped_software": 825,
     "mapped_detection_strategies": 697,
     "total_tactics": 15,
-    "total_groups": 174
+    "total_groups": 176
   },
   "mappings": {
     "tactics": [
@@ -5837,6 +5837,18 @@
             "name": "PACEMAKER",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S1109/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -6967,6 +6979,29 @@
               "red",
               "sandstorm",
               "void"
+            ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
             ]
           }
         ],
@@ -9182,6 +9217,18 @@
             "name": "HiddenFace",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9023/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -11884,6 +11931,22 @@
               "kasha",
               "mirrorface"
             ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [
@@ -13260,6 +13323,24 @@
             "name": "LAMEHUG",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9035/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -14635,6 +14716,22 @@
               "kasha",
               "mirrorface"
             ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [
@@ -14955,6 +15052,12 @@
             "name": "LODEINFO",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9020/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
           }
         ],
         "detection_strategies": [
@@ -15263,6 +15366,12 @@
             "name": "Hannotog",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S1211/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
           }
         ],
         "detection_strategies": [
@@ -18032,7 +18141,14 @@
             ]
           }
         ],
-        "software": [],
+        "software": [
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
+          }
+        ],
         "detection_strategies": [
           {
             "strategy_id": "DET0008",
@@ -21111,6 +21227,29 @@
               "tag",
               "typhoon"
             ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
           }
         ],
         "software": [
@@ -22226,6 +22365,12 @@
             "name": "DUSTTRAP",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S1159/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
           }
         ],
         "detection_strategies": [
@@ -25453,6 +25598,18 @@
             "name": "RustyWater",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9037/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -28728,6 +28885,24 @@
             "name": "RustyWater",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9037/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -30649,6 +30824,12 @@
             "name": "Qilin",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S1242/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
           }
         ],
         "detection_strategies": [
@@ -31918,6 +32099,45 @@
               "sandstorm",
               "void"
             ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [
@@ -32760,6 +32980,24 @@
             "name": "RustyWater",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9037/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -36170,6 +36408,18 @@
             "name": "LAMEHUG",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9035/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -40415,6 +40665,12 @@
             "name": "PUBLOAD",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S1228/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
           }
         ],
         "detection_strategies": [
@@ -42879,7 +43135,20 @@
           }
         ],
         "groups": [],
-        "software": [],
+        "software": [
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
+          }
+        ],
         "detection_strategies": [
           {
             "strategy_id": "DET0231",
@@ -49758,6 +50027,12 @@
             "name": "LP-Notes",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9036/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
           }
         ],
         "detection_strategies": [
@@ -56391,6 +56666,29 @@
               "tag",
               "tenacious"
             ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
           }
         ],
         "software": [
@@ -56675,6 +56973,18 @@
             "name": "BRICKSTORM",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9015/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
           }
         ],
         "detection_strategies": [
@@ -58497,6 +58807,29 @@
               "sandstorm",
               "void"
             ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
           }
         ],
         "software": [
@@ -58721,6 +59054,24 @@
             "name": "LAMEHUG",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9035/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -59281,6 +59632,45 @@
               "tag",
               "tenacious"
             ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [
@@ -59511,6 +59901,30 @@
             "name": "Tsundere Botnet",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9034/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
+          },
+          {
+            "software_id": "S9044",
+            "name": "Kali365",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9044/"
           }
         ],
         "detection_strategies": [
@@ -59659,6 +60073,22 @@
             "keywords": [
               "0501",
               "storm"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
             ]
           }
         ],
@@ -59921,9 +60351,39 @@
             "keywords": [
               "teamtnt"
             ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
           }
         ],
-        "software": [],
+        "software": [
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
+          }
+        ],
         "detection_strategies": [
           {
             "strategy_id": "DET0083",
@@ -61611,7 +62071,24 @@
             "url": "https://attack.mitre.org/tactics/TA0007/"
           }
         ],
-        "groups": [],
+        "groups": [
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
+          }
+        ],
         "software": [
           {
             "software_id": "S0677",
@@ -64717,6 +65194,24 @@
             "name": "NOOPLDR",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9025/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -69116,6 +69611,24 @@
             "name": "RustyWater",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9037/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
+          },
+          {
+            "software_id": "S9044",
+            "name": "Kali365",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9044/"
           }
         ],
         "detection_strategies": [
@@ -70488,6 +71001,22 @@
               "red",
               "sandstorm",
               "void"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
             ]
           }
         ],
@@ -71954,6 +72483,12 @@
             "name": "LP-Notes",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9036/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
           }
         ],
         "detection_strategies": [
@@ -73257,6 +73792,45 @@
               "sandstorm",
               "void"
             ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [
@@ -73919,6 +74493,22 @@
               "red",
               "sandstorm",
               "void"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
             ]
           }
         ],
@@ -74607,6 +75197,45 @@
               "sandstorm",
               "void"
             ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [
@@ -74639,6 +75268,12 @@
             "name": "TruffleHog",
             "type": "tool",
             "url": "https://attack.mitre.org/software/S9009/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -75971,6 +76606,22 @@
               "red",
               "sandstorm",
               "void"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
             ]
           }
         ],
@@ -78092,6 +78743,18 @@
             "name": "LazyWiper",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9039/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -79185,6 +79848,22 @@
               "earth",
               "kasha",
               "mirrorface"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
             ]
           }
         ],
@@ -81018,6 +81697,24 @@
             "name": "LazyWiper",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9039/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -82870,6 +83567,12 @@
             "name": "Lizar",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S0681/"
+          },
+          {
+            "software_id": "S9044",
+            "name": "Kali365",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9044/"
           }
         ],
         "detection_strategies": [
@@ -82978,6 +83681,12 @@
             "name": "Pacu",
             "type": "tool",
             "url": "https://attack.mitre.org/software/S1091/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -83704,6 +84413,12 @@
             "name": "Havoc",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S1229/"
+          },
+          {
+            "software_id": "S9044",
+            "name": "Kali365",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9044/"
           }
         ],
         "detection_strategies": [
@@ -84769,6 +85484,22 @@
               "group",
               "medusa"
             ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [
@@ -84903,6 +85634,12 @@
             "name": "SystemBC",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9001/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -86407,6 +87144,29 @@
               "sandstorm",
               "void"
             ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
           }
         ],
         "software": [
@@ -87729,6 +88489,12 @@
             "name": "AshTag",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9031/"
+          },
+          {
+            "software_id": "S9044",
+            "name": "Kali365",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9044/"
           }
         ],
         "detection_strategies": [
@@ -87977,6 +88743,18 @@
             "name": "Tsundere Botnet",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9034/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -90754,6 +91532,45 @@
               "sandstorm",
               "void"
             ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [
@@ -93156,6 +93973,24 @@
             "name": "Tsundere Botnet",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9034/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -95239,6 +96074,22 @@
               "red",
               "sandstorm",
               "void"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
             ]
           }
         ],
@@ -101222,6 +102073,18 @@
             "name": "LAMEHUG",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9035/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -102838,6 +103701,18 @@
             "name": "LODEINFO",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9020/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -104562,6 +105437,12 @@
             "name": "RustyWater",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9037/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -110888,6 +111769,24 @@
             "name": "RustyWater",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9037/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -111102,6 +112001,29 @@
               "typhoon",
               "unc6384"
             ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
           }
         ],
         "software": [],
@@ -111253,6 +112175,12 @@
             "name": "evilginx2",
             "type": "tool",
             "url": "https://attack.mitre.org/software/S9003/"
+          },
+          {
+            "software_id": "S9044",
+            "name": "Kali365",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9044/"
           }
         ],
         "detection_strategies": [
@@ -113057,6 +113985,45 @@
               "sandstorm",
               "void"
             ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [
@@ -113284,7 +114251,47 @@
             "url": "https://attack.mitre.org/tactics/TA0001/"
           }
         ],
-        "groups": [],
+        "groups": [
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
+          }
+        ],
         "software": [
           {
             "software_id": "S0658",
@@ -113315,6 +114322,18 @@
             "name": "Tsundere Botnet",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9034/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -115390,6 +116409,22 @@
             "keywords": [
               "unc3886"
             ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [
@@ -116829,6 +117864,12 @@
             "name": "ROAMINGHOUSE",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9026/"
+          },
+          {
+            "software_id": "S9044",
+            "name": "Kali365",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9044/"
           }
         ],
         "detection_strategies": [
@@ -119300,6 +120341,12 @@
             "name": "Havoc",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S1229/"
+          },
+          {
+            "software_id": "S9044",
+            "name": "Kali365",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9044/"
           }
         ],
         "detection_strategies": [
@@ -119601,6 +120648,12 @@
             "name": "BRUSHFIRE",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9011/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -120158,6 +121211,22 @@
               "lusca",
               "tag",
               "typhoon"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
             ]
           }
         ],
@@ -120827,6 +121896,22 @@
               "tempest",
               "unc3944"
             ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [
@@ -120847,6 +121932,18 @@
             "name": "GlassWorm",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9010/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -121126,6 +122223,22 @@
               "turtle",
               "wolf"
             ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [
@@ -121146,6 +122259,12 @@
             "name": "GlassWorm",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9010/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
           }
         ],
         "detection_strategies": [
@@ -124785,6 +125904,22 @@
               "group",
               "medusa"
             ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [
@@ -126231,6 +127366,24 @@
             "name": "LazyWiper",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9039/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -127360,6 +128513,45 @@
               "sandstorm",
               "void"
             ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [
@@ -127530,6 +128722,18 @@
             "name": "LazyWiper",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9039/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -127949,6 +129153,29 @@
               "red",
               "sandstorm",
               "void"
+            ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
             ]
           }
         ],
@@ -129445,6 +130672,22 @@
               "blackbyte",
               "hecamede"
             ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [
@@ -130153,6 +131396,12 @@
             "name": "RedLine Stealer",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S1240/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -130726,6 +131975,12 @@
             "name": "HeartCrypt",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9018/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -131155,6 +132410,12 @@
             "name": "HiddenFace",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9023/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
           }
         ],
         "detection_strategies": [
@@ -133203,6 +134464,12 @@
             "name": "IronWind",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9029/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
           }
         ],
         "detection_strategies": [
@@ -134537,6 +135804,12 @@
             "name": "TruffleHog",
             "type": "tool",
             "url": "https://attack.mitre.org/software/S9009/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
           }
         ],
         "detection_strategies": [
@@ -134659,6 +135932,45 @@
               "unc3524",
               "yttrium"
             ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [
@@ -134685,6 +135997,30 @@
             "name": "TruffleHog",
             "type": "tool",
             "url": "https://attack.mitre.org/software/S9009/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
+          },
+          {
+            "software_id": "S9044",
+            "name": "Kali365",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9044/"
           }
         ],
         "detection_strategies": [
@@ -134959,6 +136295,12 @@
             "name": "DynoWiper",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9038/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
           }
         ],
         "detection_strategies": [
@@ -135076,6 +136418,22 @@
             "keywords": [
               "0501",
               "storm"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
             ]
           }
         ],
@@ -135875,6 +137233,12 @@
             "name": "LODEINFO",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9020/"
+          },
+          {
+            "software_id": "S9044",
+            "name": "Kali365",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9044/"
           }
         ],
         "detection_strategies": [
@@ -136347,6 +137711,12 @@
             "name": "BRICKSTORM",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9015/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
           }
         ],
         "detection_strategies": [
@@ -136540,6 +137910,12 @@
             "name": "GlassWorm",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9010/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -136622,6 +137998,29 @@
               "tempest",
               "unc3944"
             ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
           }
         ],
         "software": [
@@ -136678,6 +138077,18 @@
             "name": "Shai-Hulud",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9008/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -138120,6 +139531,12 @@
             "name": "UPSTYLE",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S1164/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -139555,7 +140972,31 @@
             "url": "https://attack.mitre.org/tactics/TA0004/"
           }
         ],
-        "groups": [],
+        "groups": [
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
+          }
+        ],
         "software": [
           {
             "software_id": "S0584",
@@ -139568,6 +141009,12 @@
             "name": "Shai-Hulud",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9008/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
           }
         ],
         "detection_strategies": [
@@ -139650,7 +141097,20 @@
           }
         ],
         "groups": [],
-        "software": [],
+        "software": [
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
+          }
+        ],
         "detection_strategies": [
           {
             "strategy_id": "DET0258",
@@ -140942,6 +142402,29 @@
               "red",
               "sandstorm",
               "void"
+            ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
             ]
           }
         ],
@@ -143956,6 +145439,18 @@
             "name": "Shai-Hulud",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9008/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
           }
         ],
         "detection_strategies": [
@@ -144196,6 +145691,45 @@
               "silk",
               "typhoon"
             ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [
@@ -144216,6 +145750,24 @@
             "name": "Shai-Hulud",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9008/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
+          },
+          {
+            "software_id": "S9044",
+            "name": "Kali365",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9044/"
           }
         ],
         "detection_strategies": [
@@ -145163,6 +146715,22 @@
             "keywords": [
               "redcurl"
             ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [
@@ -145285,6 +146853,24 @@
             "name": "TruffleHog",
             "type": "tool",
             "url": "https://attack.mitre.org/software/S9009/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
+          },
+          {
+            "software_id": "S9044",
+            "name": "Kali365",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9044/"
           }
         ],
         "detection_strategies": [
@@ -145462,6 +147048,12 @@
             "name": "Kinsing",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S0599/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
           }
         ],
         "detection_strategies": [
@@ -145613,6 +147205,29 @@
               "0501",
               "storm"
             ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
           }
         ],
         "software": [
@@ -145681,6 +147296,24 @@
             "name": "Troll Stealer",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S1196/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -145749,6 +147382,12 @@
             "name": "TruffleHog",
             "type": "tool",
             "url": "https://attack.mitre.org/software/S9009/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -145892,6 +147531,18 @@
             "name": "Peirates",
             "type": "tool",
             "url": "https://attack.mitre.org/software/S0683/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -146672,6 +148323,29 @@
               "earth",
               "kasha",
               "mirrorface"
+            ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
             ]
           }
         ],
@@ -147497,6 +149171,12 @@
             "name": "PHASEJAM",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9014/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -147922,6 +149602,12 @@
             "name": "MirrorStealer",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9022/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
           }
         ],
         "detection_strategies": [
@@ -149395,6 +151081,12 @@
             "name": "InvisibleFerret",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S1245/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -149456,6 +151148,29 @@
               "0501",
               "storm"
             ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
           }
         ],
         "software": [
@@ -149476,6 +151191,24 @@
             "name": "TruffleHog",
             "type": "tool",
             "url": "https://attack.mitre.org/software/S9009/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -150365,6 +152098,12 @@
             "name": "evilginx2",
             "type": "tool",
             "url": "https://attack.mitre.org/software/S9003/"
+          },
+          {
+            "software_id": "S9044",
+            "name": "Kali365",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9044/"
           }
         ],
         "detection_strategies": [
@@ -151230,6 +152969,12 @@
             "name": "SPAWNCHIMERA",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9024/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -152470,6 +154215,12 @@
             "name": "LP-Notes",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9036/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -153548,6 +155299,18 @@
             "name": "LAMEHUG",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9035/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -153640,6 +155403,22 @@
               "peace",
               "sleet",
               "zinc"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
             ]
           }
         ],
@@ -155143,6 +156922,29 @@
             "keywords": [
               "redcurl"
             ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
           }
         ],
         "software": [
@@ -155415,6 +157217,12 @@
             "name": "CLAIMLOADER",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S1236/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
           }
         ],
         "detection_strategies": [
@@ -156578,7 +158386,14 @@
             ]
           }
         ],
-        "software": [],
+        "software": [
+          {
+            "software_id": "S9044",
+            "name": "Kali365",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9044/"
+          }
+        ],
         "detection_strategies": [
           {
             "strategy_id": "DET0192",
@@ -156795,6 +158610,12 @@
             "name": "Shai-Hulud",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9008/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -159331,6 +161152,12 @@
             "name": "RustyWater",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9037/"
+          },
+          {
+            "software_id": "S9044",
+            "name": "Kali365",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9044/"
           }
         ],
         "detection_strategies": [
@@ -160490,6 +162317,12 @@
             "name": "ROAMINGHOUSE",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9026/"
+          },
+          {
+            "software_id": "S9044",
+            "name": "Kali365",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9044/"
           }
         ],
         "detection_strategies": [
@@ -161041,6 +162874,22 @@
               "tag",
               "tenacious"
             ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [
@@ -161129,6 +162978,18 @@
             "name": "Shai-Hulud",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9008/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -163349,7 +165210,14 @@
             ]
           }
         ],
-        "software": [],
+        "software": [
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
+          }
+        ],
         "detection_strategies": [
           {
             "strategy_id": "DET0073",
@@ -166672,6 +168540,12 @@
             "name": "RustyWater",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9037/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
           }
         ],
         "detection_strategies": [
@@ -166881,6 +168755,22 @@
             "keywords": [
               "group",
               "medusa"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
             ]
           }
         ],
@@ -167358,6 +169248,12 @@
             "name": "LAMEHUG",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9035/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
           }
         ],
         "detection_strategies": [
@@ -169579,6 +171475,22 @@
               "0501",
               "storm"
             ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [
@@ -169593,6 +171505,12 @@
             "name": "TruffleHog",
             "type": "tool",
             "url": "https://attack.mitre.org/software/S9009/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
           }
         ],
         "detection_strategies": [
@@ -169835,6 +171753,29 @@
               "purplebravo",
               "tag",
               "tenacious"
+            ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
             ]
           }
         ],
@@ -170866,6 +172807,45 @@
               "sandstorm",
               "void"
             ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [
@@ -171579,6 +173559,45 @@
               "red",
               "sandstorm",
               "void"
+            ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
             ]
           }
         ],
@@ -172343,6 +174362,29 @@
               "red",
               "sandstorm",
               "void"
+            ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
             ]
           }
         ],
@@ -174177,6 +176219,29 @@
               "sandstorm",
               "void"
             ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
           }
         ],
         "software": [],
@@ -174681,6 +176746,22 @@
               "red",
               "sandstorm",
               "void"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
             ]
           }
         ],
@@ -176085,6 +178166,29 @@
               "sandstorm",
               "void"
             ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
           }
         ],
         "software": [],
@@ -176407,6 +178511,22 @@
             ],
             "keywords": [
               "unc3886"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
             ]
           }
         ],
@@ -178450,6 +180570,22 @@
               "sandstorm",
               "void"
             ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [
@@ -179206,6 +181342,22 @@
               "tag",
               "tenacious"
             ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [
@@ -179646,6 +181798,22 @@
               "lapsus",
               "strawberry",
               "tempest"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
             ]
           }
         ],
@@ -181970,6 +184138,22 @@
               "tag",
               "tenacious"
             ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [
@@ -182656,6 +184840,22 @@
               "sandstorm",
               "void"
             ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [],
@@ -183326,6 +185526,22 @@
               "sleet",
               "storm"
             ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [],
@@ -183905,6 +186121,22 @@
               "moonstone",
               "sleet",
               "storm"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
             ]
           }
         ],
@@ -185176,6 +187408,29 @@
               "tag",
               "tenacious"
             ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
           }
         ],
         "software": [
@@ -185744,6 +187999,24 @@
             "name": "Peirates",
             "type": "tool",
             "url": "https://attack.mitre.org/software/S0683/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -185961,6 +188234,18 @@
             "name": "Peirates",
             "type": "tool",
             "url": "https://attack.mitre.org/software/S0683/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
           }
         ],
         "detection_strategies": [
@@ -186179,6 +188464,12 @@
             "name": "Tsundere Botnet",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9034/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -186490,6 +188781,18 @@
             "name": "LODEINFO",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9020/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -186616,7 +188919,24 @@
             "url": "https://attack.mitre.org/tactics/TA0007/"
           }
         ],
-        "groups": [],
+        "groups": [
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
+          }
+        ],
         "software": [
           {
             "software_id": "S0683",
@@ -187464,6 +189784,12 @@
             "name": "AADInternals",
             "type": "tool",
             "url": "https://attack.mitre.org/software/S0677/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -188251,6 +190577,45 @@
               "sandstorm",
               "void"
             ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
+          },
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
           }
         ],
         "software": [
@@ -188295,6 +190660,12 @@
             "name": "GlassWorm",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9010/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
           }
         ],
         "detection_strategies": [
@@ -188883,13 +191254,49 @@
             "url": "https://attack.mitre.org/tactics/TA0002/"
           }
         ],
-        "groups": [],
+        "groups": [
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
+          }
+        ],
         "software": [
           {
             "software_id": "S9008",
             "name": "Shai-Hulud",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9008/"
+          },
+          {
+            "software_id": "S9042",
+            "name": "CanisterWorm",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9042/"
+          },
+          {
+            "software_id": "S9043",
+            "name": "Mini Shai-Hulud",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9043/"
           }
         ],
         "detection_strategies": [
@@ -189102,6 +191509,12 @@
             "name": "DynoWiper",
             "type": "malware",
             "url": "https://attack.mitre.org/software/S9038/"
+          },
+          {
+            "software_id": "S9041",
+            "name": "TeamPCP Cloud Stealer",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9041/"
           }
         ],
         "detection_strategies": [
@@ -190209,9 +192622,39 @@
               "tag",
               "tenacious"
             ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
+            ]
           }
         ],
-        "software": [],
+        "software": [
+          {
+            "software_id": "S9044",
+            "name": "Kali365",
+            "type": "malware",
+            "url": "https://attack.mitre.org/software/S9044/"
+          }
+        ],
         "detection_strategies": [
           {
             "strategy_id": "DET0917",
@@ -190321,7 +192764,24 @@
             "url": "https://attack.mitre.org/tactics/TA0005/"
           }
         ],
-        "groups": [],
+        "groups": [
+          {
+            "group_id": "G1057",
+            "name": "ShinyHunters",
+            "url": "https://attack.mitre.org/groups/G1057/",
+            "aliases": [
+              "Bling Libra",
+              "ShinyHunters",
+              "UNC6240"
+            ],
+            "keywords": [
+              "bling",
+              "libra",
+              "shinyhunters",
+              "unc6240"
+            ]
+          }
+        ],
         "software": [],
         "detection_strategies": [
           {
@@ -190693,6 +193153,29 @@
               "red",
               "sandstorm",
               "void"
+            ]
+          },
+          {
+            "group_id": "G1056",
+            "name": "TeamPCP",
+            "url": "https://attack.mitre.org/groups/G1056/",
+            "aliases": [
+              "DeadCatx3",
+              "PCPCat",
+              "SHADOW-WATER-058",
+              "ShellForce",
+              "TeamPCP",
+              "UNC6780"
+            ],
+            "keywords": [
+              "058",
+              "deadcatx3",
+              "pcpcat",
+              "shadow",
+              "shellforce",
+              "teampcp",
+              "unc6780",
+              "water"
             ]
           }
         ],
@@ -206746,6 +209229,219 @@
           "DET-AI-0693",
           "DET-E-001",
           "DET-E-002",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G1056",
+        "name": "TeamPCP",
+        "url": "https://attack.mitre.org/groups/G1056/",
+        "aliases": [
+          "DeadCatx3",
+          "PCPCat",
+          "SHADOW-WATER-058",
+          "ShellForce",
+          "TeamPCP",
+          "UNC6780"
+        ],
+        "keywords": [
+          "058",
+          "deadcatx3",
+          "pcpcat",
+          "shadow",
+          "shellforce",
+          "teampcp",
+          "unc6780",
+          "water"
+        ],
+        "mapped_techniques": [
+          "T1005",
+          "T1027.003",
+          "T1036.005",
+          "T1059.004",
+          "T1059.006",
+          "T1059.007",
+          "T1059.013",
+          "T1078",
+          "T1078.004",
+          "T1098",
+          "T1105",
+          "T1176.002",
+          "T1190",
+          "T1195.001",
+          "T1485",
+          "T1486",
+          "T1528",
+          "T1543.002",
+          "T1546.016",
+          "T1547.001",
+          "T1550.001",
+          "T1552.004",
+          "T1553.002",
+          "T1555.006",
+          "T1564.001",
+          "T1583",
+          "T1583.001",
+          "T1583.004",
+          "T1583.006",
+          "T1585.001",
+          "T1587.001",
+          "T1608.001",
+          "T1657",
+          "T1677",
+          "T1683.001",
+          "T1684.001"
+        ],
+        "mapped_detections": [
+          "DET-AI-0014",
+          "DET-AI-0042",
+          "DET-AI-0066",
+          "DET-AI-0121",
+          "DET-AI-0123",
+          "DET-AI-0124",
+          "DET-AI-0130",
+          "DET-AI-0155",
+          "DET-AI-0159",
+          "DET-AI-0176",
+          "DET-AI-0189",
+          "DET-AI-0239",
+          "DET-AI-0243",
+          "DET-AI-0245",
+          "DET-AI-0309",
+          "DET-AI-0311",
+          "DET-AI-0347",
+          "DET-AI-0364",
+          "DET-AI-0384",
+          "DET-AI-0388",
+          "DET-AI-0410",
+          "DET-AI-0418",
+          "DET-AI-0425",
+          "DET-AI-0437",
+          "DET-AI-0474",
+          "DET-AI-0536",
+          "DET-AI-0537",
+          "DET-AI-0540",
+          "DET-AI-0542",
+          "DET-AI-0555",
+          "DET-AI-0563",
+          "DET-AI-0634",
+          "DET-AI-0660",
+          "DET-AI-0671",
+          "DET-AI-0678",
+          "DET-AI-0681",
+          "DET-I-001"
+        ]
+      },
+      {
+        "group_id": "G1057",
+        "name": "ShinyHunters",
+        "url": "https://attack.mitre.org/groups/G1057/",
+        "aliases": [
+          "Bling Libra",
+          "ShinyHunters",
+          "UNC6240"
+        ],
+        "keywords": [
+          "bling",
+          "libra",
+          "shinyhunters",
+          "unc6240"
+        ],
+        "mapped_techniques": [
+          "T1016",
+          "T1018",
+          "T1036.005",
+          "T1059.007",
+          "T1059.009",
+          "T1069.003",
+          "T1072",
+          "T1078",
+          "T1078.002",
+          "T1078.004",
+          "T1082",
+          "T1083",
+          "T1090.003",
+          "T1105",
+          "T1110",
+          "T1190",
+          "T1195.001",
+          "T1203",
+          "T1210",
+          "T1213.003",
+          "T1213.006",
+          "T1219",
+          "T1485",
+          "T1491.001",
+          "T1528",
+          "T1530",
+          "T1550.001",
+          "T1552.001",
+          "T1560.002",
+          "T1567",
+          "T1573.002",
+          "T1580",
+          "T1583.001",
+          "T1583.004",
+          "T1585.002",
+          "T1587.004",
+          "T1588.002",
+          "T1588.007",
+          "T1589.001",
+          "T1593.003",
+          "T1595.002",
+          "T1598",
+          "T1598.003",
+          "T1619",
+          "T1657",
+          "T1684"
+        ],
+        "mapped_detections": [
+          "DET-AI-0023",
+          "DET-AI-0026",
+          "DET-AI-0066",
+          "DET-AI-0124",
+          "DET-AI-0126",
+          "DET-AI-0135",
+          "DET-AI-0151",
+          "DET-AI-0155",
+          "DET-AI-0157",
+          "DET-AI-0159",
+          "DET-AI-0161",
+          "DET-AI-0162",
+          "DET-AI-0171",
+          "DET-AI-0189",
+          "DET-AI-0191",
+          "DET-AI-0243",
+          "DET-AI-0245",
+          "DET-AI-0253",
+          "DET-AI-0264",
+          "DET-AI-0270",
+          "DET-AI-0273",
+          "DET-AI-0293",
+          "DET-AI-0309",
+          "DET-AI-0315",
+          "DET-AI-0347",
+          "DET-AI-0349",
+          "DET-AI-0410",
+          "DET-AI-0415",
+          "DET-AI-0465",
+          "DET-AI-0497",
+          "DET-AI-0515",
+          "DET-AI-0535",
+          "DET-AI-0537",
+          "DET-AI-0540",
+          "DET-AI-0556",
+          "DET-AI-0566",
+          "DET-AI-0569",
+          "DET-AI-0574",
+          "DET-AI-0576",
+          "DET-AI-0599",
+          "DET-AI-0603",
+          "DET-AI-0614",
+          "DET-AI-0617",
+          "DET-AI-0648",
+          "DET-AI-0660",
+          "DET-AI-0680",
           "DET-I-001"
         ]
       }
@@ -237573,6 +240269,350 @@
           "DET-AI-0673",
           "DET-AI-0683",
           "DET-E-002"
+        ]
+      },
+      {
+        "software_id": "S9041",
+        "name": "TeamPCP Cloud Stealer",
+        "type": "malware",
+        "url": "https://attack.mitre.org/software/S9041/",
+        "mapped_techniques": [
+          "T1003.007",
+          "T1008",
+          "T1016",
+          "T1020",
+          "T1027.013",
+          "T1033",
+          "T1036.005",
+          "T1041",
+          "T1049",
+          "T1057",
+          "T1059.004",
+          "T1059.006",
+          "T1059.007",
+          "T1070.004",
+          "T1071.001",
+          "T1074.001",
+          "T1082",
+          "T1083",
+          "T1105",
+          "T1119",
+          "T1140",
+          "T1213.003",
+          "T1213.006",
+          "T1480",
+          "T1518",
+          "T1526",
+          "T1528",
+          "T1543.002",
+          "T1546.016",
+          "T1546.018",
+          "T1548.003",
+          "T1552.001",
+          "T1552.003",
+          "T1552.004",
+          "T1552.007",
+          "T1555",
+          "T1555.006",
+          "T1560.001",
+          "T1564.001",
+          "T1567.001",
+          "T1573.001",
+          "T1573.002",
+          "T1580",
+          "T1609",
+          "T1613",
+          "T1657",
+          "T1678"
+        ],
+        "mapped_detections": [
+          "DET-AI-0012",
+          "DET-AI-0017",
+          "DET-AI-0023",
+          "DET-AI-0027",
+          "DET-AI-0052",
+          "DET-AI-0060",
+          "DET-AI-0066",
+          "DET-AI-0082",
+          "DET-AI-0089",
+          "DET-AI-0116",
+          "DET-AI-0121",
+          "DET-AI-0123",
+          "DET-AI-0124",
+          "DET-AI-0138",
+          "DET-AI-0146",
+          "DET-AI-0153",
+          "DET-AI-0161",
+          "DET-AI-0162",
+          "DET-AI-0189",
+          "DET-AI-0204",
+          "DET-AI-0236",
+          "DET-AI-0270",
+          "DET-AI-0273",
+          "DET-AI-0302",
+          "DET-AI-0342",
+          "DET-AI-0346",
+          "DET-AI-0347",
+          "DET-AI-0364",
+          "DET-AI-0384",
+          "DET-AI-0386",
+          "DET-AI-0405",
+          "DET-AI-0415",
+          "DET-AI-0417",
+          "DET-AI-0418",
+          "DET-AI-0421",
+          "DET-AI-0431",
+          "DET-AI-0437",
+          "DET-AI-0464",
+          "DET-AI-0474",
+          "DET-AI-0498",
+          "DET-AI-0514",
+          "DET-AI-0515",
+          "DET-AI-0535",
+          "DET-AI-0640",
+          "DET-AI-0644",
+          "DET-AI-0660",
+          "DET-AI-0672",
+          "DET-C-001"
+        ]
+      },
+      {
+        "software_id": "S9042",
+        "name": "CanisterWorm",
+        "type": "malware",
+        "url": "https://attack.mitre.org/software/S9042/",
+        "mapped_techniques": [
+          "T1016",
+          "T1018",
+          "T1027.009",
+          "T1033",
+          "T1036.004",
+          "T1036.005",
+          "T1053.006",
+          "T1059.004",
+          "T1059.006",
+          "T1059.007",
+          "T1070.004",
+          "T1083",
+          "T1102.001",
+          "T1105",
+          "T1124",
+          "T1140",
+          "T1195.001",
+          "T1480",
+          "T1485",
+          "T1497.003",
+          "T1528",
+          "T1529",
+          "T1543",
+          "T1548.003",
+          "T1550.001",
+          "T1552.004",
+          "T1555.006",
+          "T1569.003",
+          "T1609",
+          "T1613",
+          "T1614.001",
+          "T1677"
+        ],
+        "mapped_detections": [
+          "DET-AI-0023",
+          "DET-AI-0026",
+          "DET-AI-0048",
+          "DET-AI-0060",
+          "DET-AI-0065",
+          "DET-AI-0066",
+          "DET-AI-0096",
+          "DET-AI-0121",
+          "DET-AI-0123",
+          "DET-AI-0124",
+          "DET-AI-0138",
+          "DET-AI-0162",
+          "DET-AI-0185",
+          "DET-AI-0189",
+          "DET-AI-0207",
+          "DET-AI-0236",
+          "DET-AI-0245",
+          "DET-AI-0302",
+          "DET-AI-0309",
+          "DET-AI-0326",
+          "DET-AI-0347",
+          "DET-AI-0348",
+          "DET-AI-0362",
+          "DET-AI-0405",
+          "DET-AI-0410",
+          "DET-AI-0418",
+          "DET-AI-0437",
+          "DET-AI-0509",
+          "DET-AI-0640",
+          "DET-AI-0644",
+          "DET-AI-0646",
+          "DET-AI-0671"
+        ]
+      },
+      {
+        "software_id": "S9043",
+        "name": "Mini Shai-Hulud",
+        "type": "malware",
+        "url": "https://attack.mitre.org/software/S9043/",
+        "mapped_techniques": [
+          "T1003.007",
+          "T1008",
+          "T1016",
+          "T1021.007",
+          "T1027.013",
+          "T1033",
+          "T1036.005",
+          "T1041",
+          "T1053.006",
+          "T1059.006",
+          "T1059.007",
+          "T1059.013",
+          "T1070.004",
+          "T1071.001",
+          "T1078.004",
+          "T1082",
+          "T1083",
+          "T1087.004",
+          "T1090.003",
+          "T1102.001",
+          "T1105",
+          "T1119",
+          "T1124",
+          "T1132.001",
+          "T1140",
+          "T1195.001",
+          "T1205",
+          "T1213.003",
+          "T1480",
+          "T1485",
+          "T1497",
+          "T1497.001",
+          "T1528",
+          "T1543.001",
+          "T1543.002",
+          "T1546",
+          "T1546.018",
+          "T1550.001",
+          "T1552.001",
+          "T1552.004",
+          "T1552.005",
+          "T1552.007",
+          "T1554",
+          "T1555.005",
+          "T1555.006",
+          "T1559",
+          "T1560",
+          "T1560.001",
+          "T1564.011",
+          "T1567.001",
+          "T1609",
+          "T1614",
+          "T1614.001",
+          "T1649",
+          "T1677"
+        ],
+        "mapped_detections": [
+          "DET-AI-0012",
+          "DET-AI-0017",
+          "DET-AI-0023",
+          "DET-AI-0036",
+          "DET-AI-0052",
+          "DET-AI-0060",
+          "DET-AI-0066",
+          "DET-AI-0082",
+          "DET-AI-0096",
+          "DET-AI-0123",
+          "DET-AI-0124",
+          "DET-AI-0130",
+          "DET-AI-0138",
+          "DET-AI-0146",
+          "DET-AI-0159",
+          "DET-AI-0161",
+          "DET-AI-0162",
+          "DET-AI-0167",
+          "DET-AI-0171",
+          "DET-AI-0185",
+          "DET-AI-0189",
+          "DET-AI-0204",
+          "DET-AI-0207",
+          "DET-AI-0215",
+          "DET-AI-0236",
+          "DET-AI-0245",
+          "DET-AI-0260",
+          "DET-AI-0270",
+          "DET-AI-0302",
+          "DET-AI-0309",
+          "DET-AI-0323",
+          "DET-AI-0324",
+          "DET-AI-0347",
+          "DET-AI-0363",
+          "DET-AI-0364",
+          "DET-AI-0368",
+          "DET-AI-0386",
+          "DET-AI-0410",
+          "DET-AI-0415",
+          "DET-AI-0418",
+          "DET-AI-0419",
+          "DET-AI-0421",
+          "DET-AI-0430",
+          "DET-AI-0436",
+          "DET-AI-0437",
+          "DET-AI-0459",
+          "DET-AI-0463",
+          "DET-AI-0464",
+          "DET-AI-0484",
+          "DET-AI-0498",
+          "DET-AI-0640",
+          "DET-AI-0645",
+          "DET-AI-0646",
+          "DET-AI-0654",
+          "DET-AI-0671",
+          "DET-C-001"
+        ]
+      },
+      {
+        "software_id": "S9044",
+        "name": "Kali365",
+        "type": "malware",
+        "url": "https://attack.mitre.org/software/S9044/",
+        "mapped_techniques": [
+          "T1059.007",
+          "T1071.001",
+          "T1087.003",
+          "T1090",
+          "T1102",
+          "T1185",
+          "T1204.001",
+          "T1204.004",
+          "T1528",
+          "T1539",
+          "T1550.001",
+          "T1552.001",
+          "T1557",
+          "T1564.008",
+          "T1566.001",
+          "T1566.002",
+          "T1683.001"
+        ],
+        "mapped_detections": [
+          "DET-AI-0124",
+          "DET-AI-0146",
+          "DET-AI-0166",
+          "DET-AI-0168",
+          "DET-AI-0184",
+          "DET-AI-0240",
+          "DET-AI-0255",
+          "DET-AI-0258",
+          "DET-AI-0347",
+          "DET-AI-0355",
+          "DET-AI-0410",
+          "DET-AI-0415",
+          "DET-AI-0448",
+          "DET-AI-0481",
+          "DET-AI-0493",
+          "DET-AI-0494",
+          "DET-AI-0678"
         ]
       }
     ],
