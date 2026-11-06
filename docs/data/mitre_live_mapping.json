@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-05T02:22:25.436080+00:00",
+  "generated_at": "2026-11-06T02:22:11.411980+00:00",
   "source": {
     "mitre_stix_url": "https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/enterprise-attack/enterprise-attack.json",
-    "object_count": 26690
+    "object_count": 26699
   },
   "counts": {
     "local_detections": 702,
@@ -10,7 +10,7 @@
     "mapped_tactics": 15,
     "mapped_groups": 174,
     "mapped_software": 842,
-    "mapped_detection_strategies": 703,
+    "mapped_detection_strategies": 706,
     "total_tactics": 15,
     "total_groups": 178
   },
@@ -254547,6 +254547,33 @@
         "url": "https://attack.mitre.org/detectionstrategies/DET0939",
         "mapped_techniques": [
           "T1696"
+        ],
+        "mapped_detections": []
+      },
+      {
+        "strategy_id": "DET0941",
+        "name": "Instruction Override with Unauthorized AI Activity",
+        "url": "https://attack.mitre.org/detectionstrategies/DET0941",
+        "mapped_techniques": [
+          "T1699"
+        ],
+        "mapped_detections": []
+      },
+      {
+        "strategy_id": "DET0942",
+        "name": "Retrieved Instruction with Unauthorized Agent Action",
+        "url": "https://attack.mitre.org/detectionstrategies/DET0942",
+        "mapped_techniques": [
+          "T1698"
+        ],
+        "mapped_detections": []
+      },
+      {
+        "strategy_id": "DET0943",
+        "name": "Adversarial Content Inducing Autonomous Defense Impairment",
+        "url": "https://attack.mitre.org/detectionstrategies/DET0943",
+        "mapped_techniques": [
+          "T1685.007"
         ],
         "mapped_detections": []
       }
